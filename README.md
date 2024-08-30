@@ -4,7 +4,7 @@ Welcome to **ReinvyLibrary**! This repository is a curated collection of markdow
 
 ## Language Options
 
-- [English](README_EN.md)
+- [English](README.md)
 - [Bahasa Indonesia](README_ID.md)
 
 
@@ -36,7 +36,7 @@ This repository includes the following types of content:
 
 To get started with **ReinvyLibrary**, simply clone the repository to your local machine:
 
-    git clone https://github.com/yourusername/ReinvyLibrary.git
+    git clone https://github.com/Reinvy/ReinvyLibrary.git
 
 Navigate to the folder of your choice to explore the content:
 
