@@ -2,6 +2,12 @@
 
 Welcome to **ReinvyLibrary**! This repository is a curated collection of markdown files, created by Reinvy, containing a wide range of content including tutorials, syllabi, guides, and other educational materials. Whether you're a developer looking to expand your knowledge or a learner searching for structured resources, you'll find valuable content here.
 
+## Language Options
+
+- [English](README_EN.md)
+- [Bahasa Indonesia](README_ID.md)
+
+
 ## Table of Contents
 
 - [Introduction](#introduction)
