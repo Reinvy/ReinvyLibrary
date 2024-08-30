@@ -4,7 +4,7 @@ Selamat datang di **ReinvyLibrary**! Repositori ini adalah kumpulan file markdow
 
 ## Pilihan Bahasa
 
-- [English](README_EN.md)
+- [English](README.md)
 - [Bahasa Indonesia](README_ID.md)
 
 ## Daftar Isi
