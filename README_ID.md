@@ -35,7 +35,7 @@ Repositori ini mencakup jenis-jenis konten berikut:
 
 Untuk memulai dengan **ReinvyLibrary**, cukup kloning repositori ke mesin lokal Anda:
 
-    git clone https://github.com/yourusername/ReinvyLibrary.git
+    git clone https://github.com/Reinvy/ReinvyLibrary.git
 
 Navigasikan ke folder yang Anda pilih untuk menjelajahi konten:
 
