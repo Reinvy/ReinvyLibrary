@@ -1,5 +1,3 @@
-Tentu, mari kita buat silabus Flutter yang lebih terperinci dan dalam format Markdown yang lebih terstruktur. Silabus ini akan mencakup materi dasar hingga menengah, serta beberapa topik lanjutan yang penting untuk dikuasai oleh seorang Flutter developer.
-
 ## Silabus Pemrograman Flutter
 
 ### **Pendahuluan**
@@ -129,5 +127,3 @@ my_flutter_app/
 - **Pemanfaatan GitHub:** Ajak peserta untuk menggunakan GitHub untuk version control dan kolaborasi.
 - **Community:** Dorong peserta untuk aktif di komunitas Flutter untuk mendapatkan dukungan dan berbagi pengetahuan.
 - **Best practices:** Ajarkan best practices dalam pengembangan Flutter, seperti penggunaan linter, testing yang baik, dan clean code.
-
-Dengan silabus yang lebih terperinci ini, diharapkan peserta dapat memahami Flutter secara mendalam dan siap untuk membangun aplikasi mobile yang berkualitas.
