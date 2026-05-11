@@ -57,7 +57,8 @@ router.post("/upload", upload.single("file"), (req, res) => {
       file: req.file,
     });
   } catch (error) {
-    res.status(500).json({ error: error.message });
+    console.error(error);
+    res.status(500).json({ error: "Internal Server Error" });
   }
 });
 
@@ -69,7 +70,8 @@ router.post("/uploads", upload.array("files", 5), (req, res) => {
       files: req.files,
     });
   } catch (error) {
-    res.status(500).json({ error: error.message });
+    console.error(error);
+    res.status(500).json({ error: "Internal Server Error" });
   }
 });
 
