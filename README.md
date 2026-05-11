@@ -1,6 +1,11 @@
 # ReinvyLibrary
 
-Welcome to **ReinvyLibrary**! This repository is a curated collection of markdown files, created by Reinvy, containing a wide range of content including tutorials, syllabi, guides, and other educational materials. Whether you're a developer looking to expand your knowledge or a learner searching for structured resources, you'll find valuable content here.
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://makeapullrequest.com)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+Welcome to **ReinvyLibrary**! This repository is an open-source, curated collection of markdown files created by Reinvy. It aims to be a community-driven hub containing a wide range of educational content, including tutorials, syllabi, guides, and cheat sheets. Whether you're a developer looking to expand your knowledge or a learner searching for structured resources, you'll find valuable and accessible content here.
+
+> 📖 **Read our [Product Requirements Document (PRD)](PRD.md)** to learn more about our vision, goals, and future roadmap.
 
 ## Language Options
 
@@ -20,7 +25,7 @@ Welcome to **ReinvyLibrary**! This repository is a curated collection of markdow
 
 ## Introduction
 
-**ReinvyLibrary** is designed to be a comprehensive and accessible resource for developers, educators, and learners alike. The repository is organized into various sections, each focusing on different aspects of programming and technology. The content is written in markdown format to ensure readability and ease of use.
+**ReinvyLibrary** is designed to be a comprehensive and accessible resource for developers, educators, and learners alike. The repository is organized into various sections, each focusing on different aspects of programming and technology. The content is written in standard markdown format to ensure readability, easy navigation, and simplicity in contributions.
 
 ## Content Overview
 
@@ -54,14 +59,15 @@ Each section in **ReinvyLibrary** is self-contained, meaning you can start with 
 
 ## Contributing
 
-Contributions are welcome! If you have tutorials, guides, or any other relevant content you'd like to share, please follow these steps:
+Contributions are highly encouraged! If you have tutorials, guides, or any other relevant content you'd like to share, please read our **[Contributing Guidelines](CONTRIBUTING.md)** first.
 
+General steps to contribute:
 1. Fork the repository.
 2. Create a new branch for your contribution.
-3. Add your markdown files to the appropriate folder.
-4. Submit a pull request with a description of your changes.
+3. Add your markdown files to the appropriate folder (preferably providing both English and Indonesian versions).
+4. Submit a Pull Request using our provided PR template.
 
-We review all submissions to ensure the quality and relevance of the content.
+We review all submissions to ensure quality, formatting consistency, and relevance of the content.
 
 ## License
 
