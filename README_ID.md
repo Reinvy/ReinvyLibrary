@@ -1,6 +1,11 @@
 # ReinvyLibrary
 
-Selamat datang di **ReinvyLibrary**! Repositori ini adalah kumpulan file markdown yang telah dikurasi, dibuat oleh Reinvy, yang berisi berbagai konten termasuk tutorial, silabus, panduan, dan materi pendidikan lainnya. Apakah Anda seorang pengembang yang ingin memperluas pengetahuan Anda atau seorang pelajar yang mencari sumber daya terstruktur, Anda akan menemukan konten berharga di sini.
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://makeapullrequest.com)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+Selamat datang di **ReinvyLibrary**! Repositori ini adalah kumpulan materi pendidikan berbasis markdown bersifat *open-source* yang dikurasi dan dibuat oleh Reinvy. Repositori ini bertujuan menjadi pusat pembelajaran yang digerakkan oleh komunitas, berisi berbagai konten termasuk tutorial, silabus, panduan, dan *cheat sheets*. Apakah Anda seorang pengembang yang ingin memperluas pengetahuan Anda atau seorang pelajar yang mencari sumber daya terstruktur, Anda akan menemukan konten yang berharga dan mudah diakses di sini.
+
+> 📖 **Baca [Dokumen Persyaratan Produk (PRD)](PRD_ID.md)** kami untuk mempelajari lebih lanjut tentang visi, tujuan, dan peta jalan (roadmap) kami ke depan.
 
 ## Pilihan Bahasa
 
@@ -19,7 +24,7 @@ Selamat datang di **ReinvyLibrary**! Repositori ini adalah kumpulan file markdow
 
 ## Pengantar
 
-**ReinvyLibrary** dirancang untuk menjadi sumber daya yang komprehensif dan mudah diakses bagi pengembang, pendidik, dan pelajar. Repositori ini diorganisir dalam berbagai bagian, masing-masing berfokus pada aspek-aspek berbeda dari pemrograman dan teknologi. Konten ditulis dalam format markdown untuk memastikan keterbacaan dan kemudahan penggunaan.
+**ReinvyLibrary** dirancang untuk menjadi sumber daya yang komprehensif dan mudah diakses bagi pengembang, pendidik, dan pelajar. Repositori ini diorganisir dalam berbagai bagian, masing-masing berfokus pada aspek-aspek berbeda dari pemrograman dan teknologi. Konten ditulis dalam format standar markdown untuk memastikan keterbacaan, navigasi yang mudah, dan kesederhanaan dalam berkontribusi.
 
 ## Ikhtisar Konten
 
@@ -53,14 +58,15 @@ Setiap bagian dalam **ReinvyLibrary** bersifat mandiri, artinya Anda dapat memul
 
 ## Kontribusi
 
-Kontribusi sangat diterima! Jika Anda memiliki tutorial, panduan, atau konten relevan lainnya yang ingin Anda bagikan, ikuti langkah-langkah berikut:
+Kontribusi sangat didorong dan diterima! Jika Anda memiliki tutorial, panduan, atau konten relevan lainnya yang ingin Anda bagikan, harap baca **[Panduan Kontribusi](CONTRIBUTING_ID.md)** kami terlebih dahulu.
 
+Langkah-langkah umum untuk berkontribusi:
 1. Fork repositori.
-2. Buat cabang baru untuk kontribusi Anda.
-3. Tambahkan file markdown Anda ke folder yang sesuai.
-4. Ajukan pull request dengan deskripsi perubahan Anda.
+2. Buat cabang (branch) baru untuk kontribusi Anda.
+3. Tambahkan file markdown Anda ke folder yang sesuai (sebaiknya sediakan versi bahasa Inggris dan Indonesia).
+4. Ajukan *Pull Request* menggunakan template PR yang telah kami sediakan.
 
-Kami meninjau semua pengajuan untuk memastikan kualitas dan relevansi konten.
+Kami meninjau semua pengajuan untuk memastikan kualitas, konsistensi format, dan relevansi konten.
 
 ## Lisensi
 
