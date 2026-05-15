@@ -1,18 +1,22 @@
 # Autentikasi dan Otorisasi Menggunakan JWT di Express.js
 
 ## Ringkasan Singkat
+
 Materi ini membahas cara mengamankan aplikasi Express.js menggunakan JSON Web Token (JWT). Anda akan belajar bagaimana mengautentikasi pengguna saat login dan mengotorisasi akses ke rute-rute yang dilindungi.
 
 ---
 
 ## Untuk Siapa Materi Ini
+
 * Target pembaca: Developer Backend, Fullstack Developer
 * Level pembaca: Menengah (Intermediate)
 
 ---
 
 ## Prasyarat
+
 Sebaiknya Anda sudah memahami:
+
 * Dasar-dasar Express.js (Routing dan Middleware)
 * Konsep REST API dasar
 * Pemahaman dasar tentang database dan pengambilan data pengguna (misal: Prisma atau ORM lainnya)
@@ -20,7 +24,9 @@ Sebaiknya Anda sudah memahami:
 ---
 
 ## Tujuan Belajar
+
 Setelah membaca materi ini, Anda akan memahami:
+
 * Perbedaan antara Autentikasi dan Otorisasi
 * Konsep dasar JSON Web Token (JWT) dan strukturnya
 * Cara membuat (sign) dan memverifikasi JWT di Express.js
@@ -29,6 +35,7 @@ Setelah membaca materi ini, Anda akan memahami:
 ---
 
 ## Konteks dan Motivasi
+
 Dalam pengembangan aplikasi web modern, keamanan adalah aspek yang sangat krusial. Ketika membangun REST API dengan Express.js, server berjalan secara *stateless*. Artinya, server tidak menyimpan status login pengguna (session) secara default. Untuk mengatasi hal ini, JSON Web Token (JWT) menjadi standar industri yang aman dan efisien untuk memverifikasi identitas pengguna dan memastikan mereka memiliki hak akses ke resource tertentu tanpa membebani server dengan penyimpanan session. Memahami JWT adalah keterampilan fundamental yang wajib dimiliki oleh setiap developer backend.
 
 ---
@@ -36,19 +43,24 @@ Dalam pengembangan aplikasi web modern, keamanan adalah aspek yang sangat krusia
 ## Materi Inti
 
 ### 1. Autentikasi vs Otorisasi
+
 Banyak orang sering tertukar antara dua istilah ini:
+
 * **Autentikasi (Authentication):** Menjawab pertanyaan *"Siapa Anda?"*. Ini adalah proses verifikasi identitas pengguna (contoh: mengecek kecocokan email dan password).
 * **Otorisasi (Authorization):** Menjawab pertanyaan *"Apa yang boleh Anda lakukan?"*. Ini adalah proses mengecek apakah pengguna yang sudah terautentikasi memiliki izin untuk mengakses rute atau resource tertentu (contoh: mengecek apakah role pengguna adalah Admin).
 
 ### 2. Apa itu JSON Web Token (JWT)?
+
 JWT adalah standar terbuka (RFC 7519) yang mendefinisikan cara ringkas dan mandiri untuk mengirimkan informasi secara aman antar pihak sebagai objek JSON. Informasi ini dapat diverifikasi dan dipercaya karena ditandatangani (signed) secara digital.
 
 Sebuah JWT terdiri dari tiga bagian, yang dipisahkan oleh titik (`.`):
+
 1. **Header:** Berisi jenis token dan algoritma signing yang digunakan (misal: HMAC SHA256 atau RSA).
 2. **Payload:** Berisi klaim (claims) atau informasi entitas pengguna (misal: ID pengguna, email, role). Hindari menaruh informasi sensitif seperti password di sini.
 3. **Signature:** Digunakan untuk memverifikasi bahwa pengirim token adalah yang sebenarnya dan bahwa pesan tidak diubah di tengah jalan. Dibuat dengan menggabungkan Header, Payload, dan sebuah *Secret Key*.
 
 ### 3. Alur Kerja JWT di Express
+
 1. **Login:** Pengguna mengirimkan kredensial (email dan password).
 2. **Validasi:** Server memvalidasi kredensial ke database.
 3. **Pembuatan Token:** Jika valid, server membuat (sign) JWT yang berisi identitas pengguna dan mengembalikannya ke klien.
@@ -61,7 +73,9 @@ Sebuah JWT terdiri dari tiga bagian, yang dipisahkan oleh titik (`.`):
 ## Contoh / Ilustrasi
 
 ### Instalasi Package
+
 Kita perlu menginstal `jsonwebtoken` untuk mengelola token.
+
 ```bash
 npm install jsonwebtoken
 ```
@@ -162,6 +176,7 @@ app.listen(3000, () => console.log('Server berjalan di port 3000'));
 ---
 
 ## Ringkasan Akhir
+
 * Autentikasi adalah verifikasi identitas, otorisasi adalah verifikasi hak akses.
 * JWT (JSON Web Token) digunakan untuk mentransfer identitas antar entitas dengan aman dalam bentuk token terenkripsi (di bagian signature).
 * `jwt.sign()` digunakan untuk menghasilkan token setelah pengguna berhasil masuk.
@@ -171,6 +186,7 @@ app.listen(3000, () => console.log('Server berjalan di port 3000'));
 ---
 
 ## Langkah Belajar Berikutnya
+
 * Implementasi konsep *Refresh Token* untuk memperpanjang sesi JWT dengan aman.
 * Integrasikan proses autentikasi JWT dengan ORM seperti Prisma untuk memverifikasi data riil dari database.
 * Mempelajari cara hashing password dengan bcrypt sebelum memvalidasinya untuk autentikasi.
@@ -178,6 +194,7 @@ app.listen(3000, () => console.log('Server berjalan di port 3000'));
 ---
 
 ## Metadata
+
 * Level: Intermediate
 * Topik utama: Express.js, Authentication, Security
 * Topik terkait: Middleware, JWT, Authorization
