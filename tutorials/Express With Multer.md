@@ -100,12 +100,12 @@ app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
 Gunakan Postman atau alat serupa untuk menguji endpoint.
 
-### Endpoint untuk unggah file tunggal:
+### Endpoint untuk unggah file tunggal
 
 - **URL**: `POST /upload`
 - **Body**: Form-Data dengan key `file` dan pilih file untuk diunggah.
 
-### Endpoint untuk unggah banyak file:
+### Endpoint untuk unggah banyak file
 
 - **URL**: `POST /uploads`
 - **Body**: Form-Data dengan key `files` (multiple files).
