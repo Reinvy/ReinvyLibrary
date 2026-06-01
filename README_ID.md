@@ -61,6 +61,7 @@ Setiap bagian dalam **ReinvyLibrary** bersifat mandiri, artinya Anda dapat memul
 Kontribusi sangat didorong dan diterima! Jika Anda memiliki tutorial, panduan, atau konten relevan lainnya yang ingin Anda bagikan, harap baca **[Panduan Kontribusi](CONTRIBUTING_ID.md)** kami terlebih dahulu.
 
 Langkah-langkah umum untuk berkontribusi:
+
 1. Fork repositori.
 2. Buat cabang (branch) baru untuk kontribusi Anda.
 3. Tambahkan file markdown Anda ke folder yang sesuai (sebaiknya sediakan versi bahasa Inggris dan Indonesia).
@@ -76,7 +77,7 @@ Kami meninjau semua pengajuan untuk memastikan kualitas, konsistensi format, dan
 
 Jika Anda memiliki pertanyaan, saran, atau umpan balik, jangan ragu untuk menghubungi:
 
-- **Email**: reinvy.dev@gmail.com
+- **Email**: <reinvy.dev@gmail.com>
 - **GitHub**: [Reinvy](https://github.com/Reinvy)
 
 Terima kasih telah mengunjungi **ReinvyLibrary**! Kami berharap Anda menemukan konten yang berharga dan memperkaya perjalanan pembelajaran Anda.

@@ -12,7 +12,6 @@ Welcome to **ReinvyLibrary**! This repository is an open-source, curated collect
 - [English](README.md)
 - [Bahasa Indonesia](README_ID.md)
 
-
 ## Table of Contents
 
 - [Introduction](#introduction)
@@ -62,6 +61,7 @@ Each section in **ReinvyLibrary** is self-contained, meaning you can start with 
 Contributions are highly encouraged! If you have tutorials, guides, or any other relevant content you'd like to share, please read our **[Contributing Guidelines](CONTRIBUTING.md)** first.
 
 General steps to contribute:
+
 1. Fork the repository.
 2. Create a new branch for your contribution.
 3. Add your markdown files to the appropriate folder (preferably providing both English and Indonesian versions).
@@ -77,7 +77,7 @@ We review all submissions to ensure quality, formatting consistency, and relevan
 
 If you have any questions, suggestions, or feedback, feel free to reach out:
 
-- **Email**: reinvy.dev@gmail.com
+- **Email**: <reinvy.dev@gmail.com>
 - **GitHub**: [Reinvy](https://github.com/Reinvy)
 
 Thank you for visiting **ReinvyLibrary**! We hope you find the content valuable and enriching for your learning journey.

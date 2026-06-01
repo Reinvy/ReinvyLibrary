@@ -9,12 +9,15 @@ Dengan berpartisipasi dalam proyek ini, Anda diharapkan untuk menjunjung tinggi 
 ## Bagaimana Saya Bisa Berkontribusi?
 
 ### 1. Menyarankan Peningkatan atau Konten Baru
+
 Jika Anda memiliki ide untuk tutorial, cheat sheet, atau silabus baru, silakan ajukan *issue* menggunakan **Template Permintaan Konten** (Content Request).
 
 ### 2. Melaporkan Bug
+
 Jika Anda menemukan salah ketik, tautan yang rusak, atau masalah format, silakan ajukan *issue* menggunakan **Template Laporan Bug** (Bug Report).
 
 ### 3. Mengirimkan Pull Request
+
 1. **Fork** repositori ini.
 2. **Buat cabang (branch) baru** (`git checkout -b feature/konten-baru-anda`).
 3. **Commit perubahan Anda** (`git commit -m 'Menambahkan fitur baru'`). Harap tulis pesan commit yang jelas dan deskriptif.
@@ -22,6 +25,7 @@ Jika Anda menemukan salah ketik, tautan yang rusak, atau masalah format, silakan
 5. **Buka Pull Request** menggunakan template PR kami.
 
 ## Panduan Markdown
+
 - Harap gunakan sintaks Markdown standar.
 - Jika memungkinkan, sediakan versi bahasa Inggris dan bahasa Indonesia untuk dokumen Anda.
 - Pastikan semua tautan berfungsi sebelum mengirimkan PR Anda.
