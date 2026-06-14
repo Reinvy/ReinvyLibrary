@@ -1,50 +1,77 @@
-# Dokumen Persyaratan Produk (PRD) - ReinvyLibrary
+# Dokumen Kebutuhan Produk (PRD) - ReinvyLibrary
 
 ## 1. Ringkasan Eksekutif
-**ReinvyLibrary** adalah repositori *open-source* yang berisi kumpulan materi pendidikan berbasis markdown yang dikurasi dan dibuat oleh Reinvy. Repositori ini bertujuan untuk melayani pengembang, pendidik, dan pembelajar mandiri dengan menyediakan tutorial, silabus, *cheat sheets*, dan panduan praktis berkualitas tinggi. Dokumen ini menguraikan arah strategis, status saat ini, dan peta jalan (roadmap) repositori di masa depan untuk memastikan pertumbuhan, kemudahan pemeliharaan, dan keterlibatan komunitas.
+
+**ReinvyLibrary** adalah koleksi materi edukasi berbasis markdown terkurasi yang bersifat open-source, dibuat oleh Reinvy. Repositori ini melayani pengembang, pendidik, dan pembelajar mandiri dengan menyediakan tutorial, silabus, cheat sheet, dan panduan praktis berkualitas tinggi. Dokumen ini menguraikan arah strategis, kondisi saat ini, dan peta jalan (roadmap) masa depan repositori untuk memastikan pertumbuhan, kemudahan pemeliharaan, serta keterlibatan komunitas.
+
+---
 
 ## 2. Visi dan Tujuan
+
 ### Visi
-Menjadi pusat sumber daya teknologi dan pemrograman yang digerakkan oleh komunitas, mudah diakses, terstruktur dengan baik, dan berkualitas tinggi, tersedia dalam bahasa Inggris dan bahasa Indonesia.
+
+Menjadi pusat rujukan utama berbasis komunitas untuk sumber daya pemrograman dan teknologi yang mudah diakses, terstruktur dengan baik, berkualitas tinggi, tersedia dalam bahasa Inggris dan Indonesia, serta dioptimalkan untuk pengembang manusia maupun agen otomatis (AI).
 
 ### Tujuan
+
 - **Aksesibilitas:** Memastikan konten mudah dibaca, dinavigasi, dan dipahami oleh pengguna dari semua tingkat keahlian.
-- **Struktur:** Menyediakan silabus dan tutorial yang diatur secara logis untuk pembelajaran yang progresif.
-- **Komunitas:** Membangun lingkungan kolaboratif di mana kontributor dapat dengan mudah menyarankan, mengedit, dan menambahkan konten yang berharga.
-- **Dukungan Bilingual:** Menjaga keseimbangan antara konten bahasa Inggris dan bahasa Indonesia untuk melayani audiens yang lebih luas.
+- **Struktur:** Menyediakan silabus dan tutorial yang teratur secara logis untuk pembelajaran progresif.
+- **Komunitas:** Membangun lingkungan kolaboratif di mana kontributor dapat dengan mudah menyarankan, mengedit, dan menambahkan konten berharga.
+- **Dukungan Bilingual:** Menjaga keselarasan antara konten bahasa Inggris dan bahasa Indonesia untuk menjangkau audiens yang lebih luas.
+- **Kemudahan Dibaca Mesin:** Menetapkan skema metadata (YAML frontmatter) dan skrip verifikasi struktural agar Agentic AI dapat secara mandiri mengonsumsi dan memproduksi konten yang valid.
+
+---
 
 ## 3. Target Audiens
-1. **Pengembang (Pemula hingga Mahir):** Mencari referensi cepat (*cheat sheets*), panduan praktis, atau bahasa/kerangka kerja baru untuk dipelajari.
+
+1. **Pengembang (Pemula hingga Mahir):** Mencari cheat sheet cepat, panduan praktis, atau bahasa/framework baru untuk dipelajari.
 2. **Pendidik:** Mencari materi kursus dan silabus terstruktur untuk diintegrasikan ke dalam kurikulum pengajaran mereka.
-3. **Pelajar/Mahasiswa:** Membutuhkan jalur yang jelas dan terstruktur dari konsep dasar hingga penerapan lanjutan dalam teknologi.
+3. **Pembelajar/Siswa:** Membutuhkan jalur yang jelas dan terstruktur dari konsep dasar hingga penerapan tingkat lanjut dalam teknologi.
+4. **Agentic AI & Asisten Coding:** Asisten coding otonom yang membutuhkan cetak biru standar untuk menghasilkan materi edukasi yang kompatibel.
+
+---
 
 ## 4. Fitur & Konten
 
 ### 4.1. Penawaran Konten Saat Ini
-- **Tutorial:** Panduan langkah-demi-langkah tentang bahasa pemrograman dan alat.
+
+- **Tutorial:** Panduan langkah demi langkah tentang bahasa pemrograman dan alat pengembangan.
 - **Silabus:** Garis besar kursus yang komprehensif.
 - **Panduan:** Praktik terbaik dan implementasi praktis.
-- **Cheat Sheets:** Referensi cepat untuk perintah dan sintaksis.
-- **Dokumentasi Proyek:** Studi kasus dan penjelasan proyek contoh.
+- **Cheat Sheet:** Referensi cepat untuk perintah dan sintaks.
 
-### 4.2. Usulan Peningkatan (Mudah & Berdampak Tinggi)
-Untuk meningkatkan kualitas repositori sekaligus menyelaraskan dengan tujuan utamanya, kami akan mengimplementasikan hal-hal berikut:
-- **Panduan Kontribusi (`CONTRIBUTING_ID.md`):** Instruksi yang jelas tentang cara berkontribusi konten.
-- **Template Issue & PR Standar:** Untuk menyederhanakan permintaan konten, laporan *bug*, dan pengiriman konten.
-- **Pelacakan Keseimbangan Konten Bilingual:** Sistem (atau daftar periksa) untuk memastikan versi bahasa Inggris dan Indonesia sama-sama diperbarui.
-- **Elemen Interaktif (Masa Depan):** Menambahkan pertanyaan latihan sederhana atau proyek mini di dalam file markdown.
+### 4.2. Refaktoring Inti (Selesai)
+
+Untuk meningkatkan repositori ini dan menyelaraskannya dengan tujuan utamanya, kami telah mengimplementasikan:
+- **Topic-First Organization:** Mengorganisasikan kembali folder datar menjadi kategori terstruktur (misalnya, `backend/express-js/tutorials/`).
+- **YAML Frontmatter Metadata:** Mewajibkan metadata terstruktur pada semua file markdown konten.
+- **Templat Konten:** Menambahkan templat formal untuk ke-4 tipe konten di `.github/templates/`.
+- **Skrip Validasi Otomatis (`validate-content.js`):** Memverifikasi penamaan file, lokasi folder, dan whitelist metadata.
+- **Workflow GitHub Actions:** Memvalidasi format konten dan konsistensi metadata pada setiap Pull Request.
+- **Indeks Dinamis:** Pembuatan daftar indeks secara dinamis di README untuk mencegah tautan yang rusak.
+
+---
 
 ## 5. Metrik Kesuksesan
-- **Pertumbuhan:** Peningkatan jumlah *stars*, *forks*, dan *clones* repositori.
-- **Keterlibatan:** Jumlah kontributor aktif dan *Pull Request* yang digabungkan (*merged*).
-- **Kualitas:** Penurunan laporan konten yang usang (melalui *Issues*) dan umpan balik positif dari komunitas.
+
+- **Pertumbuhan:** Peningkatan jumlah star, fork, dan clone repositori.
+- **Keterlibatan:** Jumlah kontributor aktif (manusia dan AI) serta Pull Request yang digabungkan (merged).
+- **Kualitas:** Penurunan laporan konten usang (melalui Issues) dan umpan balik positif dari komunitas.
+- **Kepatuhan:** Tingkat kelulusan 100% pada verifikasi otomatis terhadap sintaks dan taksonomi.
+
+---
 
 ## 6. Peta Jalan (Roadmap)
-- **Fase 1 (Saat Ini):** Menetapkan PRD, README terstandarisasi, dan struktur folder dasar. Menambahkan template *Issue/PR* dan panduan Kontribusi.
-- **Fase 2 (Jangka Pendek):** Memperluas pustaka dengan 5 tutorial inti dan *cheat sheets* baru. Memastikan semua konten memiliki terjemahan bahasa Indonesia.
-- **Fase 3 (Jangka Menengah):** Memperkenalkan file markdown latihan/interaktif dan mulai menerima tutorial yang didorong oleh komunitas.
-- **Fase 4 (Jangka Panjang):** Mengotomatiskan pengecekan (*linting*) markdown melalui GitHub Actions untuk menjaga konsistensi format di semua kontribusi.
+
+- **Fase 1 (Selesai):** Menetapkan PRD, README standar, dan struktur direktori. Reorganisasi dan migrasi seluruh materi yang ada ke struktur Topic-First yang baru.
+- **Fase 2 (Selesai):** Menerapkan templat konten, skema YAML frontmatter, skrip validasi Node.js otomatis, dan workflow GitHub Actions PR.
+- **Fase 3 (Jangka Pendek):** Menambahkan kategori baru (misalnya, Frontend, Database) dan melipatgandakan cakupan tutorial bilingual saat ini.
+- **Fase 4 (Jangka Menengah):** Memperkenalkan file markdown interaktif/latihan yang berisi tantangan kode.
+- **Fase 5 (Jangka Panjang):** Menyediakan renderer situs statis (seperti Docusaurus) untuk menyajikan file markdown ini sebagai situs web dokumentasi modern.
+
+---
 
 ## 7. Pemeliharaan & Tata Kelola
-- **Proses Tinjauan:** Semua *Pull Request* akan ditinjau oleh pengelola repositori (Reinvy) untuk keakuratan, format, dan relevansinya.
-- **Standar Format:** Semua dokumen harus menggunakan standar Markdown, mematuhi struktur folder yang telah ditetapkan, dan ditautkan dengan tepat di tabel README.
+
+- **Proses Tinjauan:** Semua Pull Request akan ditinjau oleh pemelihara repositori (Reinvy) untuk akurasi, pemformatan, dan relevansi. Pemeriksaan PR akan gagal secara otomatis jika skrip validasi atau linter gagal.
+- **Standar Pemformatan:** Semua dokumen harus menggunakan Markdown standar, mematuhi taksonomi folder yang ditetapkan, berisi frontmatter yang valid, dan bebas dari error linting.
