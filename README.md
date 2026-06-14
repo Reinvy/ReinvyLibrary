@@ -121,6 +121,14 @@ Below is the dynamically updated list of all materials available in the library:
 | Topic | Format | Difficulty | Available Languages |
 | :--- | :--- | :--- | :--- |
 | [Docker Containerization Mastery Syllabus](devops/docker/syllabi/docker-containerization-syllabus.md) | Syllabus | Intermediate | [EN](devops/docker/syllabi/docker-containerization-syllabus.md) \| [ID](devops/docker/syllabi/docker-containerization-syllabus_id.md) |
+
+### 📁 Database
+
+#### 🏷️ Mongodb
+
+| Topic | Format | Difficulty | Available Languages |
+| :--- | :--- | :--- | :--- |
+| [MongoDB Query Cheatsheet](database/mongodb/cheatsheets/mongodb-query-cheatsheet.md) | Cheatsheet | Beginner | [EN](database/mongodb/cheatsheets/mongodb-query-cheatsheet.md) \| [ID](database/mongodb/cheatsheets/mongodb-query-cheatsheet_id.md) |
 <!-- INDEX_END -->
 
 ---
