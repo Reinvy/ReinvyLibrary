@@ -114,13 +114,13 @@ Imagine your Express application is a popular fast-food restaurant.
 3. **Cluster Mode (Multiple Cashiers):** Instead of one cashier, you open 4 cashiers (using PM2 on a 4-core CPU). Now you can serve 4 times as many customers simultaneously.
 4. **Caching (Pre-made Burgers):** Instead of cooking a classic burger from scratch every time it's ordered, you cook a batch and keep them warm. When ordered, you serve it instantly.
 
-## Insight Penting
+## Key Insights
 
 - **Measure Before Optimizing:** Don't guess what is slow. Use monitoring tools (like PM2 Plus, New Relic, or Datadog) to profile your application and find the actual bottlenecks.
 - **Node.js is Not for Heavy Computation:** If your app involves heavy image processing, video encoding, or machine learning, offload these tasks to microservices written in languages better suited for it (like Python or Go), or use background jobs.
 - **Keep Dependencies Lean:** Large `node_modules` and heavy libraries can slow down startup time and consume more memory. Only use libraries you actually need.
 
-## Ringkasan Akhir
+## Conclusion
 
 - Use `compression` middleware to reduce payload sizes.
 - Avoid synchronous functions to keep the event loop running smoothly.
@@ -128,16 +128,8 @@ Imagine your Express application is a popular fast-food restaurant.
 - Implement caching mechanisms (like Redis) for frequently accessed data.
 - Profile and monitor your application to find true bottlenecks.
 
-## Langkah Belajar Berikutnya
+## Next Steps
 
 - [Caching in Express JS APIs with Redis](Caching%20in%20Express%20JS%20APIs%20with%20Redis.md)
 - [Handling Background Jobs in Express JS with BullMQ and Redis](Handling%20Background%20Jobs%20in%20Express%20JS%20with%20BullMQ%20and%20Redis.md)
 - [Deploying Express JS Applications to Production](Deploying%20Express%20JS%20Applications%20to%20Production.md)
-
-## Metadata
-
-- Level: Intermediate
-- Topik utama: Express.js, Performance
-- Topik terkait: Node.js Cluster, PM2, Gzip, Caching
-- Kata kunci: express performance, node.js optimization, pm2 cluster, event loop, express compression
-- Estimasi waktu baca: 8 - 12 minutes

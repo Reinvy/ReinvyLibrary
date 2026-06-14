@@ -172,7 +172,7 @@ query GetBooks {
 
 ---
 
-## Insight Penting
+## Key Insights
 
 * **Avoid N+1 Problem:** A common pitfall in GraphQL is the N+1 problem, where a query for a list of items results in N additional database queries to fetch related data. Use tools like `DataLoader` to batch and cache database requests.
 * **Security:** Since clients can request deeply nested data, malicious users could send complex queries that overwhelm your server. Implement query depth limiting and complexity analysis to protect your API.
@@ -181,7 +181,7 @@ query GetBooks {
 
 ---
 
-## Ringkasan Akhir
+## Conclusion
 
 * GraphQL provides a flexible, client-driven approach to data fetching, solving over-fetching and under-fetching issues common in REST.
 * Apollo Server is the standard tool for integrating GraphQL with an Express.js backend.
@@ -190,7 +190,7 @@ query GetBooks {
 
 ---
 
-## Langkah Belajar Berikutnya
+## Next Steps
 
 * Explore using **DataLoader** to optimize database queries and solve the N+1 problem.
 * Learn about implementing **Authentication and Authorization** within GraphQL resolvers.
@@ -198,11 +198,3 @@ query GetBooks {
 * Understand GraphQL Subscriptions for real-time data updates.
 
 ---
-
-## Metadata
-
-* Level: Intermediate
-* Topik utama: Express.js, GraphQL
-* Topik terkait: API Design, Apollo Server, Node.js
-* Kata kunci: graphql, express, apollo server, schema, resolvers, api
-* Estimasi waktu baca: 15 menit

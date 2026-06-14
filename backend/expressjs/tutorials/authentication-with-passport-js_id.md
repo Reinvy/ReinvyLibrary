@@ -1,6 +1,6 @@
 ---
 title: "Autentikasi dengan Passport JS di Express"
-description: "Materi ini membahas cara mengimplementasikan autentikasi di Express.js menggunakan Passport.js, middleware autentikasi yang populer dan fleksibel untuk Node.js."
+description: "Pelajari cara mengimplementasikan autentikasi lokal yang aman (username dan password) di aplikasi Express.js menggunakan middleware Passport.js."
 category: "backend"
 technology: "expressjs"
 difficulty: "intermediate"
@@ -10,136 +10,98 @@ locale: "id"
 
 # Autentikasi dengan Passport JS di Express
 
-## Ringkasan Singkat
+## Ringkasan
 
-Materi ini membahas cara mengimplementasikan autentikasi di Express.js menggunakan Passport.js, *middleware* autentikasi yang populer dan fleksibel untuk Node.js. Materi ini menjelaskan cara mengatur autentikasi lokal (*username* dan *password*) dan menyentuh sedikit tentang arsitektur berbasis strategi yang modular.
+Tutorial ini memandu Anda dalam menyiapkan Autentikasi Lokal (username dan password) pada aplikasi Express.js menggunakan library Passport.js, mengamankan sesi pengguna (sessions), dan membatasi akses route privat.
 
----
+## Target Audiens
 
-## Untuk Siapa Materi Ini
-
-- Target audiens: Developer web tingkat menengah.
-- Level: Menengah (*Intermediate*).
-
----
+Pengembang backend tingkat menengah yang ingin memahami autentikasi berbasis sesi (session-based) dan pengaturan strategi modular di Node.js.
 
 ## Prasyarat
 
-Beberapa hal yang sebaiknya sudah dipahami:
+- Pemahaman yang baik tentang Express.js dan middleware sesi (`express-session`).
+- Node.js terinstal secara lokal.
 
-- *Routing* dan *middleware* dasar Express.js.
-- Pemahaman tentang *Cookies* dan *Session Management* di Express JS.
-- Keakraban dengan operasi *database* dasar (misalnya, MongoDB dengan Mongoose atau serupa).
-- Pengetahuan umum tentang konsep autentikasi.
+## Tujuan Pembelajaran
 
----
-
-## Tujuan Belajar
-
-Setelah membaca materi ini, pembaca akan memahami:
-
-- Cara kerja Passport.js dan arsitektur berbasis strateginya.
-- Cara mengimplementasikan autentikasi lokal menggunakan `passport-local`.
-- Cara melakukan *serialize* dan *deserialize* *user* untuk mempertahankan sesi *login*.
-- *Best practice* untuk menyusun *route* dan *middleware* autentikasi.
-
----
+Setelah menyelesaikan tutorial ini, Anda akan dapat:
+- Memahami arsitektur modular Passport dan konsep "Strategy".
+- Mengonfigurasi `passport-local` untuk memvalidasi kredensial pengguna dari database.
+- Mengimplementasikan serialisasi dan deserialisasi sesi.
+- Melindungi rute Express menggunakan middleware autentikasi.
 
 ## Konteks dan Motivasi
 
-Autentikasi adalah kebutuhan inti untuk sebagian besar aplikasi web. Membangun sistem autentikasi dari awal bisa menjadi kompleks dan rentan terhadap kesalahan, melibatkan *hashing password* yang aman, manajemen sesi, dan penanganan kesalahan (*error handling*) yang kuat. Passport.js memecahkan ini dengan menyediakan *framework* autentikasi yang komprehensif, aman, dan dapat diperluas (*extensible*). Dengan menggunakan Passport, *developer* dapat mengimplementasikan berbagai metode autentikasi (lokal, OAuth, OpenID) secara konsisten, menghemat waktu, dan mengurangi risiko keamanan. Ini adalah standar industri di ekosistem Node.js.
+Autentikasi adalah fitur utama dalam hampir semua aplikasi web. Membuat logika autentikasi dari nol sangat rentan terhadap celah keamanan. Passport.js menyediakan ekosistem modular yang matang dengan lebih dari 500+ strategi autentikasi, memungkinkan Anda mengelola sesi dengan aman serta memudahkan integrasi login sosial (seperti Google/GitHub) di masa mendatang.
 
----
+## Konten Inti
 
-## Materi Inti
+### 1. Instalasi Dependensi
 
-### 1. Apa itu Passport.js?
-
-Passport adalah *middleware* autentikasi untuk Node.js. Tujuan utamanya adalah untuk mengautentikasi *request*, yang dilakukannya melalui serangkaian *plugin* yang dapat diperluas yang dikenal sebagai **strategi**. Passport tidak memasang *route* atau mengasumsikan skema *database* tertentu, menjadikannya sangat fleksibel.
-
-### 2. Arsitektur Berbasis Strategi
-
-Passport menggunakan konsep **Strategi** untuk mengautentikasi *request*. Ada lebih dari 500 strategi yang tersedia, mulai dari autentikasi lokal (*username* dan *password*) hingga autentikasi yang didelegasikan (misalnya, Google, Facebook, Twitter melalui OAuth).
-
-Untuk menggunakan Passport, Anda mengonfigurasi strategi spesifik yang dibutuhkan aplikasi Anda. Dalam tutorial ini, kita fokus pada `passport-local`, yang menggunakan *username* dan *password*.
-
-### 3. Komponen Inti Passport
-
-Mengimplementasikan Passport melibatkan tiga komponen utama:
-
-- **Strategi Autentikasi:** Logika yang menentukan cara memverifikasi kredensial *user*.
-- **Middleware Aplikasi:** Menginisialisasi Passport dan menghubungkannya ke sesi.
-- **Sesi (Serialization/Deserialization):** Menyimpan informasi *user* dalam sesi sehingga mereka tetap terautentikasi di seluruh *request*.
-
-### 4. Menyiapkan Strategi Lokal Passport
-
-Untuk mengautentikasi menggunakan *username* dan *password*, Anda harus mengonfigurasi `LocalStrategy`. Strategi ini memerlukan fungsi *callback* yang memverifikasi kredensial yang diberikan terhadap *database* Anda.
-
-Jika kredensial valid, *callback* mengembalikan objek *user*. Jika tidak valid, fungsi akan mengembalikan `false`, seringkali dengan pesan kesalahan.
-
-### 5. Mengelola Sesi
-
-Dalam aplikasi web pada umumnya, kredensial hanya dikirimkan selama *login* awal. *Request* selanjutnya diautentikasi melalui sesi. Passport mengharuskan Anda untuk menentukan bagaimana *user* di-*serialize* ke dalam sesi dan di-*deserialize* dari sesi.
-
-- **Serialization:** Menentukan data mana dari objek *user* yang harus disimpan dalam sesi (biasanya ID *user*).
-- **Deserialization:** Mengambil seluruh objek *user* berdasarkan ID yang disimpan dari *database* pada *request* berikutnya.
-
----
-
-## Contoh / Ilustrasi
-
-Berikut adalah contoh komprehensif menyiapkan Passport dengan strategi lokal di aplikasi Express.
-
-### Langkah 1: Instal Dependencies
+Instal Passport, strategi lokal, middleware sesi, dan bcryptjs:
 
 ```bash
-npm install express express-session passport passport-local
+npm install passport passport-local express-session bcryptjs
 ```
 
-### Langkah 2: Konfigurasi Passport dan Strategi
+### 2. Konfigurasi Strategi Lokal
+
+Definisikan cara Passport memverifikasi kredensial pengguna:
 
 ```javascript
-const express = require('express');
-const session = require('express-session');
+// passport-config.js
 const passport = require('passport');
 const LocalStrategy = require('passport-local').Strategy;
+const bcrypt = require('bcryptjs');
 
-const app = express();
-app.use(express.urlencoded({ extended: false }));
+// Helper simulasi database
+const findUserByUsername = (username) => {
+  // Pada nyatanya: return await db.users.findUnique({ where: { username } });
+  return { id: 1, username: 'admin', passwordHash: 'hashed_password' };
+};
 
-// Dummy database user
-const users = [{ id: 1, username: 'testuser', password: 'password123' }];
-
-// 1. Konfigurasi Local Strategy
-passport.use(new LocalStrategy(
-  (username, password, done) => {
-    // Cari user di database
-    const user = users.find(u => u.username === username);
-
+passport.use(new LocalStrategy(async (username, password, done) => {
+  try {
+    const user = findUserByUsername(username);
     if (!user) {
       return done(null, false, { message: 'Username salah.' });
     }
-    if (user.password !== password) {
+    
+    const isMatch = await bcrypt.compare(password, user.passwordHash);
+    if (!isMatch) {
       return done(null, false, { message: 'Password salah.' });
     }
-
-    // Autentikasi berhasil
+    
     return done(null, user);
+  } catch (error) {
+    return done(error);
   }
-));
+}));
 
-// 2. Serialize user ke sesi
-passport.serializeUser((user, done) => {
-  done(null, user.id);
-});
-
-// 3. Deserialize user dari sesi
+// Serialisasi User
+passport.serializeUser((user, done) => done(null, user.id));
 passport.deserializeUser((id, done) => {
-  const user = users.find(u => u.id === id);
-  done(null, user);
+  // Cari user berdasarkan ID di database
+  done(null, { id: 1, username: 'admin' });
 });
+```
 
-// Inisialisasi sesi dan Passport
+### 3. Integrasi dengan Express
+
+Inisialisasi Passport dan sesi di aplikasi Express Anda:
+
+```javascript
+// app.js
+const express = require('express');
+const session = require('express-session');
+const passport = require('passport');
+require('./passport-config');
+
+const app = express();
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+
 app.use(session({
   secret: 'supersecretkey',
   resave: false,
@@ -148,69 +110,43 @@ app.use(session({
 
 app.use(passport.initialize());
 app.use(passport.session());
+```
 
-// Route Login
-app.post('/login', passport.authenticate('local', {
-  successRedirect: '/dashboard',
-  failureRedirect: '/login-failed'
+## Contoh Kode
+
+Berikut cara memproses login dan mengamankan rute privat:
+
+```javascript
+// Route Autentikasi
+app.post('/api/login', passport.authenticate('local', {
+  successRedirect: '/api/dashboard',
+  failureRedirect: '/api/login-failed'
 }));
 
-// Middleware Route Terlindungi (Protected Route)
-function isAuthenticated(req, res, next) {
+// Middleware pelindung rute
+function ensureAuthenticated(req, res, next) {
   if (req.isAuthenticated()) {
     return next();
   }
-  res.redirect('/login');
+  res.status(401).json({ error: "Akses tidak diizinkan (Unauthorized)" });
 }
 
-app.get('/dashboard', isAuthenticated, (req, res) => {
-  res.send(`Selamat datang di dashboard Anda, ${req.user.username}!`);
+app.get('/api/dashboard', ensureAuthenticated, (req, res) => {
+  res.json({ message: `Selamat datang di dashboard, ${req.user.username}!` });
 });
-
-app.listen(3000, () => console.log('Server berjalan di port 3000'));
 ```
-
-### Penjelasan Kode
-
-- Kita mengonfigurasi `LocalStrategy` yang memeriksa apakah *username* dan *password* cocok dengan *database* tiruan (*dummy*) kita.
-- `passport.serializeUser` menyimpan `user.id` ke dalam sesi.
-- `passport.deserializeUser` menggunakan `id` dari sesi untuk mengambil objek *user* lengkap, yang kemudian dilampirkan ke `req.user`.
-- *Route* `/login` menggunakan `passport.authenticate`, yang secara otomatis menangani proses *login*.
-- *Middleware* `isAuthenticated` menggunakan `req.isAuthenticated()` (disediakan oleh Passport) untuk melindungi *route* `/dashboard`.
-
----
 
 ## Insight Penting
 
-- **Separation of Concerns:** Simpan logika autentikasi (konfigurasi strategi) dalam file terpisah (misalnya, `config/passport.js`) untuk menjaga file *routing* tetap bersih.
-- **Keamanan:** Jangan pernah menyimpan *password plain text* di *production*. Selalu *hash password* menggunakan *library* seperti `bcrypt` sebelum menyimpannya dan gunakan `bcrypt.compare` di dalam `LocalStrategy` Anda.
-- **API Stateless:** Jika Anda membangun RESTful API (misalnya, untuk aplikasi *mobile* atau *frontend* React), Anda mungkin tidak menggunakan sesi. Sebagai gantinya, Anda dapat menggunakan Passport dengan strategi `passport-jwt` untuk mengautentikasi *request* menggunakan JSON Web Tokens.
-- **Error Handling:** Gunakan *callback custom* dengan `passport.authenticate` jika Anda memerlukan kontrol terperinci atas respons alih-alih pengalihan (*redirect*) otomatis.
+- **Konsep Serialisasi**: Proses serialisasi hanya menyimpan ID pengguna dalam cookie sesi agar data berukuran kecil. Deserialisasi menanyakan database di setiap request berikutnya untuk memuat detail pengguna ke dalam `req.user`.
+- **Keamanan Bcrypt**: Selalu lakukan hashing password sebelum disimpan ke database menggunakan bcrypt. Jangan pernah membandingkan password teks mentah.
+- **Keamanan Sesi**: Di tahap produksi, pastikan cookie sesi menggunakan opsi `secure: true` (wajib HTTPS) dan `httpOnly: true` untuk menghindari serangan Cross-Site Scripting (XSS).
 
----
+## Langkah Berikutnya
 
-## Ringkasan Akhir
+- Hubungkan helper database simulasi dengan database nyata menggunakan Mongoose atau Prisma.
+- Implementasikan fitur logout dan validasi request input data login.
 
-- Passport.js adalah *middleware* autentikasi serbaguna untuk Express yang menggunakan arsitektur berbasis strategi.
-- `passport-local` digunakan untuk autentikasi *username* dan *password* tradisional.
-- Status autentikasi dipertahankan menggunakan sesi melalui `serializeUser` dan `deserializeUser`.
-- Passport melampirkan *user* yang diautentikasi ke objek *request* (`req.user`) dan menyediakan metode *helper* seperti `req.isAuthenticated()`.
+## Kesimpulan
 
----
-
-## Langkah Belajar Berikutnya
-
-- Pelajari cara melakukan *hashing password* dengan `bcrypt` bersama Passport.
-- Pelajari tentang *Authentication and Authorization with JWT in Express* untuk API yang *stateless*.
-- Implementasikan *login* sosial menggunakan strategi OAuth (misalnya, `passport-google-oauth20`).
-- Pahami *Implementing Role-Based Access Control in Express JS* untuk mengelola izin *user*.
-
----
-
-## Metadata
-
-- Level: Menengah
-- Topik utama: Express JS, Autentikasi
-- Topik terkait: Middleware, Keamanan, Manajemen Sesi
-- Kata kunci: express js, passport js, autentikasi, local strategy, login
-- Estimasi waktu baca: 15 menit
+Autentikasi lokal menggunakan Passport.js berhasil dikonfigurasi dan diintegrasikan dengan Express.js.

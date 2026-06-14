@@ -10,13 +10,13 @@ locale: "id"
 
 # Sending Emails in Express JS with Nodemailer
 
-## Ringkasan Singkat
+## Ringkasan
 
 Tutorial ini menjelaskan cara mengirim email dari aplikasi Express.js Anda menggunakan library Nodemailer. Anda akan mempelajari cara mengonfigurasi transporter SMTP, menyusun logika pengiriman email secara efisien, dan mengelola kredensial email dengan aman.
 
 ---
 
-## Untuk Siapa Materi Ini
+## Target Audiens
 
 - **Target pembaca:** Backend developer dan full-stack engineer yang perlu menambahkan kemampuan email transaksional (seperti email selamat datang atau reset password) ke dalam aplikasi mereka.
 - **Level:** Menengah (Intermediate).
@@ -31,7 +31,7 @@ Tutorial ini menjelaskan cara mengirim email dari aplikasi Express.js Anda mengg
 
 ---
 
-## Tujuan Belajar
+## Tujuan Pembelajaran
 
 Setelah membaca materi ini, pembaca akan memahami:
 
@@ -50,7 +50,7 @@ Nodemailer adalah standar de facto untuk mengirim email di Node.js. Library ini 
 
 ---
 
-## Materi Inti
+## Konten Inti
 
 ### 1. Apa itu Nodemailer?
 
@@ -120,7 +120,7 @@ const sendEmail = async (to, subject, text, html) => {
 
 ---
 
-## Contoh / Ilustrasi
+## Contoh Kode
 
 Mari kita integrasikan service email ke dalam route Express sederhana, seperti endpoint untuk mengirim email selamat datang saat pengguna mendaftar.
 
@@ -194,7 +194,7 @@ app.listen(PORT, () => {
 
 ---
 
-## Ringkasan Akhir
+## Kesimpulan
 
 - Nodemailer adalah standar de facto untuk mengirim email di Node.js.
 - Konfigurasikan transporter SMTP menggunakan kredensial yang disimpan dengan aman di environment variables.
@@ -204,17 +204,9 @@ app.listen(PORT, () => {
 
 ---
 
-## Langkah Belajar Berikutnya
+## Langkah Berikutnya
 
 - Untuk mempelajari cara mendelegasikan pengiriman email agar tidak memblokir request pengguna Anda, baca: [Handling Background Jobs in Express JS with BullMQ and Redis](Handling%20Background%20Jobs%20in%20Express%20JS%20with%20BullMQ%20and%20Redis.md).
 - Untuk mengatur kode Anda dengan lebih baik, pelajari tentang menstrukturkan aplikasi menggunakan Service Layer.
 
 ---
-
-## Metadata
-
-- Level: Intermediate
-- Topik utama: Express.js, Backend Development
-- Topik terkait: Nodemailer, Email, SMTP, Error Handling
-- Kata kunci: express, nodemailer, kirim email, smtp, transporter
-- Estimasi waktu baca: 6 - 8 menit

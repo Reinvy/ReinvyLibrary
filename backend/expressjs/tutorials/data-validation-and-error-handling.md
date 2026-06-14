@@ -10,11 +10,11 @@ locale: "en"
 
 # Centralized Data Validation and Error Handling in Express.js
 
-## Brief Summary
+## Summary
 
 This material discusses the importance of validating incoming data from the *client* before it is processed by the application, as well as how to handle *errors* centrally and securely. You will learn how to prevent *bugs* and protect the system from information leaks through proper *error handling* techniques.
 
-## For Whom This Material Is
+## Target Audience
 
 - **Target Audience:** Beginner to intermediate backend developers.
 - **Level:** Intermediate.
@@ -40,7 +40,7 @@ In *web* development, we must never trust the data sent by users ("*Never trust 
 
 Furthermore, when an *error* occurs—whether due to bad input or a server issue like a dropped *database* connection—standard Express.js applications often leak code traces (*stack traces*) to the *client*. This is highly dangerous as it opens up an information loophole for hackers (*Information Exposure*). We need a centralized mechanism to catch *errors* and handle responses securely.
 
-## Core Material
+## Core Content
 
 ### 1. The Importance of Data Validation
 
@@ -117,7 +117,7 @@ app.use((err, req, res, next) => {
 app.listen(3000, () => console.log('Server is running...'));
 ```
 
-## Example / Illustration
+## Code Examples
 
 Imagine your application is a **Bread Factory**.
 
@@ -130,23 +130,15 @@ Imagine your application is a **Bread Factory**.
 - **The `next(err)` Function:** In an *asynchronous* function (`async/await`), if an *error* occurs, you **must** catch it with `try...catch` and pass the *error* using `next(err)` so it can be caught by the centralized *error handler*.
 - **Data Security:** Exposing raw *error* logs (such as failed SQL queries, *database* IPs, or *environment* secrets) through *API responses* makes it very easy for *hackers* to compromise your system.
 
-## Final Summary
+## Conclusion
 
 - Data validation ensures that input from the *client* is correct, secure, and as expected before being processed.
 - Express has a specific *Error Handling Middleware* with a 4-argument *signature*: `(err, req, res, next)`.
 - The best practice for security is to log *error* details internally on the *server*, while the *client* only receives a *generic message*.
 
-## Next Learning Steps
+## Next Steps
 
 After understanding valid data flow and *error* handling, the next appropriate steps are:
 
 - [Express With Prisma](Express%20With%20Prisma.md) (Learn *database* integration assuming your data is already validated).
 - Learn about modern schema validation *libraries* like **Zod** or **Joi** for Express.js (Advanced Material).
-
-## Metadata
-
-- **Level:** Intermediate
-- **Main Topic:** Express.js, Backend Development
-- **Related Topics:** Validation, Error Handling, Security, Middleware
-- **Keywords:** express validation, error handling middleware, express security, information exposure
-- **Estimated Reading Time:** 8 - 10 minutes

@@ -10,13 +10,13 @@ locale: "id"
 
 # Pengujian API Express dengan Jest dan Supertest
 
-## Ringkasan Singkat
+## Ringkasan
 
 Tutorial ini memperkenalkan pengujian API di Express.js menggunakan Jest dan Supertest. Anda akan mempelajari cara menulis tes otomatis untuk endpoint Anda, memastikan aplikasi berperilaku seperti yang diharapkan, dan menangkap bug sejak dini sebelum masuk ke tahap produksi.
 
 ---
 
-## Untuk Siapa Materi Ini
+## Target Audiens
 
 * **Target pembaca:** Backend Developer, QA Engineer, dan Full-Stack Developer.
 * **Level pembaca:** Menengah (Intermediate).
@@ -31,7 +31,7 @@ Tutorial ini memperkenalkan pengujian API di Express.js menggunakan Jest dan Sup
 
 ---
 
-## Tujuan Belajar
+## Tujuan Pembelajaran
 
 Setelah membaca materi ini, pembaca akan memahami:
 
@@ -48,7 +48,7 @@ Pengujian adalah bagian penting dari pengembangan perangkat lunak. Seiring berke
 
 ---
 
-## Materi Inti
+## Konten Inti
 
 ### 1. Apa itu Jest dan Supertest?
 
@@ -109,7 +109,7 @@ app.listen(PORT, () => {
 
 ---
 
-## Contoh / Ilustrasi
+## Contoh Kode
 
 ### Menulis Pengujian Pertama Anda
 
@@ -171,7 +171,7 @@ npm test
 
 ---
 
-## Ringkasan Akhir
+## Kesimpulan
 
 * Pengujian API otomatis memastikan keandalan kode dan mencegah regresi.
 * Jest adalah kerangka kerja pengujian yang kuat untuk menjalankan tes dan membuat asersi.
@@ -181,18 +181,10 @@ npm test
 
 ---
 
-## Langkah Belajar Berikutnya
+## Langkah Berikutnya
 
 * Jelajahi mocking database dengan Prisma atau Mongoose di Jest.
 * Pelajari tentang Continuous Integration (CI) untuk menjalankan tes secara otomatis di GitHub Actions.
 * Selami lebih dalam fitur lanjutan Jest seperti snapshot testing dan custom matchers.
 
 ---
-
-## Metadata
-
-* **Level:** Menengah
-* **Topik utama:** Testing, Express.js
-* **Topik terkait:** Jest, Supertest, API Development
-* **Kata kunci:** express testing, jest, supertest, api tests, nodejs testing
-* **Estimasi waktu baca:** 10 menit

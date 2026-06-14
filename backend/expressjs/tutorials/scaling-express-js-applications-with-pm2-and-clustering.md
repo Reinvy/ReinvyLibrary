@@ -188,7 +188,7 @@ Imagine a restaurant kitchen.
 
 ---
 
-## Insight Penting
+## Key Insights
 
 * **Statefulness:** When you use clustering, your application instances run in isolated memory spaces. You **cannot** store session data or application state in memory (e.g., `let activeUsers = {}`) because Worker A will not know about the users stored in Worker B. You must use external, shared storage like Redis for sessions, caching, and state management.
 * **Zero-Downtime Reloads:** Using `pm2 reload` instead of `pm2 restart` is critical for CI/CD pipelines. PM2 will gracefully restart workers one by one, ensuring that there is always at least one worker available to handle incoming traffic during the deployment.
@@ -196,7 +196,7 @@ Imagine a restaurant kitchen.
 
 ---
 
-## Ringkasan Akhir
+## Conclusion
 
 * Node.js is single-threaded; it cannot utilize multi-core CPUs by default.
 * The native `cluster` module allows scaling by spawning child processes that share the same port.
@@ -206,17 +206,9 @@ Imagine a restaurant kitchen.
 
 ---
 
-## Langkah Belajar Berikutnya
+## Next Steps
 
 * [Dockerizing Express JS Applications](Dockerizing%20Express%20JS%20Applications.md) (Learn how to containerize your application, an alternative or complementary approach to scaling).
 * [Caching in Express JS APIs with Redis](Caching%20in%20Express%20JS%20APIs%20with%20Redis.md) (Essential for managing state in a clustered environment).
 
 ---
-
-## Metadata
-
-* Level: Intermediate
-* Topik utama: Express.js, Backend Development, Scaling, Production Deployment
-* Topik terkait: PM2, Clustering, High Availability, Load Balancing
-* Kata kunci: express scaling, nodejs cluster, pm2, load balancing, production ready express
-* Estimasi waktu baca: 10 - 15 minutes

@@ -10,11 +10,11 @@ locale: "id"
 
 # Mengintegrasikan Swagger UI untuk Dokumentasi API di Express.js
 
-## Ringkasan Singkat
+## Ringkasan
 
 Tutorial ini menjelaskan cara mengintegrasikan Swagger UI ke dalam aplikasi Express.js menggunakan `swagger-ui-express` dan `swagger-jsdoc`. Setelah menyelesaikan panduan ini, Anda akan dapat membuat dan menyajikan dokumentasi API interaktif secara otomatis langsung dari anotasi kode Anda.
 
-## Untuk Siapa Materi Ini
+## Target Audiens
 
 Materi ini dirancang untuk pengembang Node.js tingkat pemula hingga menengah yang telah membangun RESTful API menggunakan Express.js dan ingin belajar cara mendokumentasikannya secara profesional.
 
@@ -24,7 +24,7 @@ Materi ini dirancang untuk pengembang Node.js tingkat pemula hingga menengah yan
 - Terbiasa dengan routing dan middleware di Express.js.
 - Memahami konsep dasar RESTful API (endpoint, HTTP method, status code).
 
-## Tujuan Belajar
+## Tujuan Pembelajaran
 
 - Memahami apa itu Swagger dan OpenAPI.
 - Mempelajari cara mengatur `swagger-ui-express` dan `swagger-jsdoc` dalam proyek Express.
@@ -35,7 +35,7 @@ Materi ini dirancang untuk pengembang Node.js tingkat pemula hingga menengah yan
 
 Membangun API yang hebat hanyalah setengah dari perjuangan; setengah lainnya adalah mengomunikasikan cara menggunakannya. Tanpa dokumentasi yang baik, pengembang frontend, tim mobile, atau klien eksternal akan kesulitan berintegrasi dengan layanan Anda. Swagger (berdasarkan OpenAPI Specification) menyelesaikan masalah ini dengan menyediakan format standar yang dapat dibaca mesin untuk mendeskripsikan API. Mengintegrasikan Swagger UI ke dalam aplikasi Express memungkinkan pengguna mengeksplorasi dan menguji endpoint secara interaktif dari browser mereka, sehingga mengurangi waktu integrasi dan meminimalkan miskomunikasi.
 
-## Materi Inti
+## Konten Inti
 
 ### 1. Pengenalan Swagger dan OpenAPI
 
@@ -60,7 +60,7 @@ Anda perlu membuat objek konfigurasi yang memberi tahu Swagger tentang API Anda 
 
 Setelah dikonfigurasi, Anda menulis komentar JSDoc di atas handler rute Anda. Komentar ini menggunakan sintaks YAML untuk mendefinisikan path endpoint, HTTP method, parameter, body permintaan (request body), dan kemungkinan respons.
 
-## Contoh / Ilustrasi
+## Contoh Kode
 
 Berikut adalah contoh lengkap pengaturan Swagger dalam aplikasi Express.
 
@@ -175,23 +175,15 @@ Saat Anda menjalankan aplikasi ini dan menavigasi ke `http://localhost:3000/api-
 - **Definisi Keamanan**: Dalam API dunia nyata, Anda sering membutuhkan autentikasi (seperti JWT). Swagger memungkinkan Anda untuk mendefinisikan skema keamanan global (misalnya, Bearer auth) sehingga Anda dapat menguji endpoint yang dilindungi langsung dari UI.
 - **Pemisahan Perhatian (Separation of Concerns)**: Dalam proyek yang lebih besar, alih-alih mengarahkan `apis: ['./app.js']`, Anda akan mengarahkannya ke folder rute Anda (misalnya, `apis: ['./routes/*.js']`) untuk menjaga file entry utama tetap bersih.
 
-## Ringkasan Akhir
+## Kesimpulan
 
 - Swagger UI menyediakan antarmuka visual dan interaktif untuk mengeksplorasi REST API.
 - Library `swagger-ui-express` menyajikan UI, sementara `swagger-jsdoc` menghasilkan spesifikasi OpenAPI dari komentar di dalam kode Anda.
 - Pengaturan Swagger melibatkan pendefinisian objek konfigurasi, inisialisasi dokumentasi, dan penulisan komentar JSDoc berbasis YAML di atas rute Anda.
 - Pendekatan ini sangat meningkatkan pengalaman pengembang (DX) bagi siapa saja yang mengonsumsi API Anda.
 
-## Langkah Belajar Berikutnya
+## Langkah Berikutnya
 
 - Pelajari cara mendokumentasikan endpoint yang dilindungi dengan mengonfigurasi autentikasi Bearer Token/JWT di Swagger.
 - Jelajahi cara mengekstrak definisi Swagger ke dalam file YAML atau JSON terpisah untuk API yang sangat kompleks.
 - Pelajari "Data Validation and Error Handling in Express" untuk memastikan endpoint Anda yang terdokumentasi menangani bad request dengan baik.
-
-## Metadata
-
-- Level: Menengah
-- Topik utama: Express.js, API Documentation
-- Topik terkait: RESTful API, Swagger, OpenAPI
-- Kata kunci: express, swagger, swagger-ui, swagger-jsdoc, dokumentasi api, openapi
-- Estimasi waktu baca: 10 menit

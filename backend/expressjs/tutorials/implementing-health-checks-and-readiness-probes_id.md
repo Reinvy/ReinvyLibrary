@@ -10,11 +10,11 @@ locale: "id"
 
 # Mengimplementasikan Health Checks dan Readiness Probes di Express JS
 
-## Ringkasan Singkat
+## Ringkasan
 
 Tutorial ini menjelaskan cara mengimplementasikan *health checks* (pemeriksaan kesehatan) dan *readiness probes* (pemeriksaan kesiapan) pada aplikasi Express.js. Anda akan mempelajari perbedaan antara *liveness* dan *readiness*, mengapa keduanya sangat penting untuk *deployment* modern seperti Docker dan Kubernetes, serta bagaimana membangun *endpoint* yang andal untuk memantau status aplikasi Anda.
 
-## Untuk Siapa Materi Ini
+## Target Audiens
 
 *Developer backend* tingkat menengah hingga mahir yang sedang menyiapkan aplikasi Express.js mereka untuk lingkungan produksi (*production*), kontainerisasi, atau sistem orkestrasi seperti Kubernetes.
 
@@ -24,7 +24,7 @@ Tutorial ini menjelaskan cara mengimplementasikan *health checks* (pemeriksaan k
 - Keakraban dasar dengan konsep *deployment*, kontainerisasi (Docker), atau orkestrasi (Kubernetes).
 - Pemahaman mengenai kode status HTTP dan operasi asinkron di Node.js.
 
-## Tujuan Belajar
+## Tujuan Pembelajaran
 
 - Memahami perbedaan antara *liveness probes* (health checks) dan *readiness probes*.
 - Mempelajari cara mengimplementasikan *endpoint health check* yang sederhana maupun tingkat lanjut di Express.js.
@@ -36,7 +36,7 @@ Tutorial ini menjelaskan cara mengimplementasikan *health checks* (pemeriksaan k
 Dalam infrastruktur modern, aplikasi jarang di-*deploy* sebagai *instance* tunggal yang statis. Aplikasi dikelola oleh orkestrator seperti Kubernetes atau *load balancer* yang perlu mengetahui apakah sebuah *instance* aplikasi berjalan dengan baik.
 Jika aplikasi *crash*, sistem perlu merestartnya (*Liveness*). Jika aplikasi masih dalam proses *booting* atau sementara terputus dari *database*-nya, sistem harus berhenti mengirimkan *traffic* kepadanya sampai pulih (*Readiness*). Tanpa pemeriksaan ini, pengguna mungkin mengalami *timeout*, *error*, atau kegagalan yang tidak disadari (*silent failures*).
 
-## Materi Inti
+## Konten Inti
 
 ### 1. Liveness vs Readiness
 
@@ -57,7 +57,7 @@ Sangat penting untuk memahami perbedaan antara dua jenis probe utama ini:
 
 Ketika *readiness probe* gagal, kembalikan kode status HTTP yang sesuai, biasanya `503 Service Unavailable`. Jangan mengembalikan `500 Internal Server Error` kecuali mekanisme probe itu sendiri yang rusak. Berikan respons JSON yang merinci komponen spesifik mana yang gagal untuk membantu proses *debugging*.
 
-## Contoh / Ilustrasi
+## Contoh Kode
 
 Berikut adalah contoh implementasi *endpoint liveness* dan *readiness* dalam aplikasi Express menggunakan simulasi koneksi *database*.
 
@@ -105,23 +105,15 @@ app.listen(PORT, () => {
 - **Timeout Itu Penting:** Pastikan probe Anda merespons dengan cepat. Jika probe memakan waktu terlalu lama, orkestrator akan menganggapnya sebagai kegagalan. Gunakan *timeout* yang ketat pada pemeriksaan *database* dalam *readiness probe*.
 - **Keamanan:** Pertimbangkan untuk mengamankan *endpoint health* Anda atau mengeksposnya pada *port* internal yang berbeda sehingga tidak dapat diakses dari internet publik, mencegah potensi serangan *Denial of Service* (DoS) pada probe itu sendiri.
 
-## Ringkasan Akhir
+## Kesimpulan
 
 - *Health checks* sangat esensial untuk orkestrasi kontainer dan *load balancing*.
 - **Liveness probes** menentukan apakah aplikasi perlu direstart.
 - **Readiness probes** menentukan apakah aplikasi dapat dengan aman menerima *traffic*.
 - Desain *liveness probes* agar cepat dan terisolasi, sementara *readiness probes* sebaiknya memverifikasi dependensi kritis seperti *database*.
 
-## Langkah Belajar Berikutnya
+## Langkah Berikutnya
 
 - Graceful Shutdown in Express JS Applications.
 - Dockerizing Express JS Applications.
 - Deploying Express JS Applications to Production.
-
-## Metadata
-
-- Level: Menengah
-- Topik utama: Express JS
-- Topik terkait: Deployment, DevOps, Containerization, Kubernetes
-- Kata kunci: health check, liveness probe, readiness probe, express health, kubernetes, docker
-- Estimasi waktu baca: 8 menit

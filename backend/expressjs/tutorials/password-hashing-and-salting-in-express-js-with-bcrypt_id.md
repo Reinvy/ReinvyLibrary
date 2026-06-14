@@ -10,13 +10,13 @@ locale: "id"
 
 # Password Hashing and Salting di Express JS dengan Bcrypt
 
-## Ringkasan Singkat
+## Ringkasan
 
 Materi ini membahas cara menyimpan kata sandi (password) pengguna secara aman di aplikasi Express.js Anda menggunakan Bcrypt. Anda akan mempelajari perbedaan krusial antara hashing, salting, dan enkripsi, serta mengapa menyimpan kata sandi dalam bentuk teks biasa adalah celah keamanan yang sangat fatal.
 
 ---
 
-## Untuk Siapa Materi Ini
+## Target Audiens
 
 - Target pembaca: Backend Developer, Fullstack Developer
 - Level pembaca: Pemula hingga Menengah
@@ -33,7 +33,7 @@ Anda sebaiknya sudah memahami:
 
 ---
 
-## Tujuan Belajar
+## Tujuan Pembelajaran
 
 Setelah membaca materi ini, Anda akan memahami:
 
@@ -52,7 +52,7 @@ Untuk mencegah hal ini, standar industri mewajibkan developer untuk melakukan "h
 
 ---
 
-## Materi Inti
+## Konten Inti
 
 ### 1. Bahaya Plain-Text Password
 
@@ -75,7 +75,7 @@ Jika dua pengguna memiliki kata sandi yang sama (`"123456"`), hasil hash mereka 
 
 ---
 
-## Contoh / Ilustrasi
+## Contoh Kode
 
 ### Instalasi Package
 
@@ -168,7 +168,7 @@ app.listen(3000, () => console.log('Server running on port 3000'));
 
 ---
 
-## Ringkasan Akhir
+## Kesimpulan
 
 - Jangan pernah menyimpan kata sandi dalam bentuk teks biasa (plain text).
 - Kata sandi harus di-hash (satu arah), bukan dienkripsi (dua arah).
@@ -178,17 +178,9 @@ app.listen(3000, () => console.log('Server running on port 3000'));
 
 ---
 
-## Langkah Belajar Berikutnya
+## Langkah Berikutnya
 
 - [Authentication and Authorization with JWT in Express](Authentication%20and%20Authorization%20with%20JWT%20in%20Express_ID.md) (Pelajari cara menerbitkan token setelah berhasil login).
 - Pelajari cara mengintegrasikan logika ini dengan database nyata menggunakan ORM seperti Prisma atau Mongoose.
 
 ---
-
-## Metadata
-
-- Level: Pemula hingga Menengah
-- Topik utama: Express.js, Keamanan
-- Topik terkait: Autentikasi, Bcrypt, Hashing, Password
-- Kata kunci: bcrypt, hash, salt, keamanan password, autentikasi express
-- Estimasi waktu baca: 8 menit

@@ -10,11 +10,11 @@ locale: "id"
 
 # Real-Time Communication di Express dengan Socket.IO
 
-## Ringkasan Singkat
+## Ringkasan
 
 Tutorial ini memperkenalkan komunikasi dua arah secara real-time pada aplikasi Express.js menggunakan Socket.IO. Materi ini membahas keterbatasan HTTP polling standar, bagaimana WebSockets menyediakan koneksi yang selalu terbuka, dan cara mengintegrasikan Socket.IO secara mulus dengan server Express untuk membangun fitur real-time yang interaktif.
 
-## Untuk Siapa Materi Ini
+## Target Audiens
 
 * Backend Developer yang ingin mengimplementasikan fitur real-time seperti aplikasi chat, notifikasi langsung, atau alat kolaborasi.
 * Pembelajar Express.js tingkat menengah yang sedang bertransisi dari REST API berbasis request-response tradisional menuju arsitektur berbasis event (event-driven).
@@ -25,7 +25,7 @@ Tutorial ini memperkenalkan komunikasi dua arah secara real-time pada aplikasi E
 * Familiar dengan RESTful API dan metode HTTP standar.
 * Pengetahuan dasar tentang JavaScript di sisi frontend untuk memahami integrasi pada klien.
 
-## Tujuan Belajar
+## Tujuan Pembelajaran
 
 Setelah membaca materi ini, pembaca akan memahami:
 
@@ -40,7 +40,7 @@ HTTP tradisional mengikuti model request-response yang ketat: klien bertanya, da
 
 WebSockets memecahkan masalah ini dengan menciptakan koneksi full-duplex yang persisten antara klien dan server. Socket.IO adalah library tangguh yang membungkus WebSockets, menyediakan mekanisme fallback untuk browser lama, koneksi ulang otomatis, dan API berbasis event yang sederhana. Memahami hal ini sangat krusial bagi developer modern yang membangun aplikasi web yang responsif dan live.
 
-## Materi Inti
+## Konten Inti
 
 ### Apa itu Socket.IO?
 
@@ -62,7 +62,7 @@ Meskipun menggunakan WebSockets di belakang layar kapan pun memungkinkan, ia aka
 
 Express menangani rute HTTP standar, sementara Socket.IO menangani koneksi websocket real-time. Karena Express sendiri tidak secara langsung mengekspos server `http` bawaan Node dengan cara yang dibutuhkan oleh Socket.IO, kita harus secara eksplisit membuat server `http`, meneruskan aplikasi Express ke dalamnya, lalu menempelkan Socket.IO ke server `http` tersebut.
 
-## Contoh / Ilustrasi
+## Contoh Kode
 
 Berikut adalah cara mengatur server obrolan real-time dasar menggunakan Express dan Socket.IO.
 
@@ -150,7 +150,7 @@ Pada frontend Anda, Anda akan terhubung ke server ini:
 * **Scaling membutuhkan Adapter:** Jika Anda menjalankan beberapa instance server Node Anda (misalnya, menggunakan Load Balancer atau Docker Swarm), klien yang terhubung ke Server A tidak akan menerima pesan yang disiarkan dari Server B. Anda harus menggunakan Redis Adapter (`@socket.io/redis-adapter`) untuk menyinkronkan event di beberapa instance server.
 * **Keamanan:** Validasi semua data yang masuk melalui `socket.on` sama ketatnya seperti Anda memvalidasi permintaan POST HTTP yang masuk. WebSockets rentan terhadap injeksi dan payload berbahaya.
 
-## Ringkasan Akhir
+## Kesimpulan
 
 * WebSockets menyediakan komunikasi real-time yang persisten, memecahkan inefisiensi dari HTTP polling.
 * Socket.IO menyederhanakan WebSockets dengan menyediakan mekanisme fallback, auto-reconnect, dan API berbasis event yang mudah.
@@ -158,16 +158,8 @@ Pada frontend Anda, Anda akan terhubung ke server ini:
 * Komunikasi real-time bergantung pada memancarkan (`emit`) dan mendengarkan (`on`) string event tertentu.
 * Melakukan scaling Socket.IO melampaui satu server membutuhkan message broker seperti Redis.
 
-## Langkah Belajar Berikutnya
+## Langkah Berikutnya
 
 * Pelajari "Rooms" dan "Namespaces" di Socket.IO untuk membangun ruang obrolan pribadi atau aplikasi multi-tenant.
 * Pelajari tentang implementasi autentikasi dengan Socket.IO menggunakan JWT.
 * Baca tutorial tentang caching dan scaling dengan Redis untuk memahami cara mengimplementasikan Redis Adapter untuk Socket.IO.
-
-## Metadata
-
-* Level: Menengah
-* Topik utama: Real-Time Communication
-* Topik terkait: WebSockets, Express.js, Event-Driven Architecture
-* Kata kunci: express, socket.io, websocket, real-time, event, broadcast
-* Estimasi waktu baca: 15 menit

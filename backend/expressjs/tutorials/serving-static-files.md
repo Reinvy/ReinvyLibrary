@@ -113,13 +113,13 @@ Imagine your server as a **Librarian**.
 - **With `express.static`:** You place a large rack of brochures in the lobby and tell the librarian, "If someone asks for a brochure, tell them to check the rack in the lobby."
 - **Absolute Path:** Instead of saying "the rack over there," you say "the rack at exact GPS coordinates X, Y," so there is no confusion even if the librarian changes desks.
 
-## Insight Penting
+## Key Insights
 
 - **Security Warning:** Never expose your root directory (`/`) or any folder containing source code, sensitive data (like `.env` files), or `node_modules` via `express.static`. Always put static assets in a dedicated folder (e.g., `public` or `assets`).
 - **Performance:** While `express.static` is perfectly fine for basic usage and small apps, in production environments with high traffic, it is highly recommended to use a reverse proxy like **Nginx** or a Content Delivery Network (**CDN**) to serve static files. They are significantly faster and reduce the load on your Node.js server.
 - **Index Files:** By default, `express.static` will look for an `index.html` file in the root of the static directory if the user requests the directory path (e.g., `/`).
 
-## Ringkasan Akhir
+## Conclusion
 
 - `express.static` is a built-in middleware for serving files like images, CSS, and JS.
 - You do not include the directory name in the URL when accessing the files.
@@ -127,17 +127,9 @@ Imagine your server as a **Librarian**.
 - Always use `path.join(__dirname, 'folder_name')` to avoid path resolution errors.
 - Keep your static files in a separate, dedicated folder for security.
 
-## Langkah Belajar Berikutnya
+## Next Steps
 
 After mastering static file serving, you can proceed to learn:
 
 - [Understanding the Express JS Request Lifecycle](Understanding%20the%20Express%20JS%20Request%20Lifecycle.md) to understand how static files fit into the request flow.
 - [Handling File Uploads in Express JS with Multer](Handling%20File%20Uploads%20in%20Express%20JS%20with%20Multer.md) to learn how to receive user files and store them dynamically.
-
-## Metadata
-
-- **Level:** Beginner
-- **Topik utama:** Express.js, Backend Development
-- **Topik terkait:** Static Assets, Middleware, Node.js Path
-- **Kata kunci:** express static, serving files, assets, public folder
-- **Estimasi waktu baca:** 5 - 7 minutes

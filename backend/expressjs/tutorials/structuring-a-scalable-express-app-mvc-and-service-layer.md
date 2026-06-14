@@ -190,30 +190,22 @@ Imagine running a restaurant:
 3. **The Service Layer is the Chef:** The chef receives the order details, follows the recipe (business logic), and decides what ingredients are needed. The chef doesn't care how the customer asked for the food; they only care about making it correctly.
 4. **The Model is the Pantry/Fridge:** This is where the raw ingredients (Database) are stored and retrieved by the chef.
 
-## Insight Penting
+## Key Insights
 
 - **Reusability:** Because Services are independent of Express.js, you can reuse the same `userService.registerUser` logic in a CLI tool, a GraphQL resolver, or a cron job without changing the code.
 - **Testability:** You can easily unit test the Service layer by passing in normal variables (e.g., `registerUser('test@test.com', 'password')`) without needing tools like Supertest to mock HTTP requests.
 - **Keep Controllers Thin:** A good rule of thumb is that controllers should rarely exceed 10-15 lines of code. If a controller is doing heavy data manipulation, move that logic down to the Service layer.
 
-## Ringkasan Akhir
+## Conclusion
 
 - "Fat controllers" mix HTTP logic, business rules, and database queries, making code difficult to maintain and test.
 - The Controller Layer should only handle HTTP requests and responses.
 - The Service Layer should contain pure business logic, decoupled from the web framework.
 - Structuring your application into Routes, Controllers, Services, and Models ensures separation of concerns and long-term scalability.
 
-## Langkah Belajar Berikutnya
+## Next Steps
 
 Now that your application is well-structured, you should look into:
 
 - [Data Validation and Error Handling in Express](Data%20Validation%20and%20Error%20Handling%20in%20Express.md) (To move validation out of controllers using middleware like Joi or Zod).
 - [Testing Express API with Jest and Supertest](Testing%20Express%20API%20with%20Jest%20and%20Supertest.md) (To see how easy it is to test separated service functions).
-
-## Metadata
-
-- **Level:** Intermediate
-- **Topik utama:** Express.js, Backend Architecture
-- **Topik terkait:** MVC, Service Layer, Refactoring, Clean Code
-- **Kata kunci:** express folder structure, express mvc, express service layer, node architecture, fat controller
-- **Estimasi waktu baca:** 10 - 15 minutes

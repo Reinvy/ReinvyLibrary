@@ -147,14 +147,14 @@ router.get('/products', async (req, res) => {
 module.exports = router;
 ```
 
-## Insight Penting
+## Key Insights
 
 - **Always Validate Input:** Query parameters are strings. Ensure you parse them to integers for `limit` and `page`, and validate that sorting/filtering fields actually exist in your database schema to prevent injection attacks or errors.
 - **Set Maximum Limits:** Never allow clients to request an unlimited number of items (e.g., `limit=10000`). Always enforce a hard maximum limit on the server side to protect your database from resource exhaustion.
 - **Cursor vs. Offset:** Offset pagination (`skip`/`limit`) can become slow on very large datasets because the database still has to count and skip the preceding rows. For massive datasets or infinite scroll features, consider Cursor-based pagination.
 - **Index Your Database:** Filtering and sorting are expensive operations. Ensure you create database indexes on fields that are frequently used for filtering or sorting.
 
-## Ringkasan Akhir
+## Conclusion
 
 - `req.query` is used to capture parameters for pagination, filtering, and sorting.
 - **Pagination** divides data into manageable chunks using `page` and `limit`.
@@ -162,16 +162,8 @@ module.exports = router;
 - **Sorting** orders the response data based on client preference.
 - Combining these features makes your APIs flexible, performant, and ready for production use.
 
-## Langkah Belajar Berikutnya
+## Next Steps
 
 - Explore **Cursor-based Pagination** for high-performance applications.
 - Learn about caching strategies (like Redis) to store frequently requested, paginated data.
 - Read up on [Data Validation and Error Handling in Express](Data%20Validation%20and%20Error%20Handling%20in%20Express.md) to secure your query parameters.
-
-## Metadata
-
-- Level: Intermediate
-- Topik utama: Express.js, API Design
-- Topik terkait: Database Queries, Pagination, RESTful APIs
-- Kata kunci: Express, pagination, filtering, sorting, REST API, query parameters
-- Estimasi waktu baca: 10 menit

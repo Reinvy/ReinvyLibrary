@@ -139,7 +139,7 @@ A "hard shutdown" would be like the manager turning off all the lights and kicki
 
 ---
 
-## Insight Penting
+## Key Insights
 
 - **Kubernetes and Docker:** In modern infrastructure, container orchestrators rely heavily on graceful shutdowns. Kubernetes sends a `SIGTERM` and waits a specific `grace period` (usually 30 seconds) before sending a forceful `SIGKILL`. If your app doesn't handle `SIGTERM`, it will just abruptly die when the grace period ends.
 - **Timeout Fallback:** Always implement a `setTimeout` during your shutdown process. If a database connection hangs while trying to close, you don't want your Node.js process to be stuck in a zombie state forever. Forcefully exit if the shutdown takes too long.
@@ -147,7 +147,7 @@ A "hard shutdown" would be like the manager turning off all the lights and kicki
 
 ---
 
-## Ringkasan Akhir
+## Conclusion
 
 - Graceful shutdown prevents user disruption and data corruption when a server stops.
 - Node.js listens for OS signals like `SIGTERM` and `SIGINT`.
@@ -156,18 +156,10 @@ A "hard shutdown" would be like the manager turning off all the lights and kicki
 
 ---
 
-## Langkah Belajar Berikutnya
+## Next Steps
 
 - Explore how to implement background job processing queues (like BullMQ) that support graceful pausing.
 - [Deploying Express JS Applications to Production](Deploying%20Express%20JS%20Applications%20to%20Production.md)
 - [Dockerizing Express JS Applications](Dockerizing%20Express%20JS%20Applications.md)
 
 ---
-
-## Metadata
-
-- **Level:** Intermediate
-- **Topik utama:** Express.js, Deployment, Reliability
-- **Topik terkait:** Process Management, Node.js Events, DevOps
-- **Kata kunci:** graceful shutdown, sigterm, sigint, server close, express deployment
-- **Estimasi waktu baca:** 7 - 10 minutes

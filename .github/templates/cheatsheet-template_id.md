@@ -2,7 +2,7 @@
 title: "Cheat Sheet Teknologi"
 description: "Panduan referensi cepat untuk perintah umum, sintaks, dan konfigurasi."
 category: "backend"
-technology: "express-js"
+technology: "expressjs"
 difficulty: "beginner"
 type: "cheatsheet"
 locale: "id"
@@ -39,5 +39,6 @@ perintah2 --flag
 
 ```javascript
 // Referensi kode cepat
-const x = require('package');
+const express = require('express');
+const app = express();
 ```

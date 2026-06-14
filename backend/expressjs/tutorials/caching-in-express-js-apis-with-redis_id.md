@@ -10,13 +10,13 @@ locale: "id"
 
 # Caching di API Express JS menggunakan Redis
 
-## Ringkasan Singkat
+## Ringkasan
 
 Caching adalah teknik yang sangat kuat untuk meningkatkan performa dan skalabilitas aplikasi Express JS Anda. Tutorial ini mengeksplorasi cara menggunakan Redis sebagai penyimpanan data dalam memori (in-memory data store) untuk melakukan caching pada respons API, mengurangi beban database, dan secara signifikan mempercepat waktu respons bagi pengguna Anda.
 
 ---
 
-## Untuk Siapa Materi Ini
+## Target Audiens
 
 * **Target pembaca:** Backend Developer, Fullstack Developer, API Designer.
 * **Level pembaca:** Menengah (Intermediate).
@@ -33,7 +33,7 @@ Caching adalah teknik yang sangat kuat untuk meningkatkan performa dan skalabili
 
 ---
 
-## Tujuan Belajar
+## Tujuan Pembelajaran
 
 Setelah membaca materi ini, pembaca akan memahami:
 
@@ -53,7 +53,7 @@ Caching menyelesaikan masalah ini dengan menyimpan hasil dari operasi yang berat
 
 ---
 
-## Materi Inti
+## Konten Inti
 
 ### Apa itu Caching?
 
@@ -75,7 +75,7 @@ Bagian tersulit dari caching adalah mengetahui kapan harus menghapus atau memper
 
 ---
 
-## Contoh / Ilustrasi
+## Contoh Kode
 
 Mari kita lihat cara mengimplementasikan strategi Cache-Aside dalam aplikasi Express menggunakan Redis.
 
@@ -194,7 +194,7 @@ Dalam contoh ini, request pertama ke `/api/users` akan memakan waktu 2 detik. Re
 
 ---
 
-## Ringkasan Akhir
+## Kesimpulan
 
 * Caching meningkatkan performa API dan mengurangi beban database dengan menyimpan data yang sering diakses di dalam memori.
 * Redis adalah solusi utama untuk caching di Node.js karena kecepatan dan kesederhanaannya.
@@ -203,18 +203,10 @@ Dalam contoh ini, request pertama ke `/api/users` akan memakan waktu 2 detik. Re
 
 ---
 
-## Langkah Belajar Berikutnya
+## Langkah Berikutnya
 
 * Pelajari struktur data lanjutan dari Redis (Hashes, Lists, Sets) untuk skenario caching yang lebih kompleks.
 * Pelajari cara mengimplementasikan strategi Invalidasi Cache yang tangguh ketika data diperbarui melalui request `POST`, `PUT`, atau `DELETE`.
 * Pelajari tentang Rate Limiting, yang sering kali juga menggunakan Redis untuk melacak jumlah request.
 
 ---
-
-## Metadata
-
-* Level: Menengah
-* Topik utama: Performance, Caching
-* Topik terkait: Redis, Middleware, Scalability
-* Kata kunci: Express, Redis, Caching, Performance, Middleware, API
-* Estimasi waktu baca: 8 menit

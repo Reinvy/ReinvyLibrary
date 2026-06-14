@@ -10,11 +10,11 @@ locale: "id"
 
 # Membangun Aplikasi Express yang Type-Safe dengan TypeScript
 
-## Ringkasan Singkat
+## Ringkasan
 
 Tutorial ini menjelaskan cara mengintegrasikan TypeScript ke dalam aplikasi Express.js untuk mencapai keamanan tipe (type safety). Materi ini mencakup pengaturan awal, konfigurasi kompilator TypeScript, penanganan routing dasar dengan tipe, dan perluasan tipe request Express menggunakan *declaration merging*. Pada akhirnya, Anda akan memiliki fondasi yang kuat untuk membangun aplikasi Express yang skalabel dan mudah dipelihara.
 
-## Untuk Siapa Materi Ini
+## Target Audiens
 
 Developer Node.js tingkat menengah yang sudah terbiasa dengan Express.js dan ingin memanfaatkan TypeScript untuk menangkap kesalahan pada saat kompilasi (*compile-time*), meningkatkan *autocomplete* kode, dan meningkatkan kualitas kode secara keseluruhan.
 
@@ -25,7 +25,7 @@ Developer Node.js tingkat menengah yang sudah terbiasa dengan Express.js dan ing
 - Pengetahuan dasar tentang sintaks dan tipe TypeScript.
 - Node.js sudah terinstal di komputer Anda.
 
-## Tujuan Belajar
+## Tujuan Pembelajaran
 
 - Memahami cara menyiapkan proyek Express baru dengan TypeScript.
 - Mempelajari cara mengonfigurasi `tsconfig.json` untuk aplikasi Express.
@@ -37,7 +37,7 @@ Developer Node.js tingkat menengah yang sudah terbiasa dengan Express.js dan ing
 
 Sistem *dynamic typing* pada JavaScript dapat menyebabkan kesalahan *runtime* yang seringkali sulit dilacak dalam aplikasi Express yang besar. Dengan mengintegrasikan TypeScript, developer mendapatkan pemeriksaan saat proses kompilasi (*compile-time checking*), yang menangkap kesalahan lebih awal dalam siklus pengembangan. TypeScript juga menyediakan fitur *autocomplete* IDE yang luar biasa untuk objek-objek Express (seperti `req.body`, `req.query`, dan `res`), sehingga secara drastis meningkatkan pengalaman developer dan membuat *codebase* lebih mudah untuk di-*refactor* dan diskalakan.
 
-## Materi Inti
+## Konten Inti
 
 ### 1. Penyiapan dan Instalasi Proyek
 
@@ -146,7 +146,7 @@ Perbarui `tsconfig.json` untuk menyertakan tipe kustom Anda:
 }
 ```
 
-## Contoh / Ilustrasi
+## Contoh Kode
 
 Berikut adalah aplikasi Express sederhana dan lengkap menggunakan TypeScript yang mengimplementasikan middleware autentikasi yang menyematkan objek *user* ke *request*.
 
@@ -186,7 +186,7 @@ app.listen(PORT, () => {
 - **Hindari `any`:** Hindari penggunaan tipe `any` untuk `req.body` atau `req.query`. Alih-alih, definisikan interface atau gunakan pustaka validasi seperti Zod atau Joi bersama TypeScript untuk memvalidasi batasan data *runtime*.
 - **Validasi Runtime:** TypeScript hanya memeriksa tipe pada saat kompilasi. Data yang masuk ke aplikasi Express Anda (melalui request POST) tidak memiliki tipe saat *runtime*. Anda tetap membutuhkan validasi *runtime* (misalnya, menggunakan Zod) untuk memastikan data yang masuk sesuai dengan interface TypeScript Anda.
 
-## Ringkasan Akhir
+## Kesimpulan
 
 - Mengintegrasikan TypeScript dengan Express membutuhkan instalasi `@types/express` dan konfigurasi `tsconfig.json`.
 - Dengan secara eksplisit memberikan tipe `Request`, `Response`, dan `NextFunction`, Anda menangkap kesalahan lebih awal dan meningkatkan pengalaman developer dengan *autocomplete*.
@@ -194,16 +194,8 @@ app.listen(PORT, () => {
 - *Declaration merging* sangat penting untuk memperluas objek `Request` dengan properti kustom seperti `req.user`.
 - TypeScript memberikan keamanan saat kompilasi (*compile-time safety*), tetapi validasi *runtime* tetap diperlukan untuk *payload request* yang masuk.
 
-## Langkah Belajar Berikutnya
+## Langkah Berikutnya
 
 - Mengintegrasikan Zod untuk validasi data *runtime* di Express.
 - Menyusun struktur aplikasi Express TypeScript yang skalabel (Pola Controller, Service, Repository).
 - Menyiapkan Jest dengan ts-jest untuk pengujian Express API berbasis TypeScript.
-
-## Metadata
-
-- Level: Menengah
-- Topik utama: Express.js, TypeScript
-- Topik terkait: Backend Development, Type Safety, Node.js
-- Kata kunci: Express TypeScript, Type-Safe API, TS Node, Declaration Merging Express
-- Estimasi waktu baca: 10 menit

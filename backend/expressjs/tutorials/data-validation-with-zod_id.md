@@ -10,13 +10,13 @@ locale: "id"
 
 # Validasi Data dengan Zod di Express JS
 
-## Ringkasan Singkat
+## Ringkasan
 
 Materi ini membahas cara efektif memvalidasi data *client* yang masuk di aplikasi Express.js menggunakan Zod, sebuah *library* deklarasi dan validasi skema modern yang mengutamakan TypeScript (*TypeScript-first*). Anda akan belajar membuat *middleware* validasi tangguh yang mencegah data buruk mencapai logika inti Anda sambil memastikan keamanan tipe (*type safety*) dan pesan *error* yang jelas.
 
 ---
 
-## Untuk Siapa Materi Ini
+## Target Audiens
 
 * **Target Pembaca:** *Backend developer* yang membangun *API* dengan Express.js.
 * **Level:** Menengah (*Intermediate*).
@@ -31,7 +31,7 @@ Materi ini membahas cara efektif memvalidasi data *client* yang masuk di aplikas
 
 ---
 
-## Tujuan Belajar
+## Tujuan Pembelajaran
 
 Setelah membaca materi ini, pembaca akan memahami:
 
@@ -50,7 +50,7 @@ Zod menawarkan cara deklaratif untuk mendefinisikan seperti apa bentuk data Anda
 
 ---
 
-## Materi Inti
+## Konten Inti
 
 ### 1. Pengenalan Zod
 
@@ -133,7 +133,7 @@ app.post('/api/users/register', validate(registerSchema), (req, res) => {
 
 ---
 
-## Contoh / Ilustrasi
+## Contoh Kode
 
 Bayangkan sebuah **Penjaga Klub yang Ketat (*Validation Middleware*)** berdiri di pintu sebuah klub eksklusif (logika aplikasi inti Anda).
 
@@ -158,7 +158,7 @@ Ketika seorang tamu (HTTP *Request*) tiba, penjaga memeriksa mereka terhadap lem
 
 ---
 
-## Ringkasan Akhir
+## Kesimpulan
 
 * Zod adalah *library* validasi skema deklaratif dan kuat yang berpasangan sangat baik dengan Express.js.
 * Membuat *middleware* validasi generik menjaga *route handler* tetap bersih dan hanya berfokus pada logika bisnis.
@@ -166,18 +166,10 @@ Ketika seorang tamu (HTTP *Request*) tiba, penjaga memeriksa mereka terhadap lem
 
 ---
 
-## Langkah Belajar Berikutnya
+## Langkah Berikutnya
 
 * Jelajahi fitur Zod yang lebih lanjut, seperti *refinements* (`.refine()`) untuk logika validasi kustom (misalnya, memeriksa apakah kata sandi cocok).
 * Pelajari cara memvalidasi bagian lain dari *request*, seperti `req.query` untuk parameter pencarian dan `req.params` untuk segmen *route* dinamis.
 * Integrasikan validasi Zod dengan ORM seperti Prisma untuk keamanan tipe ujung-ke-ujung (*end-to-end type safety*).
 
 ---
-
-## Metadata
-
-* **Level:** Menengah (*Intermediate*)
-* **Topik utama:** Express JS, Validation
-* **Topik terkait:** Zod, Middleware, Error Handling
-* **Kata kunci:** express zod, validasi skema, express middleware, validasi typescript
-* **Estimasi waktu baca:** 8 - 12 menit

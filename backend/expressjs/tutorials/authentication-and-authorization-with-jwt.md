@@ -10,13 +10,13 @@ locale: "en"
 
 # Authentication and Authorization Using JWT in Express.js
 
-## Short Summary
+## Summary
 
 This material covers how to secure your Express.js applications using JSON Web Tokens (JWT). You will learn how to authenticate users during login and authorize access to protected routes.
 
 ---
 
-## Who is this for
+## Target Audience
 
 * Target audience: Backend Developers, Fullstack Developers
 * Reader level: Intermediate
@@ -50,7 +50,7 @@ In modern web application development, security is a crucial aspect. When buildi
 
 ---
 
-## Core Material
+## Core Content
 
 ### 1. Authentication vs Authorization
 
@@ -80,7 +80,7 @@ A JWT consists of three parts, separated by dots (`.`):
 
 ---
 
-## Examples / Illustrations
+## Code Examples
 
 ### Package Installation
 
@@ -176,7 +176,7 @@ app.listen(3000, () => console.log('Server running on port 3000'));
 
 ---
 
-## Important Insights
+## Key Insights
 
 * **Keep the Secret Key Secret:** Never hardcode your *Secret Key* inside the source code, especially not uploading it to a public repository. Always use Environment Variables like `process.env.JWT_SECRET`.
 * **Public Payload:** Information in the Payload section of a JWT is only *encoded* (Base64), not encrypted. Anyone who has your token can decode and read its contents. Therefore, never store sensitive data like passwords, credit card numbers, or other secrets inside a JWT Payload.
@@ -185,7 +185,7 @@ app.listen(3000, () => console.log('Server running on port 3000'));
 
 ---
 
-## Final Summary
+## Conclusion
 
 * Authentication is identity verification, authorization is access right verification.
 * JWT (JSON Web Token) is used to securely transmit identity between entities in the form of a token that is encrypted (in the signature part).
@@ -195,18 +195,10 @@ app.listen(3000, () => console.log('Server running on port 3000'));
 
 ---
 
-## Next Learning Steps
+## Next Steps
 
 * Implement the *Refresh Token* concept to securely extend JWT sessions.
 * Integrate JWT authentication process with ORMs like Prisma to verify real data from a database.
 * Learn how to hash passwords with bcrypt before validating them for authentication.
 
 ---
-
-## Metadata
-
-* Level: Intermediate
-* Main topic: Express.js, Authentication, Security
-* Related topics: Middleware, JWT, Authorization
-* Keywords: jwt, json web token, login, express, middleware, api security
-* Estimated reading time: 10 minutes

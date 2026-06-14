@@ -198,7 +198,7 @@ const userTierLimiter = rateLimit({
 
 ---
 
-## Insight Penting
+## Key Insights
 
 * **Reverse Proxies:** If your Express app sits behind a load balancer or reverse proxy (like Nginx, AWS ALB, or Cloudflare), `req.ip` might incorrectly resolve to the proxy's IP. You must enable `app.set('trust proxy', 1 /* number of proxies */)` in Express to correctly identify the original client IP.
 * **Rate Limit Headers:** It is a best practice to send `RateLimit-Limit`, `RateLimit-Remaining`, and `RateLimit-Reset` headers in the response. This allows API clients to gracefully slow down their requests before hitting a `429` error.
@@ -207,7 +207,7 @@ const userTierLimiter = rateLimit({
 
 ---
 
-## Ringkasan Akhir
+## Conclusion
 
 * Rate limiting restricts how many requests a client can make, protecting your API from DDoS attacks, brute force attempts, and resource exhaustion.
 * `express-rate-limit` is a simple and effective middleware for applying limits.
@@ -216,18 +216,10 @@ const userTierLimiter = rateLimit({
 
 ---
 
-## Langkah Belajar Berikutnya
+## Next Steps
 
 * **Express Security:** Explore other security middlewares like `helmet` and CORS configurations.
 * **Redis Integration:** Learn more about using Redis in Express for caching responses, not just rate limiting.
 * **Monitoring:** Implement logging and monitoring to track when rate limits are hit, which can help identify malicious actors or clients that need a higher tier.
 
 ---
-
-## Metadata
-
-* Level: Menengah
-* Topik utama: Express.js, Security, Scalability
-* Topik terkait: Redis, Middleware, API Design
-* Kata kunci: Rate Limiting, Throttling, Express, Redis, 429 Too Many Requests, express-rate-limit
-* Estimasi waktu baca: 10 menit

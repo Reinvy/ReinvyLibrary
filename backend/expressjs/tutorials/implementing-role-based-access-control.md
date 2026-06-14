@@ -151,28 +151,20 @@ In this setup:
 - A user with the role `editor` can access `/profile` and `/articles`, but not `/users/:id`.
 - A user with the role `admin` has access to all routes.
 
-## Insight Penting
+## Key Insights
 
 - **Authentication First:** Always run authentication middleware *before* authorization middleware. You cannot verify a role if you don't know who the user is.
 - **401 vs 403:** Use `401 Unauthorized` when the user is not logged in or the token is invalid. Use `403 Forbidden` when the user is authenticated but lacks the required permissions.
 - **Scalability:** For more complex scenarios involving specific resources (e.g., an editor can edit *their own* articles but not others), RBAC might not be enough. In those cases, consider Attribute-Based Access Control (ABAC) or adding resource-level permission checks inside your route handlers.
 
-## Ringkasan Akhir
+## Conclusion
 
 - RBAC separates users into roles with specific permissions.
 - You must authenticate the user and attach their data to the request object before applying RBAC.
 - Create a flexible middleware that accepts an array of allowed roles and checks them against the current user's role.
 - Secure routes by chaining `authenticateUser` and `authorizeRoles` middlewares.
 
-## Langkah Belajar Berikutnya
+## Next Steps
 
 - Learn how to implement Attribute-Based Access Control (ABAC) for finer-grained permissions.
 - Explore integrating authorization logic with database queries to filter results based on user roles.
-
-## Metadata
-
-- Level: Intermediate
-- Topik utama: Express.js, Security, Authorization
-- Topik terkait: Authentication, JWT, Middleware
-- Kata kunci: express authorization, rbac, role based access control, middleware, express roles
-- Estimasi waktu baca: 10 - 15 minutes

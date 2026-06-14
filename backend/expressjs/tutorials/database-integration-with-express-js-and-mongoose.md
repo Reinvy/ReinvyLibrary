@@ -172,14 +172,14 @@ router.delete('/users/:id', async (req, res) => {
 module.exports = router;
 ```
 
-## Insight Penting
+## Key Insights
 
 - **Always use `async/await`**: Database operations are asynchronous. Using `async/await` (coupled with `try/catch` blocks) makes your code cleaner and easier to read compared to deeply nested callbacks or promise chains.
 - **Environment Variables**: Never hardcode your MongoDB connection string in your source code, especially if it contains credentials. Use environment variables (like `dotenv`).
 - **Validation is Key**: Leverage Mongoose's built-in validators (e.g., `required`, `min`, `max`, `match`) to ensure only valid data enters your database. You can also write custom validators.
 - **Handling `_id`**: MongoDB automatically assigns a unique `_id` (ObjectId) to every document. You don't need to define it in your schema unless you have a specific reason to override it.
 
-## Ringkasan Akhir
+## Conclusion
 
 - Mongoose is an ODM that provides a structured, schema-based solution to model application data in MongoDB.
 - `mongoose.connect()` establishes the connection between Express and the database.
@@ -187,16 +187,8 @@ module.exports = router;
 - A **Model** compiles the schema and provides methods to query and manipulate the database (CRUD operations).
 - Handling asynchronous operations correctly and validating data are crucial for robust database integration.
 
-## Langkah Belajar Berikutnya
+## Next Steps
 
 - Advanced Mongoose queries (filtering, sorting, pagination).
 - Working with Mongoose populations (handling relationships between different collections).
 - Data Validation and Error Handling in Express APIs.
-
-## Metadata
-
-- Level: Beginner
-- Topik utama: Express JS, Database
-- Topik terkait: MongoDB, Mongoose, Node.js
-- Kata kunci: express, mongoose, mongodb, database, crud, odm, schema, model
-- Estimasi waktu baca: 10 menit

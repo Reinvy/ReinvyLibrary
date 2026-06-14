@@ -173,7 +173,7 @@ app.listen(3000, () => {
 });
 ```
 
-## Insight Penting
+## Key Insights
 
 ### Trade-offs Between Strategies
 
@@ -188,7 +188,7 @@ Do not keep old versions alive forever. Every version multiplies your testing an
 
 Always wrap your route logic in try-catch blocks (or use async error handlers). If an error occurs, log the detailed error internally (`console.error(error)`) and return a generic `500 Internal Server Error` message. This prevents exposing stack traces or sensitive database structures to end users, regardless of which API version they use.
 
-## Ringkasan Akhir
+## Conclusion
 
 - API versioning ensures that clients relying on older structures are not broken when you introduce major changes.
 - Only version for breaking changes; additive changes do not require a new version.
@@ -196,16 +196,8 @@ Always wrap your route logic in try-catch blocks (or use async error handlers). 
 - Header Versioning uses custom middleware (`x-api-version`) to keep URLs clean but requires more client-side configuration.
 - Plan sunset periods to eventually retire older API versions to avoid infinite maintenance burden.
 
-## Langkah Belajar Berikutnya
+## Next Steps
 
 - Learn how to structure controllers and services into separate folders to keep versioned routing clean (MVC pattern).
 - Explore API documentation tools like Swagger (OpenAPI) to document multiple API versions simultaneously.
 - Study Semantic Versioning (SemVer) principles to better understand how to classify major, minor, and patch updates.
-
-## Metadata
-
-- Level: Intermediate
-- Topik utama: Express.js, API Design
-- Topik terkait: Routing, Middleware, RESTful API
-- Kata kunci: api versioning, express js routing, backward compatibility, rest api, header versioning
-- Estimasi waktu baca: 8 menit

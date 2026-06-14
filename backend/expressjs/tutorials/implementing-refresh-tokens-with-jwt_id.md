@@ -10,13 +10,13 @@ locale: "id"
 
 # Mengimplementasikan Refresh Token dengan JWT di Express.js
 
-## Ringkasan Singkat
+## Ringkasan
 
 Tutorial ini menjelaskan cara mengimplementasikan mekanisme Refresh Token yang aman pada aplikasi Express.js. Anda akan mempelajari tujuan dari refresh token, alur autentikasinya, dan bagaimana menulis kode untuk mengelola access token berumur pendek bersamaan dengan refresh token berumur panjang.
 
 ---
 
-## Untuk Siapa Materi Ini
+## Target Audiens
 
 * Backend Developer, Fullstack Developer
 * Menengah (Intermediate)
@@ -31,7 +31,7 @@ Tutorial ini menjelaskan cara mengimplementasikan mekanisme Refresh Token yang a
 
 ---
 
-## Tujuan Belajar
+## Tujuan Pembelajaran
 
 Setelah membaca materi ini, pembaca akan memahami:
 
@@ -51,7 +51,7 @@ Untuk memitigasi hal ini, Access Token diberikan masa berlaku yang sangat singka
 
 ---
 
-## Materi Inti
+## Konten Inti
 
 ### 1. Konsep Inti
 
@@ -81,7 +81,7 @@ npm install express jsonwebtoken
 
 ---
 
-## Contoh / Ilustrasi
+## Contoh Kode
 
 ### 1. Setup dan Rute Login
 
@@ -202,7 +202,7 @@ app.listen(3000, () => {
 
 ---
 
-## Ringkasan Akhir
+## Kesimpulan
 
 * Menggunakan Access Token yang berumur panjang adalah risiko keamanan. Mereka harus memiliki masa berlaku yang singkat.
 * Refresh Token adalah token berumur panjang yang digunakan secara khusus untuk meminta Access Token baru ketika token yang lama kedaluwarsa.
@@ -211,18 +211,10 @@ app.listen(3000, () => {
 
 ---
 
-## Langkah Belajar Berikutnya
+## Langkah Berikutnya
 
 * Implementasikan penyimpanan Refresh Token menggunakan database nyata (seperti PostgreSQL dengan Prisma) daripada array in-memory.
 * Pelajari cara menyimpan token secara aman di frontend menggunakan cookie `HttpOnly`.
 * Eksplorasi pola keamanan tingkat lanjut seperti *Refresh Token Rotation*.
 
 ---
-
-## Metadata
-
-* Level: Menengah
-* Topik utama: Express.js, Authentication, Security
-* Topik terkait: JWT, Refresh Token, Authorization
-* Kata kunci: express, jwt, refresh token, access token, keamanan, autentikasi
-* Estimasi waktu baca: 15 menit

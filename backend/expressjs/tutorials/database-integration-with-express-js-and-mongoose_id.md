@@ -10,11 +10,11 @@ locale: "id"
 
 # Integrasi Database dengan Express JS dan Mongoose
 
-## Ringkasan Singkat
+## Ringkasan
 
 Tutorial ini menjelaskan cara menghubungkan aplikasi Express JS ke database MongoDB menggunakan Mongoose. Anda akan mempelajari dasar-dasar Mongoose, cara membuat koneksi database, mendefinisikan skema, membuat model, dan melakukan operasi dasar CRUD (Create, Read, Update, Delete) di dalam rute Express Anda.
 
-## Untuk Siapa Materi Ini
+## Target Audiens
 
 Developer backend pemula hingga menengah yang sudah memiliki pemahaman dasar tentang Express JS dan ingin belajar cara menyimpan data secara permanen menggunakan MongoDB dan Mongoose.
 
@@ -25,7 +25,7 @@ Developer backend pemula hingga menengah yang sudah memiliki pemahaman dasar ten
 - MongoDB yang sudah berjalan (baik secara lokal maupun via MongoDB Atlas).
 - Keakraban dengan JSON dan konsep dasar database.
 
-## Tujuan Belajar
+## Tujuan Pembelajaran
 
 - Memahami peran pustaka Object Data Modeling (ODM) seperti Mongoose.
 - Membangun koneksi antara aplikasi Express dan database MongoDB.
@@ -37,7 +37,7 @@ Developer backend pemula hingga menengah yang sudah memiliki pemahaman dasar ten
 
 Sebagian besar aplikasi di dunia nyata perlu menyimpan data secara permanen. Express JS tidak dilengkapi dengan solusi database bawaan, sehingga Anda harus mengintegrasikannya sendiri. MongoDB, sebuah database dokumen NoSQL, sangat populer di ekosistem Node.js (seringkali menjadi bagian dari stack MERN). Walaupun Anda bisa menggunakan driver MongoDB bawaan, Mongoose menyediakan lapisan struktur yang sangat dibutuhkan. Mongoose memungkinkan Anda untuk mendefinisikan skema, mengatur tipe data, memvalidasi data sebelum disimpan, dan menyediakan kemampuan query yang kuat, sehingga interaksi dengan database menjadi jauh lebih mudah dan andal.
 
-## Materi Inti
+## Konten Inti
 
 ### 1. Apa itu Mongoose?
 
@@ -103,7 +103,7 @@ Setelah Anda memiliki model, Anda dapat menggunakannya di dalam handler rute Exp
 **Update (PUT/PATCH):** Gunakan `Model.findByIdAndUpdate()`.
 **Delete (DELETE):** Gunakan `Model.findByIdAndDelete()`.
 
-## Contoh / Ilustrasi
+## Contoh Kode
 
 Berikut adalah contoh lengkap yang menunjukkan router Express yang mengintegrasikan model `User` Mongoose yang telah didefinisikan di atas:
 
@@ -179,7 +179,7 @@ module.exports = router;
 - **Validasi adalah Kunci**: Manfaatkan validator bawaan Mongoose (misal: `required`, `min`, `max`, `match`) untuk memastikan hanya data valid yang masuk ke database Anda. Anda juga dapat menulis validator kustom.
 - **Menangani `_id`**: MongoDB secara otomatis memberikan `_id` unik (ObjectId) ke setiap dokumen. Anda tidak perlu mendefinisikannya di skema Anda kecuali Anda memiliki alasan khusus untuk menimpanya.
 
-## Ringkasan Akhir
+## Kesimpulan
 
 - Mongoose adalah ODM yang menyediakan solusi terstruktur berbasis skema untuk memodelkan data aplikasi di MongoDB.
 - `mongoose.connect()` membangun koneksi antara Express dan database.
@@ -187,16 +187,8 @@ module.exports = router;
 - Sebuah **Model** mengompilasi skema dan menyediakan metode untuk melakukan query dan manipulasi database (operasi CRUD).
 - Menangani operasi asinkron dengan benar dan memvalidasi data sangat penting untuk integrasi database yang tangguh.
 
-## Langkah Belajar Berikutnya
+## Langkah Berikutnya
 
 - Query Mongoose lanjutan (filtering, sorting, pagination).
 - Bekerja dengan populasi Mongoose (menangani relasi antar koleksi yang berbeda).
 - Validasi Data dan Penanganan Error di API Express.
-
-## Metadata
-
-- Level: Pemula
-- Topik utama: Express JS, Database
-- Topik terkait: MongoDB, Mongoose, Node.js
-- Kata kunci: express, mongoose, mongodb, database, crud, odm, schema, model
-- Estimasi waktu baca: 10 menit

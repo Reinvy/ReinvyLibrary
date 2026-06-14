@@ -10,11 +10,11 @@ locale: "id"
 
 # Memahami Prinsip Desain RESTful API di Express
 
-## Ringkasan Singkat
+## Ringkasan
 
 Materi ini membahas prinsip-prinsip dasar dalam mendesain RESTful API dan bagaimana menerapkannya secara efektif menggunakan Express.js. Anda akan mempelajari praktik terbaik untuk menstrukturkan endpoint, menggunakan metode HTTP yang tepat, menangani kode status (status codes), dan membangun API yang konsisten sehingga mudah dipelihara dan diskalakan.
 
-## Untuk Siapa Materi Ini
+## Target Audiens
 
 - **Target Audience:** Developer backend pemula hingga menengah.
 - **Level:** Menengah.
@@ -25,7 +25,7 @@ Materi ini membahas prinsip-prinsip dasar dalam mendesain RESTful API dan bagaim
 - Familiar dengan konsep routing dasar dan middleware di Express.js.
 - Pengetahuan dasar tentang protokol HTTP (Request dan Response).
 
-## Tujuan Belajar
+## Tujuan Pembelajaran
 
 Setelah menyelesaikan materi ini, Anda akan dapat:
 
@@ -41,7 +41,7 @@ Saat membangun layanan backend, sangat mudah untuk membuat rute yang berantakan 
 
 REST (Representational State Transfer) adalah gaya arsitektur yang menstandarkan bagaimana aplikasi berkomunikasi melalui HTTP. Dengan mematuhi prinsip RESTful, Anda membuat API yang dapat diprediksi, bersifat stateless, dan skalabel. Memahami aturan-aturan ini adalah pencapaian penting bagi setiap developer backend dalam transisinya dari sekadar "membuat program berjalan" menjadi "membangun sistem profesional berskala produksi."
 
-## Materi Inti
+## Konten Inti
 
 ### 1. Apa itu RESTful API?
 
@@ -152,7 +152,7 @@ app.delete('/api/users/:id', (req, res) => {
 app.listen(3000, () => console.log('RESTful API berjalan pada port 3000'));
 ```
 
-## Contoh / Ilustrasi
+## Contoh Kode
 
 Bayangkan Anda sedang mengelola sebuah **Perpustakaan**.
 
@@ -170,22 +170,14 @@ Bayangkan Anda sedang mengelola sebuah **Perpustakaan**.
 - **Statelessness:** Setiap permintaan dari klien harus berisi semua informasi yang diperlukan untuk memahami permintaan tersebut. Server tidak boleh menyimpan konteks klien antar permintaan (inilah sebabnya API REST sering menggunakan JWT untuk autentikasi).
 - **Batas Nesting:** Hindari menyusun URL terlalu dalam (nested). `GET /users/1/posts/5/comments` bisa menjadi sulit dikelola. Seringkali lebih baik meratakannya menjadi `GET /posts/5/comments`.
 
-## Ringkasan Akhir
+## Kesimpulan
 
 - RESTful API menggunakan URL untuk merepresentasikan sumber daya (kata benda) dan metode HTTP untuk merepresentasikan tindakan (kata kerja).
 - Gunakan `GET` untuk membaca, `POST` untuk membuat, `PUT`/`PATCH` untuk memperbarui, dan `DELETE` untuk menghapus.
 - Penggunaan kode status HTTP yang tepat (200, 201, 400, 404, 500) sangat penting untuk komunikasi klien-server yang jelas.
 - Desain API yang konsisten dan dapat diprediksi membuat aplikasi lebih mudah untuk diskalakan, didokumentasikan, dan digunakan.
 
-## Langkah Belajar Berikutnya
+## Langkah Berikutnya
 
 - [Structuring a Scalable Express App (MVC and Service Layer)](Structuring%20a%20Scalable%20Express%20App%20(MVC%20and%20Service%20Layer)_ID.md) (Pelajari cara mengatur rute RESTful dan logika bisnis Anda).
 - [Data Validation and Error Handling in Express](Data%20Validation%20and%20Error%20Handling%20in%20Express_ID.md) (Pelajari cara memvalidasi data yang masuk ke endpoint REST Anda).
-
-## Metadata
-
-- **Level:** Menengah
-- **Topik utama:** Express.js, Desain API
-- **Topik terkait:** REST, Routing, Arsitektur
-- **Kata kunci:** rest api, restful, express routing, http methods, status codes
-- **Estimasi waktu baca:** 10 - 15 menit

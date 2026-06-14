@@ -74,7 +74,7 @@ Setiap file markdown konten wajib dimulai dengan blok YAML frontmatter yang beri
 title: "Judul Materi Edukasi"
 description: "Deskripsi singkat 1-2 kalimat mengenai konten untuk tabel indeks"
 category: "backend"
-technology: "express-js"
+technology: "expressjs"
 difficulty: "intermediate"
 type: "tutorial"
 locale: "id"

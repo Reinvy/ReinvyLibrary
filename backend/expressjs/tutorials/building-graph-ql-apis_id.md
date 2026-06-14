@@ -10,13 +10,13 @@ locale: "id"
 
 # Membangun GraphQL API dengan Express dan Apollo Server
 
-## Ringkasan Singkat
+## Ringkasan
 
 Tutorial ini memperkenalkan GraphQL sebagai alternatif yang kuat untuk REST API dan menunjukkan cara mengintegrasikannya ke dalam aplikasi Express.js menggunakan Apollo Server. Anda akan mempelajari konsep inti GraphQL, cara mendefinisikan skema dan resolver, serta cara mengeksekusi query dan mutation untuk pengambilan data yang efisien.
 
 ---
 
-## Untuk Siapa Materi Ini
+## Target Audiens
 
 * **Target pembaca:** Backend developer yang sudah familiar dengan Express.js dan ingin belajar cara membangun dan mengimplementasikan GraphQL API.
 * **Level pembaca:** Menengah (Intermediate).
@@ -33,7 +33,7 @@ Sebelum membaca materi ini, Anda idealnya sudah memahami:
 
 ---
 
-## Tujuan Belajar
+## Tujuan Pembelajaran
 
 Setelah membaca materi ini, pembaca akan memahami:
 
@@ -53,7 +53,7 @@ GraphQL memecahkan masalah ini dengan menyediakan bahasa query yang fleksibel un
 
 ---
 
-## Materi Inti
+## Konten Inti
 
 ### 1. Apa itu GraphQL?
 
@@ -77,7 +77,7 @@ Untuk menggunakan GraphQL di Express, kita biasanya menggunakan `@apollo/server`
 
 ---
 
-## Contoh / Ilustrasi
+## Contoh Kode
 
 Berikut adalah contoh lengkap dan minimal untuk menyiapkan API GraphQL dengan Express dan Apollo Server.
 
@@ -181,7 +181,7 @@ query GetBooks {
 
 ---
 
-## Ringkasan Akhir
+## Kesimpulan
 
 * GraphQL menyediakan pendekatan yang fleksibel dan digerakkan oleh klien untuk pengambilan data, memecahkan masalah over-fetching dan under-fetching yang umum terjadi di REST.
 * Apollo Server adalah alat standar untuk mengintegrasikan GraphQL dengan backend Express.js.
@@ -190,7 +190,7 @@ query GetBooks {
 
 ---
 
-## Langkah Belajar Berikutnya
+## Langkah Berikutnya
 
 * Pelajari penggunaan **DataLoader** untuk mengoptimalkan query database dan memecahkan masalah N+1.
 * Pelajari tentang implementasi **Authentication dan Authorization** di dalam resolver GraphQL.
@@ -198,11 +198,3 @@ query GetBooks {
 * Pahami GraphQL Subscriptions untuk pembaruan data secara real-time.
 
 ---
-
-## Metadata
-
-* Level: Menengah
-* Topik utama: Express.js, GraphQL
-* Topik terkait: API Design, Apollo Server, Node.js
-* Kata kunci: graphql, express, apollo server, skema, resolver, api
-* Estimasi waktu baca: 15 menit

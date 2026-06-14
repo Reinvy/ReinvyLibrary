@@ -160,7 +160,7 @@ app.listen(3000, () => console.log('Server running on port 3000'));
 
 ---
 
-## Insight Penting
+## Key Insights
 
 - **Generic Error Messages:** Notice that during login, whether the user is not found or the password doesn't match, we return the same `"Invalid username or password"` message. This prevents attackers from discovering which usernames actually exist in your system (User Enumeration Attack).
 - **Asynchronous Execution:** Hashing is a CPU-intensive operation. Always use the asynchronous versions (`bcrypt.hash` and `bcrypt.compare`) with `async/await` rather than their synchronous counterparts (`bcrypt.hashSync`). Synchronous methods will block the Node.js event loop, freezing your entire server while it processes the hash.
@@ -168,7 +168,7 @@ app.listen(3000, () => console.log('Server running on port 3000'));
 
 ---
 
-## Ringkasan Akhir
+## Conclusion
 
 - Never store passwords as plain text.
 - Passwords should be hashed (one-way), not encrypted (two-way).
@@ -178,17 +178,9 @@ app.listen(3000, () => console.log('Server running on port 3000'));
 
 ---
 
-## Langkah Belajar Berikutnya
+## Next Steps
 
 - [Authentication and Authorization with JWT in Express](Authentication%20and%20Authorization%20with%20JWT%20in%20Express.md) (Learn how to issue tokens after a successful login).
 - Explore integrating this logic with a real database using an ORM like Prisma or Mongoose.
 
 ---
-
-## Metadata
-
-- Level: Beginner to Intermediate
-- Topik utama: Express.js, Security
-- Topik terkait: Authentication, Bcrypt, Hashing, Passwords
-- Kata kunci: bcrypt, hash, salt, password security, express authentication
-- Estimasi waktu baca: 8 minutes

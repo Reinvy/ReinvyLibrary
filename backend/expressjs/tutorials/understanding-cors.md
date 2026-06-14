@@ -160,7 +160,7 @@ app.listen(3000, () => console.log('Secure server running'));
 
 ---
 
-## Insight Penting
+## Key Insights
 
 * **CORS protects the Browser, not the Server:** A common misconception is that CORS secures your API. It does not. Tools like Postman or `curl` do not enforce CORS; they will always be able to hit your API. CORS purely prevents *malicious websites in a user's browser* from making unauthorized requests to your server on the user's behalf.
 * **The `*` Wildcard Danger:** Never use `Access-Control-Allow-Origin: *` if your application requires cookies or authentication credentials (using `credentials: true`). Browsers will explicitly block this combination for security reasons.
@@ -168,7 +168,7 @@ app.listen(3000, () => console.log('Secure server running'));
 
 ---
 
-## Ringkasan Akhir
+## Conclusion
 
 * SOP (Same-Origin Policy) blocks frontend applications from calling backend APIs on different domains by default.
 * CORS is the standard way to relax this policy securely.
@@ -178,7 +178,7 @@ app.listen(3000, () => console.log('Secure server running'));
 
 ---
 
-## Langkah Belajar Berikutnya
+## Next Steps
 
 Now that your API can safely communicate with frontend applications, you are ready to learn about:
 
@@ -186,11 +186,3 @@ Now that your API can safely communicate with frontend applications, you are rea
 * **Express JS Security Best Practices:** Dive deeper into protecting your server with tools like Helmet and Rate Limiting.
 
 ---
-
-## Metadata
-
-* Level: Beginner
-* Topik utama: Express JS
-* Topik terkait: Security, Middleware, Web Browsers
-* Kata kunci: express, cors, api, cross-origin, security
-* Estimasi waktu baca: 10 menit

@@ -179,14 +179,14 @@ app.listen(PORT, () => {
 });
 ```
 
-## Insight Penting
+## Key Insights
 
 - **Strict Mode:** Always enable `"strict": true` in your `tsconfig.json`. This forces you to handle potential `null` or `undefined` values and ensures the highest level of type safety.
 - **Middleware Types:** Always type middleware explicitly using `(req: Request, res: Response, next: NextFunction)`.
 - **Avoid `any`:** Refrain from using the `any` type for `req.body` or `req.query`. Instead, define interfaces or use validation libraries like Zod or Joi alongside TypeScript to validate runtime data boundaries.
 - **Runtime Validation:** TypeScript only checks types at compile time. Data coming into your Express app (via POST requests) is untyped at runtime. You still need runtime validation (e.g., using Zod) to ensure the incoming data matches your TypeScript interfaces.
 
-## Ringkasan Akhir
+## Conclusion
 
 - Integrating TypeScript with Express requires installing `@types/express` and configuring `tsconfig.json`.
 - By explicitly typing `Request`, `Response`, and `NextFunction`, you catch errors early and improve developer experience with autocomplete.
@@ -194,16 +194,8 @@ app.listen(PORT, () => {
 - Declaration merging is essential for extending the `Request` object with custom properties like `req.user`.
 - TypeScript provides compile-time safety, but runtime validation is still necessary for incoming request payloads.
 
-## Langkah Belajar Berikutnya
+## Next Steps
 
 - Integrating Zod for runtime data validation in Express.
 - Structuring a scalable TypeScript Express app (Controller, Service, Repository patterns).
 - Setting up Jest with ts-jest for testing TypeScript Express APIs.
-
-## Metadata
-
-- Level: Menengah
-- Topik utama: Express.js, TypeScript
-- Topik terkait: Backend Development, Type Safety, Node.js
-- Kata kunci: Express TypeScript, Type-Safe API, TS Node, Declaration Merging Express
-- Estimasi waktu baca: 10 menit

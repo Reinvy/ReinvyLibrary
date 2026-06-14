@@ -10,13 +10,13 @@ locale: "id"
 
 # Graceful Shutdown di Aplikasi Express JS
 
-## Ringkasan Singkat
+## Ringkasan
 
 Materi ini membahas konsep "Graceful Shutdown" pada aplikasi Express.js. Di sini dijelaskan cara menghentikan *server* Node.js dengan aman, memastikan bahwa semua *request* yang sedang berjalan diselesaikan dan sumber daya eksternal (seperti koneksi *database*) ditutup dengan benar sebelum aplikasi benar-benar mati (*exit*).
 
 ---
 
-## Untuk Siapa Materi Ini
+## Target Audiens
 
 - **Target Pembaca:** *Developer backend* level menengah hingga mahir.
 - **Level:** Menengah (Intermediate).
@@ -31,7 +31,7 @@ Materi ini membahas konsep "Graceful Shutdown" pada aplikasi Express.js. Di sini
 
 ---
 
-## Tujuan Belajar
+## Tujuan Pembelajaran
 
 Setelah membaca materi ini, pembaca akan memahami:
 
@@ -50,7 +50,7 @@ Jika aplikasi Anda berhenti secara tiba-tiba ("hard" shutdown), pengguna yang se
 
 ---
 
-## Materi Inti
+## Konten Inti
 
 ### 1. Apa itu System Signals?
 
@@ -125,7 +125,7 @@ Untuk mengatasinya, versi Node.js modern menyediakan opsi seperti `server.closeA
 
 ---
 
-## Contoh / Ilustrasi
+## Contoh Kode
 
 Bayangkan **Waktu Tutup Restoran**.
 
@@ -147,7 +147,7 @@ Sebuah "hard shutdown" ibarat manajer mematikan semua lampu dan mengusir semua o
 
 ---
 
-## Ringkasan Akhir
+## Kesimpulan
 
 - *Graceful shutdown* mencegah gangguan pada pengguna dan korupsi data ketika *server* dihentikan.
 - Node.js mendengarkan sinyal dari OS seperti `SIGTERM` dan `SIGINT`.
@@ -156,18 +156,10 @@ Sebuah "hard shutdown" ibarat manajer mematikan semua lampu dan mengusir semua o
 
 ---
 
-## Langkah Belajar Berikutnya
+## Langkah Berikutnya
 
 - Pelajari cara mengimplementasikan antrean pemrosesan tugas latar belakang (*background job processing queues*, seperti BullMQ) yang mendukung jeda dengan aman (*graceful pausing*).
 - [Deploying Express JS Applications to Production](Deploying%20Express%20JS%20Applications%20to%20Production.md)
 - [Dockerizing Express JS Applications](Dockerizing%20Express%20JS%20Applications.md)
 
 ---
-
-## Metadata
-
-- **Level:** Menengah (Intermediate)
-- **Topik utama:** Express.js, Deployment, Keandalan (Reliability)
-- **Topik terkait:** Process Management, Node.js Events, DevOps
-- **Kata kunci:** graceful shutdown, sigterm, sigint, server close, express deployment
-- **Estimasi waktu baca:** 7 - 10 menit

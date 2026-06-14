@@ -10,11 +10,11 @@ locale: "id"
 
 # Menata Struktur Aplikasi Express.js yang Skalabel: MVC dan Service Layer
 
-## Ringkasan Singkat
+## Ringkasan
 
 Materi ini membahas cara menata struktur aplikasi Express.js yang terus berkembang menggunakan pola arsitektur Model-View-Controller (MVC) yang diperkuat dengan *Service Layer*. Anda akan belajar cara memisahkan routing, logika bisnis, dan akses database untuk menciptakan arsitektur backend yang mudah dipelihara, mudah diuji, dan skalabel.
 
-## Untuk Siapa Materi Ini
+## Target Audiens
 
 - **Target pembaca:** Pengembang web tingkat menengah yang sedang membangun API dengan Express.js.
 - **Level:** Menengah (Intermediate).
@@ -25,7 +25,7 @@ Materi ini membahas cara menata struktur aplikasi Express.js yang terus berkemba
 - Telah menyelesaikan [Memahami Routing dan Middleware Dasar di Express.js](Basic%20Routing%20and%20Middleware%20in%20Express_ID.md).
 - Pemahaman dasar tentang asynchronous JavaScript dan RESTful API.
 
-## Tujuan Belajar
+## Tujuan Pembelajaran
 
 Setelah menyelesaikan materi ini, Anda akan mampu:
 
@@ -41,7 +41,7 @@ Saat baru mulai menggunakan Express.js, sangat umum untuk menaruh semuanya—val
 
 Dengan mengadopsi arsitektur terstruktur seperti MVC bersama dengan *Service Layer*, Anda membagi tanggung jawab menjadi bagian-bagian yang jelas dan berbeda. *Controllers* menangani HTTP request, *Services* menangani "aturan bisnis", dan *Models* menangani penyimpanan data. Pemisahan fokus (*separation of concerns*) ini adalah rahasia untuk membangun aplikasi Node.js berskala besar yang siap untuk *enterprise*.
 
-## Materi Inti
+## Konten Inti
 
 ### 1. Masalah dengan "Fat Controllers"
 
@@ -181,7 +181,7 @@ router.post('/register', userController.register);
 module.exports = router;
 ```
 
-## Contoh / Ilustrasi
+## Contoh Kode
 
 Bayangkan Anda sedang menjalankan sebuah restoran:
 
@@ -196,24 +196,16 @@ Bayangkan Anda sedang menjalankan sebuah restoran:
 - **Mudah Diuji (*Testability*):** Anda dapat dengan mudah melakukan *unit test* pada lapisan Service dengan mengoper variabel biasa (misal: `registerUser('test@test.com', 'password')`) tanpa memerlukan alat bantu seperti Supertest untuk memalsukan HTTP request.
 - **Jaga Controller Tetap Ramping:** Aturan praktis yang baik adalah controller jarang sekali boleh melebihi 10-15 baris kode. Jika sebuah controller melakukan manipulasi data yang berat, segera pindahkan logika tersebut turun ke lapisan Service.
 
-## Ringkasan Akhir
+## Kesimpulan
 
 - "Fat controllers" mencampurkan logika HTTP, aturan bisnis, dan query database, membuat kode sulit dipelihara dan diuji.
 - Lapisan Controller seharusnya hanya menangani HTTP request dan response.
 - Lapisan Service seharusnya berisi logika bisnis murni, terpisah dari kerangka kerja web (Express).
 - Menata aplikasi Anda ke dalam Routes, Controllers, Services, dan Models menjamin pemisahan fokus dan skalabilitas jangka panjang.
 
-## Langkah Belajar Berikutnya
+## Langkah Berikutnya
 
 Sekarang setelah aplikasi Anda terstruktur dengan baik, Anda disarankan untuk mempelajari:
 
 - [Data Validation and Error Handling in Express](Data%20Validation%20and%20Error%20Handling%20in%20Express_ID.md) (Untuk memindahkan validasi dari controller menggunakan middleware seperti Joi atau Zod).
 - [Testing Express API with Jest and Supertest](Testing%20Express%20API%20with%20Jest%20and%20Supertest_ID.md) (Untuk melihat betapa mudahnya menguji fungsi-fungsi service yang sudah dipisahkan).
-
-## Metadata
-
-- **Level:** Menengah (Intermediate)
-- **Topik utama:** Express.js, Backend Architecture
-- **Topik terkait:** MVC, Service Layer, Refactoring, Clean Code
-- **Kata kunci:** express folder structure, express mvc, express service layer, node architecture, fat controller
-- **Estimasi waktu baca:** 10 - 15 menit

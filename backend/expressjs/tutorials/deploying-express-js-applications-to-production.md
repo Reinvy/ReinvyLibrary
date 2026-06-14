@@ -106,28 +106,20 @@ Imagine your Express application is a master chef in a restaurant:
 - **PM2:** The restaurant manager. If the chef accidentally cuts their finger and stops working (a crash), the manager immediately brings in a replacement chef so the kitchen keeps running.
 - **Nginx (Reverse Proxy):** The waiters and the host at the front door. They handle the crowd, check reservations, serve the bread (static files), and only pass the complex orders (API requests) back to the chef.
 
-## Insight Penting
+## Key Insights
 
 - **Never Run Node.js on Port 80 as Root:** Running an Express app on port 80 usually requires root privileges, which is a major security risk. Run Express as a non-root user on a higher port (like 3000) and use Nginx on port 80 to proxy the traffic.
 - **Cluster Mode:** Node.js is single-threaded. To utilize multi-core processors, you can use PM2's cluster mode (`pm2 start app.js -i max`), which spawns multiple instances of your app to handle more concurrent requests.
 - **Logging:** PM2 handles log rotation, which prevents your server's disk from filling up with massive log files over time.
 
-## Ringkasan Akhir
+## Conclusion
 
 - Set `NODE_ENV=production` to optimize Express.
 - Never hardcode secrets; always use Environment Variables.
 - Use a process manager like PM2 to automatically restart the app on crashes.
 - Place a reverse proxy like Nginx in front of Express to handle load balancing, SSL, and static files safely.
 
-## Langkah Belajar Berikutnya
+## Next Steps
 
 - Learn how to set up CI/CD pipelines (e.g., GitHub Actions) to automate deployments.
 - Explore containerization with Docker to deploy your Express application consistently across any environment.
-
-## Metadata
-
-- Level: Intermediate
-- Topik utama: Express.js, Backend Development, Deployment
-- Topik terkait: PM2, Nginx, Production
-- Kata kunci: express deployment, pm2, reverse proxy, nginx, node environment
-- Estimasi waktu baca: 10 - 15 minutes

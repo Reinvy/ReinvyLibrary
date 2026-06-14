@@ -257,7 +257,7 @@ app.listen(3000, () => console.log('Server running on port 3000'));
 
 ---
 
-## Insight Penting
+## Key Insights
 
 * **Memory Storage vs. Disk Storage:** Multer also offers `multer.memoryStorage()`, which keeps the file data as a Buffer in memory (`req.file.buffer`). This is useful if you intend to immediately upload the file to a cloud storage service (like AWS S3 or Cloudinary) without saving it locally first. However, use memory storage cautiously with large files, as it can quickly consume your server's RAM.
 * **Never Trust User Input:** Always validate both the file size and the MIME type. Do not rely solely on the file extension, as a malicious user could rename an executable script (`malware.exe`) to an image (`malware.jpg`) to bypass simple checks.
@@ -267,7 +267,7 @@ app.listen(3000, () => console.log('Server running on port 3000'));
 
 ---
 
-## Ringkasan Akhir
+## Conclusion
 
 * Multer is the standard middleware for parsing `multipart/form-data` in Express.js.
 * It facilitates handling file uploads from HTML forms or API clients.
@@ -277,18 +277,10 @@ app.listen(3000, () => console.log('Server running on port 3000'));
 
 ---
 
-## Langkah Belajar Berikutnya
+## Next Steps
 
 * Explore integrating Multer with cloud storage solutions like AWS S3 using `multer-s3`.
 * Learn how to process uploaded images (e.g., resizing, cropping) using libraries like Sharp before saving them.
 * Study advanced security practices for handling user uploads, including malware scanning.
 
 ---
-
-## Metadata
-
-* Level: Intermediate
-* Topik utama: Express.js, File Uploads
-* Topik terkait: Middleware, Form Data, Security
-* Kata kunci: multer, express file upload, multipart/form-data, node.js upload
-* Estimasi waktu baca: 10 menit

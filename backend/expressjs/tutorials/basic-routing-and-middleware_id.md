@@ -10,11 +10,11 @@ locale: "id"
 
 # Memahami Routing dan Middleware Dasar di Express.js
 
-## Ringkasan Singkat
+## Ringkasan
 
 Materi ini membahas konsep fundamental dalam Express.js: *Routing* (pengaturan rute) dan *Middleware* (perantara). Anda akan belajar bagaimana mengatur alur data dari *request* masuk hingga *response* keluar, serta bagaimana menyisipkan logika tambahan di tengah-tengah proses tersebut dengan cara yang terstruktur.
 
-## Untuk Siapa Materi Ini
+## Target Audiens
 
 - **Target pembaca:** Pengembang web pemula hingga menengah.
 - **Level:** Dasar (Foundation).
@@ -25,7 +25,7 @@ Materi ini membahas konsep fundamental dalam Express.js: *Routing* (pengaturan r
 - Telah mengikuti materi [Install Express JS](Install%20Express%20JS.md) dan berhasil menjalankan server Express.js pertama.
 - Memahami konsep dasar HTTP Method (GET, POST, PUT, DELETE).
 
-## Tujuan Belajar
+## Tujuan Pembelajaran
 
 Setelah menyelesaikan materi ini, Anda akan mampu:
 
@@ -41,7 +41,7 @@ Dalam membangun aplikasi web yang nyata, Anda tidak akan menaruh semua logika ko
 
 Selanjutnya, seringkali Anda perlu melakukan pengecekan sebelum sebuah rute dieksekusi (misal: "Apakah user ini sudah login?", "Apakah data yang dikirim valid?"). Alih-alih mengulang kode pengecekan di setiap rute, Express.js menggunakan konsep **Middleware**. Menguasai dua hal ini adalah kunci untuk membangun API dan aplikasi Express yang *scalable* dan rapi.
 
-## Materi Inti
+## Konten Inti
 
 ### 1. Apa itu Routing?
 
@@ -154,7 +154,7 @@ app.get('/data-rahasia', (req, res) => {
 });
 ```
 
-## Contoh / Ilustrasi
+## Contoh Kode
 
 Bayangkan Anda sedang memasuki sebuah gedung perkantoran mewah (Aplikasi Express Anda).
 
@@ -169,24 +169,16 @@ Bayangkan Anda sedang memasuki sebuah gedung perkantoran mewah (Aplikasi Express
 - **Urutan itu Krusial**: Express mengeksekusi *middleware* secara berurutan (*top-to-bottom*) sesuai urutan Anda menuliskan `app.use()`. Pastikan *middleware* keamanan (seperti verifikasi token) diletakkan *sebelum* rute yang memerlukan perlindungan.
 - **Keamanan Informasi**: Selalu ikuti prinsip "Log detail internally, return generic safely" untuk menghindari bocornya arsitektur sistem Anda ke dunia luar.
 
-## Ringkasan Akhir
+## Kesimpulan
 
 - *Routing* digunakan untuk mengarahkan permintaan dari *client* (URL & Method) ke kode yang tepat (*handler*).
 - `express.Router()` membantu merapikan aplikasi dengan memecah rute menjadi modul-modul terpisah.
 - *Middleware* adalah fungsi yang berada di tengah-tengah alur request/response, berguna untuk log, autentikasi, modifikasi *request*, dan sebagainya.
 - Penanganan error yang aman wajib dilakukan di sisi server untuk melindungi informasi sensitif.
 
-## Langkah Belajar Berikutnya
+## Langkah Berikutnya
 
 Setelah Anda memahami Routing dan Middleware, Anda siap untuk:
 
 - [Integrasi Express dengan Multer](Express%20With%20Multer.md) (Untuk belajar mengunggah file).
 - [Integrasi Express dengan Prisma](Express%20With%20Prisma.md) (Untuk menghubungkan API Anda dengan Database).
-
-## Metadata
-
-- **Level:** Dasar (Foundation)
-- **Topik utama:** Express.js, Backend Development
-- **Topik terkait:** Routing, Middleware, Web API
-- **Kata kunci:** express router, express middleware, next function, node.js, api error handling
-- **Estimasi waktu baca:** 7 - 10 menit

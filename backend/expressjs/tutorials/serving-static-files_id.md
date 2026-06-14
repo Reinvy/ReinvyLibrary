@@ -10,11 +10,11 @@ locale: "id"
 
 # Menyajikan File Statis (Static Files) di Express.js
 
-## Ringkasan Singkat
+## Ringkasan
 
 Tutorial ini membahas cara menyajikan file statis (seperti gambar, file CSS, dan skrip JavaScript) menggunakan middleware bawaan `express.static` di Express.js. Anda akan mempelajari cara mengonfigurasi direktori statis, mengatur prefiks path virtual, dan menangani path file secara benar dan aman.
 
-## Untuk Siapa Materi Ini
+## Target Audiens
 
 - **Target Audience:** Developer backend pemula atau developer frontend yang sedang mempelajari Node.js.
 - **Level:** Pemula.
@@ -25,7 +25,7 @@ Tutorial ini membahas cara menyajikan file statis (seperti gambar, file CSS, dan
 - Pengetahuan tentang konsep dasar Express.js (misalnya, membuat aplikasi, routing).
 - Familiar dengan konsep middleware di Express.js.
 
-## Tujuan Belajar
+## Tujuan Pembelajaran
 
 Setelah menyelesaikan materi ini, Anda akan dapat:
 
@@ -40,7 +40,7 @@ Saat membangun aplikasi web, Anda sering kali perlu mengirimkan file secara lang
 
 Secara default, aplikasi Express tidak menyajikan file apa pun. Jika Anda mencoba mengakses file di direktori proyek Anda melalui browser web, Express akan mengembalikan error `404 Not Found` karena tidak ada rute yang menangani permintaan spesifik tersebut. Menulis rute satu per satu untuk mengirimkan setiap file akan sangat melelahkan dan tidak efisien. Untuk mengatasi ini, Express menyediakan middleware bawaan yang disebut `express.static` yang secara efisien menyajikan file dari direktori yang ditentukan.
 
-## Materi Inti
+## Konten Inti
 
 ### 1. Apa itu `express.static`?
 
@@ -105,7 +105,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'files')));
 ```
 
-## Contoh / Ilustrasi
+## Contoh Kode
 
 Bayangkan server Anda sebagai seorang **Pustakawan**.
 
@@ -119,7 +119,7 @@ Bayangkan server Anda sebagai seorang **Pustakawan**.
 - **Performa:** Meskipun `express.static` sangat baik untuk penggunaan dasar dan aplikasi kecil, di lingkungan produksi dengan lalu lintas tinggi, sangat disarankan untuk menggunakan reverse proxy seperti **Nginx** atau Content Delivery Network (**CDN**) untuk menyajikan file statis. Mereka secara signifikan lebih cepat dan mengurangi beban pada server Node.js Anda.
 - **File Index:** Secara default, `express.static` akan mencari file `index.html` di root direktori statis jika pengguna meminta path direktori (misalnya, `/`).
 
-## Ringkasan Akhir
+## Kesimpulan
 
 - `express.static` adalah middleware bawaan untuk menyajikan file seperti gambar, CSS, dan JS.
 - Anda tidak menyertakan nama direktori di URL saat mengakses file.
@@ -127,17 +127,9 @@ Bayangkan server Anda sebagai seorang **Pustakawan**.
 - Selalu gunakan `path.join(__dirname, 'nama_folder')` untuk menghindari error resolusi path.
 - Simpan file statis Anda di folder terpisah dan khusus untuk keamanan.
 
-## Langkah Belajar Berikutnya
+## Langkah Berikutnya
 
 Setelah menguasai penyajian file statis, Anda dapat melanjutkan untuk mempelajari:
 
 - [Understanding the Express JS Request Lifecycle_ID](Understanding%20the%20Express%20JS%20Request%20Lifecycle_ID.md) untuk memahami bagaimana file statis masuk ke dalam alur permintaan.
 - [Handling File Uploads in Express JS with Multer_ID](Handling%20File%20Uploads%20in%20Express%20JS%20with%20Multer_ID.md) untuk mempelajari cara menerima file dari pengguna dan menyimpannya secara dinamis.
-
-## Metadata
-
-- **Level:** Pemula
-- **Topik utama:** Express.js, Backend Development
-- **Topik terkait:** Aset Statis, Middleware, Node.js Path
-- **Kata kunci:** express static, menyajikan file, aset, folder public
-- **Estimasi waktu baca:** 5 - 7 menit

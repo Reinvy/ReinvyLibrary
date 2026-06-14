@@ -10,13 +10,13 @@ locale: "id"
 
 # Autentikasi dan Otorisasi Menggunakan JWT di Express.js
 
-## Ringkasan Singkat
+## Ringkasan
 
 Materi ini membahas cara mengamankan aplikasi Express.js menggunakan JSON Web Token (JWT). Anda akan belajar bagaimana mengautentikasi pengguna saat login dan mengotorisasi akses ke rute-rute yang dilindungi.
 
 ---
 
-## Untuk Siapa Materi Ini
+## Target Audiens
 
 * Target pembaca: Developer Backend, Fullstack Developer
 * Level pembaca: Menengah (Intermediate)
@@ -33,7 +33,7 @@ Sebaiknya Anda sudah memahami:
 
 ---
 
-## Tujuan Belajar
+## Tujuan Pembelajaran
 
 Setelah membaca materi ini, Anda akan memahami:
 
@@ -50,7 +50,7 @@ Dalam pengembangan aplikasi web modern, keamanan adalah aspek yang sangat krusia
 
 ---
 
-## Materi Inti
+## Konten Inti
 
 ### 1. Autentikasi vs Otorisasi
 
@@ -80,7 +80,7 @@ Sebuah JWT terdiri dari tiga bagian, yang dipisahkan oleh titik (`.`):
 
 ---
 
-## Contoh / Ilustrasi
+## Contoh Kode
 
 ### Instalasi Package
 
@@ -185,7 +185,7 @@ app.listen(3000, () => console.log('Server berjalan di port 3000'));
 
 ---
 
-## Ringkasan Akhir
+## Kesimpulan
 
 * Autentikasi adalah verifikasi identitas, otorisasi adalah verifikasi hak akses.
 * JWT (JSON Web Token) digunakan untuk mentransfer identitas antar entitas dengan aman dalam bentuk token terenkripsi (di bagian signature).
@@ -195,18 +195,10 @@ app.listen(3000, () => console.log('Server berjalan di port 3000'));
 
 ---
 
-## Langkah Belajar Berikutnya
+## Langkah Berikutnya
 
 * Implementasi konsep *Refresh Token* untuk memperpanjang sesi JWT dengan aman.
 * Integrasikan proses autentikasi JWT dengan ORM seperti Prisma untuk memverifikasi data riil dari database.
 * Mempelajari cara hashing password dengan bcrypt sebelum memvalidasinya untuk autentikasi.
 
 ---
-
-## Metadata
-
-* Level: Intermediate
-* Topik utama: Express.js, Authentication, Security
-* Topik terkait: Middleware, JWT, Authorization
-* Kata kunci: jwt, json web token, login, express, middleware, keamanan api
-* Estimasi waktu baca: 10 menit

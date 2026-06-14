@@ -99,29 +99,21 @@ app.listen(PORT, () => {
 });
 ```
 
-## Insight Penting
+## Key Insights
 
 - **Keep Liveness Checks Simple:** Never query a database in a liveness check. If the database goes down, all your app instances will fail their liveness checks and be restarted simultaneously, causing a massive outage (cascading failure).
 - **Timeouts Matter:** Ensure your probes respond quickly. If a probe takes too long, orchestrators will treat it as a failure. Use strict timeouts on database checks within the readiness probe.
 - **Security:** Consider securing your health endpoints or exposing them on a different internal port so they aren't accessible to the public internet, preventing potential Denial of Service (DoS) attacks on the probe itself.
 
-## Ringkasan Akhir
+## Conclusion
 
 - Health checks are essential for container orchestration and load balancing.
 - **Liveness probes** determine if the app needs to be restarted.
 - **Readiness probes** determine if the app can safely accept traffic.
 - Design liveness probes to be fast and isolated, while readiness probes should verify critical dependencies like databases.
 
-## Langkah Belajar Berikutnya
+## Next Steps
 
 - Graceful Shutdown in Express JS Applications.
 - Dockerizing Express JS Applications.
 - Deploying Express JS Applications to Production.
-
-## Metadata
-
-- Level: Intermediate
-- Topik utama: Express JS
-- Topik terkait: Deployment, DevOps, Containerization, Kubernetes
-- Kata kunci: health check, liveness probe, readiness probe, express health, kubernetes, docker
-- Estimasi waktu baca: 8 menit

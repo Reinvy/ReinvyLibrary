@@ -10,11 +10,11 @@ locale: "id"
 
 # Teknik Optimasi Performa di Express JS
 
-## Ringkasan Singkat
+## Ringkasan
 
 Materi ini membahas strategi esensial untuk mengoptimalkan performa aplikasi Express.js Anda. Anda akan mempelajari teknik-teknik praktis seperti mengaktifkan kompresi Gzip, mencegah *blocking* pada *event loop*, memanfaatkan modul *cluster* Node.js, dan mengimplementasikan *caching* untuk membangun sistem *backend* yang cepat dan skalabel.
 
-## Untuk Siapa Materi Ini
+## Target Audiens
 
 - **Target Pembaca:** *Developer backend* tingkat menengah hingga mahir.
 - **Level:** Menengah (Intermediate).
@@ -25,7 +25,7 @@ Materi ini membahas strategi esensial untuk mengoptimalkan performa aplikasi Exp
 - Pengetahuan dasar tentang *routing* dan *middleware* di Express.js.
 - Familiar dengan konsep *Event Loop* pada Node.js.
 
-## Tujuan Belajar
+## Tujuan Pembelajaran
 
 Setelah menyelesaikan materi ini, Anda akan dapat:
 
@@ -40,7 +40,7 @@ Seiring berkembangnya aplikasi Express.js Anda dan semakin banyaknya lalu lintas
 
 Secara *default*, Node.js bersifat *single-threaded*, yang berarti satu inti CPU menangani semua *request* yang masuk. Jika Anda tidak mengoptimalkan cara aplikasi memproses data atau mengelola sumber dayanya, komputasi berat yang sedikit saja dapat membuat *server* Anda berhenti bekerja. Dengan menerapkan teknik optimasi performa, Anda memastikan aplikasi tetap responsif, selalu tersedia (*highly available*), dan efisien secara biaya di bawah beban yang berat.
 
-## Materi Inti
+## Konten Inti
 
 ### 1. Aktifkan Kompresi Gzip
 
@@ -105,7 +105,7 @@ pm2 start app.js -i max
 
 Seringkali, masalah kelambatan (bottleneck) bukan berada di Node.js, melainkan di database. Pastikan Anda menggunakan *index* dengan benar, hanya memilih (*select*) *field* yang Anda butuhkan (contoh: `SELECT name, email` alih-alih `SELECT *`), dan hindari *join* yang terlalu kompleks atau masalah *N+1 query*.
 
-## Contoh / Ilustrasi
+## Contoh Kode
 
 Bayangkan aplikasi Express Anda adalah sebuah restoran cepat saji yang ramai.
 
@@ -120,7 +120,7 @@ Bayangkan aplikasi Express Anda adalah sebuah restoran cepat saji yang ramai.
 - **Node.js Bukan untuk Komputasi Berat:** Jika aplikasi Anda melibatkan pemrosesan gambar yang berat, *encoding* video, atau *machine learning*, pindahkan tugas-tugas ini ke *microservice* yang ditulis dalam bahasa yang lebih cocok untuk itu (seperti Python atau Go), atau gunakan *background jobs*.
 - **Jaga Dependency Tetap Ringan:** Folder `node_modules` yang besar dan *library* yang berat dapat memperlambat waktu *startup* dan mengonsumsi lebih banyak memori. Gunakan hanya *library* yang benar-benar Anda butuhkan.
 
-## Ringkasan Akhir
+## Kesimpulan
 
 - Gunakan *middleware* `compression` untuk mengurangi ukuran muatan data (*payload*).
 - Hindari fungsi sinkron untuk menjaga *event loop* tetap berjalan lancar tanpa hambatan.
@@ -128,16 +128,8 @@ Bayangkan aplikasi Express Anda adalah sebuah restoran cepat saji yang ramai.
 - Implementasikan mekanisme *caching* (seperti Redis) untuk data yang sering diakses.
 - Lakukan *profiling* dan pantau aplikasi Anda untuk menemukan *bottleneck* yang sebenarnya.
 
-## Langkah Belajar Berikutnya
+## Langkah Berikutnya
 
 - [Caching in Express JS APIs with Redis_ID](Caching%20in%20Express%20JS%20APIs%20with%20Redis_ID.md)
 - [Handling Background Jobs in Express JS with BullMQ and Redis_ID](Handling%20Background%20Jobs%20in%20Express%20JS%20with%20BullMQ%20and%20Redis_ID.md)
 - [Deploying Express JS Applications to Production_ID](Deploying%20Express%20JS%20Applications%20to%20Production_ID.md)
-
-## Metadata
-
-- Level: Menengah
-- Topik utama: Express.js, Performance
-- Topik terkait: Node.js Cluster, PM2, Gzip, Caching
-- Kata kunci: express performance, node.js optimization, pm2 cluster, event loop, express compression
-- Estimasi waktu baca: 8 - 12 menit

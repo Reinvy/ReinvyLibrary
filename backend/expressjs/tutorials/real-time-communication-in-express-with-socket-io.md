@@ -143,14 +143,14 @@ On your frontend, you would connect to this server:
 </script>
 ```
 
-## Insight Penting
+## Key Insights
 
 * **Don't block the event loop:** Just like standard Node.js, heavy computations inside a socket event handler will block all other real-time messages.
 * **Handling Disconnects gracefully:** Clients will drop connections due to network issues. Always assume connections are fragile. Design your system so that when a client reconnects, it can fetch missed state (e.g., via a standard REST API call) rather than relying solely on real-time events.
 * **Scaling requires Adapters:** If you run multiple instances of your Node server (e.g., using a Load Balancer or Docker Swarm), a client connected to Server A won't receive messages broadcasted from Server B. You must use a Redis Adapter (`@socket.io/redis-adapter`) to sync events across multiple server instances.
 * **Security:** Validate all data coming through `socket.on` just as rigorously as you would validate an incoming HTTP POST request. WebSockets are vulnerable to injection and malicious payloads.
 
-## Ringkasan Akhir
+## Conclusion
 
 * WebSockets provide persistent, real-time communication, solving the inefficiencies of HTTP polling.
 * Socket.IO simplifies WebSockets by providing fallbacks, auto-reconnection, and an easy event-based API.
@@ -158,16 +158,8 @@ On your frontend, you would connect to this server:
 * Real-time communication relies on emitting (`emit`) and listening to (`on`) specific event strings.
 * Scaling Socket.IO beyond a single server requires a message broker like Redis.
 
-## Langkah Belajar Berikutnya
+## Next Steps
 
 * Explore Socket.IO "Rooms" and "Namespaces" for building private chat rooms or multi-tenant apps.
 * Learn about implementing authentication with Socket.IO using JWTs.
 * Read the tutorial on caching and scaling with Redis to understand how to implement the Redis Adapter for Socket.IO.
-
-## Metadata
-
-* Level: Intermediate
-* Topik utama: Real-Time Communication
-* Topik terkait: WebSockets, Express.js, Event-Driven Architecture
-* Kata kunci: express, socket.io, websocket, real-time, event, broadcast
-* Estimasi waktu baca: 15 menit

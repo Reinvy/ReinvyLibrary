@@ -12,11 +12,11 @@ locale: "id"
 
 Dockerizing Aplikasi Express JS
 
-## Ringkasan Singkat
+## Ringkasan
 
 Materi ini membahas cara melakukan containerization (mengemas) aplikasi Express.js menggunakan Docker. Anda akan mempelajari cara menulis `Dockerfile` yang dioptimalkan, memanfaatkan `.dockerignore` untuk menjaga ukuran image tetap kecil, dan memahami manfaat utama menjalankan Express di dalam lingkungan container yang terisolasi.
 
-## Untuk Siapa Materi Ini
+## Target Audiens
 
 * Target pembaca: Developer backend level menengah yang ingin mempelajari cara merilis aplikasi Express mereka secara konsisten di berbagai lingkungan.
 * Level pembaca: Menengah (Intermediate).
@@ -27,7 +27,7 @@ Materi ini membahas cara melakukan containerization (mengemas) aplikasi Express.
 * Familiar dengan terminal dan perintah dasar Node.js.
 * Telah membaca dasar-dasar deployment pada tutorial sebelumnya (seperti penggunaan PM2 dan Nginx).
 
-## Tujuan Belajar
+## Tujuan Pembelajaran
 
 Setelah membaca materi ini, pembaca akan memahami:
 
@@ -43,7 +43,7 @@ Pernahkah Anda mendengar kalimat, "Di laptop saya jalan kok!"? Ini adalah masala
 
 Melakukan Dockerize pada aplikasi Express Anda berarti mengemas aplikasi, dependensinya, Node runtime, dan library OS yang diperlukan ke dalam satu paket tidak dapat diubah (immutable) yang disebut image. Hal ini menjamin bahwa aplikasi Anda akan berjalan dengan cara yang sama persis di laptop Anda, server testing, maupun lingkungan production. Ini adalah fondasi dari deployment cloud-native modern dan pipeline CI/CD.
 
-## Materi Inti
+## Konten Inti
 
 ### 1. Apa itu Docker?
 
@@ -113,7 +113,7 @@ docker run -p 3000:3000 -d my-express-app
 
 *(Flag `-p` memetakan port 3000 di host lokal Anda ke port 3000 di dalam container. Flag `-d` menjalankan container dalam mode detached/di latar belakang.)*
 
-## Contoh / Ilustrasi
+## Contoh Kode
 
 Bayangkan Anda sedang pindah rumah.
 
@@ -128,23 +128,15 @@ Dalam istilah teknis, aplikasi Express adalah furnitur Anda, Node runtime dan de
 * **Keamanan (Non-Root User):** Secara bawaan (default), Docker menjalankan container sebagai user `root`. Ini merupakan risiko keamanan. Di production, praktik terbaik adalah menjalankan aplikasi Node Anda sebagai pengguna tanpa hak istimewa (unprivileged user). Image resmi Node sudah menyertakan user bernama `node`. Anda sebaiknya menambahkan `USER node` ke Dockerfile Anda sebelum instruksi `CMD`.
 * **Image Alpine:** Menggunakan `node:18-alpine` daripada `node:18` standar secara signifikan mengurangi ukuran akhir image Anda (seringkali dari ~1GB turun menjadi ~150MB), yang menghasilkan deployment yang lebih cepat dan mengurangi biaya penyimpanan.
 
-## Ringkasan Akhir
+## Kesimpulan
 
 * Melakukan Dockerize pada aplikasi Express memastikan aplikasi berjalan identik di semua environment.
 * File `.dockerignore` wajib ada untuk mencegah pengunggahan `node_modules` yang masif dan potensi konflik dependensi.
 * `Dockerfile` yang terstruktur dengan baik memanfaatkan layer caching dengan menyalin `package.json` sebelum kode sumber aplikasi.
 * Gunakan image Node berbasis Alpine Linux untuk ukuran container yang lebih kecil dan lebih aman.
 
-## Langkah Belajar Berikutnya
+## Langkah Berikutnya
 
 * Pelajari cara menggunakan Docker Compose untuk menjalankan aplikasi Express Anda berdampingan dengan database dalam container seperti PostgreSQL atau MongoDB.
 * Eksplorasi orkestrasi banyak container dalam sebuah cluster menggunakan Kubernetes.
 * Implementasikan pipeline CI/CD untuk secara otomatis mem-build dan melakukan push image Docker Anda ke registry seperti Docker Hub atau GitHub Container Registry.
-
-## Metadata
-
-* Level: Menengah
-* Topik utama: Deployment, Docker, Express.js
-* Topik terkait: Containerization, DevOps, Arsitektur Backend
-* Kata kunci: docker, dockerfile, container express, dockerignore, alpine node
-* Estimasi waktu baca: 12 - 18 menit

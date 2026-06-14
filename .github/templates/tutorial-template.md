@@ -2,7 +2,7 @@
 title: "Tutorial Title"
 description: "A short 1-2 sentence summary of what this tutorial covers."
 category: "backend"
-technology: "express-js"
+technology: "expressjs"
 difficulty: "intermediate"
 type: "tutorial"
 locale: "en"
@@ -57,6 +57,17 @@ const express = require('express');
 const app = express();
 // ...
 ```
+
+## Key Insights
+
+- Best practice 1: Description and rationale.
+- Gotcha or architectural warning: Description and rationale.
+- Performance consideration: Description and rationale.
+
+## Next Steps
+
+- Suggested next topic to learn.
+- Link to related syllabus or advanced guide.
 
 ## Conclusion
 

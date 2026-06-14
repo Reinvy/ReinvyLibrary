@@ -171,7 +171,7 @@ Imagine a nightclub.
 
 ---
 
-## Insight Penting
+## Key Insights
 
 * **Never store sensitive data in cookies:** Passwords or personal identifiable information (PII) should never be stored in plain cookies because they are sent in clear text (unless encrypted) and can be intercepted.
 * **HttpOnly is mandatory for auth cookies:** Always set `httpOnly: true` for cookies containing Session IDs or JWTs. This prevents malicious JavaScript (XSS attacks) from reading the cookie.
@@ -181,7 +181,7 @@ Imagine a nightclub.
 
 ---
 
-## Ringkasan Akhir
+## Conclusion
 
 * **Cookies** are small data chunks stored in the browser, sent automatically with requests.
 * **Sessions** store user data securely on the server, referenced by a Session ID stored in a cookie.
@@ -192,18 +192,10 @@ Imagine a nightclub.
 
 ---
 
-## Langkah Belajar Berikutnya
+## Next Steps
 
 * Implement a Redis session store with `connect-redis`.
 * Explore Cross-Site Request Forgery (CSRF) and how to protect against it.
 * Compare Session-based Authentication with JSON Web Tokens (JWT) to understand the trade-offs.
 
 ---
-
-## Metadata
-
-* Level: Intermediate
-* Topik utama: Express JS
-* Topik terkait: Authentication, Security, State Management
-* Kata kunci: Cookies, Session, express-session, cookie-parser, State, Authentication
-* Estimasi waktu baca: 10 menit

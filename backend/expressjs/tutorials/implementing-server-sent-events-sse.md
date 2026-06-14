@@ -141,30 +141,22 @@ To consume this stream on the frontend, you use the native `EventSource` API.
 </html>
 ```
 
-## Insight Penting
+## Key Insights
 
 - **Connection Limits:** Browsers typically limit the number of concurrent SSE connections to a single domain (often 6). For applications requiring many simultaneous streams, consider using HTTP/2 multiplexing, which alleviates this limit.
 - **Data Format:** Always ensure your payload string begins with `data:` and ends with `\n\n`. You can also specify event types using `event: <type>\n` before the data line.
 - **Proxies and Timeouts:** Some load balancers or proxies (like Nginx) might buffer responses or drop idle connections. You may need to configure proxy buffering (`proxy_buffering off;` in Nginx) or implement "heartbeat" pings (empty comments like `:\n\n`) to keep the connection alive.
 - **One-Way Traffic:** Remember, if the client needs to send data back to the server, it must use standard AJAX/fetch requests alongside the SSE stream.
 
-## Ringkasan Akhir
+## Conclusion
 
 - SSE provides a simple, standard way to stream data from the server to the client over a standard HTTP connection.
 - It requires setting specific headers (`text/event-stream`, `keep-alive`, `no-cache`).
 - It is significantly simpler to implement than WebSockets for unidirectional data flows and includes built-in browser features like automatic reconnection.
 - Proper cleanup (listening to the `close` event) is vital to prevent memory leaks on the server.
 
-## Langkah Belajar Berikutnya
+## Next Steps
 
 - Real-Time Communication in Express with Socket.IO (To understand the bidirectional alternative).
 - Scaling Express JS Applications (To learn how to handle many concurrent long-lived connections).
 - Implementing Rate Limiting and API Throttling in Express JS (To protect your SSE endpoints).
-
-## Metadata
-
-- Level: Intermediate
-- Topik utama: Real-Time Communication
-- Topik terkait: Express.js, HTTP Protocols, Event Streams
-- Kata kunci: express js, sse, server sent events, real-time, event-stream
-- Estimasi waktu baca: 10 menit

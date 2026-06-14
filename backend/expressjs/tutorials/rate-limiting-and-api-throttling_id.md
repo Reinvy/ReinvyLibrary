@@ -10,13 +10,13 @@ locale: "id"
 
 # Rate Limiting dan API Throttling di Express JS
 
-## Ringkasan Singkat
+## Ringkasan
 
 Tutorial ini membahas konsep *rate limiting* dan API *throttling* di Express.js. Anda akan belajar cara melindungi API dari penyalahgunaan, mengelola lonjakan trafik, dan memastikan keadilan penggunaan antar klien dengan menerapkan strategi pembatasan yang kuat menggunakan *tools* seperti `express-rate-limit` dan Redis.
 
 ---
 
-## Untuk Siapa Materi Ini
+## Target Audiens
 
 * Backend Developer yang membangun API publik atau bertrafik tinggi.
 * Developer Express.js yang ingin meningkatkan keamanan dan ketahanan aplikasi mereka.
@@ -33,7 +33,7 @@ Tutorial ini membahas konsep *rate limiting* dan API *throttling* di Express.js.
 
 ---
 
-## Tujuan Belajar
+## Tujuan Pembelajaran
 
 Setelah membaca materi ini, Anda akan memahami:
 
@@ -59,7 +59,7 @@ Penerapan pola-pola ini memastikan:
 
 ---
 
-## Materi Inti
+## Konten Inti
 
 ### 1. Bagaimana Rate Limiting Bekerja
 
@@ -86,7 +86,7 @@ Meskipun *library* menyembunyikan kerumitannya, penting untuk mengetahui pola da
 
 ---
 
-## Contoh / Ilustrasi
+## Contoh Kode
 
 ### 1. Basic In-Memory Rate Limiting
 
@@ -207,7 +207,7 @@ const userTierLimiter = rateLimit({
 
 ---
 
-## Ringkasan Akhir
+## Kesimpulan
 
 * *Rate limiting* membatasi berapa banyak *request* yang bisa dilakukan klien, melindungi API Anda dari serangan DDoS, upaya *brute force*, dan pengurasan sumber daya (*resource exhaustion*).
 * `express-rate-limit` adalah *middleware* sederhana dan efektif untuk menerapkan pembatasan.
@@ -216,18 +216,10 @@ const userTierLimiter = rateLimit({
 
 ---
 
-## Langkah Belajar Berikutnya
+## Langkah Berikutnya
 
 * **Express Security:** Pelajari *middleware* keamanan lainnya seperti `helmet` dan konfigurasi CORS.
 * **Integrasi Redis:** Pelajari lebih lanjut tentang penggunaan Redis di Express untuk *caching* respons, bukan hanya *rate limiting*.
 * **Monitoring:** Terapkan proses *logging* dan monitoring untuk melacak kapan batas limit terlewati, yang mana dapat membantu mengidentifikasi pihak jahat (*malicious actors*) atau klien yang membutuhkan *tier* API lebih tinggi.
 
 ---
-
-## Metadata
-
-* Level: Menengah
-* Topik utama: Express.js, Security, Scalability
-* Topik terkait: Redis, Middleware, API Design
-* Kata kunci: Rate Limiting, Throttling, Express, Redis, 429 Too Many Requests, express-rate-limit
-* Estimasi waktu baca: 10 menit

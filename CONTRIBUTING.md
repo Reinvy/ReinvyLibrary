@@ -74,7 +74,7 @@ Every content markdown file must start with a YAML frontmatter block containing 
 title: "The Title of the Material"
 description: "A short 1-2 sentence description of the content for index tables"
 category: "backend"
-technology: "express-js"
+technology: "expressjs"
 difficulty: "intermediate"
 type: "tutorial"
 locale: "en"

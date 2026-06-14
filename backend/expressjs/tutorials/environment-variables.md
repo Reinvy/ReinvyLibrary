@@ -113,14 +113,14 @@ Then, import this config file wherever needed.
 
 Imagine your code is a blueprint for a house, and environment variables are the paint colors. You don't want to draw the blueprint with red ink just because the first house will be red. Instead, you draw a neutral blueprint (your code) and decide the paint color (environment variable) right before painting. This way, the exact same blueprint can be used for a red house (development), a blue house (staging), and a green house (production).
 
-## Insight Penting
+## Key Insights
 
 - **Never commit `.env`:** This is the most common mistake. Always ensure `.env` is listed in your `.gitignore`.
 - **Provide a `.env.example`:** To help other developers know what variables are required, create a `.env.example` file with dummy values and commit this to your repository.
 - **Fail Fast:** If a critical variable (like a database URL) is missing, it's better for the application to crash immediately on startup rather than failing unexpectedly later. You can validate `process.env` using libraries like `joi` or `zod`.
 - **Hosting Platforms:** In production environments (like Vercel, Heroku, or AWS), you do not upload the `.env` file. Instead, you configure the environment variables directly in their respective dashboards or deployment pipelines.
 
-## Ringkasan Akhir
+## Conclusion
 
 - Environment variables keep sensitive data like API keys and database credentials out of your source code.
 - Use the `dotenv` package to load local `.env` files during development.
@@ -128,15 +128,7 @@ Imagine your code is a blueprint for a house, and environment variables are the 
 - Centralize your environment configuration to validate and manage defaults easily.
 - Rely on your deployment platform's settings for production variables.
 
-## Langkah Belajar Berikutnya
+## Next Steps
 
 - [Structuring a Scalable Express App (MVC and Service Layer)](Structuring%20a%20Scalable%20Express%20App%20(MVC%20and%20Service%20Layer).md)
 - [Deploying Express JS Applications to Production](Deploying%20Express%20JS%20Applications%20to%20Production.md)
-
-## Metadata
-
-- Level: Beginner
-- Topik utama: Express.js, Backend Development
-- Topik terkait: Configuration, Security, Environment Variables
-- Kata kunci: express, dotenv, environment variables, process.env, configuration
-- Estimasi waktu baca: 5 - 8 minutes

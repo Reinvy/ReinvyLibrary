@@ -10,11 +10,11 @@ locale: "id"
 
 # Handling File Downloads and Streaming in Express JS
 
-## Ringkasan Singkat
+## Ringkasan
 
 Materi ini membahas cara efektif menangani unduhan file (*file downloads*) dan melakukan *streaming* file berukuran besar di Express.js. Anda akan mempelajari perbedaan antara mengirim file kecil sebagai lampiran dan men-streaming file besar secara efisien untuk mengoptimalkan penggunaan memori serta meningkatkan performa di sisi *client*.
 
-## Untuk Siapa Materi Ini
+## Target Audiens
 
 - **Target Audience:** *Backend developer* yang perlu melayani permintaan file ke *client*, terutama file besar seperti video, audio, atau dokumen berukuran masif.
 - **Level:** Menengah.
@@ -25,7 +25,7 @@ Materi ini membahas cara efektif menangani unduhan file (*file downloads*) dan m
 - Familiar dengan modul `fs` (File System) bawaan Node.js.
 - Disarankan telah menyelesaikan tutorial [Handling File Uploads in Express JS with Multer](Handling%20File%20Uploads%20in%20Express%20JS%20with%20Multer_ID.md).
 
-## Tujuan Belajar
+## Tujuan Pembelajaran
 
 Setelah menyelesaikan materi ini, Anda akan dapat:
 
@@ -40,7 +40,7 @@ Saat membangun aplikasi *web*, Anda akan sering kali perlu memungkinkan pengguna
 
 *Streaming* memecahkan masalah ini dengan membaca file dalam potongan-potongan kecil (*chunks*) dan mengirimkannya ke *client* sepotong demi sepotong. Hal ini menjaga penggunaan memori tetap rendah dan memungkinkan *client* untuk mulai memproses data seketika, yang sangat penting untuk *streaming* video atau mengunduh aset berukuran besar.
 
-## Materi Inti
+## Konten Inti
 
 ### 1. Mengirim Unduhan Sederhana
 
@@ -159,7 +159,7 @@ app.get('/video', (req, res) => {
 });
 ```
 
-## Contoh / Ilustrasi
+## Contoh Kode
 
 Bayangkan Anda sedang menyajikan sup di sebuah restoran.
 
@@ -173,22 +173,14 @@ Bayangkan Anda sedang menyajikan sup di sebuah restoran.
 - **`res.download` menggunakan *streams* di balik layar:** Express cukup pintar untuk menggunakan *streams* di dalam `res.download()` dan `res.sendFile()`. Namun, menggunakan `createReadStream` secara manual memberi Anda kontrol lebih besar, terutama untuk hal-hal seperti pelacakan progres, kompresi data secara langsung (*on-the-fly*), atau menangani permintaan `Range` untuk media.
 - **Keamanan:** Jangan pernah membangun *path* file secara langsung menggunakan *input* pengguna (misalnya, `path.join(__dirname, req.query.fileName)`). Hal ini menyebabkan kerentanan *Path Traversal* di mana penyerang dapat mengunduh file sensitif seperti `/etc/passwd`. Selalu sanitasi nama file dan batasi ke direktori tertentu.
 
-## Ringkasan Akhir
+## Kesimpulan
 
 - Gunakan `res.download()` untuk memaksa unduhan file dengan mudah.
 - Gunakan `res.sendFile()` untuk menampilkan file secara *native* di dalam *browser*.
 - Gunakan `fs.createReadStream()` yang dipasangkan dengan `res` untuk menangani file besar secara manual demi mencegah kehabisan memori *server*.
 - Implementasikan *Range requests* untuk mendukung fungsionalitas *streaming* video/audio dan lompat-waktu (*scrubbing*).
 
-## Langkah Belajar Berikutnya
+## Langkah Berikutnya
 
 - Pelajari cara mengompresi data yang sedang di-*stream* secara langsung (*on-the-fly*) menggunakan modul bawaan Node.js `zlib`.
 - Eksplorasi cara menyimpan dan melakukan *streaming* file secara langsung dari *Cloud Storage* (seperti AWS S3) alih-alih dari *file system* lokal.
-
-## Metadata
-
-- Level: Menengah
-- Topik utama: Express JS, Backend Development
-- Topik terkait: File Handling, Streams, Video Streaming, Downloads
-- Kata kunci: express download, express file stream, res.download, res.sendFile, nodejs createReadStream, video streaming express
-- Estimasi waktu baca: 8 - 12 menit

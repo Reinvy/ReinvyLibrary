@@ -1,243 +1,155 @@
 ---
-title: "Implementasi OAuth 2.0 dan Social Login di Express JS"
-description: "Materi ini memberikan panduan komprehensif tentang implementasi OAuth 2.0 dan social login (seperti \"Login dengan Google\") dalam aplikasi Express.js. Anda akan"
+title: "Mengimplementasikan OAuth 2.0 dan Social Login di Express JS"
+description: "Panduan lengkap cara mengintegrasikan login sosial Google OAuth 2.0 ke dalam aplikasi Express.js menggunakan Passport.js."
 category: "backend"
 technology: "expressjs"
-difficulty: "advanced"
+difficulty: "intermediate"
 type: "tutorial"
 locale: "id"
 ---
 
-# Implementasi OAuth 2.0 dan Social Login di Express JS
+# Mengimplementasikan OAuth 2.0 dan Social Login di Express JS
 
-## Ringkasan Singkat
+## Ringkasan
 
-Materi ini memberikan panduan komprehensif tentang implementasi OAuth 2.0 dan *social login* (seperti "Login dengan Google") dalam aplikasi Express.js. Anda akan mempelajari alur teoretis OAuth dan cara mengaplikasikannya secara praktis menggunakan `Passport.js` untuk memungkinkan autentikasi pihak ketiga yang aman dan lancar.
+Tutorial ini memandu Anda mengintegrasikan login sosial Google OAuth 2.0 ke dalam aplikasi Express.js menggunakan Passport.js, menjelaskan alur otorisasi OAuth, registrasi klien di Google Console, konfigurasi route callback, dan manajemen sesi.
 
----
+## Target Audiens
 
-## Untuk Siapa Materi Ini
-
-* **Target Audience:** Developer backend tingkat menengah yang membangun aplikasi Node.js.
-* **Level:** Menengah hingga Lanjut (Intermediate to Advanced).
-
----
+Pengembang backend tingkat menengah yang ingin meningkatkan kemudahan pendaftaran pengguna dengan menyediakan fitur login sosial pihak ketiga yang aman.
 
 ## Prasyarat
 
-* Pemahaman yang kuat tentang routing dan middleware Express.js.
-* Terbiasa dengan konsep autentikasi dan manajemen sesi (session) di Express.js.
-* Pengalaman sebelumnya atau pemahaman tentang [Understanding Cookies and Session Management in Express JS_ID](Understanding%20Cookies%20and%20Session%20Management%20in%20Express%20JS_ID.md).
+- Pemahaman tentang Express.js, session middleware, dan konsep dasar Passport.js.
+- Akun Google Developer untuk membuat credentials Client ID.
 
----
+## Tujuan Pembelajaran
 
-## Tujuan Belajar
-
-Setelah membaca materi ini, pembaca akan memahami:
-
-* Konsep inti dan alur protokol OAuth 2.0.
-* Cara mendaftarkan aplikasi pada penyedia pihak ketiga (misalnya, Google Developer Console) untuk mendapatkan Client ID dan Client Secret.
-* Cara mengonfigurasi dan mengintegrasikan `Passport.js` dengan strategi `passport-google-oauth20` di aplikasi Express.
-* Cara menangani sesi pengguna dengan aman setelah login OAuth berhasil.
-
----
+Setelah menyelesaikan tutorial ini, Anda akan dapat:
+- Menjelaskan alur kerja otorisasi OAuth 2.0 (Authorization Code flow).
+- Mendaftarkan aplikasi di Google Cloud Console dan membuat kredensial Client.
+- Mengonfigurasi strategi `passport-google-oauth20` di Express.
+- Menangani rute callback OAuth dan memetakan profil pengguna ke database lokal.
 
 ## Konteks dan Motivasi
 
-Dalam aplikasi web modern, memaksa pengguna untuk membuat dan mengingat set kredensial baru (username dan password) seringkali menimbulkan gesekan (*friction*) dan menurunkan tingkat konversi. *Social login* memungkinkan pengguna untuk melakukan autentikasi menggunakan akun yang sudah ada dari penyedia seperti Google, GitHub, atau Facebook.
+Pengguna cenderung malas membuat kata sandi baru untuk setiap website baru. Social login mempermudah pendaftaran dan login hanya dengan satu klik, serta menyerahkan tanggung jawab keamanan password dan multi-faktor autentikasi (MFA) kepada penyedia identitas tepercaya seperti Google, GitHub, atau Facebook.
 
-OAuth 2.0 adalah protokol standar industri untuk otorisasi. Protokol ini memungkinkan aplikasi pihak ketiga untuk mendapatkan akses terbatas ke layanan web tanpa mengekspos kredensial pengguna. Mengimplementasikan OAuth secara aman sangat krusial untuk melindungi data pengguna sekaligus memberikan pengalaman yang mulus. Dengan memanfaatkan `Passport.js`, developer dapat mengabstraksikan kerumitan alur OAuth menjadi pola middleware yang terstandarisasi dan dapat digunakan kembali.
+## Konten Inti
 
----
+### 1. Instalasi Dependensi
 
-## Materi Inti
+Instal Passport, strategi Google OAuth 2.0, dotenv, dan express-session:
 
-### 1. Apa itu OAuth 2.0?
+```bash
+npm install passport passport-google-oauth20 express-session dotenv
+```
 
-OAuth 2.0 (Open Authorization) adalah framework yang memungkinkan sebuah aplikasi mendapatkan akses terbatas ke akun pengguna pada layanan HTTP, seperti Google, Facebook, atau GitHub.
-
-Alih-alih pengguna memberikan kata sandi mereka secara langsung ke aplikasi Anda, OAuth bekerja dengan mengarahkan (*redirect*) pengguna ke penyedia (misalnya, Google) untuk masuk dan memberikan izin. Setelah berhasil, penyedia akan mengarahkan kembali ke aplikasi Anda membawa *Authorization Code* atau *Access Token*.
-
-### 2. Alur OAuth 2.0 (Authorization Code Grant)
-
-Untuk aplikasi web berbasis server seperti Express, Authorization Code Grant adalah alur standarnya:
-
-1. **Inisiasi Pengguna:** Pengguna mengklik "Login dengan Google".
-2. **Permintaan Otorisasi:** Aplikasi Anda mengarahkan pengguna ke layar persetujuan (*consent screen*) Google, meminta izin spesifik (seperti akses `profile`, `email`).
-3. **Pemberian Izin:** Pengguna masuk ke Google dan menyetujui akses tersebut.
-4. **Kode Otorisasi (Authorization Code):** Google mengarahkan pengguna kembali ke URL *callback* aplikasi Anda, meneruskan kode otorisasi pada *query parameter* URL.
-5. **Pertukaran Token (Token Exchange):** Server aplikasi Anda secara aman menukarkan kode otorisasi tersebut dengan *Access Token* (dan opsional *Refresh Token*) secara langsung dengan server Google.
-6. **Mengambil Data Pengguna:** Aplikasi Anda menggunakan Access Token tersebut untuk meminta informasi profil pengguna dari Google.
-7. **Pembuatan Sesi:** Aplikasi Anda mencatat pengguna sebagai *logged in* (misalnya, membuat sesi atau menerbitkan JWT).
-
-### 3. Menyiapkan Penyedia (Google)
-
-Sebelum menulis kode, Anda harus mendaftarkan aplikasi Anda di Google:
+### 2. Mendaftarkan Aplikasi di Google Cloud Console
 
 1. Buka [Google Cloud Console](https://console.cloud.google.com/).
 2. Buat proyek baru.
-3. Navigasi ke **APIs & Services > Credentials**.
-4. Konfigurasikan **OAuth consent screen**.
-5. Buat kredensial **OAuth client ID** (Web application).
-6. Tambahkan Authorized redirect URI (contoh: `http://localhost:3000/auth/google/callback`).
-7. Catat **Client ID** dan **Client Secret** Anda. (Jangan pernah memasukkan ini ke version control!).
+3. Konfigurasikan **OAuth consent screen** (User Type: External).
+4. Masuk ke tab **Credentials**, klik **Create Credentials**, pilih **OAuth client ID**.
+5. Pilih tipe aplikasi **Web application**.
+6. Di bagian **Authorized redirect URIs**, tambahkan:
+   `http://localhost:3000/auth/google/callback`
+7. Klik Simpan lalu salin **Client ID** dan **Client Secret** ke file `.env` Anda.
 
-### 4. Implementasi dengan Passport.js
-
-`Passport.js` adalah middleware autentikasi untuk Node.js. Ia menggunakan "strategi" untuk mengautentikasi *request*. Kita akan menggunakan `passport-google-oauth20`.
-
-#### Langkah 4.1: Instalasi
-
-```bash
-npm install express express-session passport passport-google-oauth20
+```env
+GOOGLE_CLIENT_ID="id_klien_anda"
+GOOGLE_CLIENT_SECRET="secret_klien_anda"
+SESSION_SECRET="supersecretkey"
 ```
 
-#### Langkah 4.2: Setup Dasar Server Express dan Session
+### 3. Mengonfigurasi Strategi Google OAuth
 
-OAuth di Passport biasanya mengandalkan sesi untuk menjaga pengguna tetap masuk di seluruh *request*.
+Konfigurasikan Passport untuk memproses token identitas dari Google:
 
 ```javascript
-const express = require('express');
-const session = require('express-session');
+// passport-oauth.js
 const passport = require('passport');
-
-const app = express();
-
-// Konfigurasi sesi
-app.use(session({
-    secret: 'KUNCI_RAHASIA_SUPER_ANDA',
-    resave: false,
-    saveUninitialized: false,
-    cookie: { secure: false } // Ubah jadi true di production dengan HTTPS
-}));
-
-// Inisialisasi Passport dan pulihkan status autentikasi dari sesi (jika ada).
-app.use(passport.initialize());
-app.use(passport.session());
-```
-
-#### Langkah 4.3: Mengonfigurasi Strategi Google
-
-```javascript
 const GoogleStrategy = require('passport-google-oauth20').Strategy;
 
 passport.use(new GoogleStrategy({
-    clientID: process.env.GOOGLE_CLIENT_ID || 'client-id-anda',
-    clientSecret: process.env.GOOGLE_CLIENT_SECRET || 'client-secret-anda',
+    clientID: process.env.GOOGLE_CLIENT_ID,
+    clientSecret: process.env.GOOGLE_CLIENT_SECRET,
     callbackURL: "http://localhost:3000/auth/google/callback"
   },
-  function(accessToken, refreshToken, profile, cb) {
-    // Callback ini dieksekusi setelah token berhasil ditukarkan.
-    // Di sini, Anda biasanya mencari atau membuat user di database.
-    console.log("Profil Google:", profile);
-
-    // Di aplikasi nyata:
-    // User.findOrCreate({ googleId: profile.id }, function (err, user) {
-    //   return cb(err, user);
-    // });
-
-    // Untuk contoh ini, kita cukup meneruskan profil sebagai objek user
-    return cb(null, profile);
+  async (accessToken, refreshToken, profile, done) => {
+    try {
+      // Cari pengguna di database lokal menggunakan profile.id (Google ID)
+      // Jika pengguna belum terdaftar, buat baris data baru.
+      const user = { id: profile.id, displayName: profile.displayName };
+      return done(null, user);
+    } catch (err) {
+      return done(err, null);
+    }
   }
 ));
+
+passport.serializeUser((user, done) => done(null, user));
+passport.deserializeUser((obj, done) => done(null, obj));
 ```
 
-#### Langkah 4.4: Serialization dan Deserialization
+## Contoh Kode
 
-Passport perlu mengetahui bagaimana cara menyimpan pengguna ke dalam sesi dan bagaimana cara mengambilnya kembali.
-
-```javascript
-// Serialize user untuk disimpan di session
-passport.serializeUser(function(user, cb) {
-  cb(null, user); // Di aplikasi nyata, Anda mungkin hanya menyimpan user.id
-});
-
-// Deserialize user dari session
-passport.deserializeUser(function(obj, cb) {
-  cb(null, obj); // Di aplikasi nyata, Anda mencari user berdasarkan ID di DB
-});
-```
-
-#### Langkah 4.5: Membuat Route
-
-Kita membutuhkan tiga route utama: pemicu (trigger), *callback*, dan rute yang diproteksi.
+Siapkan endpoint pengalihan dan callback di Express:
 
 ```javascript
-// 1. Memicu alur OAuth
+// app.js
+const express = require('express');
+const session = require('express-session');
+const passport = require('passport');
+require('dotenv').config();
+require('./passport-oauth');
+
+const app = express();
+
+app.use(session({
+  secret: process.env.SESSION_SECRET,
+  resave: false,
+  saveUninitialized: false
+}));
+
+app.use(passport.initialize());
+app.use(passport.session());
+
+// Endpoint untuk memicu login Google
 app.get('/auth/google',
   passport.authenticate('google', { scope: ['profile', 'email'] })
 );
 
-// 2. Callback tempat Google mengarahkan setelah persetujuan
-app.get('/auth/google/callback',
-  passport.authenticate('google', { failureRedirect: '/login' }),
-  function(req, res) {
-    // Autentikasi berhasil, arahkan ke beranda atau profil.
-    res.redirect('/profile');
-  });
+// Endpoint Callback tempat Google mengarahkan pengguna kembali
+app.get('/auth/google/callback', 
+  passport.authenticate('google', { failureRedirect: '/login-failed' }),
+  (req, res) => {
+    res.redirect('/dashboard');
+  }
+);
 
-// 3. Rute yang diproteksi
-app.get('/profile', (req, res) => {
-    if (!req.isAuthenticated()) {
-        return res.status(401).send('Unauthorized. Silakan login.');
-    }
-    res.send(`<h1>Selamat datang, ${req.user.displayName}</h1><a href="/logout">Logout</a>`);
+// Route Dashboard yang terproteksi
+app.get('/dashboard', (req, res) => {
+  if (!req.isAuthenticated()) {
+    return res.status(401).json({ error: "Akses tidak diizinkan" });
+  }
+  res.json({ message: `Berhasil login sebagai ${req.user.displayName} via Google!` });
 });
 
-// 4. Rute logout
-app.get('/logout', (req, res, next) => {
-    req.logout(function(err) {
-      if (err) { return next(err); }
-      res.redirect('/');
-    });
-});
+app.listen(3000, () => console.log('Server berjalan di port 3000'));
 ```
-
----
-
-## Contoh / Ilustrasi
-
-Bayangkan Anda ingin masuk ke klub eksklusif (Aplikasi Express Anda).
-
-1. Daripada memberikan KTP dan password Anda ke penjaga pintu, Anda bilang: "Google bisa menjamin saya."
-2. Penjaga pintu (Aplikasi Express) mengirim Anda ke loket Google yang aman (`/auth/google`).
-3. Anda login di loket Google dan berkata, "Ya, saya izinkan klub ini mengetahui nama dan email saya."
-4. Google memberi Anda tiket sekali pakai khusus (Authorization Code) dan mengirim Anda kembali ke pintu belakang klub (`/auth/google/callback`).
-5. Server klub mengambil tiket tersebut, diam-diam berbicara dengan Google untuk memverifikasinya, dan menukarnya dengan kartu VIP (Access Token).
-6. Klub kemudian menulis nama Anda di daftar tamu mereka (Session) dan mempersilakan Anda masuk ke ruang VIP (`/profile`).
-
----
 
 ## Insight Penting
 
-* **Parameter State untuk Keamanan:** Untuk mencegah serangan CSRF (*Cross-Site Request Forgery*) selama alur OAuth, pastikan parameter `state` digunakan (Passport menanganinya secara otomatis di versi terbaru, tetapi penting untuk dipahami).
-* **Jangan Pernah Mengekspos Client Secret:** `clientSecret` tidak boleh dikirim ke *frontend* atau di-*commit* ke source control. Selalu gunakan *environment variables* (`process.env.GOOGLE_CLIENT_SECRET`).
-* **Menangani Pengguna yang Sudah Ada:** Jika pengguna login dengan Google, tetapi akun dengan email tersebut sudah ada melalui pendaftaran standar, Anda memerlukan logika untuk menautkan akun tersebut dengan rapi, alih-alih membuat duplikat atau menghasilkan *error*.
-* **Pemisahan Konteks (Separation of Concerns):** Simpan konfigurasi Passport Anda di file terpisah (misalnya, `config/passport.js`) daripada menumpuknya di file utama `app.js` Anda.
+- **Cakupan Scope**: Hanya minta scope yang Anda butuhkan (seperti `profile` dan `email`). Meminta scope yang terlalu luas dapat membuat pengguna enggan melakukan login.
+- **Parameter State**: Parameter `state` membantu mencegah serangan CSRF (Cross-Site Request Forgery). Passport.js menangani hal ini secara otomatis di latar belakang.
+- **Keamanan Sesi**: Google OAuth 2.0 berhasil dikonfigurasi dengan aman di aplikasi Express Anda.
 
----
+## Langkah Berikutnya
 
-## Ringkasan Akhir
+- Hubungkan helper database simulasi dengan database nyata menggunakan Mongoose atau Prisma.
+- Implementasikan login dengan GitHub OAuth.
 
-* OAuth 2.0 adalah protokol otorisasi yang memungkinkan pengguna memberikan izin ke aplikasi pihak ketiga untuk mengakses data mereka tanpa membagikan kata sandi.
-* Alur Authorization Code Grant adalah metode standar dan paling aman untuk aplikasi berbasis server.
-* `Passport.js` menyederhanakan implementasi OAuth dengan menyediakan strategi seperti `passport-google-oauth20`.
-* Alur tersebut melibatkan *redirect* ke penyedia layanan, menangani *callback*, bertukar token, dan mengelola sesi pengguna.
-* Praktik keamanan terbaik melibatkan perlindungan pada *client secret* dan penggunaan sesi secara aman.
+## Kesimpulan
 
----
-
-## Langkah Belajar Berikutnya
-
-* [Implementing Role-Based Access Control in Express JS_ID](Implementing%20Role-Based%20Access%20Control%20in%20Express%20JS_ID.md) (Untuk membatasi rute tertentu hanya bagi admin).
-* Pelajari tentang pengamanan API menggunakan JWT alih-alih sesi untuk integrasi OAuth *stateless* (sering digunakan di *Single Page Applications*).
-
----
-
-## Metadata
-
-* Level: Menengah
-* Topik utama: Express.js, Keamanan, Autentikasi
-* Topik terkait: OAuth 2.0, Passport.js, Social Login
-* Kata kunci: express oauth, passport js, google login, node js oauth2
-* Estimasi waktu baca: 12 - 15 menit
+Integrasi login sosial menggunakan Google OAuth 2.0 berhasil diselesaikan secara modular menggunakan Passport.js.

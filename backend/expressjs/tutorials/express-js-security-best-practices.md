@@ -111,28 +111,20 @@ Imagine your Express server is a bank vault.
 - **Rate Limiting:** Ensuring a person can only try the passcode 3 times before they are locked out for an hour, preventing them from guessing thousands of combinations.
 - **Generic Error Messages:** When someone enters the wrong code, the screen just says "Access Denied." It does *not* say "Access Denied: The 3rd digit was correct but the 4th digit failed due to wire short on panel B" (which would help the robber).
 
-## Insight Penting
+## Key Insights
 
 - **Information Exposure is a Critical Flaw:** Always remember that users do not need to know *why* the server failed, only that it *did* fail. Detailed error logs belong in your server console or monitoring tools (like Sentry or Datadog), never in the HTTP response.
 - **Security is Layered:** No single middleware makes your application 100% secure. Helmet, rate limiting, input validation, and proper error handling work together to create a defense-in-depth strategy.
 - **Keep Dependencies Updated:** Many security breaches happen through outdated third-party packages. Regularly run `npm audit` to check for known vulnerabilities in your dependencies.
 
-## Ringkasan Akhir
+## Conclusion
 
 - Use `helmet` to hide your tech stack and set secure HTTP headers.
 - Implement rate limiting using `express-rate-limit` to prevent brute-force and DoS attacks.
 - Never return system errors to the client; log them internally and send a generic status 500 message.
 - Always validate and sanitize user input before processing it.
 
-## Langkah Belajar Berikutnya
+## Next Steps
 
 - [Data Validation and Error Handling in Express](Data%20Validation%20and%20Error%20Handling%20in%20Express.md)
 - [Authentication and Authorization with JWT in Express](Authentication%20and%20Authorization%20with%20JWT%20in%20Express.md)
-
-## Metadata
-
-- Level: Intermediate
-- Topik utama: Express.js, Backend Development, Security
-- Topik terkait: Middleware, Error Handling, API Protection
-- Kata kunci: express security, helmet, rate limiting, information exposure, error logging
-- Estimasi waktu baca: 8 - 12 minutes

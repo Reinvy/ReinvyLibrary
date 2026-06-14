@@ -163,29 +163,21 @@ Imagine you are managing a **Library**.
 - If you notice a typo in the title of a specific book and want to change just that title, you request a minor update (`PATCH /books/123`).
 - The librarian's response (e.g., "Here is the book" = `200 OK`, or "We don't have that book" = `404 Not Found`) represents the HTTP Status Codes.
 
-## Insight Penting
+## Key Insights
 
 - **Use Plural Nouns:** Always use plural nouns for collections (e.g., `/users` instead of `/user`). It keeps the API consistent whether you are requesting one item or many.
 - **Versioning:** Always version your APIs (e.g., `/api/v1/users`). This allows you to introduce breaking changes in the future (`v2`) without breaking existing client applications.
 - **Statelessness:** Each request from the client must contain all the information necessary to understand the request. The server should not store client context between requests (which is why REST APIs often use JWTs for authentication).
 - **Nesting limit:** Avoid nesting URLs too deeply. `GET /users/1/posts/5/comments` can become hard to manage. It's often better to flatten it to `GET /posts/5/comments`.
 
-## Ringkasan Akhir
+## Conclusion
 
 - RESTful APIs use URLs to represent resources (nouns) and HTTP methods to represent actions (verbs).
 - Use `GET` for reading, `POST` for creating, `PUT`/`PATCH` for updating, and `DELETE` for removing.
 - Proper use of HTTP status codes (200, 201, 400, 404, 500) is crucial for clear client-server communication.
 - Consistent, predictable API design makes applications easier to scale, document, and consume.
 
-## Langkah Belajar Berikutnya
+## Next Steps
 
 - [Structuring a Scalable Express App (MVC and Service Layer)](Structuring%20a%20Scalable%20Express%20App%20(MVC%20and%20Service%20Layer).md) (Learn how to organize your RESTful routes and business logic).
 - [Data Validation and Error Handling in Express](Data%20Validation%20and%20Error%20Handling%20in%20Express.md) (Learn how to validate the data coming into your REST endpoints).
-
-## Metadata
-
-- **Level:** Intermediate
-- **Topik utama:** Express.js, API Design
-- **Topik terkait:** REST, Routing, Architecture
-- **Kata kunci:** rest api, restful, express routing, http methods, status codes
-- **Estimasi waktu baca:** 10 - 15 minutes

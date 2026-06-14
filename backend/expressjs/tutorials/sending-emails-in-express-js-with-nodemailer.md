@@ -185,7 +185,7 @@ app.listen(PORT, () => {
 
 ---
 
-## Insight Penting
+## Key Insights
 
 - **Error Handling & Security:** Notice how the `catch` block in the route logs the actual error using `console.error(error)` but responds to the client with `res.status(500).json({ error: 'Internal Server Error' })`. This prevents Information Exposure, ensuring users don't see stack traces or connection details if the SMTP server fails.
 - **Asynchronous Flow:** Sending emails takes time. In high-traffic applications, making the user wait for the email to send before returning a response is a bad practice. For scalable apps, you should offload email sending to a background job queue (like BullMQ).
@@ -194,7 +194,7 @@ app.listen(PORT, () => {
 
 ---
 
-## Ringkasan Akhir
+## Conclusion
 
 - Nodemailer is the standard tool for sending emails in Node.js.
 - Configure an SMTP transporter using credentials stored safely in environment variables.
@@ -204,17 +204,9 @@ app.listen(PORT, () => {
 
 ---
 
-## Langkah Belajar Berikutnya
+## Next Steps
 
 - To learn how to offload email sending so it doesn't block your user's request, read: [Handling Background Jobs in Express JS with BullMQ and Redis](Handling%20Background%20Jobs%20in%20Express%20JS%20with%20BullMQ%20and%20Redis.md).
 - To organize your code better, explore structuring applications into Service Layers.
 
 ---
-
-## Metadata
-
-- Level: Intermediate
-- Topik utama: Express.js, Backend Development
-- Topik terkait: Nodemailer, Email, SMTP, Error Handling
-- Kata kunci: express, nodemailer, send email, smtp, transporter
-- Estimasi waktu baca: 6 - 8 minutes

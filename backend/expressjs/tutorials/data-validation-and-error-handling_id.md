@@ -10,11 +10,11 @@ locale: "id"
 
 # Validasi Data dan Penanganan Error Terpusat di Express.js
 
-## Ringkasan Singkat
+## Ringkasan
 
 Materi ini membahas pentingnya memvalidasi data yang masuk dari *client* sebelum diproses oleh aplikasi, serta cara menangani *error* secara terpusat dan aman. Anda akan belajar cara mencegah *bug* dan melindungi sistem dari kebocoran informasi melalui teknik *error handling* yang benar.
 
-## Untuk Siapa Materi Ini
+## Target Audiens
 
 - **Target Pembaca:** *Developer backend* pemula hingga menengah.
 - **Level:** Menengah (Intermediate).
@@ -25,7 +25,7 @@ Materi ini membahas pentingnya memvalidasi data yang masuk dari *client* sebelum
 - Telah memahami konsep *Routing* dan *Middleware* di Express.js.
 - Memiliki pemahaman dasar tentang HTTP *Methods* dan HTTP *Status Codes*.
 
-## Tujuan Belajar
+## Tujuan Pembelajaran
 
 Setelah menyelesaikan materi ini, Anda akan mampu:
 
@@ -40,7 +40,7 @@ Dalam pengembangan *web*, kita tidak boleh pernah mempercayai data yang dikirimk
 
 Selain itu, saat *error* terjadi—entah karena kesalahan input atau masalah server seperti koneksi *database* yang terputus—aplikasi Express.js standar seringkali membocorkan jejak kode (*stack trace*) ke *client*. Hal ini sangat berbahaya karena membuka celah informasi bagi peretas (*Information Exposure*). Kita butuh mekanisme terpusat untuk menangkap *error* dan menangani balasan secara aman.
 
-## Materi Inti
+## Konten Inti
 
 ### 1. Pentingnya Validasi Data
 
@@ -117,7 +117,7 @@ app.use((err, req, res, next) => {
 app.listen(3000, () => console.log('Server berjalan...'));
 ```
 
-## Contoh / Ilustrasi
+## Contoh Kode
 
 Bayangkan aplikasi Anda adalah sebuah **Pabrik Roti**.
 
@@ -130,23 +130,15 @@ Bayangkan aplikasi Anda adalah sebuah **Pabrik Roti**.
 - **Fungsi `next(err)`:** Dalam fungsi *asynchronous* (`async/await`), jika terjadi *error*, Anda **wajib** menangkapnya dengan `try...catch` dan melempar *error* tersebut menggunakan `next(err)` agar bisa ditangkap oleh *error handler* terpusat.
 - **Keamanan Data:** Mengekspos log *error* asli (seperti kueri SQL gagal, IP *database*, atau rahasia *environment*) melalui *response API* sangat membantu *hacker* untuk meretas sistem Anda.
 
-## Ringkasan Akhir
+## Kesimpulan
 
 - Validasi data memastikan input dari *client* benar, aman, dan sesuai harapan sebelum diproses.
 - Express memiliki *Error Handling Middleware* khusus dengan *signature* 4 argumen `(err, req, res, next)`.
 - Praktik terbaik untuk keamanan adalah dengan mencatat detail *error* secara internal di *server*, sementara *client* hanya menerima pesan *error* umum (*generic message*).
 
-## Langkah Belajar Berikutnya
+## Langkah Berikutnya
 
 Setelah memahami alur data yang valid dan penanganan *error*, langkah yang tepat selanjutnya adalah:
 
 - [Express With Prisma](Express%20With%20Prisma.md) (Mempelajari integrasi *database* dengan asumsi data Anda sudah tervalidasi).
 - Mempelajari *library* validasi skema modern seperti **Zod** atau **Joi** untuk Express.js (Materi Lanjutan).
-
-## Metadata
-
-- **Level:** Menengah
-- **Topik utama:** Express.js, Backend Development
-- **Topik terkait:** Validasi, Error Handling, Security, Middleware
-- **Kata kunci:** express validation, error handling middleware, express security, information exposure
-- **Estimasi waktu baca:** 8 - 10 menit

@@ -10,11 +10,11 @@ locale: "id"
 
 # Pemrosesan Tugas Asinkron di Express JS dengan BullMQ
 
-## Ringkasan Singkat
+## Ringkasan
 
 Tutorial ini memperkenalkan pemrosesan tugas asinkron di Express.js menggunakan BullMQ dan Redis. Anda akan belajar cara memindahkan operasi berat yang memakan waktu dari event loop utama Node.js ke worker di latar belakang, sehingga meningkatkan responsivitas dan skalabilitas aplikasi web Anda.
 
-## Untuk Siapa Materi Ini
+## Target Audiens
 
 Developer Express.js tingkat menengah hingga mahir yang sedang membangun aplikasi yang membutuhkan penanganan tugas komputasi berat, pengiriman email massal, pemrosesan gambar, atau integrasi dengan API pihak ketiga yang lambat tanpa memblokir request HTTP yang masuk.
 
@@ -25,7 +25,7 @@ Developer Express.js tingkat menengah hingga mahir yang sedang membangun aplikas
 - Pemahaman dasar tentang Redis (karena BullMQ bergantung pada Redis untuk menyimpan antrean tugas).
 - Node.js dan Redis sudah terinstal di mesin lokal Anda.
 
-## Tujuan Belajar
+## Tujuan Pembelajaran
 
 - Memahami konsep pekerjaan di latar belakang (background jobs) dan mengapa itu diperlukan di lingkungan Node.js yang single-threaded.
 - Mempelajari cara mengatur BullMQ dengan Redis di aplikasi Express.js.
@@ -39,7 +39,7 @@ Node.js berjalan di atas event loop dengan single-thread. Jika API Express Anda 
 
 Untuk mengatasi ini, kita menggunakan sistem antrean pesan (message queue) seperti BullMQ. Daripada memproses tugas berat tersebut segera selama request HTTP berlangsung, server Express Anda hanya menambahkan "pekerjaan" (job) ke dalam antrean dan langsung merespons pengguna (misalnya, "Tugas sedang diproses"). Sebuah proses terpisah di latar belakang (seorang worker) akan mengambil pekerjaan dari antrean dan memprosesnya secara asinkron.
 
-## Materi Inti
+## Konten Inti
 
 ### Apa itu BullMQ?
 
@@ -174,7 +174,7 @@ app.listen(3000, () => {
 });
 ```
 
-## Contoh / Ilustrasi
+## Contoh Kode
 
 Bayangkan sebuah restoran cepat saji.
 
@@ -191,23 +191,15 @@ Jika kasir juga harus memasak setiap makanan sebelum mengambil pesanan berikutny
 - **Graceful Shutdown (Penghentian Anggun):** Terapkan penghentian yang anggun untuk worker Anda. Ketika server melakukan restart atau dimatikan, Anda pasti ingin worker menyelesaikan pekerjaan yang sedang berjalan terlebih dahulu atau menghentikannya dengan aman, alih-alih membunuhnya di tengah eksekusi. Gunakan `worker.close()` selama urutan shutdown.
 - **Pantau Antrean Anda:** Gunakan alat seperti `bull-board` untuk memvisualisasikan antrean Anda, melacak pekerjaan yang gagal, dan memantau kinerja worker secara visual.
 
-## Ringkasan Akhir
+## Kesimpulan
 
 - Pemrosesan tugas asinkron sangat penting untuk menjaga aplikasi Express.js tetap responsif.
 - BullMQ adalah sistem antrean tangguh yang didukung oleh Redis.
 - Alur kerja terdiri dari **Queue** (untuk menyimpan pekerjaan), **Produsen** (aplikasi Express Anda yang menambahkan pekerjaan), dan **Worker** (proses latar belakang yang mengeksekusi pekerjaan).
 - Memindahkan tugas berat dapat mencegah terblokirnya event loop single-thread Node.js.
 
-## Langkah Belajar Berikutnya
+## Langkah Berikutnya
 
 - Pelajari cara mengimplementasikan tugas berulang (repeatable jobs) layaknya CRON menggunakan BullMQ.
 - Eksplorasi cara mengatur `bull-board` untuk mendapatkan antarmuka pengguna (GUI) pemantauan antrean Anda.
 - Pelajari strategi Graceful Shutdown di Node.js untuk memastikan worker menyelesaikan tugasnya sebelum server dimatikan.
-
-## Metadata
-
-- Level: Menengah
-- Topik utama: Express.js, Optimasi Performa
-- Topik terkait: Message Queues, Redis, Pemrosesan Asinkron, BullMQ
-- Kata kunci: express js background jobs, bullmq tutorial, node js event loop, redis task queue, async processing
-- Estimasi waktu baca: 10 menit

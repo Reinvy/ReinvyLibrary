@@ -12,11 +12,11 @@ locale: "id"
 
 Paginasi, Filtering, dan Sorting pada API Express.js
 
-## Ringkasan Singkat
+## Ringkasan
 
 Tutorial ini membahas cara mengimplementasikan fitur paginasi, pencarian (*filtering*), dan pengurutan (*sorting*) pada REST API yang dibangun dengan Express.js. Anda akan belajar bagaimana mengelola dataset besar dengan membatasi jumlah data yang dikirim, memungkinkan klien mencari data spesifik, dan menyusun urutan data secara rapi.
 
-## Untuk Siapa Materi Ini
+## Target Audiens
 
 - **Target Pembaca:** Developer back-end tingkat menengah yang sedang membangun REST API.
 - **Level:** Menengah (Intermediate).
@@ -28,7 +28,7 @@ Tutorial ini membahas cara mengimplementasikan fitur paginasi, pencarian (*filte
 - Pemahaman cara mengambil data dari database (SQL atau NoSQL).
 - Pemahaman dasar tentang HTTP Query Parameters.
 
-## Tujuan Belajar
+## Tujuan Pembelajaran
 
 Setelah menyelesaikan materi ini, Anda akan mampu:
 
@@ -44,7 +44,7 @@ Ketika aplikasi Anda berkembang dan database memiliki ribuan hingga jutaan baris
 
 Dengan menerapkan paginasi, *filtering*, dan *sorting*, Anda memberikan kebebasan kepada klien (frontend atau aplikasi mobile) untuk mengambil tepat apa yang mereka butuhkan dalam ukuran yang terkelola. Fitur-fitur ini adalah standar industri untuk API skala produksi (seperti daftar produk e-commerce atau dashboard data).
 
-## Materi Inti
+## Konten Inti
 
 ### 1. Mengekstrak Query Parameters
 
@@ -80,7 +80,7 @@ Anda perlu melakukan iterasi pada query parameter dan membangun objek query yang
 
 *Sorting* mengurutkan data berdasarkan satu field atau lebih. Pola yang sering digunakan adalah mengirimkan nama field, dan menggunakan awalan tanda `-` untuk urutan menurun/descending (contoh: `sort=-price` atau `sort=createdAt`). Anda perlu mem-parsing parameter ini dan menyesuaikannya dengan format database.
 
-## Contoh / Ilustrasi
+## Contoh Kode
 
 Berikut adalah contoh menggunakan Express dan Mongoose (MongoDB) yang mendemonstrasikan penggabungan ketiga konsep tersebut.
 
@@ -154,7 +154,7 @@ module.exports = router;
 - **Cursor vs Offset:** Paginasi berbasis offset (`skip`/`limit`) bisa menjadi sangat lambat pada dataset yang sangat besar karena database tetap harus menghitung dan melewati baris data sebelumnya. Untuk dataset masif atau fitur *infinite scroll*, pertimbangkan untuk menggunakan *Cursor-based pagination*.
 - **Gunakan Index Database:** Operasi *filtering* dan *sorting* cukup membebani server database. Pastikan Anda membuat *index* pada field yang sering digunakan untuk disaring atau diurutkan.
 
-## Ringkasan Akhir
+## Kesimpulan
 
 - `req.query` digunakan untuk menangkap parameter paginasi, filtering, dan sorting dari URL.
 - **Paginasi** membagi data menjadi potongan kecil menggunakan `page` dan `limit`.
@@ -162,16 +162,8 @@ module.exports = router;
 - **Sorting** mengurutkan respons data berdasarkan preferensi klien.
 - Menggabungkan ketiga fitur ini membuat API Anda lebih fleksibel, cepat, dan siap digunakan di production.
 
-## Langkah Belajar Berikutnya
+## Langkah Berikutnya
 
 - Pelajari **Cursor-based Pagination** untuk aplikasi dengan performa tinggi.
 - Pelajari strategi *caching* (seperti menggunakan Redis) untuk menyimpan respons data paginasi yang sering diakses.
 - Baca kembali [Data Validation and Error Handling in Express](Data%20Validation%20and%20Error%20Handling%20in%20Express_ID.md) untuk mengamankan query parameter Anda.
-
-## Metadata
-
-- Level: Menengah (Intermediate)
-- Topik utama: Express.js, API Design
-- Topik terkait: Database Queries, Pagination, RESTful APIs
-- Kata kunci: Express, paginasi, filtering, sorting, REST API, query parameter
-- Estimasi waktu baca: 10 menit

@@ -167,28 +167,20 @@ Imagine you are serving soup at a restaurant.
 - **Streaming (`fileStream.pipe(res)`):** This is like using a ladle to continuously pour soup from the cauldron into the customer's bowl bit by bit. It’s manageable, efficient, and ensures the soup safely reaches the customer without overwhelming anyone.
 - **Partial Content (Range Requests):** The customer says, "I only want the bottom half of the soup." You measure exactly where the bottom half starts and only serve them that specific portion.
 
-## Insight Penting
+## Key Insights
 
 - **Always handle errors in streams:** If the file doesn't exist or permissions are denied, an unhandled stream error will crash your Node.js application. Always listen for the `'error'` event on your streams.
 - **`res.download` uses streams internally:** Express is smart enough to use streams under the hood for `res.download()` and `res.sendFile()`. However, manually using `createReadStream` gives you more control, especially for things like progress tracking, on-the-fly compression, or handling `Range` requests for media.
 - **Security:** Never construct file paths directly using user input (e.g., `path.join(__dirname, req.query.fileName)`). This leads to Path Traversal vulnerabilities where an attacker could download sensitive files like `/etc/passwd`. Always sanitize filenames and restrict them to a specific directory.
 
-## Ringkasan Akhir
+## Conclusion
 
 - Use `res.download()` to force file downloads with ease.
 - Use `res.sendFile()` to display files natively in the browser.
 - Use `fs.createReadStream()` paired with `res` for handling large files manually to prevent server memory exhaustion.
 - Implement Range requests to support video/audio streaming and scrubbing functionality.
 
-## Langkah Belajar Berikutnya
+## Next Steps
 
 - Learn how to compress streamed data on-the-fly using the built-in Node.js `zlib` module.
 - Explore storing and streaming files directly from Cloud Storage (like AWS S3) instead of the local file system.
-
-## Metadata
-
-- Level: Intermediate
-- Topik utama: Express JS, Backend Development
-- Topik terkait: File Handling, Streams, Video Streaming, Downloads
-- Kata kunci: express download, express file stream, res.download, res.sendFile, nodejs createReadStream, video streaming express
-- Estimasi waktu baca: 8 - 12 minutes

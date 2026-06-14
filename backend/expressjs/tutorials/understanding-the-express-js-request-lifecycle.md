@@ -131,30 +131,22 @@ app.listen(3000, () => console.log('Server running on port 3000'));
 
 - Request arrives -> `express.json()` runs -> Logger runs -> `requireAuth` fails and calls `res.status(401).json()`. (Response sent early, lifecycle ends. Route handler is never reached).
 
-## Insight Penting
+## Key Insights
 
 - **Order Matters Absolutely:** Express executes middleware and routes strictly top-to-bottom as defined in your file. If you put your 404 handler at the top of your file, every request will return a 404!
 - **The "Headers Already Sent" Error:** This notorious error occurs if you try to send a response (e.g., `res.json()`) but then inadvertently call `next()` or try to send another response later in the same execution block. Always `return res.json(...)` to prevent further execution in that block.
 - **Mutating the `req` Object:** A powerful pattern in Express is using middleware to attach data to the `req` object (like `req.user` from a JWT, or `req.db` for a database connection) so that subsequent route handlers can access it.
 - **Handling Async Errors:** In Express 4, if an error occurs inside an `async` function, you must catch it and pass it to `next(err)` explicitly, otherwise it will cause an Unhandled Promise Rejection. (Express 5 handles async errors natively).
 
-## Ringkasan Akhir
+## Conclusion
 
 - The Express request lifecycle is a linear pipeline of middleware and route handlers.
 - The lifecycle flows strictly from top to bottom based on the order of `app.use()` and route definitions.
 - Middleware must either end the request-response cycle (by sending a response) or pass control to the next function via `next()`.
 - Error-handling middleware sits at the very bottom of the stack to catch any errors passed via `next(err)`.
 
-## Langkah Belajar Berikutnya
+## Next Steps
 
 - **Basic Routing and Middleware in Express**: Dive deeper into creating complex routing structures and custom middleware.
 - **Data Validation and Error Handling in Express**: Learn how to validate incoming request bodies (which happens right after parsing in the lifecycle) and build robust global error handlers.
 - **Authentication and Authorization with JWT in Express**: See how authentication middleware fits perfectly into the request lifecycle to protect routes.
-
-## Metadata
-
-- Level: Beginner / Intermediate
-- Topik utama: Express.js
-- Topik terkait: Middleware, Routing, Backend Architecture
-- Kata kunci: Express, Request Lifecycle, Middleware, next(), req, res, Node.js
-- Estimasi waktu baca: 8 menit

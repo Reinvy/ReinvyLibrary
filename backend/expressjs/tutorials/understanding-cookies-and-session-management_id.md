@@ -10,13 +10,13 @@ locale: "id"
 
 # Memahami Cookies dan Manajemen Session di Express.js
 
-## Ringkasan Singkat
+## Ringkasan
 
 Cookies dan session adalah mekanisme fundamental untuk mempertahankan *state* (status) dan mengelola autentikasi pengguna dalam aplikasi web. Tutorial ini membahas perbedaan antara cookies dan session di sisi server, cara mengimplementasikannya secara aman di Express.js menggunakan `cookie-parser` dan `express-session`, serta praktik terbaik untuk manajemen session guna melindungi aplikasi dari kerentanan umum.
 
 ---
 
-## Untuk Siapa Materi Ini
+## Target Audiens
 
 * Developer backend yang ingin memahami stateful authentication (autentikasi berbasis status).
 * Developer Express.js yang mencari cara mengimplementasikan manajemen session yang aman.
@@ -32,7 +32,7 @@ Cookies dan session adalah mekanisme fundamental untuk mempertahankan *state* (s
 
 ---
 
-## Tujuan Belajar
+## Tujuan Pembelajaran
 
 Setelah membaca materi ini, pembaca akan memahami:
 
@@ -51,7 +51,7 @@ Meskipun autentikasi berbasis token (seperti JWT) populer untuk API modern, aute
 
 ---
 
-## Materi Inti
+## Konten Inti
 
 ### Apa itu Cookies?
 
@@ -162,7 +162,7 @@ app.post('/logout', (req, res) => {
 
 ---
 
-## Contoh / Ilustrasi
+## Contoh Kode
 
 Bayangkan sebuah klub malam.
 
@@ -181,7 +181,7 @@ Bayangkan sebuah klub malam.
 
 ---
 
-## Ringkasan Akhir
+## Kesimpulan
 
 * **Cookies** adalah potongan data kecil yang disimpan di browser, dikirim secara otomatis bersama setiap permintaan.
 * **Sessions** menyimpan data pengguna dengan aman di server, direferensikan oleh Session ID yang disimpan di dalam cookie.
@@ -192,18 +192,10 @@ Bayangkan sebuah klub malam.
 
 ---
 
-## Langkah Belajar Berikutnya
+## Langkah Berikutnya
 
 * Implementasikan penyimpanan session Redis menggunakan `connect-redis`.
 * Pelajari lebih lanjut tentang Cross-Site Request Forgery (CSRF) dan cara melindunginya.
 * Bandingkan Autentikasi berbasis Session dengan JSON Web Tokens (JWT) untuk memahami *trade-off* (kelebihan dan kekurangannya).
 
 ---
-
-## Metadata
-
-* Level: Menengah
-* Topik utama: Express JS
-* Topik terkait: Autentikasi, Keamanan, State Management
-* Kata kunci: Cookies, Session, express-session, cookie-parser, State, Autentikasi
-* Estimasi waktu baca: 10 menit

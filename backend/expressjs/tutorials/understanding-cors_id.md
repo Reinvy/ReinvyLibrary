@@ -10,13 +10,13 @@ locale: "id"
 
 # Memahami CORS di Express JS
 
-## Ringkasan Singkat
+## Ringkasan
 
 Materi ini menjelaskan Cross-Origin Resource Sharing (CORS), alasan mengapa browser menerapkannya, dan cara mengonfigurasinya dengan mudah serta aman di dalam aplikasi Express.js Anda. Anda akan belajar bagaimana mengizinkan aplikasi frontend di domain yang berbeda untuk berkomunikasi dengan API backend Anda.
 
 ---
 
-## Untuk Siapa Materi Ini
+## Target Audiens
 
 * **Target pembaca:** Developer frontend yang sedang mempelajari backend, dan developer backend yang membangun API untuk dikonsumsi oleh single-page applications (SPA) modern.
 * **Level pembaca:** Pemula hingga Menengah.
@@ -33,7 +33,7 @@ Sebelum memulai materi ini, Anda sebaiknya sudah memahami:
 
 ---
 
-## Tujuan Belajar
+## Tujuan Pembelajaran
 
 Setelah membaca materi ini, pembaca akan memahami:
 
@@ -55,7 +55,7 @@ CORS adalah mekanisme standar yang memberi tahu browser, "Tidak apa-apa, backend
 
 ---
 
-## Materi Inti
+## Konten Inti
 
 ### 1. Same-Origin Policy (SOP)
 
@@ -88,7 +88,7 @@ Meskipun Anda bisa mengatur header CORS secara manual menggunakan `res.setHeader
 
 ---
 
-## Contoh / Ilustrasi
+## Contoh Kode
 
 ### Langkah 1: Instalasi
 
@@ -168,7 +168,7 @@ app.listen(3000, () => console.log('Server aman berjalan'));
 
 ---
 
-## Ringkasan Akhir
+## Kesimpulan
 
 * SOP (Same-Origin Policy) memblokir aplikasi frontend dari memanggil API backend di domain yang berbeda secara *default*.
 * CORS adalah cara standar untuk merelaksasi kebijakan ini dengan aman.
@@ -178,7 +178,7 @@ app.listen(3000, () => console.log('Server aman berjalan'));
 
 ---
 
-## Langkah Belajar Berikutnya
+## Langkah Berikutnya
 
 Sekarang API Anda dapat berkomunikasi dengan aman dengan aplikasi frontend, Anda siap untuk mempelajari tentang:
 
@@ -186,11 +186,3 @@ Sekarang API Anda dapat berkomunikasi dengan aman dengan aplikasi frontend, Anda
 * **Express JS Security Best Practices:** Selami lebih dalam untuk melindungi server Anda dengan alat seperti Helmet dan Rate Limiting.
 
 ---
-
-## Metadata
-
-* Level: Pemula
-* Topik utama: Express JS
-* Topik terkait: Keamanan, Middleware, Web Browser
-* Kata kunci: express, cors, api, cross-origin, keamanan
-* Estimasi waktu baca: 10 menit

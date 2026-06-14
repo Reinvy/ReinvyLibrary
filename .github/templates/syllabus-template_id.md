@@ -10,7 +10,7 @@ locale: "id"
 
 # Judul Silabus
 
-## Tinjauan Umum
+## Ringkasan
 
 Berikan deskripsi umum mengenai kursus, cakupan materi, dan alasan mengapa kurikulum ini disusun seperti ini.
 

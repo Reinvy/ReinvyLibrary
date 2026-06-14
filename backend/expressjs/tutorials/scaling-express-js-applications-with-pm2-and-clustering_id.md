@@ -10,13 +10,13 @@ locale: "id"
 
 # Scaling Express JS Applications with PM2 and Clustering
 
-## Ringkasan Singkat
+## Ringkasan
 
 Materi ini membahas cara men-*scale* aplikasi Express.js Anda untuk menangani lebih banyak trafik dan memaksimalkan sumber daya *server*. Anda akan mempelajari keterbatasan sifat *single-thread* pada Node.js, cara mengatasinya menggunakan modul bawaan `cluster`, dan cara mengelola *deployment* di *production* secara efektif menggunakan PM2, sebuah *process manager* tingkat lanjut.
 
 ---
 
-## Untuk Siapa Materi Ini
+## Target Audiens
 
 * **Target Audience:** *Developer backend* tingkat menengah hingga mahir yang menyiapkan aplikasi untuk lingkungan *production* dengan trafik tinggi.
 * **Level:** Menengah - Mahir.
@@ -32,7 +32,7 @@ Materi ini membahas cara men-*scale* aplikasi Express.js Anda untuk menangani le
 
 ---
 
-## Tujuan Belajar
+## Tujuan Pembelajaran
 
 Setelah menyelesaikan materi ini, Anda akan dapat:
 
@@ -51,7 +51,7 @@ Untuk menangani lebih banyak *request* bersamaan dan benar-benar melakukan *scal
 
 ---
 
-## Materi Inti
+## Konten Inti
 
 ### 1. Masalah Single-Thread di Node.js
 
@@ -179,7 +179,7 @@ pm2 start ecosystem.config.js --env production
 
 ---
 
-## Contoh / Ilustrasi
+## Contoh Kode
 
 Bayangkan sebuah dapur restoran.
 
@@ -196,7 +196,7 @@ Bayangkan sebuah dapur restoran.
 
 ---
 
-## Ringkasan Akhir
+## Kesimpulan
 
 * Node.js bersifat *single-thread*; tidak dapat memanfaatkan *CPU multi-core* secara *default*.
 * Modul bawaan `cluster` memungkinkan *scaling* dengan memunculkan *child process* yang berbagi *port* yang sama.
@@ -206,17 +206,9 @@ Bayangkan sebuah dapur restoran.
 
 ---
 
-## Langkah Belajar Berikutnya
+## Langkah Berikutnya
 
 * [Dockerizing Express JS Applications](Dockerizing%20Express%20JS%20Applications_ID.md) (Pelajari cara mengontainerisasi aplikasi Anda, sebuah pendekatan alternatif atau pelengkap untuk *scaling*).
 * [Caching in Express JS APIs with Redis](Caching%20in%20Express%20JS%20APIs%20with%20Redis_ID.md) (Penting untuk mengelola *state* di lingkungan yang terkluster).
 
 ---
-
-## Metadata
-
-* Level: Menengah
-* Topik utama: Express.js, Backend Development, Scaling, Production Deployment
-* Topik terkait: PM2, Clustering, High Availability, Load Balancing
-* Kata kunci: express scaling, nodejs cluster, pm2, load balancing, production ready express
-* Estimasi waktu baca: 10 - 15 menit

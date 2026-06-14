@@ -10,11 +10,11 @@ locale: "id"
 
 # Logging dan Monitoring di Express JS
 
-## Ringkasan Singkat
+## Ringkasan
 
 Materi ini membahas cara menerapkan pencatatan (logging) dan pemantauan (monitoring) dalam aplikasi Express.js. Anda akan belajar untuk beralih dari sekadar menggunakan `console.log()` menjadi menerapkan logging HTTP terstruktur dengan Morgan dan logging di tingkat aplikasi dengan Winston, agar aplikasi Anda lebih mudah dipelihara dan di-debug.
 
-## Untuk Siapa Materi Ini
+## Target Audiens
 
 - **Target Audience:** Developer backend yang ingin membuat aplikasinya lebih mudah di-debug dan dipantau saat berada di lingkungan produksi (production).
 - **Level:** Menengah (Intermediate).
@@ -25,7 +25,7 @@ Materi ini membahas cara menerapkan pencatatan (logging) dan pemantauan (monitor
 - Terbiasa melakukan debugging pada aplikasi JavaScript.
 - Memahami perbedaan antara lingkungan pengembangan (development) dan produksi (production).
 
-## Tujuan Belajar
+## Tujuan Pembelajaran
 
 Setelah menyelesaikan materi ini, Anda akan dapat:
 
@@ -40,7 +40,7 @@ Saat membangun aplikasi Express di komputer lokal, `console.log()` terasa cukup 
 
 Logging yang baik menyediakan catatan sejarah tentang perilaku aplikasi Anda. Dengan menggabungkan pencatat request HTTP (untuk melacak traffic yang masuk) dan pencatat aplikasi (untuk melacak alur logika bisnis dan error), Anda bisa dengan cepat mendiagnosis masalah, memantau performa, dan memahami perilaku pengguna.
 
-## Materi Inti
+## Konten Inti
 
 ### 1. Masalah dengan `console.log()`
 
@@ -123,7 +123,7 @@ const morganMiddleware = morgan(
 app.use(morganMiddleware);
 ```
 
-## Contoh / Ilustrasi
+## Contoh Kode
 
 Bayangkan Anda sedang menjalankan sebuah hotel besar:
 
@@ -138,22 +138,14 @@ Hanya mengandalkan `console.log()` sama seperti staf hotel yang hanya meneriakka
 - **Jangan Mencatat Data Sensitif:** Berhati-hatilah agar tidak memasukkan password pengguna, API keys, atau informasi identitas pribadi (PII) ke dalam log. Selalu lakukan sanitasi data sebelum dicatat jika diperlukan.
 - **Pahami Level Log:** Gunakan level `error` untuk kegagalan sistem yang membutuhkan penanganan segera, `warn` untuk situasi tak terduga yang belum tentu error, `info` untuk kejadian umum dalam siklus aplikasi, dan `debug` untuk melacak informasi detail selama tahap pengembangan.
 
-## Ringkasan Akhir
+## Kesimpulan
 
 - Penggunaan `console.log()` tidak cukup memadai untuk aplikasi di lingkungan produksi.
 - Gunakan **Morgan** untuk mencatat request HTTP yang masuk secara otomatis.
 - Gunakan **Winston** untuk membuat log aplikasi yang berjenjang dan terstruktur, serta menyimpannya ke dalam file atau layanan eksternal.
 - Menggabungkan Morgan dan Winston akan memusatkan seluruh sistem pencatatan pada aplikasi Anda.
 
-## Langkah Belajar Berikutnya
+## Langkah Berikutnya
 
 - [Deploying Express JS Applications to Production_ID](Deploying%20Express%20JS%20Applications%20to%20Production_ID.md)
 - [Express JS Security Best Practices_ID](Express%20JS%20Security%20Best%20Practices_ID.md)
-
-## Metadata
-
-- Level: Menengah
-- Topik utama: Express.js, Backend Development, Monitoring
-- Topik terkait: Middleware, Logging, Debugging, Production
-- Kata kunci: express logging, morgan, winston, production monitoring, error tracking
-- Estimasi waktu baca: 8 - 12 menit

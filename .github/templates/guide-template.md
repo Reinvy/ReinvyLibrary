@@ -2,7 +2,7 @@
 title: "Guide Title"
 description: "A short 1-2 sentence description of the best practices or architectural guidelines."
 category: "backend"
-technology: "express-js"
+technology: "expressjs"
 difficulty: "intermediate"
 type: "guide"
 locale: "en"

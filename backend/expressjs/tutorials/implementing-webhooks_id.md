@@ -10,13 +10,13 @@ locale: "id"
 
 # Implementasi Webhooks di Express JS
 
-## Ringkasan Singkat
+## Ringkasan
 
 Materi ini membahas konsep dan implementasi praktis Webhooks di Express.js. Anda akan mempelajari cara menerima event asinkron dari layanan eksternal (seperti payment gateway atau GitHub) secara aman, memverifikasi keasliannya menggunakan *signature*, dan memprosesnya secara efisien tanpa memblokir antrean utama (*main event loop*).
 
 ---
 
-## Untuk Siapa Materi Ini
+## Target Audiens
 
 * **Target Audience:** Developer backend tingkat menengah yang perlu mengintegrasikan aplikasi Express mereka dengan API dan layanan eksternal.
 * **Level:** Menengah (Intermediate).
@@ -32,7 +32,7 @@ Materi ini membahas konsep dan implementasi praktis Webhooks di Express.js. Anda
 
 ---
 
-## Tujuan Belajar
+## Tujuan Pembelajaran
 
 Setelah menyelesaikan materi ini, Anda akan dapat:
 
@@ -54,7 +54,7 @@ Memahami cara mengimplementasikan webhook dengan aman adalah keterampilan yang s
 
 ---
 
-## Materi Inti
+## Konten Inti
 
 ### 1. Apa itu Webhook?
 
@@ -106,7 +106,7 @@ Mereka membuat *signature* ini dengan melakukan *hashing* pada *payload* request
 
 ---
 
-## Contoh / Ilustrasi
+## Contoh Kode
 
 Mari kita implementasikan *endpoint* webhook aman yang memverifikasi *signature* HMAC SHA-256, mensimulasikan integrasi webhook GitHub.
 
@@ -169,7 +169,7 @@ app.listen(3000, () => console.log('Server Webhook berjalan di port 3000'));
 
 ---
 
-## Ringkasan Akhir
+## Kesimpulan
 
 * Webhooks memungkinkan layanan eksternal mendorong notifikasi event *real-time* ke server Express Anda.
 * Selalu respons dengan kode status HTTP 2xx secepat mungkin untuk mencegah *timeout* dan pengulangan pengiriman (*retries*) yang tidak perlu.
@@ -178,17 +178,9 @@ app.listen(3000, () => console.log('Server Webhook berjalan di port 3000'));
 
 ---
 
-## Langkah Belajar Berikutnya
+## Langkah Berikutnya
 
 * [Rate Limiting and API Throttling in Express JS](Rate%20Limiting%20and%20API%20Throttling%20in%20Express%20JS_ID.md) (Untuk melindungi *endpoint* webhook Anda dari banjir *request*).
 * [Data Validation and Error Handling in Express](Data%20Validation%20and%20Error%20Handling%20in%20Express_ID.md) (Untuk menangani *payload* webhook yang formatnya salah dengan kuat).
 
 ---
-
-## Metadata
-
-* **Level:** Menengah (Intermediate)
-* **Topik utama:** Express.js, Backend Development
-* **Topik terkait:** Webhooks, API Integration, Security, Asynchronous Processing
-* **Kata kunci:** express webhook, stripe webhook, github webhook, verifikasi signature hmac, express raw body, idempotency
-* **Estimasi waktu baca:** 10 - 15 menit

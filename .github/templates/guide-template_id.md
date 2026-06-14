@@ -2,7 +2,7 @@
 title: "Judul Panduan"
 description: "Deskripsi singkat 1-2 kalimat mengenai praktik terbaik atau pedoman arsitektur."
 category: "backend"
-technology: "express-js"
+technology: "expressjs"
 difficulty: "intermediate"
 type: "guide"
 locale: "id"

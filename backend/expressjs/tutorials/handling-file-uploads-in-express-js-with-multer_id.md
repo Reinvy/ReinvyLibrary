@@ -10,13 +10,13 @@ locale: "id"
 
 # Menangani Upload File di Express JS dengan Multer
 
-## Ringkasan Singkat
+## Ringkasan
 
 Tutorial ini membahas cara menangani upload file dalam aplikasi Express.js menggunakan Multer. Materi ini menjelaskan konsep dasar, konfigurasi untuk unggahan file tunggal maupun ganda, serta praktik terbaik untuk keamanan dan penyimpanan.
 
 ---
 
-## Untuk Siapa Materi Ini
+## Target Audiens
 
 * Backend Developer yang perlu memproses file yang diunggah oleh pengguna.
 * Pembelajar Express.js yang ingin memahami penggunaan middleware untuk menangani `multipart/form-data`.
@@ -32,7 +32,7 @@ Tutorial ini membahas cara menangani upload file dalam aplikasi Express.js mengg
 
 ---
 
-## Tujuan Belajar
+## Tujuan Pembelajaran
 
 Setelah membaca materi ini, pembaca akan memahami:
 
@@ -51,7 +51,7 @@ Untuk mengirim file melalui HTTP, klien menggunakan tipe encoding `multipart/for
 
 ---
 
-## Materi Inti
+## Konten Inti
 
 ### Mengapa Kita Membutuhkan Multer?
 
@@ -177,7 +177,7 @@ const secureUpload = multer({
 
 ---
 
-## Contoh / Ilustrasi
+## Contoh Kode
 
 Mari kita buat contoh lengkap endpoint aman untuk mengunggah avatar pengguna.
 
@@ -267,7 +267,7 @@ app.listen(3000, () => console.log('Server berjalan pada port 3000'));
 
 ---
 
-## Ringkasan Akhir
+## Kesimpulan
 
 * Multer adalah middleware standar untuk mem-parsing `multipart/form-data` di Express.js.
 * Ini memfasilitasi penanganan upload file dari form HTML atau klien API.
@@ -277,18 +277,10 @@ app.listen(3000, () => console.log('Server berjalan pada port 3000'));
 
 ---
 
-## Langkah Belajar Berikutnya
+## Langkah Berikutnya
 
 * Pelajari cara mengintegrasikan Multer dengan solusi penyimpanan cloud seperti AWS S3 menggunakan `multer-s3`.
 * Pelajari cara memproses gambar yang diunggah (misalnya, mengubah ukuran, memotong) menggunakan pustaka seperti Sharp sebelum menyimpannya.
 * Pelajari praktik keamanan lanjutan untuk menangani unggahan pengguna, termasuk pemindaian malware.
 
 ---
-
-## Metadata
-
-* Level: Menengah
-* Topik utama: Express.js, File Uploads
-* Topik terkait: Middleware, Form Data, Keamanan
-* Kata kunci: multer, express file upload, multipart/form-data, node.js upload
-* Estimasi waktu baca: 10 menit

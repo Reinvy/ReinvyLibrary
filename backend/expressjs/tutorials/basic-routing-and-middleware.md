@@ -10,11 +10,11 @@ locale: "en"
 
 # Understanding Basic Routing and Middleware in Express.js
 
-## Brief Summary
+## Summary
 
 This material covers fundamental concepts in Express.js: *Routing* and *Middleware*. You will learn how to direct data flow from incoming *requests* to outgoing *responses*, and how to inject additional logic midway through the process in a structured manner.
 
-## For Whom This Material Is
+## Target Audience
 
 - **Target Audience:** Beginner to intermediate web developers.
 - **Level:** Foundation.
@@ -41,7 +41,7 @@ When building a real-world web application, you wouldn't place all your code log
 
 Furthermore, you often need to perform checks before a route is executed (e.g., "Is this user logged in?", "Is the sent data valid?"). Instead of repeating validation code in every route, Express.js uses the concept of **Middleware**. Mastering these two concepts is key to building scalable and organized Express APIs and applications.
 
-## Core Material
+## Core Content
 
 ### 1. What is Routing?
 
@@ -154,7 +154,7 @@ app.get('/secret-data', (req, res) => {
 });
 ```
 
-## Example / Illustration
+## Code Examples
 
 Imagine you are entering a luxury office building (Your Express Application).
 
@@ -169,24 +169,16 @@ Imagine you are entering a luxury office building (Your Express Application).
 - **Order is Crucial**: Express executes *middleware* sequentially (*top-to-bottom*) in the order you write `app.use()`. Ensure security *middleware* (like token verification) is placed *before* the routes that need protection.
 - **Information Security**: Always follow the "Log details internally, return generic safely" principle to prevent leaking your system architecture to the outside world.
 
-## Final Summary
+## Conclusion
 
 - *Routing* is used to direct requests from the *client* (URL & Method) to the appropriate code (*handler*).
 - `express.Router()` helps organize applications by breaking routes down into separate modules.
 - *Middleware* is a function that sits in the middle of the request/response flow, useful for logging, authentication, *request* modification, and more.
 - Secure error handling must be done on the server-side to protect sensitive information.
 
-## Next Learning Steps
+## Next Steps
 
 Now that you understand Routing and Middleware, you are ready for:
 
 - [Express Integration with Multer](Express%20With%20Multer.md) (To learn file uploading).
 - [Express Integration with Prisma](Express%20With%20Prisma.md) (To connect your API with a Database).
-
-## Metadata
-
-- **Level:** Foundation
-- **Main Topic:** Express.js, Backend Development
-- **Related Topics:** Routing, Middleware, Web API
-- **Keywords:** express router, express middleware, next function, node.js, api error handling
-- **Estimated Reading Time:** 7 - 10 minutes

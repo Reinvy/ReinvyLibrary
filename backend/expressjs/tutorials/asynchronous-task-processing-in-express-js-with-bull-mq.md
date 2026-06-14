@@ -184,30 +184,22 @@ Imagine a fast-food restaurant.
 
 If the cashier also had to cook every meal before taking the next order, the line would become incredibly slow (this is what happens when you block the Node.js event loop).
 
-## Insight Penting
+## Key Insights
 
 - **Separation of Concerns:** Keep your web servers (Express) separate from your workers. In production environments, it is highly recommended to run Express APIs and BullMQ Workers in different containers or virtual machines. This allows you to scale them independently based on traffic vs. background processing load.
 - **Idempotency:** Ensure your worker jobs are idempotent. Since jobs might be retried upon failure, processing the same job twice should not cause unintended side effects (e.g., charging a customer twice).
 - **Graceful Shutdown:** Implement graceful shutdown for your workers. When the server restarts or scales down, you want the worker to finish its current job or safely pause it, rather than killing it mid-execution. Use `worker.close()` during the shutdown sequence.
 - **Monitor Your Queues:** Use tools like `bull-board` to visualize your queues, track failed jobs, and monitor worker performance visually.
 
-## Ringkasan Akhir
+## Conclusion
 
 - Asynchronous task processing is essential for keeping Express.js applications responsive.
 - BullMQ is a robust queue system backed by Redis.
 - The workflow consists of a **Queue** (to store jobs), a **Producer** (your Express app adding jobs), and a **Worker** (a background process executing jobs).
 - Offloading heavy tasks prevents blocking the Node.js single-threaded event loop.
 
-## Langkah Belajar Berikutnya
+## Next Steps
 
 - Learn how to implement CRON-like repeatable jobs using BullMQ.
 - Explore how to set up `bull-board` for a GUI dashboard of your queues.
 - Study Graceful Shutdown strategies in Node.js to ensure workers finish their tasks before the server shuts down.
-
-## Metadata
-
-- Level: Intermediate
-- Topik utama: Express.js, Performance Optimization
-- Topik terkait: Message Queues, Redis, Asynchronous Processing, BullMQ
-- Kata kunci: express js background jobs, bullmq tutorial, node js event loop, redis task queue, async processing
-- Estimasi waktu baca: 10 menit

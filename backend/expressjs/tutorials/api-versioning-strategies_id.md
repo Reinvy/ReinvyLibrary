@@ -10,11 +10,11 @@ locale: "id"
 
 # Strategi Versioning API di Express JS
 
-## Ringkasan Singkat
+## Ringkasan
 
 Materi ini menjelaskan cara mengimplementasikan versioning API pada aplikasi Express.js. Anda akan mempelajari pentingnya versioning untuk menjaga kompatibilitas versi lama (backward compatibility), serta mengeksplorasi strategi praktis seperti versioning menggunakan URI path dan header kustom untuk mengelola perubahan siklus hidup API secara halus.
 
-## Untuk Siapa Materi Ini
+## Target Audiens
 
 - Target pembaca: Backend Developer, API Designer, dan Fullstack Developer.
 - Level pembaca: Menengah.
@@ -25,7 +25,7 @@ Materi ini menjelaskan cara mengimplementasikan versioning API pada aplikasi Exp
 - Keakraban dengan prinsip desain RESTful API.
 - Pengetahuan dasar tentang metode HTTP dan header.
 
-## Tujuan Belajar
+## Tujuan Pembelajaran
 
 - Memahami apa itu versioning API dan mengapa hal ini krusial untuk pemeliharaan API jangka panjang.
 - Mempelajari kapan harus memperkenalkan versi baru dan kapan harus menghindarinya.
@@ -39,7 +39,7 @@ Ketika Anda membangun sebuah API, berbagai klien (aplikasi mobile, aplikasi web,
 
 Di sinilah peran versioning API. Versioning memungkinkan Anda untuk merilis fitur baru dan perubahan yang berpotensi merusak di bawah versi baru, sembari menjaga versi lama tetap utuh untuk klien yang sudah ada. Hal ini memberikan masa transisi, memastikan pengalaman pengguna yang lancar dan tanpa gangguan. Namun, versioning juga membawa beban pemeliharaan (maintenance overhead), sehingga mengetahui *bagaimana* dan *kapan* harus melakukan versioning adalah keahlian fundamental dalam merancang sistem backend yang tangguh dan dapat diskalakan.
 
-## Materi Inti
+## Konten Inti
 
 ### Apa itu Versioning API?
 
@@ -70,7 +70,7 @@ Ada beberapa cara untuk mengimplementasikan versioning. Dua pendekatan yang pali
 1. **Versioning URI Path:** Versi API dituliskan secara eksplisit di dalam URL (contoh: `/api/v1/users`). Ini adalah pendekatan yang paling umum dan mudah dilihat.
 2. **Versioning Header:** URL tetap sama (contoh: `/api/users`), tetapi klien menentukan versi yang diminta melalui HTTP header (contoh: `Accept-Version: v2`).
 
-## Contoh / Ilustrasi
+## Contoh Kode
 
 ### 1. Implementasi Versioning URI Path
 
@@ -188,7 +188,7 @@ Jangan biarkan versi lama hidup selamanya. Setiap versi akan melipatgandakan upa
 
 Selalu bungkus logika route Anda di dalam blok try-catch (atau gunakan error handler asinkron). Jika terjadi kesalahan, catat detail log error secara internal (`console.error(error)`) dan kembalikan pesan `500 Internal Server Error` secara generik. Ini mencegah terungkapnya stack trace atau struktur database sensitif kepada pengguna akhir, tidak peduli versi API mana yang mereka gunakan.
 
-## Ringkasan Akhir
+## Kesimpulan
 
 - Versioning API memastikan klien yang bergantung pada struktur lama tidak akan rusak saat Anda memperkenalkan perubahan besar.
 - Lakukan versioning hanya untuk breaking changes; penambahan fitur opsional (additive changes) tidak memerlukan versi baru.
@@ -196,16 +196,8 @@ Selalu bungkus logika route Anda di dalam blok try-catch (atau gunakan error han
 - Versioning Header menggunakan middleware kustom (`x-api-version`) untuk menjaga URL tetap bersih tetapi butuh konfigurasi ekstra di sisi klien.
 - Rencanakan periode sunset untuk akhirnya mematikan versi API lama agar terhindar dari beban pemeliharaan yang tak ada habisnya.
 
-## Langkah Belajar Berikutnya
+## Langkah Berikutnya
 
 - Pelajari cara merapikan struktur controller dan service ke dalam folder terpisah untuk menjaga routing versi tetap bersih (konsep MVC).
 - Eksplorasi alat dokumentasi API seperti Swagger (OpenAPI) untuk mendokumentasikan beberapa versi API secara bersamaan.
 - Pelajari prinsip Semantic Versioning (SemVer) untuk memahami cara mengklasifikasikan pembaruan major, minor, dan patch.
-
-## Metadata
-
-- Level: Menengah
-- Topik utama: Express.js, API Design
-- Topik terkait: Routing, Middleware, RESTful API
-- Kata kunci: api versioning, express js routing, backward compatibility, rest api, header versioning
-- Estimasi waktu baca: 8 menit

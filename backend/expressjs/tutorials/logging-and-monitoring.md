@@ -132,28 +132,20 @@ Imagine running a large hotel:
 
 Relying only on `console.log()` is like the hotel staff just shouting these updates into the hallway—eventually, the important messages will get lost in the noise.
 
-## Insight Penting
+## Key Insights
 
 - **Structure is Key:** In production, logging in JSON format is highly recommended. It allows log aggregation tools (like Datadog, ELK stack, or Splunk) to easily parse and search your logs.
 - **Don't Log Sensitive Data:** Be extremely careful not to log user passwords, API keys, or personally identifiable information (PII). Always sanitize logs if necessary.
 - **Log Levels Matter:** Use `error` for system failures that require attention, `warn` for expected but undesirable situations, `info` for general lifecycle events, and `debug` for detailed tracing during development.
 
-## Ringkasan Akhir
+## Conclusion
 
 - `console.log()` is not sufficient for production environments.
 - Use **Morgan** to log incoming HTTP requests automatically.
 - Use **Winston** to create structured, leveled application logs and save them to files or external services.
 - Combining Morgan and Winston centralizes all your application logging.
 
-## Langkah Belajar Berikutnya
+## Next Steps
 
 - [Deploying Express JS Applications to Production](Deploying%20Express%20JS%20Applications%20to%20Production.md)
 - [Express JS Security Best Practices](Express%20JS%20Security%20Best%20Practices.md)
-
-## Metadata
-
-- Level: Intermediate
-- Topik utama: Express.js, Backend Development, Monitoring
-- Topik terkait: Middleware, Logging, Debugging, Production
-- Kata kunci: express logging, morgan, winston, production monitoring
-- Estimasi waktu baca: 8 - 12 minutes

@@ -160,7 +160,7 @@ app.listen(3000, () => console.log('Webhook server running on port 3000'));
 
 ---
 
-## Insight Penting
+## Key Insights
 
 * **Respond Fast (Status 200):** Webhook providers expect a fast response (usually within 3-5 seconds). If you perform heavy database queries *before* sending `res.status(200)`, the provider might assume the request failed, timeout, and try sending it again (retries), causing duplicate processing. Always acknowledge first, process later.
 * **Idempotency is Key:** Because of network glitches, providers might send the exact same webhook twice. Your code must be *idempotent*. If you receive the same "payment successful" event twice, you shouldn't credit the user's account twice. Always check if the event ID has already been processed in your database.
@@ -169,7 +169,7 @@ app.listen(3000, () => console.log('Webhook server running on port 3000'));
 
 ---
 
-## Ringkasan Akhir
+## Conclusion
 
 * Webhooks allow external services to push real-time event notifications to your Express server.
 * Always respond with a 2xx HTTP status code as quickly as possible to prevent timeouts and unnecessary retries.
@@ -178,17 +178,9 @@ app.listen(3000, () => console.log('Webhook server running on port 3000'));
 
 ---
 
-## Langkah Belajar Berikutnya
+## Next Steps
 
 * [Rate Limiting and API Throttling in Express JS](Rate%20Limiting%20and%20API%20Throttling%20in%20Express%20JS.md) (To protect your webhook endpoint from being flooded).
 * [Data Validation and Error Handling in Express](Data%20Validation%20and%20Error%20Handling%20in%20Express.md) (To robustly handle malformed webhook payloads).
 
 ---
-
-## Metadata
-
-* **Level:** Intermediate
-* **Topik utama:** Express.js, Backend Development
-* **Topik terkait:** Webhooks, API Integration, Security, Asynchronous Processing
-* **Kata kunci:** express webhook, stripe webhook, github webhook, verify signature hmac, express raw body, idempotency
-* **Estimasi waktu baca:** 10 - 15 minutes

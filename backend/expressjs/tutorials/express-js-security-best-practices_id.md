@@ -10,11 +10,11 @@ locale: "id"
 
 # Praktik Terbaik Keamanan di Express.js
 
-## Ringkasan Singkat
+## Ringkasan
 
 Materi ini membahas praktik fundamental keamanan dalam Express.js. Anda akan belajar cara melindungi aplikasi dari kerentanan umum, mengelola header HTTP dengan aman, menangani error tanpa membocorkan informasi sensitif, dan menerapkan pembatasan akses (*rate limiting*) untuk mencegah penyalahgunaan.
 
-## Untuk Siapa Materi Ini
+## Target Audiens
 
 - **Target Audience:** Web developer tingkat menengah yang membangun aplikasi siap produksi.
 - **Level:** Menengah (Intermediate).
@@ -26,7 +26,7 @@ Materi ini membahas praktik fundamental keamanan dalam Express.js. Anda akan bel
 - Telah membaca [Basic Routing and Middleware in Express_ID](Basic%20Routing%20and%20Middleware%20in%20Express_ID.md).
 - Pemahaman tentang JSON Web Tokens (JWT) untuk autentikasi sangat disarankan.
 
-## Tujuan Belajar
+## Tujuan Pembelajaran
 
 Setelah menyelesaikan materi ini, Anda akan dapat:
 
@@ -42,7 +42,7 @@ Membangun API yang berfungsi barulah separuh dari pekerjaan. Setelah aplikasi An
 
 Mengamankan aplikasi Express.js tidak berarti Anda harus menulis ulang seluruh kode; ini tentang menerapkan serangkaian praktik terbaik dan middleware khusus untuk menambahkan lapisan pertahanan. Memahami praktik-praktik ini sangat penting bagi setiap developer yang bertransisi dari lingkungan *development* ke *production*.
 
-## Materi Inti
+## Konten Inti
 
 ### 1. Header HTTP Aman dengan Helmet
 
@@ -103,7 +103,7 @@ app.use('/api/', apiLimiter);
 
 Jangan pernah memercayai data yang dikirim oleh *client*. Input berbahaya dapat menyebabkan manipulasi NoSQL, Cross-Site Scripting (XSS), atau SQL *injection*. Selalu validasi dan bersihkan `req.body`, `req.query`, dan `req.params`.
 
-## Contoh / Ilustrasi
+## Contoh Kode
 
 Bayangkan server Express Anda adalah brankas bank.
 
@@ -117,22 +117,14 @@ Bayangkan server Express Anda adalah brankas bank.
 - **Keamanan Berlapis:** Tidak ada satu pun middleware yang membuat aplikasi Anda 100% aman. Helmet, *rate limiting*, validasi input, dan penanganan error yang baik bekerja sama untuk menciptakan strategi pertahanan berlapis (*defense-in-depth*).
 - **Perbarui Dependensi (Dependency):** Banyak pelanggaran keamanan terjadi melalui paket pihak ketiga yang kedaluwarsa. Jalankan `npm audit` secara rutin untuk memeriksa kerentanan yang diketahui dalam dependensi Anda.
 
-## Ringkasan Akhir
+## Kesimpulan
 
 - Gunakan `helmet` untuk menyembunyikan tumpukan teknologi (tech stack) Anda dan mengatur header HTTP yang aman.
 - Terapkan pembatasan (*rate limiting*) menggunakan `express-rate-limit` untuk mencegah serangan *brute-force* dan DoS.
 - Jangan pernah mengembalikan error sistem kepada *client*; catat di internal dan kirimkan pesan status 500 generik.
 - Selalu validasi dan bersihkan input dari pengguna sebelum memprosesnya.
 
-## Langkah Belajar Berikutnya
+## Langkah Berikutnya
 
 - [Data Validation and Error Handling in Express_ID](Data%20Validation%20and%20Error%20Handling%20in%20Express_ID.md)
 - [Authentication and Authorization with JWT in Express_ID](Authentication%20and%20Authorization%20with%20JWT%20in%20Express_ID.md)
-
-## Metadata
-
-- Level: Menengah
-- Topik utama: Express.js, Backend Development, Keamanan
-- Topik terkait: Middleware, Penanganan Error, Perlindungan API
-- Kata kunci: keamanan express, helmet, rate limiting, kebocoran informasi, logging error
-- Estimasi waktu baca: 8 - 12 menit

@@ -1,6 +1,6 @@
 ---
 title: "Authentication with Passport JS in Express"
-description: "This material covers how to implement authentication in Express.js using Passport.js, a popular and flexible authentication middleware for Node.js. It explains"
+description: "Learn how to implement secure local authentication (username and password) in an Express.js application using Passport.js middleware."
 category: "backend"
 technology: "expressjs"
 difficulty: "intermediate"
@@ -12,134 +12,96 @@ locale: "en"
 
 ## Summary
 
-This material covers how to implement authentication in Express.js using Passport.js, a popular and flexible authentication middleware for Node.js. It explains how to set up local authentication (username and password) and touches upon its modular strategy-based architecture.
-
----
+This tutorial guides you through setting up Local Authentication (username and password) in an Express.js application using the Passport.js library, securing user sessions, and protecting private routes.
 
 ## Target Audience
 
-- Target audience: Intermediate web developers.
-- Level: Intermediate.
-
----
+Intermediate backend developers who want to understand session-based authentication and modular strategy setups in Node.js.
 
 ## Prerequisites
 
-A brief list of things that should ideally be understood:
-
-- Basic Express.js routing and middleware.
-- Understanding of Cookies and Session Management in Express JS.
-- Familiarity with basic database operations (e.g., MongoDB with Mongoose or similar).
-- General knowledge of authentication concepts.
-
----
+- Good understanding of Express.js and session middleware (`express-session`).
+- Node.js installed locally.
 
 ## Learning Objectives
 
-After reading this material, readers will understand:
-
-- How Passport.js works and its strategy-based architecture.
-- How to implement local authentication using `passport-local`.
-- How to serialize and deserialize users to maintain login sessions.
-- Best practices for structuring authentication routes and middleware.
-
----
+By the end of this tutorial, you will be able to:
+- Understand Passport's modular architecture and its "Strategy" concept.
+- Configure `passport-local` to validate user credentials against database records.
+- Implement session serialization and deserialization.
+- Protect Express routes with authentication middleware.
 
 ## Context and Motivation
 
-Authentication is a core requirement for most web applications. Building an authentication system from scratch can be complex and error-prone, involving secure password hashing, session management, and robust error handling. Passport.js solves this by providing a comprehensive, secure, and extensible authentication framework. By using Passport, developers can implement various authentication methods (local, OAuth, OpenID) consistently, saving time and reducing security risks. It's an industry standard in the Node.js ecosystem.
-
----
+Authentication is a core requirement of almost every web application. Building custom authentication logic from scratch is error-prone. Passport.js provides a robust, pluggable ecosystem with over 500+ authentication strategies, allowing you to easily manage user sessions and seamlessly upgrade to OAuth or social logins later.
 
 ## Core Content
 
-### 1. What is Passport.js?
+### 1. Installation
 
-Passport is authentication middleware for Node.js. Its sole purpose is to authenticate requests, which it does through an extensible set of plugins known as **strategies**. Passport does not mount routes or assume any particular database schema, making it highly flexible.
-
-### 2. Strategy-Based Architecture
-
-Passport uses the concept of **Strategies** to authenticate requests. There are over 500 strategies available, ranging from local authentication (username and password) to delegated authentication (e.g., Google, Facebook, Twitter via OAuth).
-
-To use Passport, you configure the specific strategies your application needs. In this tutorial, we focus on `passport-local`, which uses a username and password.
-
-### 3. Core Components of Passport
-
-Implementing Passport involves three main components:
-
-- **Authentication Strategy:** The logic that defines how to verify a user's credentials.
-- **Application Middleware:** Initializing Passport and connecting it to the session.
-- **Sessions (Serialization/Deserialization):** Storing user information in the session so they remain authenticated across requests.
-
-### 4. Setting up Passport Local Strategy
-
-To authenticate using a username and password, you must configure the `LocalStrategy`. This strategy requires a callback function that verifies the provided credentials against your database.
-
-If the credentials are valid, the callback returns the user object. If invalid, it returns `false`, often with an error message.
-
-### 5. Managing Sessions
-
-In typical web applications, credentials are only transmitted during the initial login. Subsequent requests are authenticated via a session. Passport requires you to define how a user is serialized into the session and deserialized from the session.
-
-- **Serialization:** Determines which data of the user object should be stored in the session (usually the user ID).
-- **Deserialization:** Retrieves the whole user object based on the stored ID from the database on subsequent requests.
-
----
-
-## Code Examples
-
-Here is a comprehensive example of setting up Passport with a local strategy in an Express app.
-
-### Step 1: Install Dependencies
+Install Passport, the local strategy module, and express-session:
 
 ```bash
-npm install express express-session passport passport-local
+npm install passport passport-local express-session bcryptjs
 ```
 
-### Step 2: Configure Passport and Strategy
+### 2. Configuring Local Strategy
+
+Define how Passport will verify user credentials:
 
 ```javascript
-const express = require('express');
-const session = require('express-session');
+// passport-config.js
 const passport = require('passport');
 const LocalStrategy = require('passport-local').Strategy;
+const bcrypt = require('bcryptjs');
 
-const app = express();
-app.use(express.urlencoded({ extended: false }));
+// Dummy database search helper
+const findUserByUsername = (username) => {
+  // In reality: return await db.users.findUnique({ where: { username } });
+  return { id: 1, username: 'admin', passwordHash: 'hashed_password' };
+};
 
-// Dummy user database
-const users = [{ id: 1, username: 'testuser', password: 'password123' }];
-
-// 1. Configure Local Strategy
-passport.use(new LocalStrategy(
-  (username, password, done) => {
-    // Find user in database
-    const user = users.find(u => u.username === username);
-
+passport.use(new LocalStrategy(async (username, password, done) => {
+  try {
+    const user = findUserByUsername(username);
     if (!user) {
       return done(null, false, { message: 'Incorrect username.' });
     }
-    if (user.password !== password) {
+    
+    const isMatch = await bcrypt.compare(password, user.passwordHash);
+    if (!isMatch) {
       return done(null, false, { message: 'Incorrect password.' });
     }
-
-    // Authentication successful
+    
     return done(null, user);
+  } catch (error) {
+    return done(error);
   }
-));
+}));
 
-// 2. Serialize user into session
-passport.serializeUser((user, done) => {
-  done(null, user.id);
-});
-
-// 3. Deserialize user from session
+// Session Serialization
+passport.serializeUser((user, done) => done(null, user.id));
 passport.deserializeUser((id, done) => {
-  const user = users.find(u => u.id === id);
-  done(null, user);
+  // Find user by id in database
+  done(null, { id: 1, username: 'admin' });
 });
+```
 
-// Initialize session and Passport
+### 3. Integrating with Express
+
+Initialize Passport and session middleware inside your Express app:
+
+```javascript
+// app.js
+const express = require('express');
+const session = require('express-session');
+const passport = require('passport');
+require('./passport-config');
+
+const app = express();
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+
 app.use(session({
   secret: 'supersecretkey',
   resave: false,
@@ -148,69 +110,43 @@ app.use(session({
 
 app.use(passport.initialize());
 app.use(passport.session());
+```
 
-// Login Route
-app.post('/login', passport.authenticate('local', {
-  successRedirect: '/dashboard',
-  failureRedirect: '/login-failed'
+## Code Examples
+
+Here is how you handle login request and protect sensitive routes:
+
+```javascript
+// Auth Routes
+app.post('/api/login', passport.authenticate('local', {
+  successRedirect: '/api/dashboard',
+  failureRedirect: '/api/login-failed'
 }));
 
-// Protected Route Middleware
-function isAuthenticated(req, res, next) {
+// Authentication protection middleware
+function ensureAuthenticated(req, res, next) {
   if (req.isAuthenticated()) {
     return next();
   }
-  res.redirect('/login');
+  res.status(401).json({ error: "Unauthorized access" });
 }
 
-app.get('/dashboard', isAuthenticated, (req, res) => {
-  res.send(`Welcome to your dashboard, ${req.user.username}!`);
+app.get('/api/dashboard', ensureAuthenticated, (req, res) => {
+  res.json({ message: `Welcome to the dashboard, ${req.user.username}!` });
 });
-
-app.listen(3000, () => console.log('Server running on port 3000'));
 ```
 
-### Explanation of the Code
+## Key Insights
 
-- We configure a `LocalStrategy` that checks if the username and password match our dummy database.
-- `passport.serializeUser` saves the `user.id` into the session.
-- `passport.deserializeUser` uses the `id` from the session to fetch the full user object, which is then attached to `req.user`.
-- The `/login` route uses `passport.authenticate`, which automatically handles the login process.
-- The `isAuthenticated` middleware uses `req.isAuthenticated()` (provided by Passport) to protect the `/dashboard` route.
+- **Serialization Concept**: Serializing stores only the user ID in the session cookie, keeping the payload small. Deserializing queries the database on every subsequent request to load user details into `req.user`.
+- **Bcrypt Security**: Always hash passwords using bcrypt before saving. Never compare plain-text passwords.
+- **Session Security**: In production, ensure session cookies use `secure: true` (requiring HTTPS) and `httpOnly: true` to mitigate cross-site scripting (XSS) risks.
 
----
+## Next Steps
 
-## Insight Penting
+- Replace the dummy database methods with real database queries using Mongoose or Prisma.
+- Implement password recovery and validation middleware.
 
-- **Separation of Concerns:** Keep your authentication logic (strategy configuration) in a separate file (e.g., `config/passport.js`) to maintain clean routing files.
-- **Security:** Never store plain text passwords in production. Always hash passwords using libraries like `bcrypt` before storing them and use `bcrypt.compare` inside your `LocalStrategy`.
-- **Stateless APIs:** If you are building a RESTful API (e.g., for a mobile app or React frontend), you might not use sessions. Instead, you can use Passport with the `passport-jwt` strategy to authenticate requests using JSON Web Tokens.
-- **Error Handling:** Use custom callbacks with `passport.authenticate` if you need granular control over the response instead of automated redirects.
+## Conclusion
 
----
-
-## Ringkasan Akhir
-
-- Passport.js is a versatile authentication middleware for Express using a strategy-based architecture.
-- `passport-local` is used for traditional username and password authentication.
-- Authentication state is maintained using sessions via `serializeUser` and `deserializeUser`.
-- Passport attaches the authenticated user to the request object (`req.user`) and provides helper methods like `req.isAuthenticated()`.
-
----
-
-## Langkah Belajar Berikutnya
-
-- Explore hashing passwords with `bcrypt` alongside Passport.
-- Learn about Authentication and Authorization with JWT in Express for stateless APIs.
-- Implement social logins using OAuth strategies (e.g., `passport-google-oauth20`).
-- Understand Implementing Role-Based Access Control in Express JS to manage user permissions.
-
----
-
-## Metadata
-
-- Level: Intermediate
-- Topik utama: Express JS, Authentication
-- Topik terkait: Middleware, Security, Session Management
-- Kata kunci: express js, passport js, authentication, local strategy, login
-- Estimasi waktu baca: 15 minutes
+You have successfully set up local username-password authentication using Passport.js, integrated it into Express.js session middleware, and secured dashboard routes.

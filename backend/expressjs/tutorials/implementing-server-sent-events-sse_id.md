@@ -10,11 +10,11 @@ locale: "id"
 
 # Implementasi Server-Sent Events (SSE) di Express JS
 
-## Ringkasan Singkat
+## Ringkasan
 
 Server-Sent Events (SSE) adalah protokol ringan yang memungkinkan server untuk mendorong pembaruan data secara real-time ke klien melalui satu koneksi HTTP. Tutorial ini menjelaskan cara mengimplementasikan SSE dalam aplikasi Express.js, serta membahas keuntungannya dibandingkan WebSockets untuk aliran data searah (one-way data streams).
 
-## Untuk Siapa Materi Ini
+## Target Audiens
 
 Developer Node.js dan Express.js tingkat menengah yang perlu mengalirkan data real-time dari server ke klien tanpa kompleksitas koneksi dua arah seperti yang dibutuhkan oleh WebSockets.
 
@@ -24,7 +24,7 @@ Developer Node.js dan Express.js tingkat menengah yang perlu mengalirkan data re
 - Keakraban dengan protokol HTTP, headers, dan arsitektur client-server.
 - Pengetahuan dasar tentang pemrograman asinkron JavaScript.
 
-## Tujuan Belajar
+## Tujuan Pembelajaran
 
 - Memahami apa itu Server-Sent Events (SSE) dan bagaimana perbedaannya dengan WebSockets.
 - Mempelajari cara mengonfigurasi header Express.js untuk mendukung SSE.
@@ -35,7 +35,7 @@ Developer Node.js dan Express.js tingkat menengah yang perlu mengalirkan data re
 
 Dalam aplikasi web modern, fitur real-time seperti skor olahraga langsung, ticker saham, atau feed notifikasi sangatlah penting. Meskipun WebSockets sering menjadi solusi utama untuk komunikasi real-time, mereka bisa berlebihan (overkill) jika klien hanya perlu *menerima* data. Server-Sent Events (SSE) menyediakan standar berbasis HTTP yang lebih sederhana untuk aliran event searah (dari server ke klien), menawarkan fitur rekoneksi otomatis dan pelacakan ID event sebagai bawaan.
 
-## Materi Inti
+## Konten Inti
 
 ### Apa itu Server-Sent Events?
 
@@ -62,7 +62,7 @@ Setelah header diatur, server dapat mengirim data menggunakan metode `res.write(
 
 Karena koneksi SSE berumur panjang (long-lived), sangat penting untuk menangani pemutusan klien dengan baik untuk menghindari kebocoran memori. Anda harus mendengarkan event `close` dari request dan membersihkan interval atau resource terkait.
 
-## Contoh / Ilustrasi
+## Contoh Kode
 
 Berikut adalah contoh lengkap menyiapkan endpoint SSE sederhana di Express.js yang mengirimkan waktu server saat ini setiap detik.
 
@@ -148,23 +148,15 @@ Untuk mengonsumsi stream ini di frontend, Anda menggunakan API `EventSource` baw
 - **Proxy dan Timeout:** Beberapa load balancer atau proxy (seperti Nginx) mungkin menyangga (buffer) respons atau menjatuhkan koneksi yang diam. Anda mungkin perlu mengonfigurasi proxy buffering (`proxy_buffering off;` di Nginx) atau mengimplementasikan ping "heartbeat" (komentar kosong seperti `:\n\n`) untuk menjaga koneksi tetap hidup.
 - **Lalu Lintas Searah:** Ingat, jika klien perlu mengirim data kembali ke server, ia harus menggunakan permintaan AJAX/fetch standar di samping stream SSE.
 
-## Ringkasan Akhir
+## Kesimpulan
 
 - SSE menyediakan cara standar yang sederhana untuk mengalirkan data dari server ke klien melalui koneksi HTTP standar.
 - Membutuhkan pengaturan header spesifik (`text/event-stream`, `keep-alive`, `no-cache`).
 - Secara signifikan lebih sederhana untuk diimplementasikan daripada WebSockets untuk aliran data searah dan mencakup fitur browser bawaan seperti rekoneksi otomatis.
 - Pembersihan yang tepat (mendengarkan event `close`) sangat vital untuk mencegah kebocoran memori di server.
 
-## Langkah Belajar Berikutnya
+## Langkah Berikutnya
 
 - Real-Time Communication in Express with Socket.IO (Untuk memahami alternatif dua arah).
 - Scaling Express JS Applications (Untuk mempelajari cara menangani banyak koneksi berumur panjang yang bersamaan).
 - Rate Limiting and API Throttling in Express JS (Untuk melindungi endpoint SSE Anda).
-
-## Metadata
-
-- Level: Menengah
-- Topik utama: Real-Time Communication
-- Topik terkait: Express.js, Protokol HTTP, Event Streams
-- Kata kunci: express js, sse, server sent events, real-time, event-stream
-- Estimasi waktu baca: 10 menit

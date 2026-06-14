@@ -10,11 +10,11 @@ locale: "id"
 
 # Implementing Role-Based Access Control in Express JS
 
-## Ringkasan Singkat
+## Ringkasan
 
 Materi ini membahas cara mengimplementasikan *Role-Based Access Control* (RBAC) pada aplikasi Express.js. Anda akan mempelajari cara membatasi akses ke rute-rute tertentu berdasarkan *role* (peran) pengguna, memastikan bahwa hanya personel yang berwenang yang dapat melakukan operasi sensitif.
 
-## Untuk Siapa Materi Ini
+## Target Audiens
 
 - **Target Audience:** Pengembang *backend* yang ingin mengamankan aplikasi Express mereka dengan menetapkan dan menegakkan peran pengguna.
 - **Level:** Menengah.
@@ -25,7 +25,7 @@ Materi ini membahas cara mengimplementasikan *Role-Based Access Control* (RBAC) 
 - Familiar dengan autentikasi pengguna (misalnya menggunakan JWT).
 - Pengetahuan tentang kode status HTTP, khususnya `401 Unauthorized` dan `403 Forbidden`.
 
-## Tujuan Belajar
+## Tujuan Pembelajaran
 
 Setelah menyelesaikan materi ini, Anda akan dapat:
 
@@ -38,7 +38,7 @@ Setelah menyelesaikan materi ini, Anda akan dapat:
 
 Autentikasi memverifikasi *siapa* pengguna itu, tetapi otorisasi menentukan *apa* yang boleh mereka lakukan. Dalam aplikasi dunia nyata, tidak semua pengguna memiliki hak istimewa yang sama. Misalnya, pengguna biasa tidak seharusnya bisa menghapus akun pengguna lain, sementara administrator harus memiliki akses penuh. Menerapkan *Role-Based Access Control* (RBAC) memungkinkan Anda memisahkan tanggung jawab ini dengan rapi, membuat aplikasi Anda lebih aman, dapat diskalakan (*scalable*), dan lebih mudah dipelihara seiring bertambah kompleksnya persyaratan izin.
 
-## Materi Inti
+## Konten Inti
 
 ### 1. Konsep RBAC
 
@@ -111,7 +111,7 @@ const authorizeRoles = (...allowedRoles) => {
 module.exports = { authenticateUser, authorizeRoles };
 ```
 
-## Contoh / Ilustrasi
+## Contoh Kode
 
 Mari kita terapkan *middleware* ini untuk mengamankan rute tertentu di aplikasi Express.
 
@@ -157,22 +157,14 @@ Dalam pengaturan ini:
 - **401 vs 403:** Gunakan `401 Unauthorized` ketika pengguna tidak masuk (*login*) atau token tidak valid. Gunakan `403 Forbidden` ketika pengguna terautentikasi tetapi tidak memiliki izin yang diperlukan.
 - **Skalabilitas:** Untuk skenario yang lebih kompleks yang melibatkan sumber daya tertentu (misalnya, editor hanya dapat mengedit artikel *milik mereka sendiri* tetapi bukan milik orang lain), RBAC mungkin tidak cukup. Dalam kasus tersebut, pertimbangkan *Attribute-Based Access Control* (ABAC) atau menambahkan pengecekan izin tingkat sumber daya di dalam *handler* rute Anda.
 
-## Ringkasan Akhir
+## Kesimpulan
 
 - RBAC memisahkan pengguna ke dalam peran-peran dengan izin tertentu.
 - Anda harus mengautentikasi pengguna dan melampirkan datanya ke objek *request* sebelum menerapkan RBAC.
 - Buat *middleware* yang fleksibel yang menerima *array* peran yang diizinkan dan memeriksanya terhadap peran pengguna saat ini.
 - Amankan rute dengan menggabungkan *middleware* `authenticateUser` dan `authorizeRoles`.
 
-## Langkah Belajar Berikutnya
+## Langkah Berikutnya
 
 - Pelajari cara mengimplementasikan *Attribute-Based Access Control* (ABAC) untuk perizinan yang lebih mendetail (*fine-grained*).
 - Eksplorasi integrasi logika otorisasi dengan kueri basis data untuk memfilter hasil berdasarkan peran pengguna.
-
-## Metadata
-
-- Level: Menengah
-- Topik utama: Express.js, Security, Authorization
-- Topik terkait: Authentication, JWT, Middleware
-- Kata kunci: express authorization, rbac, role based access control, middleware, express roles
-- Estimasi waktu baca: 10 - 15 menit

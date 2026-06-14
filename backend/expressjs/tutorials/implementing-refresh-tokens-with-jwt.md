@@ -193,7 +193,7 @@ app.listen(3000, () => {
 
 ---
 
-## Insight Penting
+## Key Insights
 
 * **Storage Strategy:** Storing Refresh Tokens in an `HttpOnly` cookie is often considered the most secure approach against XSS attacks, while the Access Token can be stored in memory on the client side.
 * **Token Invalidation:** Because JWTs are stateless, you cannot invalidate a specific Access Token before it expires. The Refresh Token mechanism solves this: if a user is compromised or banned, you can delete their Refresh Token from the database. When their 15-minute Access Token expires, they will be unable to get a new one.
@@ -202,7 +202,7 @@ app.listen(3000, () => {
 
 ---
 
-## Ringkasan Akhir
+## Conclusion
 
 * Using long-lived Access Tokens is a security risk. They should have a short lifespan.
 * Refresh Tokens are long-lived tokens used specifically to request new Access Tokens when the old ones expire.
@@ -211,18 +211,10 @@ app.listen(3000, () => {
 
 ---
 
-## Langkah Belajar Berikutnya
+## Next Steps
 
 * Implement Refresh Token Storage using a real database (like PostgreSQL with Prisma) instead of an in-memory array.
 * Learn how to store tokens securely on the frontend using `HttpOnly` cookies.
 * Explore advanced security patterns like Refresh Token Rotation.
 
 ---
-
-## Metadata
-
-* Level: Intermediate
-* Topik utama: Express.js, Authentication, Security
-* Topik terkait: JWT, Refresh Token, Authorization
-* Kata kunci: express, jwt, refresh token, access token, security, authentication
-* Estimasi waktu baca: 15 minutes

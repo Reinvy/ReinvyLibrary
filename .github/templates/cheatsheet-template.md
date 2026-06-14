@@ -2,7 +2,7 @@
 title: "Technology Cheat Sheet"
 description: "A quick reference guide for common commands, syntax, and configurations."
 category: "backend"
-technology: "express-js"
+technology: "expressjs"
 difficulty: "beginner"
 type: "cheatsheet"
 locale: "en"
@@ -39,5 +39,6 @@ command2 --flag
 
 ```javascript
 // Quick code reference
-const x = require('package');
+const express = require('express');
+const app = express();
 ```

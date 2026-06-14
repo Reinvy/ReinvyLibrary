@@ -150,7 +150,7 @@ When a guest (HTTP Request) arrives, the bouncer checks them against the rules s
 
 ---
 
-## Insight Penting
+## Key Insights
 
 * **Fail Early, Fail Loudly:** By validating data at the edge of your application (in middleware), you prevent malformed data from causing deeper, more obscure errors in your database or business logic layers.
 * `.parse()` vs `.safeParse()`: In the middleware example, we used `.parse()`, which throws an exception on failure. Zod also provides `.safeParse()`, which returns an object containing `{ success: true/false, data, error }` instead of throwing. `.safeParse()` is useful if you prefer to avoid `try-catch` blocks.
@@ -158,7 +158,7 @@ When a guest (HTTP Request) arrives, the bouncer checks them against the rules s
 
 ---
 
-## Ringkasan Akhir
+## Conclusion
 
 * Zod is a powerful, declarative schema validation library that pairs excellently with Express.js.
 * Creating a generic validation middleware keeps route handlers clean and focused solely on business logic.
@@ -166,18 +166,10 @@ When a guest (HTTP Request) arrives, the bouncer checks them against the rules s
 
 ---
 
-## Langkah Belajar Berikutnya
+## Next Steps
 
 * Explore Zod's more advanced features, such as refinements (`.refine()`) for custom validation logic (e.g., checking if passwords match).
 * Learn how to validate other parts of the request, such as `req.query` for search parameters and `req.params` for dynamic route segments.
 * Integrate Zod validation with an ORM like Prisma for end-to-end type safety.
 
 ---
-
-## Metadata
-
-* Level: Intermediate
-* Topik utama: Express JS, Validation
-* Topik terkait: Zod, Middleware, Error Handling
-* Kata kunci: express zod, schema validation, express middleware, typescript validation
-* Estimasi waktu baca: 8 - 12 minutes

@@ -9,6 +9,25 @@ const ALLOWED_TECHNOLOGIES = [
 const ALLOWED_DIFFICULTIES = ['beginner', 'intermediate', 'advanced'];
 const ALLOWED_TYPES = ['tutorial', 'syllabus', 'cheatsheet', 'guide'];
 
+const EXPECTED_H2S = {
+  tutorial: {
+    en: ['Summary', 'Target Audience', 'Prerequisites', 'Learning Objectives', 'Context and Motivation', 'Core Content', 'Code Examples', 'Key Insights', 'Next Steps', 'Conclusion'],
+    id: ['Ringkasan', 'Target Audiens', 'Prasyarat', 'Tujuan Pembelajaran', 'Konteks dan Motivasi', 'Konten Inti', 'Contoh Kode', 'Insight Penting', 'Langkah Berikutnya', 'Kesimpulan']
+  },
+  syllabus: {
+    en: ['Overview', 'Curriculum', 'Final Project', 'Assessment Criteria', 'References'],
+    id: ['Ringkasan', 'Kurikulum', 'Proyek Akhir', 'Kriteria Penilaian', 'Referensi']
+  },
+  cheatsheet: {
+    en: ['Quick Reference Table', 'Common Commands', 'Code Snippets'],
+    id: ['Tabel Referensi Cepat', 'Perintah Umum', 'Potongan Kode']
+  },
+  guide: {
+    en: ['Introduction', 'Best Practices', 'Implementation Steps'],
+    id: ['Pendahuluan', 'Praktik Terbaik', 'Langkah Implementasi']
+  }
+};
+
 const ROOT_DIR = path.join(__dirname, '..');
 let errorCount = 0;
 
@@ -74,14 +93,15 @@ function validateFile(filePath) {
   }
   
   const requiredFields = ['title', 'description', 'category', 'technology', 'difficulty', 'type', 'locale'];
+  let hasMissingField = false;
   for (const field of requiredFields) {
     if (!metadata[field]) {
       logError(filePath, `Missing mandatory frontmatter field: "${field}"`);
+      hasMissingField = true;
     }
   }
   
-  // If some required fields are missing, stop deeper validation on them
-  if (errorCount > 0) return;
+  if (hasMissingField) return;
   
   // Locale check
   if (metadata.locale !== 'en' && metadata.locale !== 'id') {
@@ -121,6 +141,37 @@ function validateFile(filePath) {
   if (relativeDir !== expectedPath) {
     logError(filePath, `File path does not match metadata. Expected folder: "${expectedPath}", Actual: "${relativeDir}"`);
   }
+
+  // 4. Heading structure and language validation
+  const headingRegex = /^##\s+(.+)$/gm;
+  const actualH2s = [];
+  let matchH2;
+  while ((matchH2 = headingRegex.exec(content)) !== null) {
+    actualH2s.push(matchH2[1].trim());
+  }
+
+  // Check for Metadata section
+  if (actualH2s.some(h => h.toLowerCase() === 'metadata')) {
+    logError(filePath, 'Redundant "## Metadata" section is not allowed at the bottom of the file.');
+  }
+
+  const expectedList = EXPECTED_H2S[metadata.type]?.[metadata.locale];
+  if (expectedList) {
+    // Verify that all expected headings exist in the file
+    for (const expected of expectedList) {
+      if (!actualH2s.includes(expected)) {
+        logError(filePath, `Missing mandatory heading: "## ${expected}"`);
+      }
+    }
+    // Verify that no headings from the wrong language's template exist
+    const wrongLocale = metadata.locale === 'en' ? 'id' : 'en';
+    const wrongHeadings = EXPECTED_H2S[metadata.type]?.[wrongLocale] || [];
+    for (const wrong of wrongHeadings) {
+      if (actualH2s.includes(wrong)) {
+        logError(filePath, `Invalid heading for locale "${metadata.locale}": "## ${wrong}"`);
+      }
+    }
+  }
 }
 
 function walkDir(dir) {
@@ -130,7 +181,7 @@ function walkDir(dir) {
     const stat = fs.statSync(fullPath);
     if (stat.isDirectory()) {
       // Exclude system folders
-      if (file !== '.git' && file !== '.github' && file !== 'node_modules' && file !== 'scripts') {
+      if (file !== '.git' && file !== '.github' && file !== 'node_modules' && file !== 'scripts' && file !== 'docs') {
         walkDir(fullPath);
       }
     } else if (file.endsWith('.md') && dir !== ROOT_DIR) {

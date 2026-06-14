@@ -185,7 +185,7 @@ In this example, the first request to `/api/users` will take 2 seconds. Any subs
 
 ---
 
-## Insight Penting
+## Key Insights
 
 * **Cache Key Design is Critical:** Ensure your cache keys are unique. If your API response depends on the user (e.g., `/api/profile`), the cache key MUST include the user ID (e.g., \`user:\${userId}:profile\`), otherwise users might see each other's private data.
 * **Graceful Degradation:** Your application should never crash if the Redis server goes down. In the middleware example above, the `catch` block simply calls `next()`, bypassing the cache and falling back to the database. This is a crucial best practice.
@@ -194,7 +194,7 @@ In this example, the first request to `/api/users` will take 2 seconds. Any subs
 
 ---
 
-## Ringkasan Akhir
+## Conclusion
 
 * Caching improves API performance and reduces database load by storing frequently accessed data in memory.
 * Redis is the go-to solution for caching in Node.js due to its speed and simplicity.
@@ -203,18 +203,10 @@ In this example, the first request to `/api/users` will take 2 seconds. Any subs
 
 ---
 
-## Langkah Belajar Berikutnya
+## Next Steps
 
 * Explore advanced Redis data structures (Hashes, Lists, Sets) for more complex caching scenarios.
 * Learn about implementing a robust Cache Invalidation strategy when data is updated via `POST`, `PUT`, or `DELETE` requests.
 * Look into Rate Limiting, which also frequently utilizes Redis to track request counts.
 
 ---
-
-## Metadata
-
-* Level: Intermediate
-* Topik utama: Performance, Caching
-* Topik terkait: Redis, Middleware, Scalability
-* Kata kunci: Express, Redis, Caching, Performance, Middleware, API
-* Estimasi waktu baca: 8 menit

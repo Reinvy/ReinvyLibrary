@@ -10,11 +10,11 @@ locale: "id"
 
 # Memahami Siklus Hidup Request pada Express.js
 
-## Ringkasan Singkat
+## Ringkasan
 
 Siklus hidup (lifecycle) request pada Express.js mendefinisikan perjalanan pasti sebuah request HTTP dari klien sejak pertama kali menyentuh server hingga server mengirimkan respons kembali. Dengan memahami alur ini, developer dapat menempatkan middleware dengan benar, mengelola parsing data, mengautentikasi pengguna secara efisien, dan menangani error dengan anggun tanpa membiarkan request menggantung (hanging).
 
-## Untuk Siapa Materi Ini
+## Target Audiens
 
 Developer backend tingkat pemula hingga menengah yang sudah bisa membuat rute dasar Express.js tetapi ingin pemahaman lebih dalam tentang bagaimana data mengalir di dalam aplikasi, terutama saat melakukan proses debug pada rantai middleware yang kompleks atau penanganan error.
 
@@ -24,7 +24,7 @@ Developer backend tingkat pemula hingga menengah yang sudah bisa membuat rute da
 - Familiar dengan konsep dasar Express.js seperti `app.get()` dan `app.listen()`.
 - Pemahaman umum tentang apa itu request dan respons HTTP.
 
-## Tujuan Belajar
+## Tujuan Pembelajaran
 
 - Memahami langkah demi langkah perjalanan request HTTP di Express.js.
 - Mengerti peran penting dari fungsi `next()` dalam meneruskan request.
@@ -35,7 +35,7 @@ Developer backend tingkat pemula hingga menengah yang sudah bisa membuat rute da
 
 Saat membangun aplikasi Express, jebakan umum yang sering terjadi adalah menempatkan middleware pada urutan yang salah. Akibatnya, autentikasi gagal, data body menjadi tidak terdefinisi (undefined), atau error lolos tanpa tertangani. Framework Express beroperasi secara sinkron dalam hal tumpukan (stack) middleware-nya. Jika Anda tidak memahami urutan Express memproses request, aplikasi Anda akan menjadi sebuah kotak hitam (black box) yang membingungkan. Menguasai siklus hidup request akan mengubah pandangan Anda terhadap Express, dari sekadar urutan callback yang membingungkan menjadi sebuah alur (pipeline) yang dapat diprediksi dan dikelola.
 
-## Materi Inti
+## Konten Inti
 
 ### Konsep Inti: Tumpukan Middleware (Middleware Stack)
 
@@ -74,7 +74,7 @@ Fungsi `next()` adalah mesin yang menggerakkan request melewati alur pipeline.
 - Jika sebuah middleware tidak memanggil `res.json()` (atau metode sejenis) untuk mengakhiri siklus, middleware tersebut **wajib** memanggil `next()`.
 - Jika `next()` tidak dipanggil dan respons tidak dikirim, request tersebut akan menggantung (hang) tanpa batas waktu hingga klien mengalami timeout.
 
-## Contoh / Ilustrasi
+## Contoh Kode
 
 Mari kita visualisasikan siklus hidup ini dengan contoh kode praktis:
 
@@ -138,23 +138,15 @@ app.listen(3000, () => console.log('Server berjalan pada port 3000'));
 - **Memodifikasi Objek `req`:** Sebuah pola yang sangat tangguh (powerful) di Express adalah menggunakan middleware untuk menempelkan data ke objek `req` (seperti `req.user` dari hasil decode JWT, atau `req.db` untuk koneksi database) sehingga handler rute selanjutnya dapat mengakses data tersebut.
 - **Menangani Error Async:** Di Express 4, jika sebuah error terjadi di dalam fungsi asynchronous (`async`), Anda wajib menangkapnya (catch) dan mengopernya ke `next(err)` secara eksplisit, jika tidak, hal itu akan menyebabkan Unhandled Promise Rejection. (Sebagai catatan, Express 5 menangani error async secara native).
 
-## Ringkasan Akhir
+## Kesimpulan
 
 - Siklus hidup request Express adalah sebuah alur (pipeline) linier dari middleware dan handler rute.
 - Siklus ini mengalir secara ketat dari atas ke bawah berdasarkan urutan `app.use()` dan definisi rute.
 - Middleware wajib melakukan salah satu dari dua hal ini: mengakhiri siklus request-respons (dengan mengirim respons) atau menyerahkan kendali ke fungsi berikutnya melalui pemanggilan `next()`.
 - Middleware penanganan error berada di bagian paling bawah tumpukan untuk menangkap error apa pun yang dioper melalui `next(err)`.
 
-## Langkah Belajar Berikutnya
+## Langkah Berikutnya
 
 - **Basic Routing and Middleware in Express**: Pelajari lebih dalam cara membuat struktur rute yang kompleks dan membuat middleware kustom.
 - **Data Validation and Error Handling in Express**: Pelajari cara memvalidasi data body dari request yang masuk (yang terjadi tepat setelah proses parsing di siklus hidup) dan membangun penanganan error global yang tangguh.
 - **Authentication and Authorization with JWT in Express**: Lihat bagaimana middleware autentikasi sangat pas ditempatkan di dalam siklus hidup request untuk melindungi rute-rute aplikasi Anda.
-
-## Metadata
-
-- Level: Pemula / Menengah
-- Topik utama: Express.js
-- Topik terkait: Middleware, Routing, Backend Architecture
-- Kata kunci: Express, Request Lifecycle, Middleware, next(), req, res, Node.js
-- Estimasi waktu baca: 8 menit

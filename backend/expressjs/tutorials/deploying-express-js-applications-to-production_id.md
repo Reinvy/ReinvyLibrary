@@ -10,11 +10,11 @@ locale: "id"
 
 # Men-deploy Aplikasi Express JS ke Production
 
-## Ringkasan Singkat
+## Ringkasan
 
 Materi ini membahas langkah-langkah esensial dan praktik terbaik (best practices) untuk men-deploy aplikasi Express.js ke lingkungan production. Anda akan mempelajari tentang environment variables, process manager seperti PM2, reverse proxy seperti Nginx, dan pengecekan pra-deployment yang penting untuk memastikan backend yang andal dan terukur.
 
-## Untuk Siapa Materi Ini
+## Target Audiens
 
 - **Target Audience:** Developer web menengah (intermediate) yang bersiap untuk merilis aplikasi Express.js mereka agar bisa diakses oleh publik.
 - **Level:** Menengah hingga Lanjut (Intermediate to Advanced).
@@ -26,7 +26,7 @@ Materi ini membahas langkah-langkah esensial dan praktik terbaik (best practices
 - Pengetahuan tentang praktik keamanan terbaik di Express (misalnya, Helmet, Rate Limiting).
 - Sudah membaca [Express JS Security Best Practices_ID](Express%20JS%20Security%20Best%20Practices_ID.md).
 
-## Tujuan Belajar
+## Tujuan Pembelajaran
 
 Setelah menyelesaikan materi ini, Anda akan dapat:
 
@@ -42,7 +42,7 @@ Mengembangkan aplikasi Express.js secara lokal sangatlah mudah: Anda menulis kod
 
 Melakukan deploy secara asal tanpa memahami manajemen proses (process management) dan reverse proxy sering kali berujung pada server down (downtime) dan unhandled exceptions yang membuat server crash secara permanen. Tutorial ini menjembatani kesenjangan antara pengembangan lokal dan setup production yang tangguh.
 
-## Materi Inti
+## Konten Inti
 
 ### 1. Mempersiapkan Kode untuk Production
 
@@ -98,7 +98,7 @@ server {
 }
 ```
 
-## Contoh / Ilustrasi
+## Contoh Kode
 
 Bayangkan aplikasi Express Anda adalah seorang kepala koki di sebuah restoran:
 
@@ -112,22 +112,14 @@ Bayangkan aplikasi Express Anda adalah seorang kepala koki di sebuah restoran:
 - **Cluster Mode:** Node.js menggunakan sistem single-threaded. Untuk memanfaatkan prosesor multi-core, Anda dapat menggunakan mode cluster dari PM2 (`pm2 start app.js -i max`), yang akan melahirkan beberapa instance dari aplikasi Anda untuk menangani lebih banyak request secara bersamaan.
 - **Logging:** PM2 menangani rotasi log (log rotation), yang mencegah penyimpanan disk server Anda penuh akibat file log yang masif dari waktu ke waktu.
 
-## Ringkasan Akhir
+## Kesimpulan
 
 - Set `NODE_ENV=production` untuk mengoptimalkan kinerja Express.
 - Jangan pernah melakukan hardcode pada data rahasia; selalu gunakan Environment Variables.
 - Gunakan process manager seperti PM2 untuk me-restart aplikasi secara otomatis saat crash.
 - Tempatkan reverse proxy seperti Nginx di depan Express untuk menangani load balancing, SSL, dan file statis dengan aman.
 
-## Langkah Belajar Berikutnya
+## Langkah Berikutnya
 
 - Pelajari cara mengatur pipeline CI/CD (misalnya, GitHub Actions) untuk mengotomatiskan proses deployment.
 - Pelajari containerization dengan Docker untuk men-deploy aplikasi Express secara konsisten di lingkungan apa pun.
-
-## Metadata
-
-- Level: Menengah
-- Topik utama: Express.js, Backend Development, Deployment
-- Topik terkait: PM2, Nginx, Production
-- Kata kunci: express deployment, pm2, reverse proxy, nginx, node environment
-- Estimasi waktu baca: 10 - 15 menit

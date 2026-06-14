@@ -122,29 +122,21 @@ Imagine moving to a new house.
 
 In technical terms, the Express application is your furniture, the Node runtime and OS dependencies form the container layout, and Docker guarantees that wherever you deploy this container, it just works.
 
-## Insight Penting
+## Key Insights
 
 * **Layer Caching:** Docker builds images in layers. By copying `package.json` and running `npm install` *before* copying the rest of your application code (`COPY . .`), Docker caches the node_modules layer. If you only change your application code (e.g., updating a route in `app.js`), Docker reuses the cached dependencies instead of re-downloading them. This drastically speeds up build times.
 * **Security (Non-Root User):** By default, Docker runs containers as the `root` user. This is a security risk. In production, it is a best practice to run your Node application as an unprivileged user. The official Node images include a user named `node`. You should add `USER node` to your Dockerfile before the `CMD` instruction.
 * **Alpine Images:** Using `node:18-alpine` instead of standard `node:18` significantly reduces your final image size (often from ~1GB down to ~150MB), leading to faster deployments and reduced storage costs.
 
-## Ringkasan Akhir
+## Conclusion
 
 * Dockerizing an Express app ensures it runs identically across all environments.
 * A `.dockerignore` file is mandatory to prevent massive `node_modules` uploads and potential dependency conflicts.
 * A well-structured `Dockerfile` utilizes layer caching by copying `package.json` before the application source code.
 * Use Alpine Linux-based Node images for smaller, more secure container footprints.
 
-## Langkah Belajar Berikutnya
+## Next Steps
 
 * Learn how to use Docker Compose to run your Express application alongside a containerized database like PostgreSQL or MongoDB.
 * Explore orchestrating multiple containers in a cluster using Kubernetes.
 * Implement CI/CD pipelines to automatically build and push your Docker images to a registry like Docker Hub or GitHub Container Registry.
-
-## Metadata
-
-* Level: Intermediate
-* Topik utama: Deployment, Docker, Express.js
-* Topik terkait: Containerization, DevOps, Backend Architecture
-* Kata kunci: docker, dockerfile, express container, dockerignore, alpine node
-* Estimasi waktu baca: 12 - 18 minutes

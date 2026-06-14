@@ -2,7 +2,7 @@
 title: "Judul Tutorial"
 description: "Ringkasan singkat 1-2 kalimat mengenai apa yang dibahas dalam tutorial ini."
 category: "backend"
-technology: "express-js"
+technology: "expressjs"
 difficulty: "intermediate"
 type: "tutorial"
 locale: "id"
@@ -10,11 +10,11 @@ locale: "id"
 
 # Judul Tutorial
 
-## Ringkasan Singkat
+## Ringkasan
 
 Berikan ringkasan singkat dari tutorial di sini. Jelaskan apa yang akan dibahas dan hasil akhir yang akan dicapai.
 
-## Untuk Siapa Materi Ini
+## Target Audiens
 
 - Target pembaca utama (misalnya, Backend Developer, Fullstack Developer).
 - Ekspektasi tingkat kemampuan pembaca (Pemula / Menengah / Mahir).
@@ -24,18 +24,18 @@ Berikan ringkasan singkat dari tutorial di sini. Jelaskan apa yang akan dibahas 
 - Pengetahuan awal yang diperlukan (misalnya, dasar-dasar JavaScript, prinsip dasar REST).
 - Alat atau instalasi yang diperlukan (misalnya, Node.js terinstal, API client).
 
-## Tujuan Belajar
+## Tujuan Pembelajaran
 
 Setelah menyelesaikan tutorial ini, Anda akan dapat:
-- Tujuan Belajar 1
-- Tujuan Belajar 2
-- Tujuan Belajar 3
+- Tujuan Pembelajaran 1
+- Tujuan Pembelajaran 2
+- Tujuan Pembelajaran 3
 
 ## Konteks dan Motivasi
 
 Berikan latar belakang konteks. Mengapa topik ini penting? Masalah apa yang diselesaikan dalam skenario dunia nyata? Jaga agar bagian ini tetap ringkas dan menarik.
 
-## Materi Inti
+## Konten Inti
 
 Bagian edukasi utama. Jelaskan konsep dengan jelas. Gunakan sub-heading (`###`) untuk memisahkan konsep-konsep logis.
 
@@ -47,7 +47,7 @@ Jelaskan konsep A.
 
 Jelaskan konsep B.
 
-## Contoh / Ilustrasi
+## Contoh Kode
 
 Berikan contoh kode yang lengkap, dapat dijalankan, dan jelas di sini. Gunakan penyorotan sintaks (syntax highlighting) yang benar.
 
@@ -57,6 +57,17 @@ const express = require('express');
 const app = express();
 // ...
 ```
+
+## Insight Penting
+
+- Praktik terbaik 1: Deskripsi dan alasan rasional.
+- Jebakan atau peringatan arsitektur: Deskripsi dan alasan rasional.
+- Pertimbangan performa: Deskripsi dan alasan rasional.
+
+## Langkah Berikutnya
+
+- Topik berikutnya yang disarankan untuk dipelajari.
+- Tautan ke silabus terkait atau panduan lanjutan.
 
 ## Kesimpulan
 

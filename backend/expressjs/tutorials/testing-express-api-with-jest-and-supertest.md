@@ -162,7 +162,7 @@ npm test
 
 ---
 
-## Insight Penting
+## Key Insights
 
 * **Test Independence:** Each test should be independent. Do not rely on the state mutated by a previous test. Use `beforeEach` and `afterEach` hooks to reset the database or mock data.
 * **Mocking External Services:** Do not hit real third-party APIs or production databases in your tests. Use Jest's mocking capabilities (`jest.mock()`) to simulate responses from external dependencies.
@@ -171,7 +171,7 @@ npm test
 
 ---
 
-## Ringkasan Akhir
+## Conclusion
 
 * Automated API testing ensures code reliability and prevents regressions.
 * Jest is a powerful testing framework for running tests and making assertions.
@@ -181,18 +181,10 @@ npm test
 
 ---
 
-## Langkah Belajar Berikutnya
+## Next Steps
 
 * Explore database mocking with Prisma or Mongoose in Jest.
 * Learn about Continuous Integration (CI) to run tests automatically on GitHub Actions.
 * Deep dive into advanced Jest features like snapshot testing and custom matchers.
 
 ---
-
-## Metadata
-
-* **Level:** Intermediate
-* **Topik utama:** Testing, Express.js
-* **Topik terkait:** Jest, Supertest, API Development
-* **Kata kunci:** express testing, jest, supertest, api tests, nodejs testing
-* **Estimasi waktu baca:** 10 minutes
