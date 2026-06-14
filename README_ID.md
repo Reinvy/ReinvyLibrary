@@ -121,6 +121,14 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 | Topik | Format | Kesulitan | Bahasa Tersedia |
 | :--- | :--- | :--- | :--- |
 | [Silabus Penguasaan Kontainerisasi Docker](devops/docker/syllabi/docker-containerization-syllabus.md) | Syllabus | Intermediate | [EN](devops/docker/syllabi/docker-containerization-syllabus.md) \| [ID](devops/docker/syllabi/docker-containerization-syllabus_id.md) |
+
+### 📁 Database
+
+#### 🏷️ Mongodb
+
+| Topik | Format | Kesulitan | Bahasa Tersedia |
+| :--- | :--- | :--- | :--- |
+| [Cheat Sheet Query MongoDB](database/mongodb/cheatsheets/mongodb-query-cheatsheet.md) | Cheatsheet | Beginner | [EN](database/mongodb/cheatsheets/mongodb-query-cheatsheet.md) \| [ID](database/mongodb/cheatsheets/mongodb-query-cheatsheet_id.md) |
 <!-- INDEX_END -->
 
 ---
