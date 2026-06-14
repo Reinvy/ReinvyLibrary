@@ -1,11 +1,10 @@
 const fs = require('fs');
 const path = require('path');
 
-const ALLOWED_CATEGORIES = ['backend', 'frontend', 'mobile', 'devops', 'database', 'testing'];
+const ALLOWED_CATEGORIES = ['backend', 'frontend', 'mobile', 'devops', 'database'];
 const ALLOWED_TECHNOLOGIES = [
-  'express-js', 'flutter', 'docker', 'redis', 'mongodb', 'mongoose', 
-  'postgres', 'prisma', 'typescript', 'jest', 'pm2', 'zod', 
-  'passport-js', 'bullmq', 'nodemailer', 'socket-io', 'jwt', 'express-generator'
+  'expressjs', 'elysiajs', 'nextjs', 'react-native', 'flutter', 'golang', 'laravel',
+  'docker', 'pm2', 'redis', 'mongodb', 'postgres'
 ];
 const ALLOWED_DIFFICULTIES = ['beginner', 'intermediate', 'advanced'];
 const ALLOWED_TYPES = ['tutorial', 'syllabus', 'cheatsheet', 'guide'];

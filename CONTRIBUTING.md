@@ -41,8 +41,8 @@ Files must be organized using **Topic-First Organization**. The directory layout
 
 Only the following values are allowed in directory paths and YAML frontmatter:
 
-- **Categories**: `backend`, `frontend`, `mobile`, `devops`, `database`, `testing`
-- **Technologies**: `express-js`, `flutter`, `docker`, `redis`, `mongodb`, `mongoose`, `postgres`, `prisma`, `typescript`, `jest`, `pm2`, `zod`, `passport-js`, `bullmq`, `nodemailer`, `socket-io`, `jwt`, `express-generator`
+- **Categories**: `backend`, `frontend`, `mobile`, `devops`, `database`
+- **Technologies**: `expressjs`, `elysiajs`, `nextjs`, `react-native`, `flutter`, `golang`, `laravel`, `docker`, `pm2`, `redis`, `mongodb`, `postgres`
 
 ### Plural Content Types
 - `tutorials` (for step-by-step programming materials)
@@ -50,7 +50,7 @@ Only the following values are allowed in directory paths and YAML frontmatter:
 - `cheatsheets` (for quick syntax references)
 - `guides` (for architectural and best practice guidelines)
 
-*Example Target Path*: `backend/express-js/tutorials/api-versioning-strategies.md`
+*Example Target Path*: `backend/expressjs/tutorials/api-versioning-strategies.md`
 
 ---
 

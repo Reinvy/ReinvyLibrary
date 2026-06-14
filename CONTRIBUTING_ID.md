@@ -41,8 +41,8 @@ Semua konten harus diatur menggunakan prinsip **Topic-First Organization** (Orga
 
 Hanya nilai-nilai berikut yang diizinkan dalam penamaan direktori dan YAML frontmatter:
 
-- **Kategori**: `backend`, `frontend`, `mobile`, `devops`, `database`, `testing`
-- **Teknologi**: `express-js`, `flutter`, `docker`, `redis`, `mongodb`, `mongoose`, `postgres`, `prisma`, `typescript`, `jest`, `pm2`, `zod`, `passport-js`, `bullmq`, `nodemailer`, `socket-io`, `jwt`, `express-generator`
+- **Kategori**: `backend`, `frontend`, `mobile`, `devops`, `database`
+- **Teknologi**: `expressjs`, `elysiajs`, `nextjs`, `react-native`, `flutter`, `golang`, `laravel`, `docker`, `pm2`, `redis`, `mongodb`, `postgres`
 
 ### Bentuk Konten Plural
 - `tutorials` (untuk panduan pengkodean langkah demi langkah)
@@ -50,7 +50,7 @@ Hanya nilai-nilai berikut yang diizinkan dalam penamaan direktori dan YAML front
 - `cheatsheets` (untuk referensi cepat perintah/sintaks)
 - `guides` (untuk pedoman arsitektur dan praktik terbaik)
 
-*Contoh Path Target*: `backend/express-js/tutorials/api-versioning-strategies_id.md`
+*Contoh Path Target*: `backend/expressjs/tutorials/api-versioning-strategies_id.md`
 
 ---
 
