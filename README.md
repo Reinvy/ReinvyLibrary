@@ -144,6 +144,12 @@ Below is the dynamically updated list of all materials available in the library:
 | Topic | Format | Difficulty | Available Languages |
 | :--- | :--- | :--- | :--- |
 | [MongoDB Query Cheatsheet](database/mongodb/cheatsheets/mongodb-query-cheatsheet.md) | Cheatsheet | Beginner | [EN](database/mongodb/cheatsheets/mongodb-query-cheatsheet.md) \| [ID](database/mongodb/cheatsheets/mongodb-query-cheatsheet_id.md) |
+
+#### 🏷️ Postgres
+
+| Topic | Format | Difficulty | Available Languages |
+| :--- | :--- | :--- | :--- |
+| [Getting Started with PostgreSQL](database/postgres/tutorials/getting-started-with-postgresql.md) | Tutorial | Beginner | [EN](database/postgres/tutorials/getting-started-with-postgresql.md) \| [ID](database/postgres/tutorials/getting-started-with-postgresql_id.md) |
 <!-- INDEX_END -->
 
 ---

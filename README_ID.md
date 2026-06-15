@@ -144,6 +144,12 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 | Topik | Format | Kesulitan | Bahasa Tersedia |
 | :--- | :--- | :--- | :--- |
 | [Cheat Sheet Query MongoDB](database/mongodb/cheatsheets/mongodb-query-cheatsheet.md) | Cheatsheet | Beginner | [EN](database/mongodb/cheatsheets/mongodb-query-cheatsheet.md) \| [ID](database/mongodb/cheatsheets/mongodb-query-cheatsheet_id.md) |
+
+#### 🏷️ Postgres
+
+| Topik | Format | Kesulitan | Bahasa Tersedia |
+| :--- | :--- | :--- | :--- |
+| [Memulai dengan PostgreSQL](database/postgres/tutorials/getting-started-with-postgresql.md) | Tutorial | Beginner | [EN](database/postgres/tutorials/getting-started-with-postgresql.md) \| [ID](database/postgres/tutorials/getting-started-with-postgresql_id.md) |
 <!-- INDEX_END -->
 
 ---
