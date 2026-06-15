@@ -105,6 +105,26 @@ Below is the dynamically updated list of all materials available in the library:
 | [Understanding RESTful API Design Principles in Express](backend/expressjs/tutorials/understanding-restful-api-design-principles.md) | Tutorial | Beginner | [EN](backend/expressjs/tutorials/understanding-restful-api-design-principles.md) \| [ID](backend/expressjs/tutorials/understanding-restful-api-design-principles_id.md) |
 | [Understanding the Express JS Request Lifecycle](backend/expressjs/tutorials/understanding-the-express-js-request-lifecycle.md) | Tutorial | Beginner | [EN](backend/expressjs/tutorials/understanding-the-express-js-request-lifecycle.md) \| [ID](backend/expressjs/tutorials/understanding-the-express-js-request-lifecycle_id.md) |
 
+#### 🏷️ Elysiajs
+
+| Topic | Format | Difficulty | Available Languages |
+| :--- | :--- | :--- | :--- |
+| [Building REST APIs with ElysiaJS](backend/elysiajs/tutorials/building-rest-apis-with-elysiajs.md) | Tutorial | Intermediate | [EN](backend/elysiajs/tutorials/building-rest-apis-with-elysiajs.md) \| [ID](backend/elysiajs/tutorials/building-rest-apis-with-elysiajs_id.md) |
+
+### 📁 Frontend
+
+#### 🏷️ Nextjs
+
+| Topic | Format | Difficulty | Available Languages |
+| :--- | :--- | :--- | :--- |
+| [Next.js Project Structure and Best Practices](frontend/nextjs/guides/nextjs-project-structure-and-best-practices.md) | Guide | Intermediate | [EN](frontend/nextjs/guides/nextjs-project-structure-and-best-practices.md) \| [ID](frontend/nextjs/guides/nextjs-project-structure-and-best-practices_id.md) |
+
+#### 🏷️ React Native
+
+| Topic | Format | Difficulty | Available Languages |
+| :--- | :--- | :--- | :--- |
+| [React Native Development Syllabus](frontend/react-native/syllabi/react-native-development-syllabus.md) | Syllabus | Intermediate | [EN](frontend/react-native/syllabi/react-native-development-syllabus.md) \| [ID](frontend/react-native/syllabi/react-native-development-syllabus_id.md) |
+
 ### 📁 Mobile
 
 #### 🏷️ Flutter
@@ -112,6 +132,7 @@ Below is the dynamically updated list of all materials available in the library:
 | Topic | Format | Difficulty | Available Languages |
 | :--- | :--- | :--- | :--- |
 | [Flutter App Development Syllabus](mobile/flutter/syllabi/flutter-syllabus.md) | Syllabus | Advanced | [EN](mobile/flutter/syllabi/flutter-syllabus.md) \| [ID](mobile/flutter/syllabi/flutter-syllabus_id.md) |
+| [Flutter Widget Cheatsheet](mobile/flutter/cheatsheets/flutter-widget-cheatsheet.md) | Cheatsheet | Beginner | [EN](mobile/flutter/cheatsheets/flutter-widget-cheatsheet.md) \| [ID](mobile/flutter/cheatsheets/flutter-widget-cheatsheet_id.md) |
 | [State Management with Provider in Flutter](mobile/flutter/tutorials/state-management-with-provider-in-flutter.md) | Tutorial | Intermediate | [EN](mobile/flutter/tutorials/state-management-with-provider-in-flutter.md) \| [ID](mobile/flutter/tutorials/state-management-with-provider-in-flutter_id.md) |
 
 ### 📁 Devops
@@ -121,6 +142,20 @@ Below is the dynamically updated list of all materials available in the library:
 | Topic | Format | Difficulty | Available Languages |
 | :--- | :--- | :--- | :--- |
 | [Docker Containerization Mastery Syllabus](devops/docker/syllabi/docker-containerization-syllabus.md) | Syllabus | Intermediate | [EN](devops/docker/syllabi/docker-containerization-syllabus.md) \| [ID](devops/docker/syllabi/docker-containerization-syllabus_id.md) |
+
+### 📁 Database
+
+#### 🏷️ Mongodb
+
+| Topic | Format | Difficulty | Available Languages |
+| :--- | :--- | :--- | :--- |
+| [MongoDB Query Cheatsheet](database/mongodb/cheatsheets/mongodb-query-cheatsheet.md) | Cheatsheet | Beginner | [EN](database/mongodb/cheatsheets/mongodb-query-cheatsheet.md) \| [ID](database/mongodb/cheatsheets/mongodb-query-cheatsheet_id.md) |
+
+#### 🏷️ Postgres
+
+| Topic | Format | Difficulty | Available Languages |
+| :--- | :--- | :--- | :--- |
+| [Getting Started with PostgreSQL](database/postgres/tutorials/getting-started-with-postgresql.md) | Tutorial | Beginner | [EN](database/postgres/tutorials/getting-started-with-postgresql.md) \| [ID](database/postgres/tutorials/getting-started-with-postgresql_id.md) |
 <!-- INDEX_END -->
 
 ---

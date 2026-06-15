@@ -105,6 +105,26 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 | [Memahami Prinsip Desain RESTful API di Express](backend/expressjs/tutorials/understanding-restful-api-design-principles.md) | Tutorial | Beginner | [EN](backend/expressjs/tutorials/understanding-restful-api-design-principles.md) \| [ID](backend/expressjs/tutorials/understanding-restful-api-design-principles_id.md) |
 | [Memahami Siklus Hidup Request pada Express.js](backend/expressjs/tutorials/understanding-the-express-js-request-lifecycle.md) | Tutorial | Beginner | [EN](backend/expressjs/tutorials/understanding-the-express-js-request-lifecycle.md) \| [ID](backend/expressjs/tutorials/understanding-the-express-js-request-lifecycle_id.md) |
 
+#### 🏷️ Elysiajs
+
+| Topik | Format | Kesulitan | Bahasa Tersedia |
+| :--- | :--- | :--- | :--- |
+| [Membangun REST API dengan ElysiaJS](backend/elysiajs/tutorials/building-rest-apis-with-elysiajs.md) | Tutorial | Intermediate | [EN](backend/elysiajs/tutorials/building-rest-apis-with-elysiajs.md) \| [ID](backend/elysiajs/tutorials/building-rest-apis-with-elysiajs_id.md) |
+
+### 📁 Frontend
+
+#### 🏷️ Nextjs
+
+| Topik | Format | Kesulitan | Bahasa Tersedia |
+| :--- | :--- | :--- | :--- |
+| [Struktur Proyek Next.js dan Praktik Terbaik](frontend/nextjs/guides/nextjs-project-structure-and-best-practices.md) | Guide | Intermediate | [EN](frontend/nextjs/guides/nextjs-project-structure-and-best-practices.md) \| [ID](frontend/nextjs/guides/nextjs-project-structure-and-best-practices_id.md) |
+
+#### 🏷️ React Native
+
+| Topik | Format | Kesulitan | Bahasa Tersedia |
+| :--- | :--- | :--- | :--- |
+| [Silabus Pengembangan React Native](frontend/react-native/syllabi/react-native-development-syllabus.md) | Syllabus | Intermediate | [EN](frontend/react-native/syllabi/react-native-development-syllabus.md) \| [ID](frontend/react-native/syllabi/react-native-development-syllabus_id.md) |
+
 ### 📁 Mobile
 
 #### 🏷️ Flutter
@@ -112,6 +132,7 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 | Topik | Format | Kesulitan | Bahasa Tersedia |
 | :--- | :--- | :--- | :--- |
 | [Silabus Pemrograman Flutter](mobile/flutter/syllabi/flutter-syllabus.md) | Syllabus | Advanced | [EN](mobile/flutter/syllabi/flutter-syllabus.md) \| [ID](mobile/flutter/syllabi/flutter-syllabus_id.md) |
+| [Cheat Sheet Widget Flutter](mobile/flutter/cheatsheets/flutter-widget-cheatsheet.md) | Cheatsheet | Beginner | [EN](mobile/flutter/cheatsheets/flutter-widget-cheatsheet.md) \| [ID](mobile/flutter/cheatsheets/flutter-widget-cheatsheet_id.md) |
 | [Manajemen State dengan Provider di Flutter](mobile/flutter/tutorials/state-management-with-provider-in-flutter.md) | Tutorial | Intermediate | [EN](mobile/flutter/tutorials/state-management-with-provider-in-flutter.md) \| [ID](mobile/flutter/tutorials/state-management-with-provider-in-flutter_id.md) |
 
 ### 📁 Devops
@@ -121,6 +142,20 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 | Topik | Format | Kesulitan | Bahasa Tersedia |
 | :--- | :--- | :--- | :--- |
 | [Silabus Penguasaan Kontainerisasi Docker](devops/docker/syllabi/docker-containerization-syllabus.md) | Syllabus | Intermediate | [EN](devops/docker/syllabi/docker-containerization-syllabus.md) \| [ID](devops/docker/syllabi/docker-containerization-syllabus_id.md) |
+
+### 📁 Database
+
+#### 🏷️ Mongodb
+
+| Topik | Format | Kesulitan | Bahasa Tersedia |
+| :--- | :--- | :--- | :--- |
+| [Cheat Sheet Query MongoDB](database/mongodb/cheatsheets/mongodb-query-cheatsheet.md) | Cheatsheet | Beginner | [EN](database/mongodb/cheatsheets/mongodb-query-cheatsheet.md) \| [ID](database/mongodb/cheatsheets/mongodb-query-cheatsheet_id.md) |
+
+#### 🏷️ Postgres
+
+| Topik | Format | Kesulitan | Bahasa Tersedia |
+| :--- | :--- | :--- | :--- |
+| [Memulai dengan PostgreSQL](database/postgres/tutorials/getting-started-with-postgresql.md) | Tutorial | Beginner | [EN](database/postgres/tutorials/getting-started-with-postgresql.md) \| [ID](database/postgres/tutorials/getting-started-with-postgresql_id.md) |
 <!-- INDEX_END -->
 
 ---
