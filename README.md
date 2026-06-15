@@ -111,6 +111,12 @@ Below is the dynamically updated list of all materials available in the library:
 | :--- | :--- | :--- | :--- |
 | [Building REST APIs with ElysiaJS](backend/elysiajs/tutorials/building-rest-apis-with-elysiajs.md) | Tutorial | Intermediate | [EN](backend/elysiajs/tutorials/building-rest-apis-with-elysiajs.md) \| [ID](backend/elysiajs/tutorials/building-rest-apis-with-elysiajs_id.md) |
 
+#### 🏷️ Golang
+
+| Topic | Format | Difficulty | Available Languages |
+| :--- | :--- | :--- | :--- |
+| [Getting Started with Go Programming](backend/golang/tutorials/getting-started-with-go.md) | Tutorial | Beginner | [EN](backend/golang/tutorials/getting-started-with-go.md) \| [ID](backend/golang/tutorials/getting-started-with-go_id.md) |
+
 ### 📁 Frontend
 
 #### 🏷️ Nextjs
