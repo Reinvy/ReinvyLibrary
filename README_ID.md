@@ -137,6 +137,7 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 
 | Topik | Format | Kesulitan | Bahasa Tersedia |
 | :--- | :--- | :--- | :--- |
+| [Panduan Arsitektur Clean Architecture Flutter](mobile/flutter/guides/flutter-clean-architecture-guide.md) | Guide | Advanced | [EN](mobile/flutter/guides/flutter-clean-architecture-guide.md) \| [ID](mobile/flutter/guides/flutter-clean-architecture-guide_id.md) |
 | [Silabus Pemrograman Flutter](mobile/flutter/syllabi/flutter-syllabus.md) | Syllabus | Advanced | [EN](mobile/flutter/syllabi/flutter-syllabus.md) \| [ID](mobile/flutter/syllabi/flutter-syllabus_id.md) |
 | [Cheat Sheet Widget Flutter](mobile/flutter/cheatsheets/flutter-widget-cheatsheet.md) | Cheatsheet | Beginner | [EN](mobile/flutter/cheatsheets/flutter-widget-cheatsheet.md) \| [ID](mobile/flutter/cheatsheets/flutter-widget-cheatsheet_id.md) |
 | [Manajemen State dengan Provider di Flutter](mobile/flutter/tutorials/state-management-with-provider-in-flutter.md) | Tutorial | Intermediate | [EN](mobile/flutter/tutorials/state-management-with-provider-in-flutter.md) \| [ID](mobile/flutter/tutorials/state-management-with-provider-in-flutter_id.md) |
