@@ -151,6 +151,12 @@ Below is the dynamically updated list of all materials available in the library:
 | [Docker Containerization Mastery Syllabus](devops/docker/syllabi/docker-containerization-syllabus.md) | Syllabus | Intermediate | [EN](devops/docker/syllabi/docker-containerization-syllabus.md) \| [ID](devops/docker/syllabi/docker-containerization-syllabus_id.md) |
 | [Dockerizing a Full-Stack Application](devops/docker/tutorials/dockerizing-a-full-stack-application.md) | Tutorial | Intermediate | [EN](devops/docker/tutorials/dockerizing-a-full-stack-application.md) \| [ID](devops/docker/tutorials/dockerizing-a-full-stack-application_id.md) |
 
+#### 🏷️ Pm2
+
+| Topic | Format | Difficulty | Available Languages |
+| :--- | :--- | :--- | :--- |
+| [Managing Node.js Applications with PM2](devops/pm2/tutorials/managing-node-js-applications-with-pm2.md) | Tutorial | Intermediate | [EN](devops/pm2/tutorials/managing-node-js-applications-with-pm2.md) \| [ID](devops/pm2/tutorials/managing-node-js-applications-with-pm2_id.md) |
+
 ### 📁 Database
 
 #### 🏷️ Mongodb
