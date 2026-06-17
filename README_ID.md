@@ -130,6 +130,7 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 
 | Topik | Format | Kesulitan | Bahasa Tersedia |
 | :--- | :--- | :--- | :--- |
+| [Membangun Aplikasi Mobile Berbasis REST API dengan React Native](frontend/react-native/tutorials/building-rest-api-driven-mobile-app-with-react-native.md) | Tutorial | Intermediate | [EN](frontend/react-native/tutorials/building-rest-api-driven-mobile-app-with-react-native.md) \| [ID](frontend/react-native/tutorials/building-rest-api-driven-mobile-app-with-react-native_id.md) |
 | [Silabus Pengembangan React Native](frontend/react-native/syllabi/react-native-development-syllabus.md) | Syllabus | Intermediate | [EN](frontend/react-native/syllabi/react-native-development-syllabus.md) \| [ID](frontend/react-native/syllabi/react-native-development-syllabus_id.md) |
 
 ### 📁 Mobile
