@@ -173,6 +173,12 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 
 ### 📁 Database
 
+#### 🏷️ Redis
+
+| Topik | Format | Kesulitan | Bahasa Tersedia |
+| :--- | :--- | :--- | :--- |
+| [Memulai dengan Redis](database/redis/tutorials/getting-started-with-redis.md) | Tutorial | Beginner | [EN](database/redis/tutorials/getting-started-with-redis.md) \| [ID](database/redis/tutorials/getting-started-with-redis_id.md) |
+
 #### 🏷️ Mongodb
 
 | Topik | Format | Kesulitan | Bahasa Tersedia |

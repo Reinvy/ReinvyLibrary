@@ -173,6 +173,12 @@ Below is the dynamically updated list of all materials available in the library:
 
 ### 📁 Database
 
+#### 🏷️ Redis
+
+| Topic | Format | Difficulty | Available Languages |
+| :--- | :--- | :--- | :--- |
+| [Getting Started with Redis](database/redis/tutorials/getting-started-with-redis.md) | Tutorial | Beginner | [EN](database/redis/tutorials/getting-started-with-redis.md) \| [ID](database/redis/tutorials/getting-started-with-redis_id.md) |
+
 #### 🏷️ Mongodb
 
 | Topic | Format | Difficulty | Available Languages |
