@@ -128,6 +128,8 @@ Below is the dynamically updated list of all materials available in the library:
 
 | Topic | Format | Difficulty | Available Languages |
 | :--- | :--- | :--- | :--- |
+| [Laravel Best Practices Guide](backend/laravel/guides/laravel-best-practices-guide.md) | Guide | Intermediate | [EN](backend/laravel/guides/laravel-best-practices-guide.md) \| [ID](backend/laravel/guides/laravel-best-practices-guide_id.md) |
+| [Laravel Cheat Sheet](backend/laravel/cheatsheets/laravel-cheatsheet.md) | Cheatsheet | Beginner | [EN](backend/laravel/cheatsheets/laravel-cheatsheet.md) \| [ID](backend/laravel/cheatsheets/laravel-cheatsheet_id.md) |
 | [Laravel CRUD REST API Tutorial](backend/laravel/tutorials/laravel-crud-rest-api-tutorial.md) | Tutorial | Intermediate | [EN](backend/laravel/tutorials/laravel-crud-rest-api-tutorial.md) \| [ID](backend/laravel/tutorials/laravel-crud-rest-api-tutorial_id.md) |
 | [Laravel Development Syllabus](backend/laravel/syllabi/laravel-development-syllabus.md) | Syllabus | Intermediate | [EN](backend/laravel/syllabi/laravel-development-syllabus.md) \| [ID](backend/laravel/syllabi/laravel-development-syllabus_id.md) |
 
