@@ -128,6 +128,7 @@ Below is the dynamically updated list of all materials available in the library:
 | [Building a Full-Stack Blog with Next.js App Router](frontend/nextjs/tutorials/building-a-full-stack-blog-with-nextjs-app-router.md) | Tutorial | Intermediate | [EN](frontend/nextjs/tutorials/building-a-full-stack-blog-with-nextjs-app-router.md) \| [ID](frontend/nextjs/tutorials/building-a-full-stack-blog-with-nextjs-app-router_id.md) |
 | [Next.js Cheatsheet](frontend/nextjs/cheatsheets/nextjs-cheatsheet.md) | Cheatsheet | Intermediate | [EN](frontend/nextjs/cheatsheets/nextjs-cheatsheet.md) \| [ID](frontend/nextjs/cheatsheets/nextjs-cheatsheet_id.md) |
 | [Next.js Project Structure and Best Practices](frontend/nextjs/guides/nextjs-project-structure-and-best-practices.md) | Guide | Intermediate | [EN](frontend/nextjs/guides/nextjs-project-structure-and-best-practices.md) \| [ID](frontend/nextjs/guides/nextjs-project-structure-and-best-practices_id.md) |
+| [Next.js Development Syllabus](frontend/nextjs/syllabi/nextjs-syllabus.md) | Syllabus | Intermediate | [EN](frontend/nextjs/syllabi/nextjs-syllabus.md) \| [ID](frontend/nextjs/syllabi/nextjs-syllabus_id.md) |
 
 #### 🏷️ React Native
 
