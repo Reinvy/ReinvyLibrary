@@ -20,7 +20,7 @@ Building a production-grade Android application requires more than just knowing 
 
 Organize your code into three distinct layers. The **data layer** handles external data sources (APIs, databases, preferences). The **domain layer** contains business logic and use cases — it depends only on Kotlin, not on Android framework. The **presentation layer** consists of Composables, ViewModels, and UI state holders. Dependencies point inward: presentation depends on domain, domain depends on data interfaces.
 
-```textkotlin
+```kotlin
 // Domain layer — pure Kotlin, no Android dependencies
 class GetUserUseCase(private val userRepository: UserRepository) {
     suspend operator fun invoke(id: String): Result<User> {
@@ -38,13 +38,13 @@ class UserRepositoryImpl(
         User(id = response.id, name = response.name, email = response.email)
     }
 }
-```text
+```
 
 ### 2. MVVM + MVI Patterns
 
 Adopt MVVM (Model-View-ViewModel) as the base pattern. For complex screens with multiple states, enhance it with MVI (Model-View-Intent), where UI state is modeled as a sealed class and user intents are explicit action objects. This creates a unidirectional data flow that is predictable and testable.
 
-```textkotlin
+```kotlin
 // MVI state
 data class ProfileState(
     val isLoading: Boolean = false,
@@ -84,13 +84,13 @@ class ProfileViewModel @Inject constructor(
         }
     }
 }
-```text
+```
 
 ### 3. Reactive UI with StateFlow
 
 Use `StateFlow` (not LiveData) for UI state. StateFlow is Kotlin-native, works seamlessly with coroutines and Compose, and has deterministic behavior. Collect flows lifecycle-aware in Compose using `collectAsStateWithLifecycle()` from `lifecycle-runtime-compose`.
 
-```textkotlin
+```kotlin
 @Composable
 fun ProfileScreen(viewModel: ProfileViewModel = hiltViewModel()) {
     val state by viewModel.state.collectAsStateWithLifecycle()
@@ -101,13 +101,13 @@ fun ProfileScreen(viewModel: ProfileViewModel = hiltViewModel()) {
         state.error != null -> ErrorView(message = state.error!!)
     }
 }
-```text
+```
 
 ### 4. Dependency Injection with Hilt
 
 Use Hilt for all dependency injection. Prefer constructor injection over field injection. Use `@HiltViewModel` for ViewModels and `@Inject` annotations. Create dedicated modules for networking, database, and repository bindings. Use `@Singleton` sparingly — prefer `@ViewModelScoped` or `@ActivityScoped` where appropriate.
 
-```textkotlin
+```kotlin
 @Module
 @InstallIn(SingletonComponent::class)
 object NetworkModule {
@@ -133,13 +133,13 @@ object NetworkModule {
             .build()
     }
 }
-```text
+```
 
 ### 5. Error Handling with Sealed Class Results
 
 Never use bare exceptions for flow control. Model all operation results as sealed result types. Use `kotlin.Result` for simple cases or a custom sealed hierarchy for richer error information.
 
-```textkotlin
+```kotlin
 sealed class NetworkResult<out T> {
     data class Success<T>(val data: T) : NetworkResult<T>()
     data class Error(val code: Int, val message: String) : NetworkResult<Nothing>()
@@ -158,13 +158,13 @@ suspend fun <T> safeApiCall(call: suspend () -> T): NetworkResult<T> {
         NetworkResult.Timeout
     }
 }
-```text
+```
 
 ### 6. Testing Pyramid (Unit / Integration / UI)
 
 Follow the testing pyramid: write many fast unit tests, fewer integration tests, and a few slow UI tests. Use `Turbine` for testing Flows, `MockK` or `Mockito` for mocking, and `compose-test` for UI tests. Run tests on every CI build.
 
-```textkotlin
+```kotlin
 class ProfileViewModelTest {
     @get:Rule
     val composeTestRule = createComposeRule()
@@ -185,7 +185,7 @@ class ProfileViewModelTest {
         assertEquals(MockData.user, state.user)
     }
 }
-```text
+```
 
 ### 7. Modularization with Dynamic Features
 
@@ -199,13 +199,13 @@ Project/
 ├── :feature:profile        (profile feature module)
 ├── :feature:settings       (settings feature module, dynamic)
 └── :feature:payment        (payment feature module, dynamic)
-```text
+```
 
 ### 8. ProGuard / R8 Optimization
 
 Enable minification, shrinking, and obfuscation in release builds. Keep rules for reflection (Gson, Retrofit, Room). Generate and ship Baseline Profiles for faster startup.
 
-```textpro
+```pro
 # ProGuard rules
 -keepattributes Signature
 -keepattributes *Annotation*
@@ -221,13 +221,13 @@ Enable minification, shrinking, and obfuscation in release builds. Keep rules fo
 # Room
 -keep class * extends androidx.room.RoomDatabase
 -dontwarn androidx.room.paging.**
-```text
+```
 
 ### 9. Performance (Lazy Lists, Image Loading, Baseline Profiles)
 
 Use `LazyColumn` with stable keys to minimize recomposition. Use Coil for image loading (Kotlin-first, coroutine-based, Compose-native). Generate Baseline Profiles with the Macrobenchmark library to improve cold-start performance by 15–30%.
 
-```textkotlin
+```kotlin
 @Composable
 fun UserList(users: List<User>) {
     LazyColumn {
@@ -239,13 +239,13 @@ fun UserList(users: List<User>) {
         }
     }
 }
-```text
+```
 
 ### 10. Security (EncryptedSharedPreferences, SSL Pinning)
 
 Store sensitive tokens in `EncryptedSharedPreferences` backed by the Android Keystore. Implement SSL pinning via OkHttp's `CertificatePinner`. Never hardcode secrets — use BuildConfig fields from `local.properties` or environment variables.
 
-```textkotlin
+```kotlin
 val masterKey = MasterKey.Builder(context)
     .setKeyScheme(MasterKey.KeyScheme.AES256_GCM)
     .build()
@@ -262,13 +262,13 @@ val sharedPreferences = EncryptedSharedPreferences.create(
 val certificatePinner = CertificatePinner.Builder()
     .add("api.example.com", "sha256/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=")
     .build()
-```text
+```
 
 ### 11. CI/CD (GitHub Actions, Firebase Test Lab)
 
 Automate builds, linting, testing, and deployment with GitHub Actions. Use Firebase Test Lab for device-farm testing on real devices. Automate Play Store deployment with Gradle Play Publisher or fastlane.
 
-```textyaml
+```yaml
 # .github/workflows/android-ci.yml
 name: Android CI
 on: [push, pull_request]
@@ -290,7 +290,7 @@ jobs:
         run: ./gradlew test
       - name: Build release
         run: ./gradlew assembleRelease
-```text
+```
 
 ## Implementation Steps
 
@@ -298,10 +298,10 @@ jobs:
 
 Create a new Android project with Kotlin DSL in Gradle. Set up the three-layer package structure: `data/`, `domain/`, `presentation/`. Add Hilt with `@HiltAndroidApp`. Configure version catalogs in `libs.versions.toml`. Add baseline Compose dependencies and enable build caching.
 
-```textbash
+```bash
 # Create package structure
 mkdir -p app/src/main/java/com/example/app/{data/{api,local,repository},domain/{model,usecase,repository},presentation/{ui/{screen},viewmodel}}
-```text
+```
 
 ### Step 2: Dependency Injection Configuration
 

@@ -20,7 +20,7 @@ Membangun aplikasi Android tingkat produksi membutuhkan lebih dari sekadar memah
 
 Atur kode Anda ke dalam tiga lapisan yang berbeda. Lapisan **data** menangani sumber data eksternal (API, database, preferensi). Lapisan **domain** berisi logika bisnis dan use case — hanya bergantung pada Kotlin, bukan pada framework Android. Lapisan **presentasi** terdiri dari Composable, ViewModel, dan penampung state UI. Dependensi mengarah ke dalam: presentasi bergantung pada domain, domain bergantung pada interface data.
 
-```textkotlin
+```kotlin
 // Lapisan domain — Kotlin murni, tanpa dependensi Android
 class GetUserUseCase(private val userRepository: UserRepository) {
     suspend operator fun invoke(id: String): Result<User> {
@@ -38,13 +38,13 @@ class UserRepositoryImpl(
         User(id = response.id, name = response.name, email = response.email)
     }
 }
-```text
+```
 
 ### 2. Pola MVVM + MVI
 
 Adopsi MVVM (Model-View-ViewModel) sebagai pola dasar. Untuk layar kompleks dengan banyak state, tingkatkan dengan MVI (Model-View-Intent), di mana state UI dimodelkan sebagai sealed class dan niat pengguna adalah objek aksi eksplisit. Ini menciptakan aliran data searah yang dapat diprediksi dan diuji.
 
-```textkotlin
+```kotlin
 // State MVI
 data class ProfileState(
     val isLoading: Boolean = false,
@@ -84,13 +84,13 @@ class ProfileViewModel @Inject constructor(
         }
     }
 }
-```text
+```
 
 ### 3. UI Reaktif dengan StateFlow
 
 Gunakan `StateFlow` (bukan LiveData) untuk state UI. StateFlow adalah native Kotlin, bekerja mulus dengan coroutine dan Compose, serta memiliki perilaku deterministik. Kumpulkan flow dengan cara sadar siklus hidup di Compose menggunakan `collectAsStateWithLifecycle()` dari `lifecycle-runtime-compose`.
 
-```textkotlin
+```kotlin
 @Composable
 fun ProfileScreen(viewModel: ProfileViewModel = hiltViewModel()) {
     val state by viewModel.state.collectAsStateWithLifecycle()
@@ -101,13 +101,13 @@ fun ProfileScreen(viewModel: ProfileViewModel = hiltViewModel()) {
         state.error != null -> ErrorView(message = state.error!!)
     }
 }
-```text
+```
 
 ### 4. Injeksi Dependensi dengan Hilt
 
 Gunakan Hilt untuk semua injeksi dependensi. Utamakan injeksi konstruktor daripada injeksi field. Gunakan `@HiltViewModel` untuk ViewModel dan anotasi `@Inject`. Buat modul khusus untuk jaringan, database, dan binding repository. Gunakan `@Singleton` dengan bijak — utamakan `@ViewModelScoped` atau `@ActivityScoped` sesuai kebutuhan.
 
-```textkotlin
+```kotlin
 @Module
 @InstallIn(SingletonComponent::class)
 object NetworkModule {
@@ -133,13 +133,13 @@ object NetworkModule {
             .build()
     }
 }
-```text
+```
 
 ### 5. Penanganan Error dengan Sealed Class Results
 
 Jangan pernah menggunakan eksepsi mentah untuk kontrol aliran. Modelkan semua hasil operasi sebagai tipe hasil sealed. Gunakan `kotlin.Result` untuk kasus sederhana atau hierarki sealed kustom untuk informasi error yang lebih kaya.
 
-```textkotlin
+```kotlin
 sealed class NetworkResult<out T> {
     data class Success<T>(val data: T) : NetworkResult<T>()
     data class Error(val code: Int, val message: String) : NetworkResult<Nothing>()
@@ -158,13 +158,13 @@ suspend fun <T> safeApiCall(call: suspend () -> T): NetworkResult<T> {
         NetworkResult.Timeout
     }
 }
-```text
+```
 
 ### 6. Piramida Pengujian (Unit / Integrasi / UI)
 
 Ikuti piramida pengujian: tulis banyak unit test cepat, lebih sedikit test integrasi, dan beberapa test UI lambat. Gunakan `Turbine` untuk menguji Flow, `MockK` atau `Mockito` untuk mocking, dan `compose-test` untuk test UI. Jalankan test di setiap build CI.
 
-```textkotlin
+```kotlin
 class ProfileViewModelTest {
     @get:Rule
     val composeTestRule = createComposeRule()
@@ -185,7 +185,7 @@ class ProfileViewModelTest {
         assertEquals(MockData.user, state.user)
     }
 }
-```text
+```
 
 ### 7. Modularisasi dengan Fitur Dinamis
 
@@ -199,13 +199,13 @@ Project/
 ├── :feature:profile        (modul fitur profil)
 ├── :feature:settings       (modul fitur pengaturan, dinamis)
 └── :feature:payment        (modul fitur pembayaran, dinamis)
-```text
+```
 
 ### 8. Optimasi ProGuard / R8
 
 Aktifkan minifikasi, pengecilan, dan obfuskasi di build rilis. Simpan aturan untuk refleksi (Gson, Retrofit, Room). Generate dan kirimkan Baseline Profiles untuk startup yang lebih cepat.
 
-```textpro
+```pro
 # Aturan ProGuard
 -keepattributes Signature
 -keepattributes *Annotation*
@@ -221,13 +221,13 @@ Aktifkan minifikasi, pengecilan, dan obfuskasi di build rilis. Simpan aturan unt
 # Room
 -keep class * extends androidx.room.RoomDatabase
 -dontwarn androidx.room.paging.**
-```text
+```
 
 ### 9. Performa (Lazy List, Pemuatan Gambar, Baseline Profiles)
 
 Gunakan `LazyColumn` dengan key stabil untuk meminimalkan rekomposisi. Gunakan Coil untuk pemuatan gambar (Kotlin-first, berbasis coroutine, native Compose). Generate Baseline Profiles dengan library Macrobenchmark untuk meningkatkan performa cold-start sebesar 15–30%.
 
-```textkotlin
+```kotlin
 @Composable
 fun UserList(users: List<User>) {
     LazyColumn {
@@ -239,13 +239,13 @@ fun UserList(users: List<User>) {
         }
     }
 }
-```text
+```
 
 ### 10. Keamanan (EncryptedSharedPreferences, SSL Pinning)
 
 Simpan token sensitif di `EncryptedSharedPreferences` yang didukung oleh Android Keystore. Implementasikan SSL pinning melalui `CertificatePinner` OkHttp. Jangan pernah menuliskan rahasia secara hardcode — gunakan field BuildConfig dari `local.properties` atau variabel lingkungan.
 
-```textkotlin
+```kotlin
 val masterKey = MasterKey.Builder(context)
     .setKeyScheme(MasterKey.KeyScheme.AES256_GCM)
     .build()
@@ -262,13 +262,13 @@ val sharedPreferences = EncryptedSharedPreferences.create(
 val certificatePinner = CertificatePinner.Builder()
     .add("api.example.com", "sha256/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=")
     .build()
-```text
+```
 
 ### 11. CI/CD (GitHub Actions, Firebase Test Lab)
 
 Otomatiskan build, lint, pengujian, dan deployment dengan GitHub Actions. Gunakan Firebase Test Lab untuk pengujian di farm perangkat nyata. Otomatiskan deployment Play Store dengan Gradle Play Publisher atau fastlane.
 
-```textyaml
+```yaml
 # .github/workflows/android-ci.yml
 name: Android CI
 on: [push, pull_request]
@@ -290,7 +290,7 @@ jobs:
         run: ./gradlew test
       - name: Build release
         run: ./gradlew assembleRelease
-```text
+```
 
 ## Langkah Implementasi
 
@@ -298,10 +298,10 @@ jobs:
 
 Buat proyek Android baru dengan Kotlin DSL di Gradle. Atur struktur paket tiga lapis: `data/`, `domain/`, `presentation/`. Tambahkan Hilt dengan `@HiltAndroidApp`. Konfigurasi katalog versi di `libs.versions.toml`. Tambahkan dependensi Compose dasar dan aktifkan build caching.
 
-```textbash
+```bash
 # Buat struktur paket
 mkdir -p app/src/main/java/com/example/app/{data/{api,local,repository},domain/{model,usecase,repository},presentation/{ui/{screen},viewmodel}}
-```text
+```
 
 ### Langkah 2: Konfigurasi Injeksi Dependensi
 
