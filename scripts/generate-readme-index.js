@@ -5,7 +5,8 @@ const ROOT_DIR = path.join(__dirname, '..');
 const ALLOWED_CATEGORIES = ['backend', 'frontend', 'mobile', 'devops', 'database'];
 const ALLOWED_TECHNOLOGIES = [
   'expressjs', 'elysiajs', 'nextjs', 'react-native', 'flutter', 'golang', 'laravel',
-  'docker', 'pm2', 'redis', 'mongodb', 'postgres'
+  'docker', 'pm2', 'redis', 'mongodb', 'postgres',
+  'swift', 'kotlin', 'kubernetes'
 ];
 
 function getPluralType(type) {
