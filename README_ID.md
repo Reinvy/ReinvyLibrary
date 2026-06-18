@@ -78,6 +78,7 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 | [Environment Variables di Express JS](backend/expressjs/tutorials/environment-variables.md) | Tutorial | Beginner | [EN](backend/expressjs/tutorials/environment-variables.md) \| [ID](backend/expressjs/tutorials/environment-variables_id.md) |
 | [Praktik Terbaik Keamanan di Express.js](backend/expressjs/tutorials/express-js-security-best-practices.md) | Tutorial | Intermediate | [EN](backend/expressjs/tutorials/express-js-security-best-practices.md) \| [ID](backend/expressjs/tutorials/express-js-security-best-practices_id.md) |
 | [Langkah Integrasi Prisma dengan Express.js](backend/expressjs/tutorials/express-with-prisma.md) | Tutorial | Intermediate | [EN](backend/expressjs/tutorials/express-with-prisma.md) \| [ID](backend/expressjs/tutorials/express-with-prisma_id.md) |
+| [Panduan Praktik Terbaik Express.js](backend/expressjs/guides/expressjs-best-practices-guide.md) | Guide | Intermediate | [EN](backend/expressjs/guides/expressjs-best-practices-guide.md) \| [ID](backend/expressjs/guides/expressjs-best-practices-guide_id.md) |
 | [Cheat Sheet Express.js](backend/expressjs/cheatsheets/expressjs-cheatsheet.md) | Cheatsheet | Beginner | [EN](backend/expressjs/cheatsheets/expressjs-cheatsheet.md) \| [ID](backend/expressjs/cheatsheets/expressjs-cheatsheet_id.md) |
 | [Langkah Membuat Project Express.js dengan Express Generator](backend/expressjs/tutorials/getting-started-with-express-generator.md) | Tutorial | Beginner | [EN](backend/expressjs/tutorials/getting-started-with-express-generator.md) \| [ID](backend/expressjs/tutorials/getting-started-with-express-generator_id.md) |
 | [Graceful Shutdown di Aplikasi Express JS](backend/expressjs/tutorials/graceful-shutdown-in-express-js-applications.md) | Tutorial | Advanced | [EN](backend/expressjs/tutorials/graceful-shutdown-in-express-js-applications.md) \| [ID](backend/expressjs/tutorials/graceful-shutdown-in-express-js-applications_id.md) |
@@ -111,6 +112,7 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 | Topik | Format | Kesulitan | Bahasa Tersedia |
 | :--- | :--- | :--- | :--- |
 | [Membangun REST API dengan ElysiaJS](backend/elysiajs/tutorials/building-rest-apis-with-elysiajs.md) | Tutorial | Intermediate | [EN](backend/elysiajs/tutorials/building-rest-apis-with-elysiajs.md) \| [ID](backend/elysiajs/tutorials/building-rest-apis-with-elysiajs_id.md) |
+| [Cheat Sheet Elysia.js](backend/elysiajs/cheatsheets/elysiajs-cheatsheet.md) | Cheatsheet | Beginner | [EN](backend/elysiajs/cheatsheets/elysiajs-cheatsheet.md) \| [ID](backend/elysiajs/cheatsheets/elysiajs-cheatsheet_id.md) |
 | [Panduan Pola Produksi Elysia.js](backend/elysiajs/guides/elysiajs-production-patterns-guide.md) | Guide | Intermediate | [EN](backend/elysiajs/guides/elysiajs-production-patterns-guide.md) \| [ID](backend/elysiajs/guides/elysiajs-production-patterns-guide_id.md) |
 
 #### 🏷️ Golang
@@ -180,6 +182,7 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 | Topik | Format | Kesulitan | Bahasa Tersedia |
 | :--- | :--- | :--- | :--- |
 | [Memulai dengan Redis](database/redis/tutorials/getting-started-with-redis.md) | Tutorial | Beginner | [EN](database/redis/tutorials/getting-started-with-redis.md) \| [ID](database/redis/tutorials/getting-started-with-redis_id.md) |
+| [Panduan Pola dan Strategi Caching Redis](database/redis/guides/redis-caching-patterns-guide.md) | Guide | Intermediate | [EN](database/redis/guides/redis-caching-patterns-guide.md) \| [ID](database/redis/guides/redis-caching-patterns-guide_id.md) |
 | [Cheat Sheet Redis](database/redis/cheatsheets/redis-cheatsheet.md) | Cheatsheet | Beginner | [EN](database/redis/cheatsheets/redis-cheatsheet.md) \| [ID](database/redis/cheatsheets/redis-cheatsheet_id.md) |
 
 #### 🏷️ Mongodb
