@@ -202,6 +202,15 @@ Below is the dynamically updated list of all materials available in the library:
 | [PM2 Process Management Syllabus](devops/pm2/syllabi/pm2-process-management-syllabus.md) | Syllabus | Intermediate | [EN](devops/pm2/syllabi/pm2-process-management-syllabus.md) \| [ID](devops/pm2/syllabi/pm2-process-management-syllabus_id.md) |
 | [PM2 Production Deployment and Monitoring Guide](devops/pm2/guides/pm2-production-deployment-guide.md) | Guide | Intermediate | [EN](devops/pm2/guides/pm2-production-deployment-guide.md) \| [ID](devops/pm2/guides/pm2-production-deployment-guide_id.md) |
 
+#### 🏷️ Kubernetes
+
+| Topic | Format | Difficulty | Available Languages |
+| :--- | :--- | :--- | :--- |
+| [Getting Started with Kubernetes](devops/kubernetes/tutorials/getting-started-with-kubernetes.md) | Tutorial | Intermediate | [EN](devops/kubernetes/tutorials/getting-started-with-kubernetes.md) \| [ID](devops/kubernetes/tutorials/getting-started-with-kubernetes_id.md) |
+| [Kubernetes Cheat Sheet](devops/kubernetes/cheatsheets/kubernetes-cheatsheet.md) | Cheatsheet | Beginner | [EN](devops/kubernetes/cheatsheets/kubernetes-cheatsheet.md) \| [ID](devops/kubernetes/cheatsheets/kubernetes-cheatsheet_id.md) |
+| [Kubernetes DevOps Syllabus](devops/kubernetes/syllabi/kubernetes-devops-syllabus.md) | Syllabus | Intermediate | [EN](devops/kubernetes/syllabi/kubernetes-devops-syllabus.md) \| [ID](devops/kubernetes/syllabi/kubernetes-devops-syllabus_id.md) |
+| [Kubernetes Production Best Practices Guide](devops/kubernetes/guides/kubernetes-production-best-practices.md) | Guide | Advanced | [EN](devops/kubernetes/guides/kubernetes-production-best-practices.md) \| [ID](devops/kubernetes/guides/kubernetes-production-best-practices_id.md) |
+
 ### 📁 Database
 
 #### 🏷️ Redis

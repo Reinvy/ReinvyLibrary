@@ -202,6 +202,15 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 | [Silabus Manajemen Proses PM2](devops/pm2/syllabi/pm2-process-management-syllabus.md) | Syllabus | Intermediate | [EN](devops/pm2/syllabi/pm2-process-management-syllabus.md) \| [ID](devops/pm2/syllabi/pm2-process-management-syllabus_id.md) |
 | [Panduan Deployment Produksi dan Monitoring dengan PM2](devops/pm2/guides/pm2-production-deployment-guide.md) | Guide | Intermediate | [EN](devops/pm2/guides/pm2-production-deployment-guide.md) \| [ID](devops/pm2/guides/pm2-production-deployment-guide_id.md) |
 
+#### 🏷️ Kubernetes
+
+| Topik | Format | Kesulitan | Bahasa Tersedia |
+| :--- | :--- | :--- | :--- |
+| [Memulai dengan Kubernetes](devops/kubernetes/tutorials/getting-started-with-kubernetes.md) | Tutorial | Intermediate | [EN](devops/kubernetes/tutorials/getting-started-with-kubernetes.md) \| [ID](devops/kubernetes/tutorials/getting-started-with-kubernetes_id.md) |
+| [Cheat Sheet Kubernetes](devops/kubernetes/cheatsheets/kubernetes-cheatsheet.md) | Cheatsheet | Beginner | [EN](devops/kubernetes/cheatsheets/kubernetes-cheatsheet.md) \| [ID](devops/kubernetes/cheatsheets/kubernetes-cheatsheet_id.md) |
+| [Silabus DevOps Kubernetes](devops/kubernetes/syllabi/kubernetes-devops-syllabus.md) | Syllabus | Intermediate | [EN](devops/kubernetes/syllabi/kubernetes-devops-syllabus.md) \| [ID](devops/kubernetes/syllabi/kubernetes-devops-syllabus_id.md) |
+| [Panduan Praktik Terbaik Produksi Kubernetes](devops/kubernetes/guides/kubernetes-production-best-practices.md) | Guide | Advanced | [EN](devops/kubernetes/guides/kubernetes-production-best-practices.md) \| [ID](devops/kubernetes/guides/kubernetes-production-best-practices_id.md) |
+
 ### 📁 Database
 
 #### 🏷️ Redis
