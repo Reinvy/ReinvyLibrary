@@ -110,6 +110,7 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 | Topik | Format | Kesulitan | Bahasa Tersedia |
 | :--- | :--- | :--- | :--- |
 | [Membangun REST API dengan ElysiaJS](backend/elysiajs/tutorials/building-rest-apis-with-elysiajs.md) | Tutorial | Intermediate | [EN](backend/elysiajs/tutorials/building-rest-apis-with-elysiajs.md) \| [ID](backend/elysiajs/tutorials/building-rest-apis-with-elysiajs_id.md) |
+| [Panduan Pola Produksi Elysia.js](backend/elysiajs/guides/elysiajs-production-patterns-guide.md) | Guide | Intermediate | [EN](backend/elysiajs/guides/elysiajs-production-patterns-guide.md) \| [ID](backend/elysiajs/guides/elysiajs-production-patterns-guide_id.md) |
 
 #### 🏷️ Golang
 
