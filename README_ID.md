@@ -165,6 +165,7 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 | Topik | Format | Kesulitan | Bahasa Tersedia |
 | :--- | :--- | :--- | :--- |
 | [Mengelola Aplikasi Node.js dengan PM2](devops/pm2/tutorials/managing-node-js-applications-with-pm2.md) | Tutorial | Intermediate | [EN](devops/pm2/tutorials/managing-node-js-applications-with-pm2.md) \| [ID](devops/pm2/tutorials/managing-node-js-applications-with-pm2_id.md) |
+| [Cheat Sheet PM2](devops/pm2/cheatsheets/pm2-cheatsheet.md) | Cheatsheet | Intermediate | [EN](devops/pm2/cheatsheets/pm2-cheatsheet.md) \| [ID](devops/pm2/cheatsheets/pm2-cheatsheet_id.md) |
 | [Panduan Deployment Produksi dan Monitoring dengan PM2](devops/pm2/guides/pm2-production-deployment-guide.md) | Guide | Intermediate | [EN](devops/pm2/guides/pm2-production-deployment-guide.md) \| [ID](devops/pm2/guides/pm2-production-deployment-guide_id.md) |
 
 ### 📁 Database
