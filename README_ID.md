@@ -230,6 +230,7 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 | [Memulai dengan Redis](database/redis/tutorials/getting-started-with-redis.md) | Tutorial | Beginner | [EN](database/redis/tutorials/getting-started-with-redis.md) \| [ID](database/redis/tutorials/getting-started-with-redis_id.md) |
 | [Panduan Pola dan Strategi Caching Redis](database/redis/guides/redis-caching-patterns-guide.md) | Guide | Intermediate | [EN](database/redis/guides/redis-caching-patterns-guide.md) \| [ID](database/redis/guides/redis-caching-patterns-guide_id.md) |
 | [Cheat Sheet Redis](database/redis/cheatsheets/redis-cheatsheet.md) | Cheatsheet | Beginner | [EN](database/redis/cheatsheets/redis-cheatsheet.md) \| [ID](database/redis/cheatsheets/redis-cheatsheet_id.md) |
+| [Silabus Pengembangan Redis](database/redis/syllabi/redis-development-syllabus.md) | Syllabus | Intermediate | [EN](database/redis/syllabi/redis-development-syllabus.md) \| [ID](database/redis/syllabi/redis-development-syllabus_id.md) |
 
 #### 🏷️ Mongodb
 

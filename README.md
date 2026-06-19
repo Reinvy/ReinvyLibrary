@@ -230,6 +230,7 @@ Below is the dynamically updated list of all materials available in the library:
 | [Getting Started with Redis](database/redis/tutorials/getting-started-with-redis.md) | Tutorial | Beginner | [EN](database/redis/tutorials/getting-started-with-redis.md) \| [ID](database/redis/tutorials/getting-started-with-redis_id.md) |
 | [Redis Caching Patterns and Strategies Guide](database/redis/guides/redis-caching-patterns-guide.md) | Guide | Intermediate | [EN](database/redis/guides/redis-caching-patterns-guide.md) \| [ID](database/redis/guides/redis-caching-patterns-guide_id.md) |
 | [Redis Cheatsheet](database/redis/cheatsheets/redis-cheatsheet.md) | Cheatsheet | Beginner | [EN](database/redis/cheatsheets/redis-cheatsheet.md) \| [ID](database/redis/cheatsheets/redis-cheatsheet_id.md) |
+| [Redis Development Syllabus](database/redis/syllabi/redis-development-syllabus.md) | Syllabus | Intermediate | [EN](database/redis/syllabi/redis-development-syllabus.md) \| [ID](database/redis/syllabi/redis-development-syllabus_id.md) |
 
 #### 🏷️ Mongodb
 
