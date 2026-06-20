@@ -42,7 +42,7 @@ Semua konten harus diatur menggunakan prinsip **Topic-First Organization** (Orga
 Hanya nilai-nilai berikut yang diizinkan dalam penamaan direktori dan YAML frontmatter:
 
 - **Kategori**: `backend`, `frontend`, `mobile`, `devops`, `database`
-- **Teknologi**: `expressjs`, `elysiajs`, `nextjs`, `react-native`, `flutter`, `golang`, `laravel`, `docker`, `pm2`, `redis`, `mongodb`, `postgres`, `swift`, `kotlin`, `kubernetes`, `vuejs`
+- **Teknologi**: `expressjs`, `elysiajs`, `nextjs`, `react-native`, `flutter`, `golang`, `laravel`, `docker`, `pm2`, `redis`, `mongodb`, `postgres`, `swift`, `kotlin`, `kubernetes`, `nestjs`, `vuejs`
 
 ### Bentuk Konten Plural
 - `tutorials` (untuk panduan pengkodean langkah demi langkah)
