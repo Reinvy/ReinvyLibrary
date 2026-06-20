@@ -135,6 +135,12 @@ Below is the dynamically updated list of all materials available in the library:
 | [Laravel CRUD REST API Tutorial](backend/laravel/tutorials/laravel-crud-rest-api-tutorial.md) | Tutorial | Intermediate | [EN](backend/laravel/tutorials/laravel-crud-rest-api-tutorial.md) \| [ID](backend/laravel/tutorials/laravel-crud-rest-api-tutorial_id.md) |
 | [Laravel Development Syllabus](backend/laravel/syllabi/laravel-development-syllabus.md) | Syllabus | Intermediate | [EN](backend/laravel/syllabi/laravel-development-syllabus.md) \| [ID](backend/laravel/syllabi/laravel-development-syllabus_id.md) |
 
+#### 🏷️ Nestjs
+
+| Topic | Format | Difficulty | Available Languages |
+| :--- | :--- | :--- | :--- |
+| [Getting Started with NestJS](backend/nestjs/tutorials/getting-started-with-nestjs.md) | Tutorial | Intermediate | [EN](backend/nestjs/tutorials/getting-started-with-nestjs.md) \| [ID](backend/nestjs/tutorials/getting-started-with-nestjs_id.md) |
+
 ### 📁 Frontend
 
 #### 🏷️ Nextjs
