@@ -142,6 +142,7 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 | [Memulai dengan NestJS](backend/nestjs/tutorials/getting-started-with-nestjs.md) | Tutorial | Intermediate | [EN](backend/nestjs/tutorials/getting-started-with-nestjs.md) \| [ID](backend/nestjs/tutorials/getting-started-with-nestjs_id.md) |
 | [Panduan Praktik Terbaik NestJS](backend/nestjs/guides/nestjs-best-practices-guide.md) | Guide | Intermediate | [EN](backend/nestjs/guides/nestjs-best-practices-guide.md) \| [ID](backend/nestjs/guides/nestjs-best-practices-guide_id.md) |
 | [Cheat Sheet NestJS](backend/nestjs/cheatsheets/nestjs-cheatsheet.md) | Cheatsheet | Intermediate | [EN](backend/nestjs/cheatsheets/nestjs-cheatsheet.md) \| [ID](backend/nestjs/cheatsheets/nestjs-cheatsheet_id.md) |
+| [Silabus Pengembangan NestJS](backend/nestjs/syllabi/nestjs-development-syllabus.md) | Syllabus | Intermediate | [EN](backend/nestjs/syllabi/nestjs-development-syllabus.md) \| [ID](backend/nestjs/syllabi/nestjs-development-syllabus_id.md) |
 
 ### 📁 Frontend
 
