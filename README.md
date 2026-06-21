@@ -236,6 +236,7 @@ Below is the dynamically updated list of all materials available in the library:
 | Topic | Format | Difficulty | Available Languages |
 | :--- | :--- | :--- | :--- |
 | [Getting Started with GitHub Actions](devops/github-actions/tutorials/getting-started-with-github-actions.md) | Tutorial | Beginner | [EN](devops/github-actions/tutorials/getting-started-with-github-actions.md) \| [ID](devops/github-actions/tutorials/getting-started-with-github-actions_id.md) |
+| [GitHub Actions Cheat Sheet](devops/github-actions/cheatsheets/github-actions-cheatsheet.md) | Cheatsheet | Beginner | [EN](devops/github-actions/cheatsheets/github-actions-cheatsheet.md) \| [ID](devops/github-actions/cheatsheets/github-actions-cheatsheet_id.md) |
 | [GitHub Actions DevOps Syllabus](devops/github-actions/syllabi/github-actions-devops-syllabus.md) | Syllabus | Intermediate | [EN](devops/github-actions/syllabi/github-actions-devops-syllabus.md) \| [ID](devops/github-actions/syllabi/github-actions-devops-syllabus_id.md) |
 
 ### 📁 Database
