@@ -173,6 +173,12 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 | [Cheat Sheet Vue.js](frontend/vuejs/cheatsheets/vuejs-cheatsheet.md) | Cheatsheet | Beginner | [EN](frontend/vuejs/cheatsheets/vuejs-cheatsheet.md) \| [ID](frontend/vuejs/cheatsheets/vuejs-cheatsheet_id.md) |
 | [Silabus Pengembangan Frontend Vue.js](frontend/vuejs/syllabi/vuejs-frontend-development-syllabus.md) | Syllabus | Intermediate | [EN](frontend/vuejs/syllabi/vuejs-frontend-development-syllabus.md) \| [ID](frontend/vuejs/syllabi/vuejs-frontend-development-syllabus_id.md) |
 
+#### 🏷️ Tailwindcss
+
+| Topik | Format | Kesulitan | Bahasa Tersedia |
+| :--- | :--- | :--- | :--- |
+| [Memulai dengan Tailwind CSS](frontend/tailwindcss/tutorials/getting-started-with-tailwind-css.md) | Tutorial | Beginner | [EN](frontend/tailwindcss/tutorials/getting-started-with-tailwind-css.md) \| [ID](frontend/tailwindcss/tutorials/getting-started-with-tailwind-css_id.md) |
+
 ### 📁 Mobile
 
 #### 🏷️ Flutter

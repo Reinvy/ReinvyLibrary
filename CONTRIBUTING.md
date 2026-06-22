@@ -42,7 +42,7 @@ Files must be organized using **Topic-First Organization**. The directory layout
 Only the following values are allowed in directory paths and YAML frontmatter:
 
 - **Categories**: `backend`, `frontend`, `mobile`, `devops`, `database`
-- **Technologies**: `expressjs`, `elysiajs`, `nextjs`, `react-native`, `flutter`, `golang`, `laravel`, `docker`, `pm2`, `redis`, `mongodb`, `postgres`, `swift`, `kotlin`, `kubernetes`, `nestjs`, `vuejs`, `github-actions`
+- **Technologies**: `expressjs`, `elysiajs`, `nextjs`, `react-native`, `flutter`, `golang`, `laravel`, `docker`, `pm2`, `redis`, `mongodb`, `postgres`, `swift`, `kotlin`, `kubernetes`, `nestjs`, `vuejs`, `github-actions`, `tailwindcss`
 
 ### Plural Content Types
 - `tutorials` (for step-by-step programming materials)
