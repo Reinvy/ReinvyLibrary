@@ -182,6 +182,12 @@ Below is the dynamically updated list of all materials available in the library:
 | [Tailwind CSS Cheat Sheet](frontend/tailwindcss/cheatsheets/tailwind-css-cheatsheet.md) | Cheatsheet | Beginner | [EN](frontend/tailwindcss/cheatsheets/tailwind-css-cheatsheet.md) \| [ID](frontend/tailwindcss/cheatsheets/tailwind-css-cheatsheet_id.md) |
 | [Tailwind CSS Syllabus](frontend/tailwindcss/syllabi/tailwind-css-syllabus.md) | Syllabus | Beginner | [EN](frontend/tailwindcss/syllabi/tailwind-css-syllabus.md) \| [ID](frontend/tailwindcss/syllabi/tailwind-css-syllabus_id.md) |
 
+#### 🏷️ Svelte
+
+| Topic | Format | Difficulty | Available Languages |
+| :--- | :--- | :--- | :--- |
+| [Getting Started with Svelte](frontend/svelte/tutorials/getting-started-with-svelte.md) | Tutorial | Beginner | [EN](frontend/svelte/tutorials/getting-started-with-svelte.md) \| [ID](frontend/svelte/tutorials/getting-started-with-svelte_id.md) |
+
 ### 📁 Mobile
 
 #### 🏷️ Flutter
