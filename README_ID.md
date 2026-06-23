@@ -182,6 +182,12 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 | [Cheat Sheet Tailwind CSS](frontend/tailwindcss/cheatsheets/tailwind-css-cheatsheet.md) | Cheatsheet | Beginner | [EN](frontend/tailwindcss/cheatsheets/tailwind-css-cheatsheet.md) \| [ID](frontend/tailwindcss/cheatsheets/tailwind-css-cheatsheet_id.md) |
 | [Silabus Tailwind CSS](frontend/tailwindcss/syllabi/tailwind-css-syllabus.md) | Syllabus | Beginner | [EN](frontend/tailwindcss/syllabi/tailwind-css-syllabus.md) \| [ID](frontend/tailwindcss/syllabi/tailwind-css-syllabus_id.md) |
 
+#### 🏷️ Svelte
+
+| Topik | Format | Kesulitan | Bahasa Tersedia |
+| :--- | :--- | :--- | :--- |
+| [Memulai dengan Svelte](frontend/svelte/tutorials/getting-started-with-svelte.md) | Tutorial | Beginner | [EN](frontend/svelte/tutorials/getting-started-with-svelte.md) \| [ID](frontend/svelte/tutorials/getting-started-with-svelte_id.md) |
+
 ### 📁 Mobile
 
 #### 🏷️ Flutter
