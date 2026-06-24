@@ -187,6 +187,7 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 | Topik | Format | Kesulitan | Bahasa Tersedia |
 | :--- | :--- | :--- | :--- |
 | [Memulai dengan Svelte](frontend/svelte/tutorials/getting-started-with-svelte.md) | Tutorial | Beginner | [EN](frontend/svelte/tutorials/getting-started-with-svelte.md) \| [ID](frontend/svelte/tutorials/getting-started-with-svelte_id.md) |
+| [Cheat Sheet Svelte](frontend/svelte/cheatsheets/svelte-cheatsheet.md) | Cheatsheet | Intermediate | [EN](frontend/svelte/cheatsheets/svelte-cheatsheet.md) \| [ID](frontend/svelte/cheatsheets/svelte-cheatsheet_id.md) |
 
 ### 📁 Mobile
 
