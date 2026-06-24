@@ -187,6 +187,7 @@ Below is the dynamically updated list of all materials available in the library:
 | Topic | Format | Difficulty | Available Languages |
 | :--- | :--- | :--- | :--- |
 | [Getting Started with Svelte](frontend/svelte/tutorials/getting-started-with-svelte.md) | Tutorial | Beginner | [EN](frontend/svelte/tutorials/getting-started-with-svelte.md) \| [ID](frontend/svelte/tutorials/getting-started-with-svelte_id.md) |
+| [Svelte Cheat Sheet](frontend/svelte/cheatsheets/svelte-cheatsheet.md) | Cheatsheet | Intermediate | [EN](frontend/svelte/cheatsheets/svelte-cheatsheet.md) \| [ID](frontend/svelte/cheatsheets/svelte-cheatsheet_id.md) |
 
 ### 📁 Mobile
 
