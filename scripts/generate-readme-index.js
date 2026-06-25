@@ -6,7 +6,7 @@ const ALLOWED_CATEGORIES = ['backend', 'frontend', 'mobile', 'devops', 'database
 const ALLOWED_TECHNOLOGIES = [
   'expressjs', 'elysiajs', 'nextjs', 'react-native', 'flutter', 'golang', 'laravel',
   'docker', 'pm2', 'redis', 'mongodb', 'postgres',
-  'swift', 'kotlin', 'kubernetes', 'nestjs', 'vuejs', 'github-actions', 'tailwindcss', 'svelte'
+  'swift', 'kotlin', 'kubernetes', 'nestjs', 'vuejs', 'github-actions', 'tailwindcss', 'svelte', 'bun'
 ];
 
 function getPluralType(type) {
