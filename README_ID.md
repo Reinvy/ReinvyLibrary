@@ -144,6 +144,12 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 | [Cheat Sheet NestJS](backend/nestjs/cheatsheets/nestjs-cheatsheet.md) | Cheatsheet | Intermediate | [EN](backend/nestjs/cheatsheets/nestjs-cheatsheet.md) \| [ID](backend/nestjs/cheatsheets/nestjs-cheatsheet_id.md) |
 | [Silabus Pengembangan NestJS](backend/nestjs/syllabi/nestjs-development-syllabus.md) | Syllabus | Intermediate | [EN](backend/nestjs/syllabi/nestjs-development-syllabus.md) \| [ID](backend/nestjs/syllabi/nestjs-development-syllabus_id.md) |
 
+#### 🏷️ Bun
+
+| Topik | Format | Kesulitan | Bahasa Tersedia |
+| :--- | :--- | :--- | :--- |
+| [Memulai dengan Bun](backend/bun/tutorials/getting-started-with-bun.md) | Tutorial | Beginner | [EN](backend/bun/tutorials/getting-started-with-bun.md) \| [ID](backend/bun/tutorials/getting-started-with-bun_id.md) |
+
 ### 📁 Frontend
 
 #### 🏷️ Nextjs
