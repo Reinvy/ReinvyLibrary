@@ -189,6 +189,7 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 | [Memulai dengan Svelte](frontend/svelte/tutorials/getting-started-with-svelte.md) | Tutorial | Beginner | [EN](frontend/svelte/tutorials/getting-started-with-svelte.md) \| [ID](frontend/svelte/tutorials/getting-started-with-svelte_id.md) |
 | [Panduan Praktik Terbaik Svelte](frontend/svelte/guides/svelte-best-practices-guide.md) | Guide | Intermediate | [EN](frontend/svelte/guides/svelte-best-practices-guide.md) \| [ID](frontend/svelte/guides/svelte-best-practices-guide_id.md) |
 | [Cheat Sheet Svelte](frontend/svelte/cheatsheets/svelte-cheatsheet.md) | Cheatsheet | Intermediate | [EN](frontend/svelte/cheatsheets/svelte-cheatsheet.md) \| [ID](frontend/svelte/cheatsheets/svelte-cheatsheet_id.md) |
+| [Silabus Pengembangan Svelte dan SvelteKit](frontend/svelte/syllabi/svelte-syllabus.md) | Syllabus | Intermediate | [EN](frontend/svelte/syllabi/svelte-syllabus.md) \| [ID](frontend/svelte/syllabi/svelte-syllabus_id.md) |
 
 ### 📁 Mobile
 
