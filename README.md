@@ -297,6 +297,7 @@ Below is the dynamically updated list of all materials available in the library:
 | [PostgreSQL Performance Tuning and Optimization Guide](database/postgres/guides/postgresql-performance-tuning-guide.md) | Guide | Advanced | [EN](database/postgres/guides/postgresql-performance-tuning-guide.md) \| [ID](database/postgres/guides/postgresql-performance-tuning-guide_id.md) |
 | [PostgreSQL Query Cheatsheet](database/postgres/cheatsheets/postgresql-query-cheatsheet.md) | Cheatsheet | Beginner | [EN](database/postgres/cheatsheets/postgresql-query-cheatsheet.md) \| [ID](database/postgres/cheatsheets/postgresql-query-cheatsheet_id.md) |
 | [PostgreSQL Syllabus](database/postgres/syllabi/postgresql-syllabus.md) | Syllabus | Beginner | [EN](database/postgres/syllabi/postgresql-syllabus.md) \| [ID](database/postgres/syllabi/postgresql-syllabus_id.md) |
+| [PostgreSQL Table Partitioning and Data Lifecycle Management](database/postgres/tutorials/postgresql-table-partitioning-and-lifecycle-management.md) | Tutorial | Advanced | [EN](database/postgres/tutorials/postgresql-table-partitioning-and-lifecycle-management.md) \| [ID](database/postgres/tutorials/postgresql-table-partitioning-and-lifecycle-management_id.md) |
 <!-- INDEX_END -->
 
 ---
