@@ -297,6 +297,7 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 | [Panduan Tuning Performa dan Optimasi PostgreSQL](database/postgres/guides/postgresql-performance-tuning-guide.md) | Guide | Advanced | [EN](database/postgres/guides/postgresql-performance-tuning-guide.md) \| [ID](database/postgres/guides/postgresql-performance-tuning-guide_id.md) |
 | [Cheat Sheet Query PostgreSQL](database/postgres/cheatsheets/postgresql-query-cheatsheet.md) | Cheatsheet | Beginner | [EN](database/postgres/cheatsheets/postgresql-query-cheatsheet.md) \| [ID](database/postgres/cheatsheets/postgresql-query-cheatsheet_id.md) |
 | [Silabus PostgreSQL](database/postgres/syllabi/postgresql-syllabus.md) | Syllabus | Beginner | [EN](database/postgres/syllabi/postgresql-syllabus.md) \| [ID](database/postgres/syllabi/postgresql-syllabus_id.md) |
+| [Partisi Tabel PostgreSQL dan Manajemen Siklus Hidup Data](database/postgres/tutorials/postgresql-table-partitioning-and-lifecycle-management.md) | Tutorial | Advanced | [EN](database/postgres/tutorials/postgresql-table-partitioning-and-lifecycle-management.md) \| [ID](database/postgres/tutorials/postgresql-table-partitioning-and-lifecycle-management_id.md) |
 <!-- INDEX_END -->
 
 ---
