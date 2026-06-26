@@ -239,6 +239,7 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 | [Cheat Sheet Perintah Docker](devops/docker/cheatsheets/docker-command-cheatsheet.md) | Cheatsheet | Beginner | [EN](devops/docker/cheatsheets/docker-command-cheatsheet.md) \| [ID](devops/docker/cheatsheets/docker-command-cheatsheet_id.md) |
 | [Panduan Jaringan Docker Compose dan Orkestrasi Multi-Layanan](devops/docker/guides/docker-compose-networking-guide.md) | Guide | Intermediate | [EN](devops/docker/guides/docker-compose-networking-guide.md) \| [ID](devops/docker/guides/docker-compose-networking-guide_id.md) |
 | [Silabus Penguasaan Kontainerisasi Docker](devops/docker/syllabi/docker-containerization-syllabus.md) | Syllabus | Intermediate | [EN](devops/docker/syllabi/docker-containerization-syllabus.md) \| [ID](devops/docker/syllabi/docker-containerization-syllabus_id.md) |
+| [Build Multi-Arsitektur Docker dengan Buildx](devops/docker/tutorials/docker-multi-architecture-builds.md) | Tutorial | Intermediate | [EN](devops/docker/tutorials/docker-multi-architecture-builds.md) \| [ID](devops/docker/tutorials/docker-multi-architecture-builds_id.md) |
 | [Membuat Aplikasi Full-Stack dengan Docker](devops/docker/tutorials/dockerizing-a-full-stack-application.md) | Tutorial | Intermediate | [EN](devops/docker/tutorials/dockerizing-a-full-stack-application.md) \| [ID](devops/docker/tutorials/dockerizing-a-full-stack-application_id.md) |
 
 #### 🏷️ Pm2
