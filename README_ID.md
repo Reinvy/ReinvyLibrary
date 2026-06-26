@@ -149,6 +149,7 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 | Topik | Format | Kesulitan | Bahasa Tersedia |
 | :--- | :--- | :--- | :--- |
 | [Cheat Sheet CLI dan API Bun](backend/bun/cheatsheets/bun-cheatsheet.md) | Cheatsheet | Intermediate | [EN](backend/bun/cheatsheets/bun-cheatsheet.md) \| [ID](backend/bun/cheatsheets/bun-cheatsheet_id.md) |
+| [Panduan Pola Produksi Bun](backend/bun/guides/bun-production-patterns-guide.md) | Guide | Intermediate | [EN](backend/bun/guides/bun-production-patterns-guide.md) \| [ID](backend/bun/guides/bun-production-patterns-guide_id.md) |
 | [Memulai dengan Bun](backend/bun/tutorials/getting-started-with-bun.md) | Tutorial | Beginner | [EN](backend/bun/tutorials/getting-started-with-bun.md) \| [ID](backend/bun/tutorials/getting-started-with-bun_id.md) |
 
 ### 📁 Frontend
