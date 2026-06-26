@@ -149,6 +149,7 @@ Below is the dynamically updated list of all materials available in the library:
 | Topic | Format | Difficulty | Available Languages |
 | :--- | :--- | :--- | :--- |
 | [Bun CLI and API Cheatsheet](backend/bun/cheatsheets/bun-cheatsheet.md) | Cheatsheet | Intermediate | [EN](backend/bun/cheatsheets/bun-cheatsheet.md) \| [ID](backend/bun/cheatsheets/bun-cheatsheet_id.md) |
+| [Bun Development Syllabus](backend/bun/syllabi/bun-development-syllabus.md) | Syllabus | Intermediate | [EN](backend/bun/syllabi/bun-development-syllabus.md) \| [ID](backend/bun/syllabi/bun-development-syllabus_id.md) |
 | [Bun Production Patterns Guide](backend/bun/guides/bun-production-patterns-guide.md) | Guide | Intermediate | [EN](backend/bun/guides/bun-production-patterns-guide.md) \| [ID](backend/bun/guides/bun-production-patterns-guide_id.md) |
 | [Getting Started with Bun](backend/bun/tutorials/getting-started-with-bun.md) | Tutorial | Beginner | [EN](backend/bun/tutorials/getting-started-with-bun.md) \| [ID](backend/bun/tutorials/getting-started-with-bun_id.md) |
 
