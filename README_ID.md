@@ -161,6 +161,7 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 | Topik | Format | Kesulitan | Bahasa Tersedia |
 | :--- | :--- | :--- | :--- |
 | [Membangun Blog Full-Stack dengan Next.js App Router](frontend/nextjs/tutorials/building-a-full-stack-blog-with-nextjs-app-router.md) | Tutorial | Intermediate | [EN](frontend/nextjs/tutorials/building-a-full-stack-blog-with-nextjs-app-router.md) \| [ID](frontend/nextjs/tutorials/building-a-full-stack-blog-with-nextjs-app-router_id.md) |
+| [Panduan Autentikasi dan Otorisasi Next.js](frontend/nextjs/guides/nextjs-authentication-and-authorization-guide.md) | Guide | Advanced | [EN](frontend/nextjs/guides/nextjs-authentication-and-authorization-guide.md) \| [ID](frontend/nextjs/guides/nextjs-authentication-and-authorization-guide_id.md) |
 | [Cheat Sheet Next.js](frontend/nextjs/cheatsheets/nextjs-cheatsheet.md) | Cheatsheet | Intermediate | [EN](frontend/nextjs/cheatsheets/nextjs-cheatsheet.md) \| [ID](frontend/nextjs/cheatsheets/nextjs-cheatsheet_id.md) |
 | [Struktur Proyek Next.js dan Praktik Terbaik](frontend/nextjs/guides/nextjs-project-structure-and-best-practices.md) | Guide | Intermediate | [EN](frontend/nextjs/guides/nextjs-project-structure-and-best-practices.md) \| [ID](frontend/nextjs/guides/nextjs-project-structure-and-best-practices_id.md) |
 | [Silabus Pengembangan Next.js](frontend/nextjs/syllabi/nextjs-syllabus.md) | Syllabus | Intermediate | [EN](frontend/nextjs/syllabi/nextjs-syllabus.md) \| [ID](frontend/nextjs/syllabi/nextjs-syllabus_id.md) |
