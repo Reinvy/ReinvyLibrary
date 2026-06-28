@@ -121,6 +121,7 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 
 | Topik | Format | Kesulitan | Bahasa Tersedia |
 | :--- | :--- | :--- | :--- |
+| [Membangun RESTful API dengan Go](backend/golang/tutorials/building-restful-api-with-go.md) | Tutorial | Intermediate | [EN](backend/golang/tutorials/building-restful-api-with-go.md) \| [ID](backend/golang/tutorials/building-restful-api-with-go_id.md) |
 | [Memulai Pemrograman Go](backend/golang/tutorials/getting-started-with-go.md) | Tutorial | Beginner | [EN](backend/golang/tutorials/getting-started-with-go.md) \| [ID](backend/golang/tutorials/getting-started-with-go_id.md) |
 | [Silabus Bahasa Pemrograman Go](backend/golang/syllabi/go-syllabus.md) | Syllabus | Intermediate | [EN](backend/golang/syllabi/go-syllabus.md) \| [ID](backend/golang/syllabi/go-syllabus_id.md) |
 | [Cheat Sheet Golang](backend/golang/cheatsheets/golang-cheatsheet.md) | Cheatsheet | Intermediate | [EN](backend/golang/cheatsheets/golang-cheatsheet.md) \| [ID](backend/golang/cheatsheets/golang-cheatsheet_id.md) |

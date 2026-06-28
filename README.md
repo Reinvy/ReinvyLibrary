@@ -121,6 +121,7 @@ Below is the dynamically updated list of all materials available in the library:
 
 | Topic | Format | Difficulty | Available Languages |
 | :--- | :--- | :--- | :--- |
+| [Building a RESTful API with Go](backend/golang/tutorials/building-restful-api-with-go.md) | Tutorial | Intermediate | [EN](backend/golang/tutorials/building-restful-api-with-go.md) \| [ID](backend/golang/tutorials/building-restful-api-with-go_id.md) |
 | [Getting Started with Go Programming](backend/golang/tutorials/getting-started-with-go.md) | Tutorial | Beginner | [EN](backend/golang/tutorials/getting-started-with-go.md) \| [ID](backend/golang/tutorials/getting-started-with-go_id.md) |
 | [Go Programming Language Syllabus](backend/golang/syllabi/go-syllabus.md) | Syllabus | Intermediate | [EN](backend/golang/syllabi/go-syllabus.md) \| [ID](backend/golang/syllabi/go-syllabus_id.md) |
 | [Golang Cheatsheet](backend/golang/cheatsheets/golang-cheatsheet.md) | Cheatsheet | Intermediate | [EN](backend/golang/cheatsheets/golang-cheatsheet.md) \| [ID](backend/golang/cheatsheets/golang-cheatsheet_id.md) |
