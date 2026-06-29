@@ -171,6 +171,7 @@ Below is the dynamically updated list of all materials available in the library:
 
 | Topic | Format | Difficulty | Available Languages |
 | :--- | :--- | :--- | :--- |
+| [Building a Maps and Location-Aware App with React Native](frontend/react-native/tutorials/building-maps-and-location-app-with-react-native.md) | Tutorial | Intermediate | [EN](frontend/react-native/tutorials/building-maps-and-location-app-with-react-native.md) \| [ID](frontend/react-native/tutorials/building-maps-and-location-app-with-react-native_id.md) |
 | [Building a REST API-Driven Mobile App with React Native](frontend/react-native/tutorials/building-rest-api-driven-mobile-app-with-react-native.md) | Tutorial | Intermediate | [EN](frontend/react-native/tutorials/building-rest-api-driven-mobile-app-with-react-native.md) \| [ID](frontend/react-native/tutorials/building-rest-api-driven-mobile-app-with-react-native_id.md) |
 | [React Native Cheatsheet](frontend/react-native/cheatsheets/react-native-cheatsheet.md) | Cheatsheet | Intermediate | [EN](frontend/react-native/cheatsheets/react-native-cheatsheet.md) \| [ID](frontend/react-native/cheatsheets/react-native-cheatsheet_id.md) |
 | [React Native Development Syllabus](frontend/react-native/syllabi/react-native-development-syllabus.md) | Syllabus | Intermediate | [EN](frontend/react-native/syllabi/react-native-development-syllabus.md) \| [ID](frontend/react-native/syllabi/react-native-development-syllabus_id.md) |
