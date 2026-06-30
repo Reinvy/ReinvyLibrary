@@ -190,6 +190,7 @@ Below is the dynamically updated list of all materials available in the library:
 
 | Topic | Format | Difficulty | Available Languages |
 | :--- | :--- | :--- | :--- |
+| [Building a Responsive Landing Page with Tailwind CSS](frontend/tailwindcss/tutorials/building-responsive-landing-page-with-tailwind-css.md) | Tutorial | Beginner | [EN](frontend/tailwindcss/tutorials/building-responsive-landing-page-with-tailwind-css.md) \| [ID](frontend/tailwindcss/tutorials/building-responsive-landing-page-with-tailwind-css_id.md) |
 | [Getting Started with Tailwind CSS](frontend/tailwindcss/tutorials/getting-started-with-tailwind-css.md) | Tutorial | Beginner | [EN](frontend/tailwindcss/tutorials/getting-started-with-tailwind-css.md) \| [ID](frontend/tailwindcss/tutorials/getting-started-with-tailwind-css_id.md) |
 | [Tailwind CSS Best Practices Guide](frontend/tailwindcss/guides/tailwind-css-best-practices-guide.md) | Guide | Intermediate | [EN](frontend/tailwindcss/guides/tailwind-css-best-practices-guide.md) \| [ID](frontend/tailwindcss/guides/tailwind-css-best-practices-guide_id.md) |
 | [Tailwind CSS Cheat Sheet](frontend/tailwindcss/cheatsheets/tailwind-css-cheatsheet.md) | Cheatsheet | Beginner | [EN](frontend/tailwindcss/cheatsheets/tailwind-css-cheatsheet.md) \| [ID](frontend/tailwindcss/cheatsheets/tailwind-css-cheatsheet_id.md) |
