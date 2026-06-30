@@ -292,6 +292,7 @@ Below is the dynamically updated list of all materials available in the library:
 | :--- | :--- | :--- | :--- |
 | [MongoDB Aggregation Pipeline: A Practical Tutorial](database/mongodb/tutorials/mongodb-aggregation-pipeline.md) | Tutorial | Intermediate | [EN](database/mongodb/tutorials/mongodb-aggregation-pipeline.md) \| [ID](database/mongodb/tutorials/mongodb-aggregation-pipeline_id.md) |
 | [MongoDB Development Syllabus](database/mongodb/syllabi/mongodb-development-syllabus.md) | Syllabus | Intermediate | [EN](database/mongodb/syllabi/mongodb-development-syllabus.md) \| [ID](database/mongodb/syllabi/mongodb-development-syllabus_id.md) |
+| [MongoDB Indexing Strategies and Query Performance Optimization](database/mongodb/tutorials/mongodb-indexing-strategies.md) | Tutorial | Intermediate | [EN](database/mongodb/tutorials/mongodb-indexing-strategies.md) \| [ID](database/mongodb/tutorials/mongodb-indexing-strategies_id.md) |
 | [MongoDB Query Cheatsheet](database/mongodb/cheatsheets/mongodb-query-cheatsheet.md) | Cheatsheet | Beginner | [EN](database/mongodb/cheatsheets/mongodb-query-cheatsheet.md) \| [ID](database/mongodb/cheatsheets/mongodb-query-cheatsheet_id.md) |
 | [MongoDB Schema Design and Data Modeling Guide](database/mongodb/guides/mongodb-schema-design-and-data-modeling-guide.md) | Guide | Intermediate | [EN](database/mongodb/guides/mongodb-schema-design-and-data-modeling-guide.md) \| [ID](database/mongodb/guides/mongodb-schema-design-and-data-modeling-guide_id.md) |
 
