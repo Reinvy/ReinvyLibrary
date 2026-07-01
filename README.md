@@ -304,6 +304,7 @@ Below is the dynamically updated list of all materials available in the library:
 | Topic | Format | Difficulty | Available Languages |
 | :--- | :--- | :--- | :--- |
 | [Getting Started with PostgreSQL](database/postgres/tutorials/getting-started-with-postgresql.md) | Tutorial | Beginner | [EN](database/postgres/tutorials/getting-started-with-postgresql.md) \| [ID](database/postgres/tutorials/getting-started-with-postgresql_id.md) |
+| [PostgreSQL Full-Text Search Tutorial](database/postgres/tutorials/postgresql-full-text-search-tutorial.md) | Tutorial | Intermediate | [EN](database/postgres/tutorials/postgresql-full-text-search-tutorial.md) \| [ID](database/postgres/tutorials/postgresql-full-text-search-tutorial_id.md) |
 | [PostgreSQL Performance Tuning and Optimization Guide](database/postgres/guides/postgresql-performance-tuning-guide.md) | Guide | Advanced | [EN](database/postgres/guides/postgresql-performance-tuning-guide.md) \| [ID](database/postgres/guides/postgresql-performance-tuning-guide_id.md) |
 | [PostgreSQL Query Cheatsheet](database/postgres/cheatsheets/postgresql-query-cheatsheet.md) | Cheatsheet | Beginner | [EN](database/postgres/cheatsheets/postgresql-query-cheatsheet.md) \| [ID](database/postgres/cheatsheets/postgresql-query-cheatsheet_id.md) |
 | [PostgreSQL Syllabus](database/postgres/syllabi/postgresql-syllabus.md) | Syllabus | Beginner | [EN](database/postgres/syllabi/postgresql-syllabus.md) \| [ID](database/postgres/syllabi/postgresql-syllabus_id.md) |
