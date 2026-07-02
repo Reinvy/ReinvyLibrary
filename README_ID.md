@@ -131,6 +131,7 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 
 | Topik | Format | Kesulitan | Bahasa Tersedia |
 | :--- | :--- | :--- | :--- |
+| [Membangun Aplikasi Chat Real-Time dengan Laravel Reverb](backend/laravel/tutorials/building-real-time-chat-with-laravel-reverb.md) | Tutorial | Advanced | [EN](backend/laravel/tutorials/building-real-time-chat-with-laravel-reverb.md) \| [ID](backend/laravel/tutorials/building-real-time-chat-with-laravel-reverb_id.md) |
 | [Panduan Praktik Terbaik Laravel](backend/laravel/guides/laravel-best-practices-guide.md) | Guide | Intermediate | [EN](backend/laravel/guides/laravel-best-practices-guide.md) \| [ID](backend/laravel/guides/laravel-best-practices-guide_id.md) |
 | [Cheat Sheet Laravel](backend/laravel/cheatsheets/laravel-cheatsheet.md) | Cheatsheet | Beginner | [EN](backend/laravel/cheatsheets/laravel-cheatsheet.md) \| [ID](backend/laravel/cheatsheets/laravel-cheatsheet_id.md) |
 | [Tutorial CRUD REST API Laravel](backend/laravel/tutorials/laravel-crud-rest-api-tutorial.md) | Tutorial | Intermediate | [EN](backend/laravel/tutorials/laravel-crud-rest-api-tutorial.md) \| [ID](backend/laravel/tutorials/laravel-crud-rest-api-tutorial_id.md) |
