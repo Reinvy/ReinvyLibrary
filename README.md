@@ -183,6 +183,7 @@ Below is the dynamically updated list of all materials available in the library:
 | Topic | Format | Difficulty | Available Languages |
 | :--- | :--- | :--- | :--- |
 | [Building Web Apps with Vue.js 3](frontend/vuejs/tutorials/building-web-apps-with-vuejs.md) | Tutorial | Intermediate | [EN](frontend/vuejs/tutorials/building-web-apps-with-vuejs.md) \| [ID](frontend/vuejs/tutorials/building-web-apps-with-vuejs_id.md) |
+| [Building a Real-Time Dashboard with Vue.js and WebSocket](frontend/vuejs/tutorials/real-time-dashboard-with-vuejs-websocket.md) | Tutorial | Advanced | [EN](frontend/vuejs/tutorials/real-time-dashboard-with-vuejs-websocket.md) \| [ID](frontend/vuejs/tutorials/real-time-dashboard-with-vuejs-websocket_id.md) |
 | [Vue.js Best Practices Guide](frontend/vuejs/guides/vuejs-best-practices-guide.md) | Guide | Advanced | [EN](frontend/vuejs/guides/vuejs-best-practices-guide.md) \| [ID](frontend/vuejs/guides/vuejs-best-practices-guide_id.md) |
 | [Vue.js Cheat Sheet](frontend/vuejs/cheatsheets/vuejs-cheatsheet.md) | Cheatsheet | Beginner | [EN](frontend/vuejs/cheatsheets/vuejs-cheatsheet.md) \| [ID](frontend/vuejs/cheatsheets/vuejs-cheatsheet_id.md) |
 | [Vue.js Frontend Development Syllabus](frontend/vuejs/syllabi/vuejs-frontend-development-syllabus.md) | Syllabus | Intermediate | [EN](frontend/vuejs/syllabi/vuejs-frontend-development-syllabus.md) \| [ID](frontend/vuejs/syllabi/vuejs-frontend-development-syllabus_id.md) |
