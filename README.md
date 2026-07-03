@@ -269,6 +269,7 @@ Below is the dynamically updated list of all materials available in the library:
 | [Kubernetes Cheat Sheet](devops/kubernetes/cheatsheets/kubernetes-cheatsheet.md) | Cheatsheet | Beginner | [EN](devops/kubernetes/cheatsheets/kubernetes-cheatsheet.md) \| [ID](devops/kubernetes/cheatsheets/kubernetes-cheatsheet_id.md) |
 | [Kubernetes DevOps Syllabus](devops/kubernetes/syllabi/kubernetes-devops-syllabus.md) | Syllabus | Intermediate | [EN](devops/kubernetes/syllabi/kubernetes-devops-syllabus.md) \| [ID](devops/kubernetes/syllabi/kubernetes-devops-syllabus_id.md) |
 | [Kubernetes Production Best Practices Guide](devops/kubernetes/guides/kubernetes-production-best-practices.md) | Guide | Advanced | [EN](devops/kubernetes/guides/kubernetes-production-best-practices.md) \| [ID](devops/kubernetes/guides/kubernetes-production-best-practices_id.md) |
+| [Kubernetes Stateful Applications: Deploying Databases with StatefulSets](devops/kubernetes/tutorials/kubernetes-stateful-applications-statefulsets.md) | Tutorial | Advanced | [EN](devops/kubernetes/tutorials/kubernetes-stateful-applications-statefulsets.md) \| [ID](devops/kubernetes/tutorials/kubernetes-stateful-applications-statefulsets_id.md) |
 
 #### 🏷️ Github Actions
 

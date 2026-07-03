@@ -269,6 +269,7 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 | [Cheat Sheet Kubernetes](devops/kubernetes/cheatsheets/kubernetes-cheatsheet.md) | Cheatsheet | Beginner | [EN](devops/kubernetes/cheatsheets/kubernetes-cheatsheet.md) \| [ID](devops/kubernetes/cheatsheets/kubernetes-cheatsheet_id.md) |
 | [Silabus DevOps Kubernetes](devops/kubernetes/syllabi/kubernetes-devops-syllabus.md) | Syllabus | Intermediate | [EN](devops/kubernetes/syllabi/kubernetes-devops-syllabus.md) \| [ID](devops/kubernetes/syllabi/kubernetes-devops-syllabus_id.md) |
 | [Panduan Praktik Terbaik Produksi Kubernetes](devops/kubernetes/guides/kubernetes-production-best-practices.md) | Guide | Advanced | [EN](devops/kubernetes/guides/kubernetes-production-best-practices.md) \| [ID](devops/kubernetes/guides/kubernetes-production-best-practices_id.md) |
+| [Aplikasi Stateful di Kubernetes: Menjalankan Database dengan StatefulSets](devops/kubernetes/tutorials/kubernetes-stateful-applications-statefulsets.md) | Tutorial | Advanced | [EN](devops/kubernetes/tutorials/kubernetes-stateful-applications-statefulsets.md) \| [ID](devops/kubernetes/tutorials/kubernetes-stateful-applications-statefulsets_id.md) |
 
 #### 🏷️ Github Actions
 
