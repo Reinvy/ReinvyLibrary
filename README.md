@@ -213,6 +213,7 @@ Below is the dynamically updated list of all materials available in the library:
 
 | Topic | Format | Difficulty | Available Languages |
 | :--- | :--- | :--- | :--- |
+| [Building an E-Commerce App with Flutter](mobile/flutter/tutorials/building-ecommerce-app-with-flutter.md) | Tutorial | Intermediate | [EN](mobile/flutter/tutorials/building-ecommerce-app-with-flutter.md) \| [ID](mobile/flutter/tutorials/building-ecommerce-app-with-flutter_id.md) |
 | [Building a Real-Time Chat Application with Flutter and Firebase](mobile/flutter/tutorials/building-real-time-chat-app-with-flutter-and-firebase.md) | Tutorial | Advanced | [EN](mobile/flutter/tutorials/building-real-time-chat-app-with-flutter-and-firebase.md) \| [ID](mobile/flutter/tutorials/building-real-time-chat-app-with-flutter-and-firebase_id.md) |
 | [Flutter Clean Architecture Guide](mobile/flutter/guides/flutter-clean-architecture-guide.md) | Guide | Advanced | [EN](mobile/flutter/guides/flutter-clean-architecture-guide.md) \| [ID](mobile/flutter/guides/flutter-clean-architecture-guide_id.md) |
 | [Flutter App Development Syllabus](mobile/flutter/syllabi/flutter-syllabus.md) | Syllabus | Advanced | [EN](mobile/flutter/syllabi/flutter-syllabus.md) \| [ID](mobile/flutter/syllabi/flutter-syllabus_id.md) |
