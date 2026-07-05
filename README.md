@@ -302,6 +302,7 @@ Below is the dynamically updated list of all materials available in the library:
 | Topic | Format | Difficulty | Available Languages |
 | :--- | :--- | :--- | :--- |
 | [MongoDB Aggregation Pipeline: A Practical Tutorial](database/mongodb/tutorials/mongodb-aggregation-pipeline.md) | Tutorial | Intermediate | [EN](database/mongodb/tutorials/mongodb-aggregation-pipeline.md) \| [ID](database/mongodb/tutorials/mongodb-aggregation-pipeline_id.md) |
+| [Building Real-Time Data Pipelines with MongoDB Change Streams](database/mongodb/tutorials/mongodb-change-streams-real-time-pipelines.md) | Tutorial | Advanced | [EN](database/mongodb/tutorials/mongodb-change-streams-real-time-pipelines.md) \| [ID](database/mongodb/tutorials/mongodb-change-streams-real-time-pipelines_id.md) |
 | [MongoDB Development Syllabus](database/mongodb/syllabi/mongodb-development-syllabus.md) | Syllabus | Intermediate | [EN](database/mongodb/syllabi/mongodb-development-syllabus.md) \| [ID](database/mongodb/syllabi/mongodb-development-syllabus_id.md) |
 | [MongoDB Indexing Strategies and Query Performance Optimization](database/mongodb/tutorials/mongodb-indexing-strategies.md) | Tutorial | Intermediate | [EN](database/mongodb/tutorials/mongodb-indexing-strategies.md) \| [ID](database/mongodb/tutorials/mongodb-indexing-strategies_id.md) |
 | [MongoDB Query Cheatsheet](database/mongodb/cheatsheets/mongodb-query-cheatsheet.md) | Cheatsheet | Beginner | [EN](database/mongodb/cheatsheets/mongodb-query-cheatsheet.md) \| [ID](database/mongodb/cheatsheets/mongodb-query-cheatsheet_id.md) |
