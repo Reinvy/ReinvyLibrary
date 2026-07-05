@@ -302,6 +302,7 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 | Topik | Format | Kesulitan | Bahasa Tersedia |
 | :--- | :--- | :--- | :--- |
 | [Pipeline Agregasi MongoDB: Tutorial Praktis](database/mongodb/tutorials/mongodb-aggregation-pipeline.md) | Tutorial | Intermediate | [EN](database/mongodb/tutorials/mongodb-aggregation-pipeline.md) \| [ID](database/mongodb/tutorials/mongodb-aggregation-pipeline_id.md) |
+| [Membangun Pipeline Data Real-Time dengan MongoDB Change Streams](database/mongodb/tutorials/mongodb-change-streams-real-time-pipelines.md) | Tutorial | Advanced | [EN](database/mongodb/tutorials/mongodb-change-streams-real-time-pipelines.md) \| [ID](database/mongodb/tutorials/mongodb-change-streams-real-time-pipelines_id.md) |
 | [Silabus Pengembangan MongoDB](database/mongodb/syllabi/mongodb-development-syllabus.md) | Syllabus | Intermediate | [EN](database/mongodb/syllabi/mongodb-development-syllabus.md) \| [ID](database/mongodb/syllabi/mongodb-development-syllabus_id.md) |
 | [Strategi Indexing MongoDB dan Optimasi Performa Query](database/mongodb/tutorials/mongodb-indexing-strategies.md) | Tutorial | Intermediate | [EN](database/mongodb/tutorials/mongodb-indexing-strategies.md) \| [ID](database/mongodb/tutorials/mongodb-indexing-strategies_id.md) |
 | [Cheat Sheet Query MongoDB](database/mongodb/cheatsheets/mongodb-query-cheatsheet.md) | Cheatsheet | Beginner | [EN](database/mongodb/cheatsheets/mongodb-query-cheatsheet.md) \| [ID](database/mongodb/cheatsheets/mongodb-query-cheatsheet_id.md) |
