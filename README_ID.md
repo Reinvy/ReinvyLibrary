@@ -187,6 +187,7 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 | [Membangun Dashboard Real-Time dengan Vue.js dan WebSocket](frontend/vuejs/tutorials/real-time-dashboard-with-vuejs-websocket.md) | Tutorial | Advanced | [EN](frontend/vuejs/tutorials/real-time-dashboard-with-vuejs-websocket.md) \| [ID](frontend/vuejs/tutorials/real-time-dashboard-with-vuejs-websocket_id.md) |
 | [Panduan Praktik Terbaik Vue.js](frontend/vuejs/guides/vuejs-best-practices-guide.md) | Guide | Advanced | [EN](frontend/vuejs/guides/vuejs-best-practices-guide.md) \| [ID](frontend/vuejs/guides/vuejs-best-practices-guide_id.md) |
 | [Cheat Sheet Vue.js](frontend/vuejs/cheatsheets/vuejs-cheatsheet.md) | Cheatsheet | Beginner | [EN](frontend/vuejs/cheatsheets/vuejs-cheatsheet.md) \| [ID](frontend/vuejs/cheatsheets/vuejs-cheatsheet_id.md) |
+| [Panduan Penanganan dan Validasi Formulir Vue.js](frontend/vuejs/guides/vuejs-form-handling-validation-guide.md) | Guide | Intermediate | [EN](frontend/vuejs/guides/vuejs-form-handling-validation-guide.md) \| [ID](frontend/vuejs/guides/vuejs-form-handling-validation-guide_id.md) |
 | [Silabus Pengembangan Frontend Vue.js](frontend/vuejs/syllabi/vuejs-frontend-development-syllabus.md) | Syllabus | Intermediate | [EN](frontend/vuejs/syllabi/vuejs-frontend-development-syllabus.md) \| [ID](frontend/vuejs/syllabi/vuejs-frontend-development-syllabus_id.md) |
 
 #### 🏷️ Tailwindcss
