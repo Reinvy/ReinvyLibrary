@@ -138,6 +138,7 @@ Below is the dynamically updated list of all materials available in the library:
 | [Laravel Cheat Sheet](backend/laravel/cheatsheets/laravel-cheatsheet.md) | Cheatsheet | Beginner | [EN](backend/laravel/cheatsheets/laravel-cheatsheet.md) \| [ID](backend/laravel/cheatsheets/laravel-cheatsheet_id.md) |
 | [Laravel CRUD REST API Tutorial](backend/laravel/tutorials/laravel-crud-rest-api-tutorial.md) | Tutorial | Intermediate | [EN](backend/laravel/tutorials/laravel-crud-rest-api-tutorial.md) \| [ID](backend/laravel/tutorials/laravel-crud-rest-api-tutorial_id.md) |
 | [Laravel Development Syllabus](backend/laravel/syllabi/laravel-development-syllabus.md) | Syllabus | Intermediate | [EN](backend/laravel/syllabi/laravel-development-syllabus.md) \| [ID](backend/laravel/syllabi/laravel-development-syllabus_id.md) |
+| [Laravel Queue and Job Processing Tutorial](backend/laravel/tutorials/laravel-queue-job-processing-tutorial.md) | Tutorial | Advanced | [EN](backend/laravel/tutorials/laravel-queue-job-processing-tutorial.md) \| [ID](backend/laravel/tutorials/laravel-queue-job-processing-tutorial_id.md) |
 
 #### 🏷️ Nestjs
 
