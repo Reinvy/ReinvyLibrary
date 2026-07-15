@@ -158,6 +158,7 @@ Below is the dynamically updated list of all materials available in the library:
 | [Building a Real-time Chat Application with Bun WebSocket](backend/bun/tutorials/building-real-time-chat-with-bun-websocket.md) | Tutorial | Intermediate | [EN](backend/bun/tutorials/building-real-time-chat-with-bun-websocket.md) \| [ID](backend/bun/tutorials/building-real-time-chat-with-bun-websocket_id.md) |
 | [Bun CLI and API Cheatsheet](backend/bun/cheatsheets/bun-cheatsheet.md) | Cheatsheet | Intermediate | [EN](backend/bun/cheatsheets/bun-cheatsheet.md) \| [ID](backend/bun/cheatsheets/bun-cheatsheet_id.md) |
 | [Bun Development Syllabus](backend/bun/syllabi/bun-development-syllabus.md) | Syllabus | Intermediate | [EN](backend/bun/syllabi/bun-development-syllabus.md) \| [ID](backend/bun/syllabi/bun-development-syllabus_id.md) |
+| [Bun File I/O and Stream Processing Guide](backend/bun/guides/bun-file-io-stream-processing-guide.md) | Guide | Intermediate | [EN](backend/bun/guides/bun-file-io-stream-processing-guide.md) \| [ID](backend/bun/guides/bun-file-io-stream-processing-guide_id.md) |
 | [Bun Production Patterns Guide](backend/bun/guides/bun-production-patterns-guide.md) | Guide | Intermediate | [EN](backend/bun/guides/bun-production-patterns-guide.md) \| [ID](backend/bun/guides/bun-production-patterns-guide_id.md) |
 | [Getting Started with Bun](backend/bun/tutorials/getting-started-with-bun.md) | Tutorial | Beginner | [EN](backend/bun/tutorials/getting-started-with-bun.md) \| [ID](backend/bun/tutorials/getting-started-with-bun_id.md) |
 
