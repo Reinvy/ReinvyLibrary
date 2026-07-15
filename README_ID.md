@@ -158,6 +158,7 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 | [Membangun Aplikasi Chat Real-time dengan Bun WebSocket](backend/bun/tutorials/building-real-time-chat-with-bun-websocket.md) | Tutorial | Intermediate | [EN](backend/bun/tutorials/building-real-time-chat-with-bun-websocket.md) \| [ID](backend/bun/tutorials/building-real-time-chat-with-bun-websocket_id.md) |
 | [Cheat Sheet CLI dan API Bun](backend/bun/cheatsheets/bun-cheatsheet.md) | Cheatsheet | Intermediate | [EN](backend/bun/cheatsheets/bun-cheatsheet.md) \| [ID](backend/bun/cheatsheets/bun-cheatsheet_id.md) |
 | [Silabus Pengembangan Bun](backend/bun/syllabi/bun-development-syllabus.md) | Syllabus | Intermediate | [EN](backend/bun/syllabi/bun-development-syllabus.md) \| [ID](backend/bun/syllabi/bun-development-syllabus_id.md) |
+| [Panduan I/O Berkas dan Pemrosesan Stream dengan Bun](backend/bun/guides/bun-file-io-stream-processing-guide.md) | Guide | Intermediate | [EN](backend/bun/guides/bun-file-io-stream-processing-guide.md) \| [ID](backend/bun/guides/bun-file-io-stream-processing-guide_id.md) |
 | [Panduan Pola Produksi Bun](backend/bun/guides/bun-production-patterns-guide.md) | Guide | Intermediate | [EN](backend/bun/guides/bun-production-patterns-guide.md) \| [ID](backend/bun/guides/bun-production-patterns-guide_id.md) |
 | [Memulai dengan Bun](backend/bun/tutorials/getting-started-with-bun.md) | Tutorial | Beginner | [EN](backend/bun/tutorials/getting-started-with-bun.md) \| [ID](backend/bun/tutorials/getting-started-with-bun_id.md) |
 
