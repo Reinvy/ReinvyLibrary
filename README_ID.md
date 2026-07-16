@@ -245,6 +245,7 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 | [Cheat Sheet Swift](mobile/swift/cheatsheets/swift-cheatsheet.md) | Cheatsheet | Beginner | [EN](mobile/swift/cheatsheets/swift-cheatsheet.md) \| [ID](mobile/swift/cheatsheets/swift-cheatsheet_id.md) |
 | [Panduan Concurrency Swift: async/await, Actors, dan Structured Concurrency](mobile/swift/guides/swift-concurrency-async-await-actors-guide.md) | Guide | Advanced | [EN](mobile/swift/guides/swift-concurrency-async-await-actors-guide.md) \| [ID](mobile/swift/guides/swift-concurrency-async-await-actors-guide_id.md) |
 | [Panduan Praktik Terbaik Swift iOS](mobile/swift/guides/swift-ios-best-practices-guide.md) | Guide | Advanced | [EN](mobile/swift/guides/swift-ios-best-practices-guide.md) \| [ID](mobile/swift/guides/swift-ios-best-practices-guide_id.md) |
+| [Cheat Sheet Komponen dan Pola SwiftUI](mobile/swift/cheatsheets/swiftui-components-cheatsheet.md) | Cheatsheet | Intermediate | [EN](mobile/swift/cheatsheets/swiftui-components-cheatsheet.md) \| [ID](mobile/swift/cheatsheets/swiftui-components-cheatsheet_id.md) |
 
 #### 🏷️ Kotlin
 
