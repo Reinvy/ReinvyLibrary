@@ -257,6 +257,7 @@ Below is the dynamically updated list of all materials available in the library:
 | [Kotlin Android Best Practices Guide](mobile/kotlin/guides/kotlin-android-best-practices-guide.md) | Guide | Advanced | [EN](mobile/kotlin/guides/kotlin-android-best-practices-guide.md) \| [ID](mobile/kotlin/guides/kotlin-android-best-practices-guide_id.md) |
 | [Kotlin Cheat Sheet](mobile/kotlin/cheatsheets/kotlin-cheatsheet.md) | Cheatsheet | Beginner | [EN](mobile/kotlin/cheatsheets/kotlin-cheatsheet.md) \| [ID](mobile/kotlin/cheatsheets/kotlin-cheatsheet_id.md) |
 | [Kotlin Coroutines and Flow: Advanced Patterns Guide](mobile/kotlin/guides/kotlin-coroutines-flow-advanced-patterns-guide.md) | Guide | Advanced | [EN](mobile/kotlin/guides/kotlin-coroutines-flow-advanced-patterns-guide.md) \| [ID](mobile/kotlin/guides/kotlin-coroutines-flow-advanced-patterns-guide_id.md) |
+| [Kotlin Jetpack Compose Cheat Sheet](mobile/kotlin/cheatsheets/kotlin-jetpack-compose-cheatsheet.md) | Cheatsheet | Intermediate | [EN](mobile/kotlin/cheatsheets/kotlin-jetpack-compose-cheatsheet.md) \| [ID](mobile/kotlin/cheatsheets/kotlin-jetpack-compose-cheatsheet_id.md) |
 | [Building a Movie Discovery App with Kotlin, Retrofit, and Jetpack Compose](mobile/kotlin/tutorials/movie-discovery-app-kotlin-retrofit-compose.md) | Tutorial | Intermediate | [EN](mobile/kotlin/tutorials/movie-discovery-app-kotlin-retrofit-compose.md) \| [ID](mobile/kotlin/tutorials/movie-discovery-app-kotlin-retrofit-compose_id.md) |
 
 ### 📁 Devops
