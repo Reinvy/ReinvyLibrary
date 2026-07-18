@@ -161,6 +161,7 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 | [Silabus Pengembangan Bun](backend/bun/syllabi/bun-development-syllabus.md) | Syllabus | Intermediate | [EN](backend/bun/syllabi/bun-development-syllabus.md) \| [ID](backend/bun/syllabi/bun-development-syllabus_id.md) |
 | [Panduan I/O Berkas dan Pemrosesan Stream dengan Bun](backend/bun/guides/bun-file-io-stream-processing-guide.md) | Guide | Intermediate | [EN](backend/bun/guides/bun-file-io-stream-processing-guide.md) \| [ID](backend/bun/guides/bun-file-io-stream-processing-guide_id.md) |
 | [Panduan Pola Produksi Bun](backend/bun/guides/bun-production-patterns-guide.md) | Guide | Intermediate | [EN](backend/bun/guides/bun-production-patterns-guide.md) \| [ID](backend/bun/guides/bun-production-patterns-guide_id.md) |
+| [Cheat Sheet SQLite dan Operasi Database Bun](backend/bun/cheatsheets/bun-sqlite-database-cheatsheet.md) | Cheatsheet | Intermediate | [EN](backend/bun/cheatsheets/bun-sqlite-database-cheatsheet.md) \| [ID](backend/bun/cheatsheets/bun-sqlite-database-cheatsheet_id.md) |
 | [Memulai dengan Bun](backend/bun/tutorials/getting-started-with-bun.md) | Tutorial | Beginner | [EN](backend/bun/tutorials/getting-started-with-bun.md) \| [ID](backend/bun/tutorials/getting-started-with-bun_id.md) |
 
 ### 📁 Frontend
