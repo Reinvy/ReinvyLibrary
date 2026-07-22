@@ -113,8 +113,10 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 | Topik | Format | Kesulitan | Bahasa Tersedia |
 | :--- | :--- | :--- | :--- |
 | [Membangun REST API dengan ElysiaJS](backend/elysiajs/tutorials/building-rest-apis-with-elysiajs.md) | Tutorial | Intermediate | [EN](backend/elysiajs/tutorials/building-rest-apis-with-elysiajs.md) \| [ID](backend/elysiajs/tutorials/building-rest-apis-with-elysiajs_id.md) |
+| [Membangun URL Shortener dengan Elysia.js](backend/elysiajs/tutorials/building-url-shortener-with-elysiajs.md) | Tutorial | Intermediate | [EN](backend/elysiajs/tutorials/building-url-shortener-with-elysiajs.md) \| [ID](backend/elysiajs/tutorials/building-url-shortener-with-elysiajs_id.md) |
 | [Cheat Sheet Elysia.js](backend/elysiajs/cheatsheets/elysiajs-cheatsheet.md) | Cheatsheet | Beginner | [EN](backend/elysiajs/cheatsheets/elysiajs-cheatsheet.md) \| [ID](backend/elysiajs/cheatsheets/elysiajs-cheatsheet_id.md) |
 | [Panduan Pola Produksi Elysia.js](backend/elysiajs/guides/elysiajs-production-patterns-guide.md) | Guide | Intermediate | [EN](backend/elysiajs/guides/elysiajs-production-patterns-guide.md) \| [ID](backend/elysiajs/guides/elysiajs-production-patterns-guide_id.md) |
+| [Panduan Aplikasi Real-Time dengan WebSocket dan SSE di Elysia.js](backend/elysiajs/guides/elysiajs-realtime-websocket-guide.md) | Guide | Intermediate | [EN](backend/elysiajs/guides/elysiajs-realtime-websocket-guide.md) \| [ID](backend/elysiajs/guides/elysiajs-realtime-websocket-guide_id.md) |
 | [Silabus Pengembangan Web Elysia.js](backend/elysiajs/syllabi/elysiajs-web-development-syllabus.md) | Syllabus | Intermediate | [EN](backend/elysiajs/syllabi/elysiajs-web-development-syllabus.md) \| [ID](backend/elysiajs/syllabi/elysiajs-web-development-syllabus_id.md) |
 
 #### 🏷️ Golang
@@ -122,6 +124,7 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 | Topik | Format | Kesulitan | Bahasa Tersedia |
 | :--- | :--- | :--- | :--- |
 | [Membangun RESTful API dengan Go](backend/golang/tutorials/building-restful-api-with-go.md) | Tutorial | Intermediate | [EN](backend/golang/tutorials/building-restful-api-with-go.md) \| [ID](backend/golang/tutorials/building-restful-api-with-go_id.md) |
+| [Membangun Server Chat WebSocket Real-time dengan Go](backend/golang/tutorials/building-websocket-chat-server-with-go.md) | Tutorial | Intermediate | [EN](backend/golang/tutorials/building-websocket-chat-server-with-go.md) \| [ID](backend/golang/tutorials/building-websocket-chat-server-with-go_id.md) |
 | [Memulai Pemrograman Go](backend/golang/tutorials/getting-started-with-go.md) | Tutorial | Beginner | [EN](backend/golang/tutorials/getting-started-with-go.md) \| [ID](backend/golang/tutorials/getting-started-with-go_id.md) |
 | [Silabus Bahasa Pemrograman Go](backend/golang/syllabi/go-syllabus.md) | Syllabus | Intermediate | [EN](backend/golang/syllabi/go-syllabus.md) \| [ID](backend/golang/syllabi/go-syllabus_id.md) |
 | [Cheat Sheet Golang](backend/golang/cheatsheets/golang-cheatsheet.md) | Cheatsheet | Intermediate | [EN](backend/golang/cheatsheets/golang-cheatsheet.md) \| [ID](backend/golang/cheatsheets/golang-cheatsheet_id.md) |
@@ -131,28 +134,35 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 
 | Topik | Format | Kesulitan | Bahasa Tersedia |
 | :--- | :--- | :--- | :--- |
+| [Membangun Aplikasi Chat Real-Time dengan Laravel Reverb](backend/laravel/tutorials/building-real-time-chat-with-laravel-reverb.md) | Tutorial | Advanced | [EN](backend/laravel/tutorials/building-real-time-chat-with-laravel-reverb.md) \| [ID](backend/laravel/tutorials/building-real-time-chat-with-laravel-reverb_id.md) |
 | [Panduan Praktik Terbaik Laravel](backend/laravel/guides/laravel-best-practices-guide.md) | Guide | Intermediate | [EN](backend/laravel/guides/laravel-best-practices-guide.md) \| [ID](backend/laravel/guides/laravel-best-practices-guide_id.md) |
 | [Cheat Sheet Laravel](backend/laravel/cheatsheets/laravel-cheatsheet.md) | Cheatsheet | Beginner | [EN](backend/laravel/cheatsheets/laravel-cheatsheet.md) \| [ID](backend/laravel/cheatsheets/laravel-cheatsheet_id.md) |
 | [Tutorial CRUD REST API Laravel](backend/laravel/tutorials/laravel-crud-rest-api-tutorial.md) | Tutorial | Intermediate | [EN](backend/laravel/tutorials/laravel-crud-rest-api-tutorial.md) \| [ID](backend/laravel/tutorials/laravel-crud-rest-api-tutorial_id.md) |
 | [Silabus Pengembangan Laravel](backend/laravel/syllabi/laravel-development-syllabus.md) | Syllabus | Intermediate | [EN](backend/laravel/syllabi/laravel-development-syllabus.md) \| [ID](backend/laravel/syllabi/laravel-development-syllabus_id.md) |
+| [Tutorial Queue dan Pemrosesan Job Laravel](backend/laravel/tutorials/laravel-queue-job-processing-tutorial.md) | Tutorial | Advanced | [EN](backend/laravel/tutorials/laravel-queue-job-processing-tutorial.md) \| [ID](backend/laravel/tutorials/laravel-queue-job-processing-tutorial_id.md) |
 
 #### 🏷️ Nestjs
 
 | Topik | Format | Kesulitan | Bahasa Tersedia |
 | :--- | :--- | :--- | :--- |
+| [Membangun API GraphQL dengan NestJS](backend/nestjs/tutorials/building-graphql-api-with-nestjs.md) | Tutorial | Intermediate | [EN](backend/nestjs/tutorials/building-graphql-api-with-nestjs.md) \| [ID](backend/nestjs/tutorials/building-graphql-api-with-nestjs_id.md) |
 | [Membangun API Chat Real-Time dengan NestJS dan WebSocket Gateway](backend/nestjs/tutorials/building-real-time-chat-api-with-nestjs-websocket.md) | Tutorial | Intermediate | [EN](backend/nestjs/tutorials/building-real-time-chat-api-with-nestjs-websocket.md) \| [ID](backend/nestjs/tutorials/building-real-time-chat-api-with-nestjs-websocket_id.md) |
 | [Memulai dengan NestJS](backend/nestjs/tutorials/getting-started-with-nestjs.md) | Tutorial | Intermediate | [EN](backend/nestjs/tutorials/getting-started-with-nestjs.md) \| [ID](backend/nestjs/tutorials/getting-started-with-nestjs_id.md) |
 | [Panduan Praktik Terbaik NestJS](backend/nestjs/guides/nestjs-best-practices-guide.md) | Guide | Intermediate | [EN](backend/nestjs/guides/nestjs-best-practices-guide.md) \| [ID](backend/nestjs/guides/nestjs-best-practices-guide_id.md) |
 | [Cheat Sheet NestJS](backend/nestjs/cheatsheets/nestjs-cheatsheet.md) | Cheatsheet | Intermediate | [EN](backend/nestjs/cheatsheets/nestjs-cheatsheet.md) \| [ID](backend/nestjs/cheatsheets/nestjs-cheatsheet_id.md) |
 | [Silabus Pengembangan NestJS](backend/nestjs/syllabi/nestjs-development-syllabus.md) | Syllabus | Intermediate | [EN](backend/nestjs/syllabi/nestjs-development-syllabus.md) \| [ID](backend/nestjs/syllabi/nestjs-development-syllabus_id.md) |
+| [Panduan Mikroservis NestJS](backend/nestjs/guides/nestjs-microservices-guide.md) | Guide | Advanced | [EN](backend/nestjs/guides/nestjs-microservices-guide.md) \| [ID](backend/nestjs/guides/nestjs-microservices-guide_id.md) |
 
 #### 🏷️ Bun
 
 | Topik | Format | Kesulitan | Bahasa Tersedia |
 | :--- | :--- | :--- | :--- |
+| [Membangun Aplikasi Chat Real-time dengan Bun WebSocket](backend/bun/tutorials/building-real-time-chat-with-bun-websocket.md) | Tutorial | Intermediate | [EN](backend/bun/tutorials/building-real-time-chat-with-bun-websocket.md) \| [ID](backend/bun/tutorials/building-real-time-chat-with-bun-websocket_id.md) |
 | [Cheat Sheet CLI dan API Bun](backend/bun/cheatsheets/bun-cheatsheet.md) | Cheatsheet | Intermediate | [EN](backend/bun/cheatsheets/bun-cheatsheet.md) \| [ID](backend/bun/cheatsheets/bun-cheatsheet_id.md) |
 | [Silabus Pengembangan Bun](backend/bun/syllabi/bun-development-syllabus.md) | Syllabus | Intermediate | [EN](backend/bun/syllabi/bun-development-syllabus.md) \| [ID](backend/bun/syllabi/bun-development-syllabus_id.md) |
+| [Panduan I/O Berkas dan Pemrosesan Stream dengan Bun](backend/bun/guides/bun-file-io-stream-processing-guide.md) | Guide | Intermediate | [EN](backend/bun/guides/bun-file-io-stream-processing-guide.md) \| [ID](backend/bun/guides/bun-file-io-stream-processing-guide_id.md) |
 | [Panduan Pola Produksi Bun](backend/bun/guides/bun-production-patterns-guide.md) | Guide | Intermediate | [EN](backend/bun/guides/bun-production-patterns-guide.md) \| [ID](backend/bun/guides/bun-production-patterns-guide_id.md) |
+| [Cheat Sheet SQLite dan Operasi Database Bun](backend/bun/cheatsheets/bun-sqlite-database-cheatsheet.md) | Cheatsheet | Intermediate | [EN](backend/bun/cheatsheets/bun-sqlite-database-cheatsheet.md) \| [ID](backend/bun/cheatsheets/bun-sqlite-database-cheatsheet_id.md) |
 | [Memulai dengan Bun](backend/bun/tutorials/getting-started-with-bun.md) | Tutorial | Beginner | [EN](backend/bun/tutorials/getting-started-with-bun.md) \| [ID](backend/bun/tutorials/getting-started-with-bun_id.md) |
 
 ### 📁 Frontend
@@ -162,6 +172,8 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 | Topik | Format | Kesulitan | Bahasa Tersedia |
 | :--- | :--- | :--- | :--- |
 | [Membangun Blog Full-Stack dengan Next.js App Router](frontend/nextjs/tutorials/building-a-full-stack-blog-with-nextjs-app-router.md) | Tutorial | Intermediate | [EN](frontend/nextjs/tutorials/building-a-full-stack-blog-with-nextjs-app-router.md) \| [ID](frontend/nextjs/tutorials/building-a-full-stack-blog-with-nextjs-app-router_id.md) |
+| [Membangun Toko E-commerce dengan Next.js](frontend/nextjs/tutorials/building-ecommerce-store-with-nextjs.md) | Tutorial | Advanced | [EN](frontend/nextjs/tutorials/building-ecommerce-store-with-nextjs.md) \| [ID](frontend/nextjs/tutorials/building-ecommerce-store-with-nextjs_id.md) |
+| [Membangun Dashboard Keuangan Pribadi dengan Next.js](frontend/nextjs/tutorials/building-personal-finance-dashboard-nextjs.md) | Tutorial | Intermediate | [EN](frontend/nextjs/tutorials/building-personal-finance-dashboard-nextjs.md) \| [ID](frontend/nextjs/tutorials/building-personal-finance-dashboard-nextjs_id.md) |
 | [Panduan Autentikasi dan Otorisasi Next.js](frontend/nextjs/guides/nextjs-authentication-and-authorization-guide.md) | Guide | Advanced | [EN](frontend/nextjs/guides/nextjs-authentication-and-authorization-guide.md) \| [ID](frontend/nextjs/guides/nextjs-authentication-and-authorization-guide_id.md) |
 | [Cheat Sheet Next.js](frontend/nextjs/cheatsheets/nextjs-cheatsheet.md) | Cheatsheet | Intermediate | [EN](frontend/nextjs/cheatsheets/nextjs-cheatsheet.md) \| [ID](frontend/nextjs/cheatsheets/nextjs-cheatsheet_id.md) |
 | [Struktur Proyek Next.js dan Praktik Terbaik](frontend/nextjs/guides/nextjs-project-structure-and-best-practices.md) | Guide | Intermediate | [EN](frontend/nextjs/guides/nextjs-project-structure-and-best-practices.md) \| [ID](frontend/nextjs/guides/nextjs-project-structure-and-best-practices_id.md) |
@@ -173,6 +185,7 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 | :--- | :--- | :--- | :--- |
 | [Membangun Aplikasi Maps dan Lokasi dengan React Native](frontend/react-native/tutorials/building-maps-and-location-app-with-react-native.md) | Tutorial | Intermediate | [EN](frontend/react-native/tutorials/building-maps-and-location-app-with-react-native.md) \| [ID](frontend/react-native/tutorials/building-maps-and-location-app-with-react-native_id.md) |
 | [Membangun Aplikasi Mobile Berbasis REST API dengan React Native](frontend/react-native/tutorials/building-rest-api-driven-mobile-app-with-react-native.md) | Tutorial | Intermediate | [EN](frontend/react-native/tutorials/building-rest-api-driven-mobile-app-with-react-native.md) \| [ID](frontend/react-native/tutorials/building-rest-api-driven-mobile-app-with-react-native_id.md) |
+| [Membangun Aplikasi Media Sosial dengan React Native dan Firebase](frontend/react-native/tutorials/building-social-media-app-with-react-native-firebase.md) | Tutorial | Advanced | [EN](frontend/react-native/tutorials/building-social-media-app-with-react-native-firebase.md) \| [ID](frontend/react-native/tutorials/building-social-media-app-with-react-native-firebase_id.md) |
 | [Cheat Sheet React Native](frontend/react-native/cheatsheets/react-native-cheatsheet.md) | Cheatsheet | Intermediate | [EN](frontend/react-native/cheatsheets/react-native-cheatsheet.md) \| [ID](frontend/react-native/cheatsheets/react-native-cheatsheet_id.md) |
 | [Silabus Pengembangan React Native](frontend/react-native/syllabi/react-native-development-syllabus.md) | Syllabus | Intermediate | [EN](frontend/react-native/syllabi/react-native-development-syllabus.md) \| [ID](frontend/react-native/syllabi/react-native-development-syllabus_id.md) |
 | [Panduan Optimasi Performa dan Debugging React Native](frontend/react-native/guides/react-native-performance-debugging-guide.md) | Guide | Advanced | [EN](frontend/react-native/guides/react-native-performance-debugging-guide.md) \| [ID](frontend/react-native/guides/react-native-performance-debugging-guide_id.md) |
@@ -182,24 +195,31 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 | Topik | Format | Kesulitan | Bahasa Tersedia |
 | :--- | :--- | :--- | :--- |
 | [Membangun Aplikasi Web dengan Vue.js 3](frontend/vuejs/tutorials/building-web-apps-with-vuejs.md) | Tutorial | Intermediate | [EN](frontend/vuejs/tutorials/building-web-apps-with-vuejs.md) \| [ID](frontend/vuejs/tutorials/building-web-apps-with-vuejs_id.md) |
+| [Membangun Dashboard Real-Time dengan Vue.js dan WebSocket](frontend/vuejs/tutorials/real-time-dashboard-with-vuejs-websocket.md) | Tutorial | Advanced | [EN](frontend/vuejs/tutorials/real-time-dashboard-with-vuejs-websocket.md) \| [ID](frontend/vuejs/tutorials/real-time-dashboard-with-vuejs-websocket_id.md) |
+| [Cheat Sheet Animasi dan Transisi Vue.js](frontend/vuejs/cheatsheets/vuejs-animations-transitions-cheatsheet.md) | Cheatsheet | Intermediate | [EN](frontend/vuejs/cheatsheets/vuejs-animations-transitions-cheatsheet.md) \| [ID](frontend/vuejs/cheatsheets/vuejs-animations-transitions-cheatsheet_id.md) |
 | [Panduan Praktik Terbaik Vue.js](frontend/vuejs/guides/vuejs-best-practices-guide.md) | Guide | Advanced | [EN](frontend/vuejs/guides/vuejs-best-practices-guide.md) \| [ID](frontend/vuejs/guides/vuejs-best-practices-guide_id.md) |
 | [Cheat Sheet Vue.js](frontend/vuejs/cheatsheets/vuejs-cheatsheet.md) | Cheatsheet | Beginner | [EN](frontend/vuejs/cheatsheets/vuejs-cheatsheet.md) \| [ID](frontend/vuejs/cheatsheets/vuejs-cheatsheet_id.md) |
+| [Panduan Penanganan dan Validasi Formulir Vue.js](frontend/vuejs/guides/vuejs-form-handling-validation-guide.md) | Guide | Intermediate | [EN](frontend/vuejs/guides/vuejs-form-handling-validation-guide.md) \| [ID](frontend/vuejs/guides/vuejs-form-handling-validation-guide_id.md) |
 | [Silabus Pengembangan Frontend Vue.js](frontend/vuejs/syllabi/vuejs-frontend-development-syllabus.md) | Syllabus | Intermediate | [EN](frontend/vuejs/syllabi/vuejs-frontend-development-syllabus.md) \| [ID](frontend/vuejs/syllabi/vuejs-frontend-development-syllabus_id.md) |
 
 #### 🏷️ Tailwindcss
 
 | Topik | Format | Kesulitan | Bahasa Tersedia |
 | :--- | :--- | :--- | :--- |
+| [Membangun Dashboard UI dengan Tailwind CSS](frontend/tailwindcss/tutorials/building-dashboard-ui-with-tailwind-css.md) | Tutorial | Intermediate | [EN](frontend/tailwindcss/tutorials/building-dashboard-ui-with-tailwind-css.md) \| [ID](frontend/tailwindcss/tutorials/building-dashboard-ui-with-tailwind-css_id.md) |
 | [Membangun Landing Page Responsif dengan Tailwind CSS](frontend/tailwindcss/tutorials/building-responsive-landing-page-with-tailwind-css.md) | Tutorial | Beginner | [EN](frontend/tailwindcss/tutorials/building-responsive-landing-page-with-tailwind-css.md) \| [ID](frontend/tailwindcss/tutorials/building-responsive-landing-page-with-tailwind-css_id.md) |
 | [Memulai dengan Tailwind CSS](frontend/tailwindcss/tutorials/getting-started-with-tailwind-css.md) | Tutorial | Beginner | [EN](frontend/tailwindcss/tutorials/getting-started-with-tailwind-css.md) \| [ID](frontend/tailwindcss/tutorials/getting-started-with-tailwind-css_id.md) |
 | [Panduan Praktik Terbaik Tailwind CSS](frontend/tailwindcss/guides/tailwind-css-best-practices-guide.md) | Guide | Intermediate | [EN](frontend/tailwindcss/guides/tailwind-css-best-practices-guide.md) \| [ID](frontend/tailwindcss/guides/tailwind-css-best-practices-guide_id.md) |
 | [Cheat Sheet Tailwind CSS](frontend/tailwindcss/cheatsheets/tailwind-css-cheatsheet.md) | Cheatsheet | Beginner | [EN](frontend/tailwindcss/cheatsheets/tailwind-css-cheatsheet.md) \| [ID](frontend/tailwindcss/cheatsheets/tailwind-css-cheatsheet_id.md) |
+| [Panduan Mode Gelap dan Tema untuk Tailwind CSS](frontend/tailwindcss/guides/tailwind-css-dark-mode-and-theming-guide.md) | Guide | Intermediate | [EN](frontend/tailwindcss/guides/tailwind-css-dark-mode-and-theming-guide.md) \| [ID](frontend/tailwindcss/guides/tailwind-css-dark-mode-and-theming-guide_id.md) |
 | [Silabus Tailwind CSS](frontend/tailwindcss/syllabi/tailwind-css-syllabus.md) | Syllabus | Beginner | [EN](frontend/tailwindcss/syllabi/tailwind-css-syllabus.md) \| [ID](frontend/tailwindcss/syllabi/tailwind-css-syllabus_id.md) |
 
 #### 🏷️ Svelte
 
 | Topik | Format | Kesulitan | Bahasa Tersedia |
 | :--- | :--- | :--- | :--- |
+| [Membangun Blog Markdown dengan SvelteKit](frontend/svelte/tutorials/building-markdown-blog-with-sveltekit.md) | Tutorial | Intermediate | [EN](frontend/svelte/tutorials/building-markdown-blog-with-sveltekit.md) \| [ID](frontend/svelte/tutorials/building-markdown-blog-with-sveltekit_id.md) |
+| [Membangun Aplikasi Manajemen Tugas dengan SvelteKit](frontend/svelte/tutorials/building-task-management-app-with-sveltekit.md) | Tutorial | Intermediate | [EN](frontend/svelte/tutorials/building-task-management-app-with-sveltekit.md) \| [ID](frontend/svelte/tutorials/building-task-management-app-with-sveltekit_id.md) |
 | [Memulai dengan Svelte](frontend/svelte/tutorials/getting-started-with-svelte.md) | Tutorial | Beginner | [EN](frontend/svelte/tutorials/getting-started-with-svelte.md) \| [ID](frontend/svelte/tutorials/getting-started-with-svelte_id.md) |
 | [Panduan Praktik Terbaik Svelte](frontend/svelte/guides/svelte-best-practices-guide.md) | Guide | Intermediate | [EN](frontend/svelte/guides/svelte-best-practices-guide.md) \| [ID](frontend/svelte/guides/svelte-best-practices-guide_id.md) |
 | [Cheat Sheet Svelte](frontend/svelte/cheatsheets/svelte-cheatsheet.md) | Cheatsheet | Intermediate | [EN](frontend/svelte/cheatsheets/svelte-cheatsheet.md) \| [ID](frontend/svelte/cheatsheets/svelte-cheatsheet_id.md) |
@@ -211,9 +231,12 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 
 | Topik | Format | Kesulitan | Bahasa Tersedia |
 | :--- | :--- | :--- | :--- |
+| [Membangun Aplikasi E-Commerce dengan Flutter](mobile/flutter/tutorials/building-ecommerce-app-with-flutter.md) | Tutorial | Intermediate | [EN](mobile/flutter/tutorials/building-ecommerce-app-with-flutter.md) \| [ID](mobile/flutter/tutorials/building-ecommerce-app-with-flutter_id.md) |
 | [Membangun Aplikasi Chat Real-Time dengan Flutter dan Firebase](mobile/flutter/tutorials/building-real-time-chat-app-with-flutter-and-firebase.md) | Tutorial | Advanced | [EN](mobile/flutter/tutorials/building-real-time-chat-app-with-flutter-and-firebase.md) \| [ID](mobile/flutter/tutorials/building-real-time-chat-app-with-flutter-and-firebase_id.md) |
+| [Cheat Sheet Animasi dan Transisi Flutter](mobile/flutter/cheatsheets/flutter-animations-cheatsheet.md) | Cheatsheet | Intermediate | [EN](mobile/flutter/cheatsheets/flutter-animations-cheatsheet.md) \| [ID](mobile/flutter/cheatsheets/flutter-animations-cheatsheet_id.md) |
 | [Panduan Arsitektur Clean Architecture Flutter](mobile/flutter/guides/flutter-clean-architecture-guide.md) | Guide | Advanced | [EN](mobile/flutter/guides/flutter-clean-architecture-guide.md) \| [ID](mobile/flutter/guides/flutter-clean-architecture-guide_id.md) |
 | [Silabus Pemrograman Flutter](mobile/flutter/syllabi/flutter-syllabus.md) | Syllabus | Advanced | [EN](mobile/flutter/syllabi/flutter-syllabus.md) \| [ID](mobile/flutter/syllabi/flutter-syllabus_id.md) |
+| [Panduan Pengujian Flutter](mobile/flutter/guides/flutter-testing-guide.md) | Guide | Intermediate | [EN](mobile/flutter/guides/flutter-testing-guide.md) \| [ID](mobile/flutter/guides/flutter-testing-guide_id.md) |
 | [Cheat Sheet Widget Flutter](mobile/flutter/cheatsheets/flutter-widget-cheatsheet.md) | Cheatsheet | Beginner | [EN](mobile/flutter/cheatsheets/flutter-widget-cheatsheet.md) \| [ID](mobile/flutter/cheatsheets/flutter-widget-cheatsheet_id.md) |
 | [Manajemen State dengan Provider di Flutter](mobile/flutter/tutorials/state-management-with-provider-in-flutter.md) | Tutorial | Intermediate | [EN](mobile/flutter/tutorials/state-management-with-provider-in-flutter.md) \| [ID](mobile/flutter/tutorials/state-management-with-provider-in-flutter_id.md) |
 
@@ -225,7 +248,9 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 | [Pengembangan Aplikasi iOS dengan Swift](mobile/swift/tutorials/ios-app-development-with-swift.md) | Tutorial | Intermediate | [EN](mobile/swift/tutorials/ios-app-development-with-swift.md) \| [ID](mobile/swift/tutorials/ios-app-development-with-swift_id.md) |
 | [Silabus Pengembangan iOS](mobile/swift/syllabi/ios-development-syllabus.md) | Syllabus | Intermediate | [EN](mobile/swift/syllabi/ios-development-syllabus.md) \| [ID](mobile/swift/syllabi/ios-development-syllabus_id.md) |
 | [Cheat Sheet Swift](mobile/swift/cheatsheets/swift-cheatsheet.md) | Cheatsheet | Beginner | [EN](mobile/swift/cheatsheets/swift-cheatsheet.md) \| [ID](mobile/swift/cheatsheets/swift-cheatsheet_id.md) |
+| [Panduan Concurrency Swift: async/await, Actors, dan Structured Concurrency](mobile/swift/guides/swift-concurrency-async-await-actors-guide.md) | Guide | Advanced | [EN](mobile/swift/guides/swift-concurrency-async-await-actors-guide.md) \| [ID](mobile/swift/guides/swift-concurrency-async-await-actors-guide_id.md) |
 | [Panduan Praktik Terbaik Swift iOS](mobile/swift/guides/swift-ios-best-practices-guide.md) | Guide | Advanced | [EN](mobile/swift/guides/swift-ios-best-practices-guide.md) \| [ID](mobile/swift/guides/swift-ios-best-practices-guide_id.md) |
+| [Cheat Sheet Komponen dan Pola SwiftUI](mobile/swift/cheatsheets/swiftui-components-cheatsheet.md) | Cheatsheet | Intermediate | [EN](mobile/swift/cheatsheets/swiftui-components-cheatsheet.md) \| [ID](mobile/swift/cheatsheets/swiftui-components-cheatsheet_id.md) |
 
 #### 🏷️ Kotlin
 
@@ -233,8 +258,12 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 | :--- | :--- | :--- | :--- |
 | [Pengembangan Aplikasi Android dengan Kotlin](mobile/kotlin/tutorials/android-app-development-with-kotlin.md) | Tutorial | Intermediate | [EN](mobile/kotlin/tutorials/android-app-development-with-kotlin.md) \| [ID](mobile/kotlin/tutorials/android-app-development-with-kotlin_id.md) |
 | [Silabus Pengembangan Android](mobile/kotlin/syllabi/android-development-syllabus.md) | Syllabus | Intermediate | [EN](mobile/kotlin/syllabi/android-development-syllabus.md) \| [ID](mobile/kotlin/syllabi/android-development-syllabus_id.md) |
+| [Membangun Aplikasi Pencatat Pengeluaran dengan Kotlin, Room, dan Jetpack Compose](mobile/kotlin/tutorials/building-expense-tracker-app-kotlin-room-compose.md) | Tutorial | Intermediate | [EN](mobile/kotlin/tutorials/building-expense-tracker-app-kotlin-room-compose.md) \| [ID](mobile/kotlin/tutorials/building-expense-tracker-app-kotlin-room-compose_id.md) |
 | [Panduan Praktik Terbaik Android Kotlin](mobile/kotlin/guides/kotlin-android-best-practices-guide.md) | Guide | Advanced | [EN](mobile/kotlin/guides/kotlin-android-best-practices-guide.md) \| [ID](mobile/kotlin/guides/kotlin-android-best-practices-guide_id.md) |
 | [Cheat Sheet Kotlin](mobile/kotlin/cheatsheets/kotlin-cheatsheet.md) | Cheatsheet | Beginner | [EN](mobile/kotlin/cheatsheets/kotlin-cheatsheet.md) \| [ID](mobile/kotlin/cheatsheets/kotlin-cheatsheet_id.md) |
+| [Panduan Pola Lanjutan Coroutine dan Flow Kotlin](mobile/kotlin/guides/kotlin-coroutines-flow-advanced-patterns-guide.md) | Guide | Advanced | [EN](mobile/kotlin/guides/kotlin-coroutines-flow-advanced-patterns-guide.md) \| [ID](mobile/kotlin/guides/kotlin-coroutines-flow-advanced-patterns-guide_id.md) |
+| [Cheat Sheet Kotlin Jetpack Compose](mobile/kotlin/cheatsheets/kotlin-jetpack-compose-cheatsheet.md) | Cheatsheet | Intermediate | [EN](mobile/kotlin/cheatsheets/kotlin-jetpack-compose-cheatsheet.md) \| [ID](mobile/kotlin/cheatsheets/kotlin-jetpack-compose-cheatsheet_id.md) |
+| [Membangun Aplikasi Discovery Film dengan Kotlin, Retrofit, dan Jetpack Compose](mobile/kotlin/tutorials/movie-discovery-app-kotlin-retrofit-compose.md) | Tutorial | Intermediate | [EN](mobile/kotlin/tutorials/movie-discovery-app-kotlin-retrofit-compose.md) \| [ID](mobile/kotlin/tutorials/movie-discovery-app-kotlin-retrofit-compose_id.md) |
 
 ### 📁 Devops
 
@@ -245,7 +274,9 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 | [Cheat Sheet Perintah Docker](devops/docker/cheatsheets/docker-command-cheatsheet.md) | Cheatsheet | Beginner | [EN](devops/docker/cheatsheets/docker-command-cheatsheet.md) \| [ID](devops/docker/cheatsheets/docker-command-cheatsheet_id.md) |
 | [Panduan Jaringan Docker Compose dan Orkestrasi Multi-Layanan](devops/docker/guides/docker-compose-networking-guide.md) | Guide | Intermediate | [EN](devops/docker/guides/docker-compose-networking-guide.md) \| [ID](devops/docker/guides/docker-compose-networking-guide_id.md) |
 | [Silabus Penguasaan Kontainerisasi Docker](devops/docker/syllabi/docker-containerization-syllabus.md) | Syllabus | Intermediate | [EN](devops/docker/syllabi/docker-containerization-syllabus.md) \| [ID](devops/docker/syllabi/docker-containerization-syllabus_id.md) |
+| [Tutorial Logging dan Monitoring Docker](devops/docker/tutorials/docker-logging-and-monitoring-tutorial.md) | Tutorial | Intermediate | [EN](devops/docker/tutorials/docker-logging-and-monitoring-tutorial.md) \| [ID](devops/docker/tutorials/docker-logging-and-monitoring-tutorial_id.md) |
 | [Build Multi-Arsitektur Docker dengan Buildx](devops/docker/tutorials/docker-multi-architecture-builds.md) | Tutorial | Intermediate | [EN](devops/docker/tutorials/docker-multi-architecture-builds.md) \| [ID](devops/docker/tutorials/docker-multi-architecture-builds_id.md) |
+| [Manajemen Rahasia Docker dan Praktik Keamanan Terbaik](devops/docker/tutorials/docker-secrets-management-and-security.md) | Tutorial | Intermediate | [EN](devops/docker/tutorials/docker-secrets-management-and-security.md) \| [ID](devops/docker/tutorials/docker-secrets-management-and-security_id.md) |
 | [Membuat Aplikasi Full-Stack dengan Docker](devops/docker/tutorials/dockerizing-a-full-stack-application.md) | Tutorial | Intermediate | [EN](devops/docker/tutorials/dockerizing-a-full-stack-application.md) \| [ID](devops/docker/tutorials/dockerizing-a-full-stack-application_id.md) |
 
 #### 🏷️ Pm2
@@ -254,6 +285,9 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 | :--- | :--- | :--- | :--- |
 | [Mengelola Aplikasi Node.js dengan PM2](devops/pm2/tutorials/managing-node-js-applications-with-pm2.md) | Tutorial | Intermediate | [EN](devops/pm2/tutorials/managing-node-js-applications-with-pm2.md) \| [ID](devops/pm2/tutorials/managing-node-js-applications-with-pm2_id.md) |
 | [Cheat Sheet PM2](devops/pm2/cheatsheets/pm2-cheatsheet.md) | Cheatsheet | Intermediate | [EN](devops/pm2/cheatsheets/pm2-cheatsheet.md) \| [ID](devops/pm2/cheatsheets/pm2-cheatsheet_id.md) |
+| [Panduan Alur Kerja Pengembangan dan Development Lokal dengan PM2](devops/pm2/guides/pm2-development-workflows-guide.md) | Guide | Intermediate | [EN](devops/pm2/guides/pm2-development-workflows-guide.md) \| [ID](devops/pm2/guides/pm2-development-workflows-guide_id.md) |
+| [Membangun Arsitektur Microservices dengan PM2](devops/pm2/tutorials/pm2-microservices-architecture.md) | Tutorial | Advanced | [EN](devops/pm2/tutorials/pm2-microservices-architecture.md) \| [ID](devops/pm2/tutorials/pm2-microservices-architecture_id.md) |
+| [Monitoring dan Observabilitas Aplikasi dengan PM2](devops/pm2/tutorials/pm2-monitoring-and-observability.md) | Tutorial | Intermediate | [EN](devops/pm2/tutorials/pm2-monitoring-and-observability.md) \| [ID](devops/pm2/tutorials/pm2-monitoring-and-observability_id.md) |
 | [Silabus Manajemen Proses PM2](devops/pm2/syllabi/pm2-process-management-syllabus.md) | Syllabus | Intermediate | [EN](devops/pm2/syllabi/pm2-process-management-syllabus.md) \| [ID](devops/pm2/syllabi/pm2-process-management-syllabus_id.md) |
 | [Panduan Deployment Produksi dan Monitoring dengan PM2](devops/pm2/guides/pm2-production-deployment-guide.md) | Guide | Intermediate | [EN](devops/pm2/guides/pm2-production-deployment-guide.md) \| [ID](devops/pm2/guides/pm2-production-deployment-guide_id.md) |
 
@@ -264,15 +298,19 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 | [Memulai dengan Kubernetes](devops/kubernetes/tutorials/getting-started-with-kubernetes.md) | Tutorial | Intermediate | [EN](devops/kubernetes/tutorials/getting-started-with-kubernetes.md) \| [ID](devops/kubernetes/tutorials/getting-started-with-kubernetes_id.md) |
 | [Cheat Sheet Kubernetes](devops/kubernetes/cheatsheets/kubernetes-cheatsheet.md) | Cheatsheet | Beginner | [EN](devops/kubernetes/cheatsheets/kubernetes-cheatsheet.md) \| [ID](devops/kubernetes/cheatsheets/kubernetes-cheatsheet_id.md) |
 | [Silabus DevOps Kubernetes](devops/kubernetes/syllabi/kubernetes-devops-syllabus.md) | Syllabus | Intermediate | [EN](devops/kubernetes/syllabi/kubernetes-devops-syllabus.md) \| [ID](devops/kubernetes/syllabi/kubernetes-devops-syllabus_id.md) |
+| [GitOps dengan ArgoCD di Kubernetes](devops/kubernetes/tutorials/kubernetes-gitops-argocd.md) | Tutorial | Advanced | [EN](devops/kubernetes/tutorials/kubernetes-gitops-argocd.md) \| [ID](devops/kubernetes/tutorials/kubernetes-gitops-argocd_id.md) |
 | [Panduan Praktik Terbaik Produksi Kubernetes](devops/kubernetes/guides/kubernetes-production-best-practices.md) | Guide | Advanced | [EN](devops/kubernetes/guides/kubernetes-production-best-practices.md) \| [ID](devops/kubernetes/guides/kubernetes-production-best-practices_id.md) |
+| [Aplikasi Stateful di Kubernetes: Menjalankan Database dengan StatefulSets](devops/kubernetes/tutorials/kubernetes-stateful-applications-statefulsets.md) | Tutorial | Advanced | [EN](devops/kubernetes/tutorials/kubernetes-stateful-applications-statefulsets.md) \| [ID](devops/kubernetes/tutorials/kubernetes-stateful-applications-statefulsets_id.md) |
 
 #### 🏷️ Github Actions
 
 | Topik | Format | Kesulitan | Bahasa Tersedia |
 | :--- | :--- | :--- | :--- |
+| [Membangun GitHub Actions Kustom](devops/github-actions/tutorials/building-custom-github-actions.md) | Tutorial | Intermediate | [EN](devops/github-actions/tutorials/building-custom-github-actions.md) \| [ID](devops/github-actions/tutorials/building-custom-github-actions_id.md) |
 | [Memulai dengan GitHub Actions](devops/github-actions/tutorials/getting-started-with-github-actions.md) | Tutorial | Beginner | [EN](devops/github-actions/tutorials/getting-started-with-github-actions.md) \| [ID](devops/github-actions/tutorials/getting-started-with-github-actions_id.md) |
 | [GitHub Actions Cheat Sheet](devops/github-actions/cheatsheets/github-actions-cheatsheet.md) | Cheatsheet | Beginner | [EN](devops/github-actions/cheatsheets/github-actions-cheatsheet.md) \| [ID](devops/github-actions/cheatsheets/github-actions-cheatsheet_id.md) |
 | [Panduan Praktik Terbaik CI/CD GitHub Actions](devops/github-actions/guides/github-actions-cicd-best-practices-guide.md) | Guide | Intermediate | [EN](devops/github-actions/guides/github-actions-cicd-best-practices-guide.md) \| [ID](devops/github-actions/guides/github-actions-cicd-best-practices-guide_id.md) |
+| [Membangun Pipeline Deployment dengan GitHub Actions](devops/github-actions/tutorials/github-actions-deployment-pipelines.md) | Tutorial | Intermediate | [EN](devops/github-actions/tutorials/github-actions-deployment-pipelines.md) \| [ID](devops/github-actions/tutorials/github-actions-deployment-pipelines_id.md) |
 | [Silabus DevOps GitHub Actions](devops/github-actions/syllabi/github-actions-devops-syllabus.md) | Syllabus | Intermediate | [EN](devops/github-actions/syllabi/github-actions-devops-syllabus.md) \| [ID](devops/github-actions/syllabi/github-actions-devops-syllabus_id.md) |
 
 ### 📁 Database
@@ -281,10 +319,13 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 
 | Topik | Format | Kesulitan | Bahasa Tersedia |
 | :--- | :--- | :--- | :--- |
+| [Membangun Antrean Tugas dengan Redis](database/redis/tutorials/building-task-queue-with-redis.md) | Tutorial | Intermediate | [EN](database/redis/tutorials/building-task-queue-with-redis.md) \| [ID](database/redis/tutorials/building-task-queue-with-redis_id.md) |
 | [Memulai dengan Redis](database/redis/tutorials/getting-started-with-redis.md) | Tutorial | Beginner | [EN](database/redis/tutorials/getting-started-with-redis.md) \| [ID](database/redis/tutorials/getting-started-with-redis_id.md) |
 | [Panduan Pola dan Strategi Caching Redis](database/redis/guides/redis-caching-patterns-guide.md) | Guide | Intermediate | [EN](database/redis/guides/redis-caching-patterns-guide.md) \| [ID](database/redis/guides/redis-caching-patterns-guide_id.md) |
 | [Cheat Sheet Redis](database/redis/cheatsheets/redis-cheatsheet.md) | Cheatsheet | Beginner | [EN](database/redis/cheatsheets/redis-cheatsheet.md) \| [ID](database/redis/cheatsheets/redis-cheatsheet_id.md) |
 | [Silabus Pengembangan Redis](database/redis/syllabi/redis-development-syllabus.md) | Syllabus | Intermediate | [EN](database/redis/syllabi/redis-development-syllabus.md) \| [ID](database/redis/syllabi/redis-development-syllabus_id.md) |
+| [Cheat Sheet Skrip Lua dan Pemrograman Server-Side Redis](database/redis/cheatsheets/redis-lua-scripting-cheatsheet.md) | Cheatsheet | Intermediate | [EN](database/redis/cheatsheets/redis-lua-scripting-cheatsheet.md) \| [ID](database/redis/cheatsheets/redis-lua-scripting-cheatsheet_id.md) |
+| [Panduan Persistensi dan Ketahanan Data Redis](database/redis/guides/redis-persistence-and-data-durability-guide.md) | Guide | Intermediate | [EN](database/redis/guides/redis-persistence-and-data-durability-guide.md) \| [ID](database/redis/guides/redis-persistence-and-data-durability-guide_id.md) |
 | [Membangun Sistem Berbasis Event dengan Redis Streams](database/redis/tutorials/redis-streams-event-driven-architecture.md) | Tutorial | Intermediate | [EN](database/redis/tutorials/redis-streams-event-driven-architecture.md) \| [ID](database/redis/tutorials/redis-streams-event-driven-architecture_id.md) |
 
 #### 🏷️ Mongodb
@@ -292,8 +333,11 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 | Topik | Format | Kesulitan | Bahasa Tersedia |
 | :--- | :--- | :--- | :--- |
 | [Pipeline Agregasi MongoDB: Tutorial Praktis](database/mongodb/tutorials/mongodb-aggregation-pipeline.md) | Tutorial | Intermediate | [EN](database/mongodb/tutorials/mongodb-aggregation-pipeline.md) \| [ID](database/mongodb/tutorials/mongodb-aggregation-pipeline_id.md) |
+| [Cheat Sheet Pipeline Agregasi MongoDB](database/mongodb/cheatsheets/mongodb-aggregation-pipeline-cheatsheet.md) | Cheatsheet | Intermediate | [EN](database/mongodb/cheatsheets/mongodb-aggregation-pipeline-cheatsheet.md) \| [ID](database/mongodb/cheatsheets/mongodb-aggregation-pipeline-cheatsheet_id.md) |
+| [Membangun Pipeline Data Real-Time dengan MongoDB Change Streams](database/mongodb/tutorials/mongodb-change-streams-real-time-pipelines.md) | Tutorial | Advanced | [EN](database/mongodb/tutorials/mongodb-change-streams-real-time-pipelines.md) \| [ID](database/mongodb/tutorials/mongodb-change-streams-real-time-pipelines_id.md) |
 | [Silabus Pengembangan MongoDB](database/mongodb/syllabi/mongodb-development-syllabus.md) | Syllabus | Intermediate | [EN](database/mongodb/syllabi/mongodb-development-syllabus.md) \| [ID](database/mongodb/syllabi/mongodb-development-syllabus_id.md) |
 | [Strategi Indexing MongoDB dan Optimasi Performa Query](database/mongodb/tutorials/mongodb-indexing-strategies.md) | Tutorial | Intermediate | [EN](database/mongodb/tutorials/mongodb-indexing-strategies.md) \| [ID](database/mongodb/tutorials/mongodb-indexing-strategies_id.md) |
+| [Panduan Optimasi Kinerja dan Monitoring MongoDB](database/mongodb/guides/mongodb-performance-optimization-guide.md) | Guide | Advanced | [EN](database/mongodb/guides/mongodb-performance-optimization-guide.md) \| [ID](database/mongodb/guides/mongodb-performance-optimization-guide_id.md) |
 | [Cheat Sheet Query MongoDB](database/mongodb/cheatsheets/mongodb-query-cheatsheet.md) | Cheatsheet | Beginner | [EN](database/mongodb/cheatsheets/mongodb-query-cheatsheet.md) \| [ID](database/mongodb/cheatsheets/mongodb-query-cheatsheet_id.md) |
 | [Panduan Desain Skema dan Pemodelan Data MongoDB](database/mongodb/guides/mongodb-schema-design-and-data-modeling-guide.md) | Guide | Intermediate | [EN](database/mongodb/guides/mongodb-schema-design-and-data-modeling-guide.md) \| [ID](database/mongodb/guides/mongodb-schema-design-and-data-modeling-guide_id.md) |
 
@@ -302,8 +346,11 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 | Topik | Format | Kesulitan | Bahasa Tersedia |
 | :--- | :--- | :--- | :--- |
 | [Memulai dengan PostgreSQL](database/postgres/tutorials/getting-started-with-postgresql.md) | Tutorial | Beginner | [EN](database/postgres/tutorials/getting-started-with-postgresql.md) \| [ID](database/postgres/tutorials/getting-started-with-postgresql_id.md) |
+| [Cheat Sheet Administrasi Database PostgreSQL](database/postgres/cheatsheets/postgresql-administration-cheatsheet.md) | Cheatsheet | Intermediate | [EN](database/postgres/cheatsheets/postgresql-administration-cheatsheet.md) \| [ID](database/postgres/cheatsheets/postgresql-administration-cheatsheet_id.md) |
+| [Tutorial Pencarian Teks Lengkap PostgreSQL](database/postgres/tutorials/postgresql-full-text-search-tutorial.md) | Tutorial | Intermediate | [EN](database/postgres/tutorials/postgresql-full-text-search-tutorial.md) \| [ID](database/postgres/tutorials/postgresql-full-text-search-tutorial_id.md) |
 | [Panduan Tuning Performa dan Optimasi PostgreSQL](database/postgres/guides/postgresql-performance-tuning-guide.md) | Guide | Advanced | [EN](database/postgres/guides/postgresql-performance-tuning-guide.md) \| [ID](database/postgres/guides/postgresql-performance-tuning-guide_id.md) |
 | [Cheat Sheet Query PostgreSQL](database/postgres/cheatsheets/postgresql-query-cheatsheet.md) | Cheatsheet | Beginner | [EN](database/postgres/cheatsheets/postgresql-query-cheatsheet.md) \| [ID](database/postgres/cheatsheets/postgresql-query-cheatsheet_id.md) |
+| [Panduan Replikasi dan Ketersediaan Tinggi PostgreSQL](database/postgres/guides/postgresql-replication-high-availability-guide.md) | Guide | Advanced | [EN](database/postgres/guides/postgresql-replication-high-availability-guide.md) \| [ID](database/postgres/guides/postgresql-replication-high-availability-guide_id.md) |
 | [Silabus PostgreSQL](database/postgres/syllabi/postgresql-syllabus.md) | Syllabus | Beginner | [EN](database/postgres/syllabi/postgresql-syllabus.md) \| [ID](database/postgres/syllabi/postgresql-syllabus_id.md) |
 | [Partisi Tabel PostgreSQL dan Manajemen Siklus Hidup Data](database/postgres/tutorials/postgresql-table-partitioning-and-lifecycle-management.md) | Tutorial | Advanced | [EN](database/postgres/tutorials/postgresql-table-partitioning-and-lifecycle-management.md) \| [ID](database/postgres/tutorials/postgresql-table-partitioning-and-lifecycle-management_id.md) |
 <!-- INDEX_END -->
