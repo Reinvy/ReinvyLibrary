@@ -301,6 +301,7 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 | [GitOps dengan ArgoCD di Kubernetes](devops/kubernetes/tutorials/kubernetes-gitops-argocd.md) | Tutorial | Advanced | [EN](devops/kubernetes/tutorials/kubernetes-gitops-argocd.md) \| [ID](devops/kubernetes/tutorials/kubernetes-gitops-argocd_id.md) |
 | [Panduan Praktik Terbaik Produksi Kubernetes](devops/kubernetes/guides/kubernetes-production-best-practices.md) | Guide | Advanced | [EN](devops/kubernetes/guides/kubernetes-production-best-practices.md) \| [ID](devops/kubernetes/guides/kubernetes-production-best-practices_id.md) |
 | [Aplikasi Stateful di Kubernetes: Menjalankan Database dengan StatefulSets](devops/kubernetes/tutorials/kubernetes-stateful-applications-statefulsets.md) | Tutorial | Advanced | [EN](devops/kubernetes/tutorials/kubernetes-stateful-applications-statefulsets.md) \| [ID](devops/kubernetes/tutorials/kubernetes-stateful-applications-statefulsets_id.md) |
+| [Panduan Troubleshooting Kubernetes](devops/kubernetes/guides/kubernetes-troubleshooting-guide.md) | Guide | Advanced | [EN](devops/kubernetes/guides/kubernetes-troubleshooting-guide.md) \| [ID](devops/kubernetes/guides/kubernetes-troubleshooting-guide_id.md) |
 
 #### 🏷️ Github Actions
 
