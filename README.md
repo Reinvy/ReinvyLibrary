@@ -224,6 +224,7 @@ Below is the dynamically updated list of all materials available in the library:
 | [Svelte Best Practices Guide](frontend/svelte/guides/svelte-best-practices-guide.md) | Guide | Intermediate | [EN](frontend/svelte/guides/svelte-best-practices-guide.md) \| [ID](frontend/svelte/guides/svelte-best-practices-guide_id.md) |
 | [Svelte Cheat Sheet](frontend/svelte/cheatsheets/svelte-cheatsheet.md) | Cheatsheet | Intermediate | [EN](frontend/svelte/cheatsheets/svelte-cheatsheet.md) \| [ID](frontend/svelte/cheatsheets/svelte-cheatsheet_id.md) |
 | [Svelte and SvelteKit Development Syllabus](frontend/svelte/syllabi/svelte-syllabus.md) | Syllabus | Intermediate | [EN](frontend/svelte/syllabi/svelte-syllabus.md) \| [ID](frontend/svelte/syllabi/svelte-syllabus_id.md) |
+| [SvelteKit Internationalization (i18n) and Localization Guide](frontend/svelte/guides/sveltekit-internationalization-guide.md) | Guide | Intermediate | [EN](frontend/svelte/guides/sveltekit-internationalization-guide.md) \| [ID](frontend/svelte/guides/sveltekit-internationalization-guide_id.md) |
 
 ### 📁 Mobile
 
