@@ -127,6 +127,7 @@ Below is the dynamically updated list of all materials available in the library:
 | [Building a Real-time WebSocket Chat Server with Go](backend/golang/tutorials/building-websocket-chat-server-with-go.md) | Tutorial | Intermediate | [EN](backend/golang/tutorials/building-websocket-chat-server-with-go.md) \| [ID](backend/golang/tutorials/building-websocket-chat-server-with-go_id.md) |
 | [Getting Started with Go Programming](backend/golang/tutorials/getting-started-with-go.md) | Tutorial | Beginner | [EN](backend/golang/tutorials/getting-started-with-go.md) \| [ID](backend/golang/tutorials/getting-started-with-go_id.md) |
 | [Go Programming Language Syllabus](backend/golang/syllabi/go-syllabus.md) | Syllabus | Intermediate | [EN](backend/golang/syllabi/go-syllabus.md) \| [ID](backend/golang/syllabi/go-syllabus_id.md) |
+| [Go Testing and Benchmarking Guide](backend/golang/guides/go-testing-and-benchmarking-guide.md) | Guide | Intermediate | [EN](backend/golang/guides/go-testing-and-benchmarking-guide.md) \| [ID](backend/golang/guides/go-testing-and-benchmarking-guide_id.md) |
 | [Golang Cheatsheet](backend/golang/cheatsheets/golang-cheatsheet.md) | Cheatsheet | Intermediate | [EN](backend/golang/cheatsheets/golang-cheatsheet.md) \| [ID](backend/golang/cheatsheets/golang-cheatsheet_id.md) |
 | [Go Concurrency Patterns Guide](backend/golang/guides/golang-concurrency-patterns-guide.md) | Guide | Intermediate | [EN](backend/golang/guides/golang-concurrency-patterns-guide.md) \| [ID](backend/golang/guides/golang-concurrency-patterns-guide_id.md) |
 
