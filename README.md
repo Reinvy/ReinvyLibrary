@@ -316,6 +316,7 @@ Below is the dynamically updated list of all materials available in the library:
 | [GitHub Actions CI/CD Best Practices Guide](devops/github-actions/guides/github-actions-cicd-best-practices-guide.md) | Guide | Intermediate | [EN](devops/github-actions/guides/github-actions-cicd-best-practices-guide.md) \| [ID](devops/github-actions/guides/github-actions-cicd-best-practices-guide_id.md) |
 | [Building Deployment Pipelines with GitHub Actions](devops/github-actions/tutorials/github-actions-deployment-pipelines.md) | Tutorial | Intermediate | [EN](devops/github-actions/tutorials/github-actions-deployment-pipelines.md) \| [ID](devops/github-actions/tutorials/github-actions-deployment-pipelines_id.md) |
 | [GitHub Actions DevOps Syllabus](devops/github-actions/syllabi/github-actions-devops-syllabus.md) | Syllabus | Intermediate | [EN](devops/github-actions/syllabi/github-actions-devops-syllabus.md) \| [ID](devops/github-actions/syllabi/github-actions-devops-syllabus_id.md) |
+| [GitHub Actions Workflow Testing and Debugging Guide](devops/github-actions/guides/github-actions-workflow-testing-debugging-guide.md) | Guide | Intermediate | [EN](devops/github-actions/guides/github-actions-workflow-testing-debugging-guide.md) \| [ID](devops/github-actions/guides/github-actions-workflow-testing-debugging-guide_id.md) |
 
 ### 📁 Database
 

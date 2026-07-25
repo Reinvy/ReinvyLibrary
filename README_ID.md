@@ -316,6 +316,7 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 | [Panduan Praktik Terbaik CI/CD GitHub Actions](devops/github-actions/guides/github-actions-cicd-best-practices-guide.md) | Guide | Intermediate | [EN](devops/github-actions/guides/github-actions-cicd-best-practices-guide.md) \| [ID](devops/github-actions/guides/github-actions-cicd-best-practices-guide_id.md) |
 | [Membangun Pipeline Deployment dengan GitHub Actions](devops/github-actions/tutorials/github-actions-deployment-pipelines.md) | Tutorial | Intermediate | [EN](devops/github-actions/tutorials/github-actions-deployment-pipelines.md) \| [ID](devops/github-actions/tutorials/github-actions-deployment-pipelines_id.md) |
 | [Silabus DevOps GitHub Actions](devops/github-actions/syllabi/github-actions-devops-syllabus.md) | Syllabus | Intermediate | [EN](devops/github-actions/syllabi/github-actions-devops-syllabus.md) \| [ID](devops/github-actions/syllabi/github-actions-devops-syllabus_id.md) |
+| [Panduan Pengujian dan Debugging Workflow GitHub Actions](devops/github-actions/guides/github-actions-workflow-testing-debugging-guide.md) | Guide | Intermediate | [EN](devops/github-actions/guides/github-actions-workflow-testing-debugging-guide.md) \| [ID](devops/github-actions/guides/github-actions-workflow-testing-debugging-guide_id.md) |
 
 ### 📁 Database
 
