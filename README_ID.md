@@ -191,6 +191,7 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 | [Cheat Sheet React Native](frontend/react-native/cheatsheets/react-native-cheatsheet.md) | Cheatsheet | Intermediate | [EN](frontend/react-native/cheatsheets/react-native-cheatsheet.md) \| [ID](frontend/react-native/cheatsheets/react-native-cheatsheet_id.md) |
 | [Silabus Pengembangan React Native](frontend/react-native/syllabi/react-native-development-syllabus.md) | Syllabus | Intermediate | [EN](frontend/react-native/syllabi/react-native-development-syllabus.md) \| [ID](frontend/react-native/syllabi/react-native-development-syllabus_id.md) |
 | [Panduan Optimasi Performa dan Debugging React Native](frontend/react-native/guides/react-native-performance-debugging-guide.md) | Guide | Advanced | [EN](frontend/react-native/guides/react-native-performance-debugging-guide.md) \| [ID](frontend/react-native/guides/react-native-performance-debugging-guide_id.md) |
+| [Panduan Manajemen State React Native](frontend/react-native/guides/react-native-state-management-guide.md) | Guide | Intermediate | [EN](frontend/react-native/guides/react-native-state-management-guide.md) \| [ID](frontend/react-native/guides/react-native-state-management-guide_id.md) |
 
 #### 🏷️ Vuejs
 

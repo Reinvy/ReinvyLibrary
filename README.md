@@ -191,6 +191,7 @@ Below is the dynamically updated list of all materials available in the library:
 | [React Native Cheatsheet](frontend/react-native/cheatsheets/react-native-cheatsheet.md) | Cheatsheet | Intermediate | [EN](frontend/react-native/cheatsheets/react-native-cheatsheet.md) \| [ID](frontend/react-native/cheatsheets/react-native-cheatsheet_id.md) |
 | [React Native Development Syllabus](frontend/react-native/syllabi/react-native-development-syllabus.md) | Syllabus | Intermediate | [EN](frontend/react-native/syllabi/react-native-development-syllabus.md) \| [ID](frontend/react-native/syllabi/react-native-development-syllabus_id.md) |
 | [React Native Performance Optimization and Debugging Guide](frontend/react-native/guides/react-native-performance-debugging-guide.md) | Guide | Advanced | [EN](frontend/react-native/guides/react-native-performance-debugging-guide.md) \| [ID](frontend/react-native/guides/react-native-performance-debugging-guide_id.md) |
+| [React Native State Management Guide](frontend/react-native/guides/react-native-state-management-guide.md) | Guide | Intermediate | [EN](frontend/react-native/guides/react-native-state-management-guide.md) \| [ID](frontend/react-native/guides/react-native-state-management-guide_id.md) |
 
 #### 🏷️ Vuejs
 
