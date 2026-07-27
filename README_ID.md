@@ -341,6 +341,7 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 
 | Topik | Format | Kesulitan | Bahasa Tersedia |
 | :--- | :--- | :--- | :--- |
+| [Silabus MongoDB Tingkat Lanjut](database/mongodb/syllabi/advanced-mongodb-syllabus.md) | Syllabus | Advanced | [EN](database/mongodb/syllabi/advanced-mongodb-syllabus.md) \| [ID](database/mongodb/syllabi/advanced-mongodb-syllabus_id.md) |
 | [Pipeline Agregasi MongoDB: Tutorial Praktis](database/mongodb/tutorials/mongodb-aggregation-pipeline.md) | Tutorial | Intermediate | [EN](database/mongodb/tutorials/mongodb-aggregation-pipeline.md) \| [ID](database/mongodb/tutorials/mongodb-aggregation-pipeline_id.md) |
 | [Cheat Sheet Pipeline Agregasi MongoDB](database/mongodb/cheatsheets/mongodb-aggregation-pipeline-cheatsheet.md) | Cheatsheet | Intermediate | [EN](database/mongodb/cheatsheets/mongodb-aggregation-pipeline-cheatsheet.md) \| [ID](database/mongodb/cheatsheets/mongodb-aggregation-pipeline-cheatsheet_id.md) |
 | [Membangun Pipeline Data Real-Time dengan MongoDB Change Streams](database/mongodb/tutorials/mongodb-change-streams-real-time-pipelines.md) | Tutorial | Advanced | [EN](database/mongodb/tutorials/mongodb-change-streams-real-time-pipelines.md) \| [ID](database/mongodb/tutorials/mongodb-change-streams-real-time-pipelines_id.md) |
