@@ -332,6 +332,7 @@ Below is the dynamically updated list of all materials available in the library:
 
 | Topic | Format | Difficulty | Available Languages |
 | :--- | :--- | :--- | :--- |
+| [Advanced Redis Syllabus](database/redis/syllabi/advanced-redis-syllabus.md) | Syllabus | Advanced | [EN](database/redis/syllabi/advanced-redis-syllabus.md) \| [ID](database/redis/syllabi/advanced-redis-syllabus_id.md) |
 | [Building a Task Queue with Redis](database/redis/tutorials/building-task-queue-with-redis.md) | Tutorial | Intermediate | [EN](database/redis/tutorials/building-task-queue-with-redis.md) \| [ID](database/redis/tutorials/building-task-queue-with-redis_id.md) |
 | [Getting Started with Redis](database/redis/tutorials/getting-started-with-redis.md) | Tutorial | Beginner | [EN](database/redis/tutorials/getting-started-with-redis.md) \| [ID](database/redis/tutorials/getting-started-with-redis_id.md) |
 | [Redis Caching Patterns and Strategies Guide](database/redis/guides/redis-caching-patterns-guide.md) | Guide | Intermediate | [EN](database/redis/guides/redis-caching-patterns-guide.md) \| [ID](database/redis/guides/redis-caching-patterns-guide_id.md) |
