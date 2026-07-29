@@ -230,6 +230,7 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 | [Cheat Sheet Svelte](frontend/svelte/cheatsheets/svelte-cheatsheet.md) | Cheatsheet | Intermediate | [EN](frontend/svelte/cheatsheets/svelte-cheatsheet.md) \| [ID](frontend/svelte/cheatsheets/svelte-cheatsheet_id.md) |
 | [Silabus Pengembangan Svelte dan SvelteKit](frontend/svelte/syllabi/svelte-syllabus.md) | Syllabus | Intermediate | [EN](frontend/svelte/syllabi/svelte-syllabus.md) \| [ID](frontend/svelte/syllabi/svelte-syllabus_id.md) |
 | [Panduan Internasionalisasi (i18n) dan Lokalisasi SvelteKit](frontend/svelte/guides/sveltekit-internationalization-guide.md) | Guide | Intermediate | [EN](frontend/svelte/guides/sveltekit-internationalization-guide.md) \| [ID](frontend/svelte/guides/sveltekit-internationalization-guide_id.md) |
+| [Cheat Sheet Routing dan Data Loading SvelteKit](frontend/svelte/cheatsheets/sveltekit-routing-data-loading-cheatsheet.md) | Cheatsheet | Intermediate | [EN](frontend/svelte/cheatsheets/sveltekit-routing-data-loading-cheatsheet.md) \| [ID](frontend/svelte/cheatsheets/sveltekit-routing-data-loading-cheatsheet_id.md) |
 
 ### 📁 Mobile
 
