@@ -253,6 +253,7 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 
 | Topik | Format | Kesulitan | Bahasa Tersedia |
 | :--- | :--- | :--- | :--- |
+| [Silabus SwiftUI Lanjutan](mobile/swift/syllabi/advanced-swiftui-syllabus.md) | Syllabus | Advanced | [EN](mobile/swift/syllabi/advanced-swiftui-syllabus.md) \| [ID](mobile/swift/syllabi/advanced-swiftui-syllabus_id.md) |
 | [Membangun Aplikasi Sadar Lokasi dengan SwiftUI dan MapKit](mobile/swift/tutorials/building-location-aware-app-swiftui-mapkit.md) | Tutorial | Intermediate | [EN](mobile/swift/tutorials/building-location-aware-app-swiftui-mapkit.md) \| [ID](mobile/swift/tutorials/building-location-aware-app-swiftui-mapkit_id.md) |
 | [Pengembangan Aplikasi iOS dengan Swift](mobile/swift/tutorials/ios-app-development-with-swift.md) | Tutorial | Intermediate | [EN](mobile/swift/tutorials/ios-app-development-with-swift.md) \| [ID](mobile/swift/tutorials/ios-app-development-with-swift_id.md) |
 | [Silabus Pengembangan iOS](mobile/swift/syllabi/ios-development-syllabus.md) | Syllabus | Intermediate | [EN](mobile/swift/syllabi/ios-development-syllabus.md) \| [ID](mobile/swift/syllabi/ios-development-syllabus_id.md) |
