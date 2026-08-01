@@ -363,6 +363,7 @@ Below is the dynamically updated list of all materials available in the library:
 
 | Topic | Format | Difficulty | Available Languages |
 | :--- | :--- | :--- | :--- |
+| [Advanced PostgreSQL Syllabus](database/postgres/syllabi/advanced-postgresql-syllabus.md) | Syllabus | Advanced | [EN](database/postgres/syllabi/advanced-postgresql-syllabus.md) \| [ID](database/postgres/syllabi/advanced-postgresql-syllabus_id.md) |
 | [Getting Started with PostgreSQL](database/postgres/tutorials/getting-started-with-postgresql.md) | Tutorial | Beginner | [EN](database/postgres/tutorials/getting-started-with-postgresql.md) \| [ID](database/postgres/tutorials/getting-started-with-postgresql_id.md) |
 | [PostgreSQL Database Administration Cheatsheet](database/postgres/cheatsheets/postgresql-administration-cheatsheet.md) | Cheatsheet | Intermediate | [EN](database/postgres/cheatsheets/postgresql-administration-cheatsheet.md) \| [ID](database/postgres/cheatsheets/postgresql-administration-cheatsheet_id.md) |
 | [PostgreSQL Full-Text Search Tutorial](database/postgres/tutorials/postgresql-full-text-search-tutorial.md) | Tutorial | Intermediate | [EN](database/postgres/tutorials/postgresql-full-text-search-tutorial.md) \| [ID](database/postgres/tutorials/postgresql-full-text-search-tutorial_id.md) |
