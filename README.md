@@ -161,6 +161,7 @@ Below is the dynamically updated list of all materials available in the library:
 
 | Topic | Format | Difficulty | Available Languages |
 | :--- | :--- | :--- | :--- |
+| [Advanced Bun Runtime Internals Syllabus](backend/bun/syllabi/advanced-bun-syllabus.md) | Syllabus | Advanced | [EN](backend/bun/syllabi/advanced-bun-syllabus.md) \| [ID](backend/bun/syllabi/advanced-bun-syllabus_id.md) |
 | [Building a Real-time Chat Application with Bun WebSocket](backend/bun/tutorials/building-real-time-chat-with-bun-websocket.md) | Tutorial | Intermediate | [EN](backend/bun/tutorials/building-real-time-chat-with-bun-websocket.md) \| [ID](backend/bun/tutorials/building-real-time-chat-with-bun-websocket_id.md) |
 | [Bun CLI and API Cheatsheet](backend/bun/cheatsheets/bun-cheatsheet.md) | Cheatsheet | Intermediate | [EN](backend/bun/cheatsheets/bun-cheatsheet.md) \| [ID](backend/bun/cheatsheets/bun-cheatsheet_id.md) |
 | [Bun Development Syllabus](backend/bun/syllabi/bun-development-syllabus.md) | Syllabus | Intermediate | [EN](backend/bun/syllabi/bun-development-syllabus.md) \| [ID](backend/bun/syllabi/bun-development-syllabus_id.md) |
