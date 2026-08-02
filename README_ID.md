@@ -161,6 +161,7 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 
 | Topik | Format | Kesulitan | Bahasa Tersedia |
 | :--- | :--- | :--- | :--- |
+| [Silabus Lanjutan Internal Runtime Bun](backend/bun/syllabi/advanced-bun-syllabus.md) | Syllabus | Advanced | [EN](backend/bun/syllabi/advanced-bun-syllabus.md) \| [ID](backend/bun/syllabi/advanced-bun-syllabus_id.md) |
 | [Membangun Aplikasi Chat Real-time dengan Bun WebSocket](backend/bun/tutorials/building-real-time-chat-with-bun-websocket.md) | Tutorial | Intermediate | [EN](backend/bun/tutorials/building-real-time-chat-with-bun-websocket.md) \| [ID](backend/bun/tutorials/building-real-time-chat-with-bun-websocket_id.md) |
 | [Cheat Sheet CLI dan API Bun](backend/bun/cheatsheets/bun-cheatsheet.md) | Cheatsheet | Intermediate | [EN](backend/bun/cheatsheets/bun-cheatsheet.md) \| [ID](backend/bun/cheatsheets/bun-cheatsheet_id.md) |
 | [Silabus Pengembangan Bun](backend/bun/syllabi/bun-development-syllabus.md) | Syllabus | Intermediate | [EN](backend/bun/syllabi/bun-development-syllabus.md) \| [ID](backend/bun/syllabi/bun-development-syllabus_id.md) |
