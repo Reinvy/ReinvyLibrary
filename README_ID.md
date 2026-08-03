@@ -269,6 +269,7 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 
 | Topik | Format | Kesulitan | Bahasa Tersedia |
 | :--- | :--- | :--- | :--- |
+| [Silabus Kotlin Tingkat Lanjut](mobile/kotlin/syllabi/advanced-kotlin-syllabus.md) | Syllabus | Advanced | [EN](mobile/kotlin/syllabi/advanced-kotlin-syllabus.md) \| [ID](mobile/kotlin/syllabi/advanced-kotlin-syllabus_id.md) |
 | [Pengembangan Aplikasi Android dengan Kotlin](mobile/kotlin/tutorials/android-app-development-with-kotlin.md) | Tutorial | Intermediate | [EN](mobile/kotlin/tutorials/android-app-development-with-kotlin.md) \| [ID](mobile/kotlin/tutorials/android-app-development-with-kotlin_id.md) |
 | [Silabus Pengembangan Android](mobile/kotlin/syllabi/android-development-syllabus.md) | Syllabus | Intermediate | [EN](mobile/kotlin/syllabi/android-development-syllabus.md) \| [ID](mobile/kotlin/syllabi/android-development-syllabus_id.md) |
 | [Membangun Aplikasi Pencatat Pengeluaran dengan Kotlin, Room, dan Jetpack Compose](mobile/kotlin/tutorials/building-expense-tracker-app-kotlin-room-compose.md) | Tutorial | Intermediate | [EN](mobile/kotlin/tutorials/building-expense-tracker-app-kotlin-room-compose.md) \| [ID](mobile/kotlin/tutorials/building-expense-tracker-app-kotlin-room-compose_id.md) |
