@@ -269,6 +269,7 @@ Below is the dynamically updated list of all materials available in the library:
 
 | Topic | Format | Difficulty | Available Languages |
 | :--- | :--- | :--- | :--- |
+| [Advanced Kotlin Syllabus](mobile/kotlin/syllabi/advanced-kotlin-syllabus.md) | Syllabus | Advanced | [EN](mobile/kotlin/syllabi/advanced-kotlin-syllabus.md) \| [ID](mobile/kotlin/syllabi/advanced-kotlin-syllabus_id.md) |
 | [Android App Development with Kotlin](mobile/kotlin/tutorials/android-app-development-with-kotlin.md) | Tutorial | Intermediate | [EN](mobile/kotlin/tutorials/android-app-development-with-kotlin.md) \| [ID](mobile/kotlin/tutorials/android-app-development-with-kotlin_id.md) |
 | [Android Development Syllabus](mobile/kotlin/syllabi/android-development-syllabus.md) | Syllabus | Intermediate | [EN](mobile/kotlin/syllabi/android-development-syllabus.md) \| [ID](mobile/kotlin/syllabi/android-development-syllabus_id.md) |
 | [Building an Expense Tracker App with Kotlin, Room and Jetpack Compose](mobile/kotlin/tutorials/building-expense-tracker-app-kotlin-room-compose.md) | Tutorial | Intermediate | [EN](mobile/kotlin/tutorials/building-expense-tracker-app-kotlin-room-compose.md) \| [ID](mobile/kotlin/tutorials/building-expense-tracker-app-kotlin-room-compose_id.md) |
