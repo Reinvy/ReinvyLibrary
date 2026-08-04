@@ -361,6 +361,7 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 | [Strategi Indexing MongoDB dan Optimasi Performa Query](database/mongodb/tutorials/mongodb-indexing-strategies.md) | Tutorial | Intermediate | [EN](database/mongodb/tutorials/mongodb-indexing-strategies.md) \| [ID](database/mongodb/tutorials/mongodb-indexing-strategies_id.md) |
 | [Panduan Optimasi Kinerja dan Monitoring MongoDB](database/mongodb/guides/mongodb-performance-optimization-guide.md) | Guide | Advanced | [EN](database/mongodb/guides/mongodb-performance-optimization-guide.md) \| [ID](database/mongodb/guides/mongodb-performance-optimization-guide_id.md) |
 | [Cheat Sheet Query MongoDB](database/mongodb/cheatsheets/mongodb-query-cheatsheet.md) | Cheatsheet | Beginner | [EN](database/mongodb/cheatsheets/mongodb-query-cheatsheet.md) \| [ID](database/mongodb/cheatsheets/mongodb-query-cheatsheet_id.md) |
+| [Panduan Replica Set dan Sharding MongoDB](database/mongodb/guides/mongodb-replica-sets-and-sharding-guide.md) | Guide | Advanced | [EN](database/mongodb/guides/mongodb-replica-sets-and-sharding-guide.md) \| [ID](database/mongodb/guides/mongodb-replica-sets-and-sharding-guide_id.md) |
 | [Panduan Desain Skema dan Pemodelan Data MongoDB](database/mongodb/guides/mongodb-schema-design-and-data-modeling-guide.md) | Guide | Intermediate | [EN](database/mongodb/guides/mongodb-schema-design-and-data-modeling-guide.md) \| [ID](database/mongodb/guides/mongodb-schema-design-and-data-modeling-guide_id.md) |
 
 #### 🏷️ Postgres
