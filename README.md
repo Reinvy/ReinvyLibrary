@@ -361,6 +361,7 @@ Below is the dynamically updated list of all materials available in the library:
 | [MongoDB Indexing Strategies and Query Performance Optimization](database/mongodb/tutorials/mongodb-indexing-strategies.md) | Tutorial | Intermediate | [EN](database/mongodb/tutorials/mongodb-indexing-strategies.md) \| [ID](database/mongodb/tutorials/mongodb-indexing-strategies_id.md) |
 | [MongoDB Performance Optimization and Monitoring Guide](database/mongodb/guides/mongodb-performance-optimization-guide.md) | Guide | Advanced | [EN](database/mongodb/guides/mongodb-performance-optimization-guide.md) \| [ID](database/mongodb/guides/mongodb-performance-optimization-guide_id.md) |
 | [MongoDB Query Cheatsheet](database/mongodb/cheatsheets/mongodb-query-cheatsheet.md) | Cheatsheet | Beginner | [EN](database/mongodb/cheatsheets/mongodb-query-cheatsheet.md) \| [ID](database/mongodb/cheatsheets/mongodb-query-cheatsheet_id.md) |
+| [MongoDB Replica Sets and Sharding Guide](database/mongodb/guides/mongodb-replica-sets-and-sharding-guide.md) | Guide | Advanced | [EN](database/mongodb/guides/mongodb-replica-sets-and-sharding-guide.md) \| [ID](database/mongodb/guides/mongodb-replica-sets-and-sharding-guide_id.md) |
 | [MongoDB Schema Design and Data Modeling Guide](database/mongodb/guides/mongodb-schema-design-and-data-modeling-guide.md) | Guide | Intermediate | [EN](database/mongodb/guides/mongodb-schema-design-and-data-modeling-guide.md) \| [ID](database/mongodb/guides/mongodb-schema-design-and-data-modeling-guide_id.md) |
 
 #### 🏷️ Postgres
