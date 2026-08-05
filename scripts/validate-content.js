@@ -181,8 +181,8 @@ function walkDir(dir) {
     const fullPath = path.join(dir, file);
     const stat = fs.statSync(fullPath);
     if (stat.isDirectory()) {
-      // Exclude system folders
-      if (file !== '.git' && file !== '.github' && file !== 'node_modules' && file !== 'scripts' && file !== 'docs') {
+      // Exclude system folders and the website app (not content)
+      if (file !== '.git' && file !== '.github' && file !== 'node_modules' && file !== 'scripts' && file !== 'docs' && file !== 'website') {
         walkDir(fullPath);
       }
     } else if (file.endsWith('.md') && dir !== ROOT_DIR) {

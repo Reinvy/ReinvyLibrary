@@ -4,7 +4,7 @@
   "description": "Curated collection of educational tech materials",
   "scripts": {
     "validate": "node scripts/validate-content.js",
-    "lint": "npx markdownlint-cli \"**/*.md\" --ignore node_modules --ignore .github/templates"
+    "lint": "npx markdownlint-cli \"**/*.md\" --ignore node_modules --ignore .github/templates --ignore website/node_modules --ignore website/.next"
   },
   "devDependencies": {
     "markdownlint-cli": "^0.41.0"
