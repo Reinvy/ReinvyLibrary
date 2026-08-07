@@ -222,6 +222,7 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 | [Cheat Sheet Tailwind CSS](frontend/tailwindcss/cheatsheets/tailwind-css-cheatsheet.md) | Cheatsheet | Beginner | [EN](frontend/tailwindcss/cheatsheets/tailwind-css-cheatsheet.md) \| [ID](frontend/tailwindcss/cheatsheets/tailwind-css-cheatsheet_id.md) |
 | [Panduan Mode Gelap dan Tema untuk Tailwind CSS](frontend/tailwindcss/guides/tailwind-css-dark-mode-and-theming-guide.md) | Guide | Intermediate | [EN](frontend/tailwindcss/guides/tailwind-css-dark-mode-and-theming-guide.md) \| [ID](frontend/tailwindcss/guides/tailwind-css-dark-mode-and-theming-guide_id.md) |
 | [Silabus Tailwind CSS](frontend/tailwindcss/syllabi/tailwind-css-syllabus.md) | Syllabus | Beginner | [EN](frontend/tailwindcss/syllabi/tailwind-css-syllabus.md) \| [ID](frontend/tailwindcss/syllabi/tailwind-css-syllabus_id.md) |
+| [Cheat Sheet Konfigurasi CSS-First Tailwind CSS v4](frontend/tailwindcss/cheatsheets/tailwind-css-v4-css-first-configuration-cheatsheet.md) | Cheatsheet | Advanced | [EN](frontend/tailwindcss/cheatsheets/tailwind-css-v4-css-first-configuration-cheatsheet.md) \| [ID](frontend/tailwindcss/cheatsheets/tailwind-css-v4-css-first-configuration-cheatsheet_id.md) |
 
 #### 🏷️ Svelte
 
