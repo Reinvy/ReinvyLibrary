@@ -289,6 +289,7 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 
 | Topik | Format | Kesulitan | Bahasa Tersedia |
 | :--- | :--- | :--- | :--- |
+| [Cheat Sheet Pipeline CI/CD Docker](devops/docker/cheatsheets/docker-ci-cd-pipelines-cheatsheet.md) | Cheatsheet | Intermediate | [EN](devops/docker/cheatsheets/docker-ci-cd-pipelines-cheatsheet.md) \| [ID](devops/docker/cheatsheets/docker-ci-cd-pipelines-cheatsheet_id.md) |
 | [Cheat Sheet Perintah Docker](devops/docker/cheatsheets/docker-command-cheatsheet.md) | Cheatsheet | Beginner | [EN](devops/docker/cheatsheets/docker-command-cheatsheet.md) \| [ID](devops/docker/cheatsheets/docker-command-cheatsheet_id.md) |
 | [Panduan Jaringan Docker Compose dan Orkestrasi Multi-Layanan](devops/docker/guides/docker-compose-networking-guide.md) | Guide | Intermediate | [EN](devops/docker/guides/docker-compose-networking-guide.md) \| [ID](devops/docker/guides/docker-compose-networking-guide_id.md) |
 | [Silabus Penguasaan Kontainerisasi Docker](devops/docker/syllabi/docker-containerization-syllabus.md) | Syllabus | Intermediate | [EN](devops/docker/syllabi/docker-containerization-syllabus.md) \| [ID](devops/docker/syllabi/docker-containerization-syllabus_id.md) |

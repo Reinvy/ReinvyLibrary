@@ -289,6 +289,7 @@ Below is the dynamically updated list of all materials available in the library:
 
 | Topic | Format | Difficulty | Available Languages |
 | :--- | :--- | :--- | :--- |
+| [Docker CI/CD Pipelines Cheatsheet](devops/docker/cheatsheets/docker-ci-cd-pipelines-cheatsheet.md) | Cheatsheet | Intermediate | [EN](devops/docker/cheatsheets/docker-ci-cd-pipelines-cheatsheet.md) \| [ID](devops/docker/cheatsheets/docker-ci-cd-pipelines-cheatsheet_id.md) |
 | [Docker Command Cheatsheet](devops/docker/cheatsheets/docker-command-cheatsheet.md) | Cheatsheet | Beginner | [EN](devops/docker/cheatsheets/docker-command-cheatsheet.md) \| [ID](devops/docker/cheatsheets/docker-command-cheatsheet_id.md) |
 | [Docker Compose Networking and Multi-Service Orchestration Guide](devops/docker/guides/docker-compose-networking-guide.md) | Guide | Intermediate | [EN](devops/docker/guides/docker-compose-networking-guide.md) \| [ID](devops/docker/guides/docker-compose-networking-guide_id.md) |
 | [Docker Containerization Mastery Syllabus](devops/docker/syllabi/docker-containerization-syllabus.md) | Syllabus | Intermediate | [EN](devops/docker/syllabi/docker-containerization-syllabus.md) \| [ID](devops/docker/syllabi/docker-containerization-syllabus_id.md) |
