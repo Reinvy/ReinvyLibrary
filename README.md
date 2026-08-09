@@ -267,6 +267,7 @@ Below is the dynamically updated list of all materials available in the library:
 | [Swift Cheat Sheet](mobile/swift/cheatsheets/swift-cheatsheet.md) | Cheatsheet | Beginner | [EN](mobile/swift/cheatsheets/swift-cheatsheet.md) \| [ID](mobile/swift/cheatsheets/swift-cheatsheet_id.md) |
 | [Swift Concurrency: async/await, Actors, and Structured Concurrency Guide](mobile/swift/guides/swift-concurrency-async-await-actors-guide.md) | Guide | Advanced | [EN](mobile/swift/guides/swift-concurrency-async-await-actors-guide.md) \| [ID](mobile/swift/guides/swift-concurrency-async-await-actors-guide_id.md) |
 | [Swift iOS Best Practices Guide](mobile/swift/guides/swift-ios-best-practices-guide.md) | Guide | Advanced | [EN](mobile/swift/guides/swift-ios-best-practices-guide.md) \| [ID](mobile/swift/guides/swift-ios-best-practices-guide_id.md) |
+| [Swift Memory Management and ARC Cheat Sheet](mobile/swift/cheatsheets/swift-memory-management-arc-cheatsheet.md) | Cheatsheet | Advanced | [EN](mobile/swift/cheatsheets/swift-memory-management-arc-cheatsheet.md) \| [ID](mobile/swift/cheatsheets/swift-memory-management-arc-cheatsheet_id.md) |
 | [SwiftUI Components and Patterns Cheat Sheet](mobile/swift/cheatsheets/swiftui-components-cheatsheet.md) | Cheatsheet | Intermediate | [EN](mobile/swift/cheatsheets/swiftui-components-cheatsheet.md) \| [ID](mobile/swift/cheatsheets/swiftui-components-cheatsheet_id.md) |
 
 #### 🏷️ Kotlin
