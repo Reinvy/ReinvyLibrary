@@ -332,6 +332,7 @@ Below is the dynamically updated list of all materials available in the library:
 
 | Topic | Format | Difficulty | Available Languages |
 | :--- | :--- | :--- | :--- |
+| [Advanced GitHub Actions Enterprise Automation Syllabus](devops/github-actions/syllabi/advanced-github-actions-syllabus.md) | Syllabus | Advanced | [EN](devops/github-actions/syllabi/advanced-github-actions-syllabus.md) \| [ID](devops/github-actions/syllabi/advanced-github-actions-syllabus_id.md) |
 | [Building Custom GitHub Actions](devops/github-actions/tutorials/building-custom-github-actions.md) | Tutorial | Intermediate | [EN](devops/github-actions/tutorials/building-custom-github-actions.md) \| [ID](devops/github-actions/tutorials/building-custom-github-actions_id.md) |
 | [Getting Started with GitHub Actions](devops/github-actions/tutorials/getting-started-with-github-actions.md) | Tutorial | Beginner | [EN](devops/github-actions/tutorials/getting-started-with-github-actions.md) \| [ID](devops/github-actions/tutorials/getting-started-with-github-actions_id.md) |
 | [GitHub Actions Cheat Sheet](devops/github-actions/cheatsheets/github-actions-cheatsheet.md) | Cheatsheet | Beginner | [EN](devops/github-actions/cheatsheets/github-actions-cheatsheet.md) \| [ID](devops/github-actions/cheatsheets/github-actions-cheatsheet_id.md) |
