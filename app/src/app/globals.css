@@ -1,0 +1,145 @@
+/*
+ * ReinvyLibrary — Soft Scrapbook / Cozy Journal design system
+ * =============================================================
+ * DESIGN TOKEN RULE: this file is the ONLY place colors, radii, shadows,
+ * and font choices are defined. Do NOT inject hardcoded hex values in
+ * components — use the Tailwind utilities generated from these tokens
+ * (bg-paper, text-ink, border-line, rounded-card, shadow-paper, …).
+ *
+ * Palette (from the design spec):
+ *   paper        #FAFAF7  warm vanilla page background
+ *   card         #FFFFFF  cards & reading surface
+ *   ink          #2D3142  primary text (never pure black)
+ *   ink-muted    #4C566A  secondary text (AA on white)
+ *   sticky       #FFF3B0  soft lemon — sticky notes / tips / highlights
+ *   peach        #FDE2E4  muted peach — tags, badges, warnings
+ *   sage         #E8F3E8  sage matcha — code blocks, table headers
+ *   line         #E5E5E0  subtle warm borders & dividers
+ *   terracotta   #E07A5F  links hover, accents, focus rings
+ *   eucalyptus   #81B29A  success / checked states
+ *   washi        #F7F3E8  translucent cream washi tape
+ *
+ * NO glassmorphism, NO brutalist black borders, NO pure #000.
+ * Radii: 16–24px (rounded-card = 20px). Shadows: soft paper.
+ */
+
+@import "tailwindcss";
+
+@theme {
+  --color-paper: #fafaf7;
+  --color-card: #ffffff;
+  --color-ink: #2d3142;
+  --color-ink-muted: #4c566a;
+  --color-sticky: #fff3b0;
+  --color-peach: #fde2e4;
+  --color-sage: #e8f3e8;
+  --color-line: #e5e5e0;
+  --color-terracotta: #e07a5f;
+  --color-eucalyptus: #81b29a;
+  --color-washi: #f7f3e8;
+
+  --radius-card: 20px;
+  --radius-chip: 9999px;
+
+  --shadow-paper: 0 8px 24px rgba(0, 0, 0, 0.03);
+  --shadow-lift: 0 12px 32px rgba(45, 49, 66, 0.06);
+
+  --font-display: var(--font-quicksand), ui-rounded, system-ui, sans-serif;
+  --font-body: var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
+  --font-hand: var(--font-kalam), "Comic Sans MS", cursive;
+  --font-mono: var(--font-jetbrains), ui-monospace, "SF Mono", monospace;
+
+  --animate-pulse-soft: pulse 2.4s ease-in-out infinite;
+}
+
+@layer base {
+  html {
+    @apply bg-paper text-ink;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-body antialiased;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  ::selection {
+    @apply bg-sticky text-ink;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  /* Washi tape — translucent cream strip */
+  .washi {
+    @apply absolute left-1/2 top-0 h-5 w-24 -translate-x-1/2 -translate-y-1/2 rotate-[-2deg] rounded-sm bg-washi shadow-paper;
+  }
+
+  /* Sticky note rotation helper */
+  .sticky-note {
+    @apply rotate-[-0.5deg] transition-transform hover:rotate-0;
+  }
+
+  /* Paper card */
+  .paper-card {
+    @apply rounded-card border border-line bg-card shadow-paper transition-shadow hover:shadow-lift;
+  }
+
+  /* Prose overrides for the reader */
+  .reader-prose h2 {
+    @apply mt-10 mb-4 scroll-mt-24 font-display text-2xl font-bold text-ink;
+  }
+  .reader-prose h3 {
+    @apply mt-8 mb-3 scroll-mt-24 font-display text-xl font-semibold text-ink;
+  }
+  .reader-prose p {
+    @apply my-4 text-[17px] leading-[1.75] text-ink-muted;
+  }
+  .reader-prose a {
+    @apply text-terracotta underline underline-offset-4 decoration-terracotta/40 hover:decoration-terracotta;
+  }
+  .reader-prose ul,
+  .reader-prose ol {
+    @apply my-4 list-none space-y-2 pl-0;
+  }
+  .reader-prose li {
+    @apply flex gap-3 text-[17px] leading-[1.7] text-ink-muted;
+  }
+  .reader-prose li > p {
+    @apply my-0;
+  }
+  .reader-prose code:not(pre code) {
+    @apply rounded-lg bg-sage px-1.5 py-0.5 font-mono text-[0.85em] text-ink;
+  }
+  .reader-prose blockquote {
+    @apply my-6 rounded-r-2xl border-l-4 border-peach bg-peach/30 py-2 pl-4 pr-4 italic text-ink-muted;
+  }
+  .reader-prose table {
+    @apply my-6 w-full overflow-x-auto rounded-2xl border border-line text-sm text-ink-muted;
+  }
+  .reader-prose th {
+    @apply border-b border-line bg-sage/60 px-4 py-2.5 text-left font-semibold text-ink;
+  }
+  .reader-prose td {
+    @apply border-b border-line/60 px-4 py-2.5;
+  }
+  .reader-prose img {
+    @apply my-6 max-w-full rounded-2xl;
+  }
+  .reader-prose hr {
+    @apply my-8 border-line;
+  }
+}

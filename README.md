@@ -112,9 +112,11 @@ Below is the dynamically updated list of all materials available in the library:
 
 | Topic | Format | Difficulty | Available Languages |
 | :--- | :--- | :--- | :--- |
+| [Advanced Elysia.js Syllabus](backend/elysiajs/syllabi/advanced-elysiajs-syllabus.md) | Syllabus | Advanced | [EN](backend/elysiajs/syllabi/advanced-elysiajs-syllabus.md) \| [ID](backend/elysiajs/syllabi/advanced-elysiajs-syllabus_id.md) |
 | [Building REST APIs with ElysiaJS](backend/elysiajs/tutorials/building-rest-apis-with-elysiajs.md) | Tutorial | Intermediate | [EN](backend/elysiajs/tutorials/building-rest-apis-with-elysiajs.md) \| [ID](backend/elysiajs/tutorials/building-rest-apis-with-elysiajs_id.md) |
 | [Building a URL Shortener with Elysia.js](backend/elysiajs/tutorials/building-url-shortener-with-elysiajs.md) | Tutorial | Intermediate | [EN](backend/elysiajs/tutorials/building-url-shortener-with-elysiajs.md) \| [ID](backend/elysiajs/tutorials/building-url-shortener-with-elysiajs_id.md) |
 | [Elysia.js Cheatsheet](backend/elysiajs/cheatsheets/elysiajs-cheatsheet.md) | Cheatsheet | Beginner | [EN](backend/elysiajs/cheatsheets/elysiajs-cheatsheet.md) \| [ID](backend/elysiajs/cheatsheets/elysiajs-cheatsheet_id.md) |
+| [Elysia.js Database Integration Cheatsheet](backend/elysiajs/cheatsheets/elysiajs-database-integration-cheatsheet.md) | Cheatsheet | Intermediate | [EN](backend/elysiajs/cheatsheets/elysiajs-database-integration-cheatsheet.md) \| [ID](backend/elysiajs/cheatsheets/elysiajs-database-integration-cheatsheet_id.md) |
 | [Elysia.js Production Patterns Guide](backend/elysiajs/guides/elysiajs-production-patterns-guide.md) | Guide | Intermediate | [EN](backend/elysiajs/guides/elysiajs-production-patterns-guide.md) \| [ID](backend/elysiajs/guides/elysiajs-production-patterns-guide_id.md) |
 | [Elysia.js Real-Time Applications with WebSocket and SSE Guide](backend/elysiajs/guides/elysiajs-realtime-websocket-guide.md) | Guide | Intermediate | [EN](backend/elysiajs/guides/elysiajs-realtime-websocket-guide.md) \| [ID](backend/elysiajs/guides/elysiajs-realtime-websocket-guide_id.md) |
 | [Elysia.js Web Development Syllabus](backend/elysiajs/syllabi/elysiajs-web-development-syllabus.md) | Syllabus | Intermediate | [EN](backend/elysiajs/syllabi/elysiajs-web-development-syllabus.md) \| [ID](backend/elysiajs/syllabi/elysiajs-web-development-syllabus_id.md) |
@@ -127,6 +129,8 @@ Below is the dynamically updated list of all materials available in the library:
 | [Building a Real-time WebSocket Chat Server with Go](backend/golang/tutorials/building-websocket-chat-server-with-go.md) | Tutorial | Intermediate | [EN](backend/golang/tutorials/building-websocket-chat-server-with-go.md) \| [ID](backend/golang/tutorials/building-websocket-chat-server-with-go_id.md) |
 | [Getting Started with Go Programming](backend/golang/tutorials/getting-started-with-go.md) | Tutorial | Beginner | [EN](backend/golang/tutorials/getting-started-with-go.md) \| [ID](backend/golang/tutorials/getting-started-with-go_id.md) |
 | [Go Programming Language Syllabus](backend/golang/syllabi/go-syllabus.md) | Syllabus | Intermediate | [EN](backend/golang/syllabi/go-syllabus.md) \| [ID](backend/golang/syllabi/go-syllabus_id.md) |
+| [Go Testing and Benchmarking Guide](backend/golang/guides/go-testing-and-benchmarking-guide.md) | Guide | Intermediate | [EN](backend/golang/guides/go-testing-and-benchmarking-guide.md) \| [ID](backend/golang/guides/go-testing-and-benchmarking-guide_id.md) |
+| [Go Web Development and HTTP API Cheatsheet](backend/golang/cheatsheets/go-web-development-cheatsheet.md) | Cheatsheet | Intermediate | [EN](backend/golang/cheatsheets/go-web-development-cheatsheet.md) \| [ID](backend/golang/cheatsheets/go-web-development-cheatsheet_id.md) |
 | [Golang Cheatsheet](backend/golang/cheatsheets/golang-cheatsheet.md) | Cheatsheet | Intermediate | [EN](backend/golang/cheatsheets/golang-cheatsheet.md) \| [ID](backend/golang/cheatsheets/golang-cheatsheet_id.md) |
 | [Go Concurrency Patterns Guide](backend/golang/guides/golang-concurrency-patterns-guide.md) | Guide | Intermediate | [EN](backend/golang/guides/golang-concurrency-patterns-guide.md) \| [ID](backend/golang/guides/golang-concurrency-patterns-guide_id.md) |
 
@@ -139,6 +143,8 @@ Below is the dynamically updated list of all materials available in the library:
 | [Laravel Cheat Sheet](backend/laravel/cheatsheets/laravel-cheatsheet.md) | Cheatsheet | Beginner | [EN](backend/laravel/cheatsheets/laravel-cheatsheet.md) \| [ID](backend/laravel/cheatsheets/laravel-cheatsheet_id.md) |
 | [Laravel CRUD REST API Tutorial](backend/laravel/tutorials/laravel-crud-rest-api-tutorial.md) | Tutorial | Intermediate | [EN](backend/laravel/tutorials/laravel-crud-rest-api-tutorial.md) \| [ID](backend/laravel/tutorials/laravel-crud-rest-api-tutorial_id.md) |
 | [Laravel Development Syllabus](backend/laravel/syllabi/laravel-development-syllabus.md) | Syllabus | Intermediate | [EN](backend/laravel/syllabi/laravel-development-syllabus.md) \| [ID](backend/laravel/syllabi/laravel-development-syllabus_id.md) |
+| [Advanced Eloquent ORM Cheat Sheet](backend/laravel/cheatsheets/laravel-eloquent-advanced-cheatsheet.md) | Cheatsheet | Advanced | [EN](backend/laravel/cheatsheets/laravel-eloquent-advanced-cheatsheet.md) \| [ID](backend/laravel/cheatsheets/laravel-eloquent-advanced-cheatsheet_id.md) |
+| [Laravel Package Development Guide](backend/laravel/guides/laravel-package-development-guide.md) | Guide | Advanced | [EN](backend/laravel/guides/laravel-package-development-guide.md) \| [ID](backend/laravel/guides/laravel-package-development-guide_id.md) |
 | [Laravel Queue and Job Processing Tutorial](backend/laravel/tutorials/laravel-queue-job-processing-tutorial.md) | Tutorial | Advanced | [EN](backend/laravel/tutorials/laravel-queue-job-processing-tutorial.md) \| [ID](backend/laravel/tutorials/laravel-queue-job-processing-tutorial_id.md) |
 
 #### 🏷️ Nestjs
@@ -152,11 +158,13 @@ Below is the dynamically updated list of all materials available in the library:
 | [NestJS Cheatsheet](backend/nestjs/cheatsheets/nestjs-cheatsheet.md) | Cheatsheet | Intermediate | [EN](backend/nestjs/cheatsheets/nestjs-cheatsheet.md) \| [ID](backend/nestjs/cheatsheets/nestjs-cheatsheet_id.md) |
 | [NestJS Development Syllabus](backend/nestjs/syllabi/nestjs-development-syllabus.md) | Syllabus | Intermediate | [EN](backend/nestjs/syllabi/nestjs-development-syllabus.md) \| [ID](backend/nestjs/syllabi/nestjs-development-syllabus_id.md) |
 | [NestJS Microservices Guide](backend/nestjs/guides/nestjs-microservices-guide.md) | Guide | Advanced | [EN](backend/nestjs/guides/nestjs-microservices-guide.md) \| [ID](backend/nestjs/guides/nestjs-microservices-guide_id.md) |
+| [NestJS Testing Cheatsheet](backend/nestjs/cheatsheets/nestjs-testing-cheatsheet.md) | Cheatsheet | Advanced | [EN](backend/nestjs/cheatsheets/nestjs-testing-cheatsheet.md) \| [ID](backend/nestjs/cheatsheets/nestjs-testing-cheatsheet_id.md) |
 
 #### 🏷️ Bun
 
 | Topic | Format | Difficulty | Available Languages |
 | :--- | :--- | :--- | :--- |
+| [Advanced Bun Runtime Internals Syllabus](backend/bun/syllabi/advanced-bun-syllabus.md) | Syllabus | Advanced | [EN](backend/bun/syllabi/advanced-bun-syllabus.md) \| [ID](backend/bun/syllabi/advanced-bun-syllabus_id.md) |
 | [Building a Real-time Chat Application with Bun WebSocket](backend/bun/tutorials/building-real-time-chat-with-bun-websocket.md) | Tutorial | Intermediate | [EN](backend/bun/tutorials/building-real-time-chat-with-bun-websocket.md) \| [ID](backend/bun/tutorials/building-real-time-chat-with-bun-websocket_id.md) |
 | [Bun CLI and API Cheatsheet](backend/bun/cheatsheets/bun-cheatsheet.md) | Cheatsheet | Intermediate | [EN](backend/bun/cheatsheets/bun-cheatsheet.md) \| [ID](backend/bun/cheatsheets/bun-cheatsheet_id.md) |
 | [Bun Development Syllabus](backend/bun/syllabi/bun-development-syllabus.md) | Syllabus | Intermediate | [EN](backend/bun/syllabi/bun-development-syllabus.md) \| [ID](backend/bun/syllabi/bun-development-syllabus_id.md) |
@@ -175,6 +183,7 @@ Below is the dynamically updated list of all materials available in the library:
 | [Building an E-commerce Store with Next.js](frontend/nextjs/tutorials/building-ecommerce-store-with-nextjs.md) | Tutorial | Advanced | [EN](frontend/nextjs/tutorials/building-ecommerce-store-with-nextjs.md) \| [ID](frontend/nextjs/tutorials/building-ecommerce-store-with-nextjs_id.md) |
 | [Building a Personal Finance Dashboard with Next.js](frontend/nextjs/tutorials/building-personal-finance-dashboard-nextjs.md) | Tutorial | Intermediate | [EN](frontend/nextjs/tutorials/building-personal-finance-dashboard-nextjs.md) \| [ID](frontend/nextjs/tutorials/building-personal-finance-dashboard-nextjs_id.md) |
 | [Next.js Authentication and Authorization Guide](frontend/nextjs/guides/nextjs-authentication-and-authorization-guide.md) | Guide | Advanced | [EN](frontend/nextjs/guides/nextjs-authentication-and-authorization-guide.md) \| [ID](frontend/nextjs/guides/nextjs-authentication-and-authorization-guide_id.md) |
+| [Next.js Caching and Revalidation Cheatsheet](frontend/nextjs/cheatsheets/nextjs-caching-revalidation-cheatsheet.md) | Cheatsheet | Advanced | [EN](frontend/nextjs/cheatsheets/nextjs-caching-revalidation-cheatsheet.md) \| [ID](frontend/nextjs/cheatsheets/nextjs-caching-revalidation-cheatsheet_id.md) |
 | [Next.js Cheatsheet](frontend/nextjs/cheatsheets/nextjs-cheatsheet.md) | Cheatsheet | Intermediate | [EN](frontend/nextjs/cheatsheets/nextjs-cheatsheet.md) \| [ID](frontend/nextjs/cheatsheets/nextjs-cheatsheet_id.md) |
 | [Next.js Project Structure and Best Practices](frontend/nextjs/guides/nextjs-project-structure-and-best-practices.md) | Guide | Intermediate | [EN](frontend/nextjs/guides/nextjs-project-structure-and-best-practices.md) \| [ID](frontend/nextjs/guides/nextjs-project-structure-and-best-practices_id.md) |
 | [Next.js Development Syllabus](frontend/nextjs/syllabi/nextjs-syllabus.md) | Syllabus | Intermediate | [EN](frontend/nextjs/syllabi/nextjs-syllabus.md) \| [ID](frontend/nextjs/syllabi/nextjs-syllabus_id.md) |
@@ -189,6 +198,8 @@ Below is the dynamically updated list of all materials available in the library:
 | [React Native Cheatsheet](frontend/react-native/cheatsheets/react-native-cheatsheet.md) | Cheatsheet | Intermediate | [EN](frontend/react-native/cheatsheets/react-native-cheatsheet.md) \| [ID](frontend/react-native/cheatsheets/react-native-cheatsheet_id.md) |
 | [React Native Development Syllabus](frontend/react-native/syllabi/react-native-development-syllabus.md) | Syllabus | Intermediate | [EN](frontend/react-native/syllabi/react-native-development-syllabus.md) \| [ID](frontend/react-native/syllabi/react-native-development-syllabus_id.md) |
 | [React Native Performance Optimization and Debugging Guide](frontend/react-native/guides/react-native-performance-debugging-guide.md) | Guide | Advanced | [EN](frontend/react-native/guides/react-native-performance-debugging-guide.md) \| [ID](frontend/react-native/guides/react-native-performance-debugging-guide_id.md) |
+| [React Native Security Cheatsheet](frontend/react-native/cheatsheets/react-native-security-cheatsheet.md) | Cheatsheet | Advanced | [EN](frontend/react-native/cheatsheets/react-native-security-cheatsheet.md) \| [ID](frontend/react-native/cheatsheets/react-native-security-cheatsheet_id.md) |
+| [React Native State Management Guide](frontend/react-native/guides/react-native-state-management-guide.md) | Guide | Intermediate | [EN](frontend/react-native/guides/react-native-state-management-guide.md) \| [ID](frontend/react-native/guides/react-native-state-management-guide_id.md) |
 
 #### 🏷️ Vuejs
 
@@ -199,6 +210,7 @@ Below is the dynamically updated list of all materials available in the library:
 | [Vue.js Animations and Transitions Cheatsheet](frontend/vuejs/cheatsheets/vuejs-animations-transitions-cheatsheet.md) | Cheatsheet | Intermediate | [EN](frontend/vuejs/cheatsheets/vuejs-animations-transitions-cheatsheet.md) \| [ID](frontend/vuejs/cheatsheets/vuejs-animations-transitions-cheatsheet_id.md) |
 | [Vue.js Best Practices Guide](frontend/vuejs/guides/vuejs-best-practices-guide.md) | Guide | Advanced | [EN](frontend/vuejs/guides/vuejs-best-practices-guide.md) \| [ID](frontend/vuejs/guides/vuejs-best-practices-guide_id.md) |
 | [Vue.js Cheat Sheet](frontend/vuejs/cheatsheets/vuejs-cheatsheet.md) | Cheatsheet | Beginner | [EN](frontend/vuejs/cheatsheets/vuejs-cheatsheet.md) \| [ID](frontend/vuejs/cheatsheets/vuejs-cheatsheet_id.md) |
+| [Vue.js Enterprise Applications with TypeScript Syllabus](frontend/vuejs/syllabi/vuejs-enterprise-typescript-syllabus.md) | Syllabus | Advanced | [EN](frontend/vuejs/syllabi/vuejs-enterprise-typescript-syllabus.md) \| [ID](frontend/vuejs/syllabi/vuejs-enterprise-typescript-syllabus_id.md) |
 | [Vue.js Form Handling and Validation Guide](frontend/vuejs/guides/vuejs-form-handling-validation-guide.md) | Guide | Intermediate | [EN](frontend/vuejs/guides/vuejs-form-handling-validation-guide.md) \| [ID](frontend/vuejs/guides/vuejs-form-handling-validation-guide_id.md) |
 | [Vue.js Frontend Development Syllabus](frontend/vuejs/syllabi/vuejs-frontend-development-syllabus.md) | Syllabus | Intermediate | [EN](frontend/vuejs/syllabi/vuejs-frontend-development-syllabus.md) \| [ID](frontend/vuejs/syllabi/vuejs-frontend-development-syllabus_id.md) |
 
@@ -213,6 +225,7 @@ Below is the dynamically updated list of all materials available in the library:
 | [Tailwind CSS Cheat Sheet](frontend/tailwindcss/cheatsheets/tailwind-css-cheatsheet.md) | Cheatsheet | Beginner | [EN](frontend/tailwindcss/cheatsheets/tailwind-css-cheatsheet.md) \| [ID](frontend/tailwindcss/cheatsheets/tailwind-css-cheatsheet_id.md) |
 | [Tailwind CSS Dark Mode and Theming Guide](frontend/tailwindcss/guides/tailwind-css-dark-mode-and-theming-guide.md) | Guide | Intermediate | [EN](frontend/tailwindcss/guides/tailwind-css-dark-mode-and-theming-guide.md) \| [ID](frontend/tailwindcss/guides/tailwind-css-dark-mode-and-theming-guide_id.md) |
 | [Tailwind CSS Syllabus](frontend/tailwindcss/syllabi/tailwind-css-syllabus.md) | Syllabus | Beginner | [EN](frontend/tailwindcss/syllabi/tailwind-css-syllabus.md) \| [ID](frontend/tailwindcss/syllabi/tailwind-css-syllabus_id.md) |
+| [Tailwind CSS v4 CSS-First Configuration Cheatsheet](frontend/tailwindcss/cheatsheets/tailwind-css-v4-css-first-configuration-cheatsheet.md) | Cheatsheet | Advanced | [EN](frontend/tailwindcss/cheatsheets/tailwind-css-v4-css-first-configuration-cheatsheet.md) \| [ID](frontend/tailwindcss/cheatsheets/tailwind-css-v4-css-first-configuration-cheatsheet_id.md) |
 
 #### 🏷️ Svelte
 
@@ -224,6 +237,8 @@ Below is the dynamically updated list of all materials available in the library:
 | [Svelte Best Practices Guide](frontend/svelte/guides/svelte-best-practices-guide.md) | Guide | Intermediate | [EN](frontend/svelte/guides/svelte-best-practices-guide.md) \| [ID](frontend/svelte/guides/svelte-best-practices-guide_id.md) |
 | [Svelte Cheat Sheet](frontend/svelte/cheatsheets/svelte-cheatsheet.md) | Cheatsheet | Intermediate | [EN](frontend/svelte/cheatsheets/svelte-cheatsheet.md) \| [ID](frontend/svelte/cheatsheets/svelte-cheatsheet_id.md) |
 | [Svelte and SvelteKit Development Syllabus](frontend/svelte/syllabi/svelte-syllabus.md) | Syllabus | Intermediate | [EN](frontend/svelte/syllabi/svelte-syllabus.md) \| [ID](frontend/svelte/syllabi/svelte-syllabus_id.md) |
+| [SvelteKit Internationalization (i18n) and Localization Guide](frontend/svelte/guides/sveltekit-internationalization-guide.md) | Guide | Intermediate | [EN](frontend/svelte/guides/sveltekit-internationalization-guide.md) \| [ID](frontend/svelte/guides/sveltekit-internationalization-guide_id.md) |
+| [SvelteKit Routing and Data Loading Cheatsheet](frontend/svelte/cheatsheets/sveltekit-routing-data-loading-cheatsheet.md) | Cheatsheet | Intermediate | [EN](frontend/svelte/cheatsheets/sveltekit-routing-data-loading-cheatsheet.md) \| [ID](frontend/svelte/cheatsheets/sveltekit-routing-data-loading-cheatsheet_id.md) |
 
 ### 📁 Mobile
 
@@ -235,8 +250,10 @@ Below is the dynamically updated list of all materials available in the library:
 | [Building a Real-Time Chat Application with Flutter and Firebase](mobile/flutter/tutorials/building-real-time-chat-app-with-flutter-and-firebase.md) | Tutorial | Advanced | [EN](mobile/flutter/tutorials/building-real-time-chat-app-with-flutter-and-firebase.md) \| [ID](mobile/flutter/tutorials/building-real-time-chat-app-with-flutter-and-firebase_id.md) |
 | [Flutter Animations and Transitions Cheatsheet](mobile/flutter/cheatsheets/flutter-animations-cheatsheet.md) | Cheatsheet | Intermediate | [EN](mobile/flutter/cheatsheets/flutter-animations-cheatsheet.md) \| [ID](mobile/flutter/cheatsheets/flutter-animations-cheatsheet_id.md) |
 | [Flutter Clean Architecture Guide](mobile/flutter/guides/flutter-clean-architecture-guide.md) | Guide | Advanced | [EN](mobile/flutter/guides/flutter-clean-architecture-guide.md) \| [ID](mobile/flutter/guides/flutter-clean-architecture-guide_id.md) |
+| [Flutter Networking and API Integration Cheatsheet](mobile/flutter/cheatsheets/flutter-networking-api-cheatsheet.md) | Cheatsheet | Intermediate | [EN](mobile/flutter/cheatsheets/flutter-networking-api-cheatsheet.md) \| [ID](mobile/flutter/cheatsheets/flutter-networking-api-cheatsheet_id.md) |
 | [Flutter App Development Syllabus](mobile/flutter/syllabi/flutter-syllabus.md) | Syllabus | Advanced | [EN](mobile/flutter/syllabi/flutter-syllabus.md) \| [ID](mobile/flutter/syllabi/flutter-syllabus_id.md) |
 | [Flutter Testing Guide](mobile/flutter/guides/flutter-testing-guide.md) | Guide | Intermediate | [EN](mobile/flutter/guides/flutter-testing-guide.md) \| [ID](mobile/flutter/guides/flutter-testing-guide_id.md) |
+| [Flutter UI/UX Design and Animations Syllabus](mobile/flutter/syllabi/flutter-ui-ux-design-and-animations-syllabus.md) | Syllabus | Intermediate | [EN](mobile/flutter/syllabi/flutter-ui-ux-design-and-animations-syllabus.md) \| [ID](mobile/flutter/syllabi/flutter-ui-ux-design-and-animations-syllabus_id.md) |
 | [Flutter Widget Cheatsheet](mobile/flutter/cheatsheets/flutter-widget-cheatsheet.md) | Cheatsheet | Beginner | [EN](mobile/flutter/cheatsheets/flutter-widget-cheatsheet.md) \| [ID](mobile/flutter/cheatsheets/flutter-widget-cheatsheet_id.md) |
 | [State Management with Provider in Flutter](mobile/flutter/tutorials/state-management-with-provider-in-flutter.md) | Tutorial | Intermediate | [EN](mobile/flutter/tutorials/state-management-with-provider-in-flutter.md) \| [ID](mobile/flutter/tutorials/state-management-with-provider-in-flutter_id.md) |
 
@@ -244,21 +261,26 @@ Below is the dynamically updated list of all materials available in the library:
 
 | Topic | Format | Difficulty | Available Languages |
 | :--- | :--- | :--- | :--- |
+| [Advanced SwiftUI Syllabus](mobile/swift/syllabi/advanced-swiftui-syllabus.md) | Syllabus | Advanced | [EN](mobile/swift/syllabi/advanced-swiftui-syllabus.md) \| [ID](mobile/swift/syllabi/advanced-swiftui-syllabus_id.md) |
 | [Building a Location-Aware App with SwiftUI and MapKit](mobile/swift/tutorials/building-location-aware-app-swiftui-mapkit.md) | Tutorial | Intermediate | [EN](mobile/swift/tutorials/building-location-aware-app-swiftui-mapkit.md) \| [ID](mobile/swift/tutorials/building-location-aware-app-swiftui-mapkit_id.md) |
 | [iOS App Development with Swift](mobile/swift/tutorials/ios-app-development-with-swift.md) | Tutorial | Intermediate | [EN](mobile/swift/tutorials/ios-app-development-with-swift.md) \| [ID](mobile/swift/tutorials/ios-app-development-with-swift_id.md) |
 | [iOS Development Syllabus](mobile/swift/syllabi/ios-development-syllabus.md) | Syllabus | Intermediate | [EN](mobile/swift/syllabi/ios-development-syllabus.md) \| [ID](mobile/swift/syllabi/ios-development-syllabus_id.md) |
+| [Building a Modern Networking Layer in Swift with Async/Await](mobile/swift/tutorials/networking-layer-swift-async-await.md) | Tutorial | Advanced | [EN](mobile/swift/tutorials/networking-layer-swift-async-await.md) \| [ID](mobile/swift/tutorials/networking-layer-swift-async-await_id.md) |
 | [Swift Cheat Sheet](mobile/swift/cheatsheets/swift-cheatsheet.md) | Cheatsheet | Beginner | [EN](mobile/swift/cheatsheets/swift-cheatsheet.md) \| [ID](mobile/swift/cheatsheets/swift-cheatsheet_id.md) |
 | [Swift Concurrency: async/await, Actors, and Structured Concurrency Guide](mobile/swift/guides/swift-concurrency-async-await-actors-guide.md) | Guide | Advanced | [EN](mobile/swift/guides/swift-concurrency-async-await-actors-guide.md) \| [ID](mobile/swift/guides/swift-concurrency-async-await-actors-guide_id.md) |
 | [Swift iOS Best Practices Guide](mobile/swift/guides/swift-ios-best-practices-guide.md) | Guide | Advanced | [EN](mobile/swift/guides/swift-ios-best-practices-guide.md) \| [ID](mobile/swift/guides/swift-ios-best-practices-guide_id.md) |
+| [Swift Memory Management and ARC Cheat Sheet](mobile/swift/cheatsheets/swift-memory-management-arc-cheatsheet.md) | Cheatsheet | Advanced | [EN](mobile/swift/cheatsheets/swift-memory-management-arc-cheatsheet.md) \| [ID](mobile/swift/cheatsheets/swift-memory-management-arc-cheatsheet_id.md) |
 | [SwiftUI Components and Patterns Cheat Sheet](mobile/swift/cheatsheets/swiftui-components-cheatsheet.md) | Cheatsheet | Intermediate | [EN](mobile/swift/cheatsheets/swiftui-components-cheatsheet.md) \| [ID](mobile/swift/cheatsheets/swiftui-components-cheatsheet_id.md) |
 
 #### 🏷️ Kotlin
 
 | Topic | Format | Difficulty | Available Languages |
 | :--- | :--- | :--- | :--- |
+| [Advanced Kotlin Syllabus](mobile/kotlin/syllabi/advanced-kotlin-syllabus.md) | Syllabus | Advanced | [EN](mobile/kotlin/syllabi/advanced-kotlin-syllabus.md) \| [ID](mobile/kotlin/syllabi/advanced-kotlin-syllabus_id.md) |
 | [Android App Development with Kotlin](mobile/kotlin/tutorials/android-app-development-with-kotlin.md) | Tutorial | Intermediate | [EN](mobile/kotlin/tutorials/android-app-development-with-kotlin.md) \| [ID](mobile/kotlin/tutorials/android-app-development-with-kotlin_id.md) |
 | [Android Development Syllabus](mobile/kotlin/syllabi/android-development-syllabus.md) | Syllabus | Intermediate | [EN](mobile/kotlin/syllabi/android-development-syllabus.md) \| [ID](mobile/kotlin/syllabi/android-development-syllabus_id.md) |
 | [Building an Expense Tracker App with Kotlin, Room and Jetpack Compose](mobile/kotlin/tutorials/building-expense-tracker-app-kotlin-room-compose.md) | Tutorial | Intermediate | [EN](mobile/kotlin/tutorials/building-expense-tracker-app-kotlin-room-compose.md) \| [ID](mobile/kotlin/tutorials/building-expense-tracker-app-kotlin-room-compose_id.md) |
+| [Building a Real-Time Chat App with Kotlin and WebSockets](mobile/kotlin/tutorials/building-real-time-chat-app-kotlin-websockets.md) | Tutorial | Intermediate | [EN](mobile/kotlin/tutorials/building-real-time-chat-app-kotlin-websockets.md) \| [ID](mobile/kotlin/tutorials/building-real-time-chat-app-kotlin-websockets_id.md) |
 | [Kotlin Android Best Practices Guide](mobile/kotlin/guides/kotlin-android-best-practices-guide.md) | Guide | Advanced | [EN](mobile/kotlin/guides/kotlin-android-best-practices-guide.md) \| [ID](mobile/kotlin/guides/kotlin-android-best-practices-guide_id.md) |
 | [Kotlin Cheat Sheet](mobile/kotlin/cheatsheets/kotlin-cheatsheet.md) | Cheatsheet | Beginner | [EN](mobile/kotlin/cheatsheets/kotlin-cheatsheet.md) \| [ID](mobile/kotlin/cheatsheets/kotlin-cheatsheet_id.md) |
 | [Kotlin Coroutines and Flow: Advanced Patterns Guide](mobile/kotlin/guides/kotlin-coroutines-flow-advanced-patterns-guide.md) | Guide | Advanced | [EN](mobile/kotlin/guides/kotlin-coroutines-flow-advanced-patterns-guide.md) \| [ID](mobile/kotlin/guides/kotlin-coroutines-flow-advanced-patterns-guide_id.md) |
@@ -271,9 +293,11 @@ Below is the dynamically updated list of all materials available in the library:
 
 | Topic | Format | Difficulty | Available Languages |
 | :--- | :--- | :--- | :--- |
+| [Docker CI/CD Pipelines Cheatsheet](devops/docker/cheatsheets/docker-ci-cd-pipelines-cheatsheet.md) | Cheatsheet | Intermediate | [EN](devops/docker/cheatsheets/docker-ci-cd-pipelines-cheatsheet.md) \| [ID](devops/docker/cheatsheets/docker-ci-cd-pipelines-cheatsheet_id.md) |
 | [Docker Command Cheatsheet](devops/docker/cheatsheets/docker-command-cheatsheet.md) | Cheatsheet | Beginner | [EN](devops/docker/cheatsheets/docker-command-cheatsheet.md) \| [ID](devops/docker/cheatsheets/docker-command-cheatsheet_id.md) |
 | [Docker Compose Networking and Multi-Service Orchestration Guide](devops/docker/guides/docker-compose-networking-guide.md) | Guide | Intermediate | [EN](devops/docker/guides/docker-compose-networking-guide.md) \| [ID](devops/docker/guides/docker-compose-networking-guide_id.md) |
 | [Docker Containerization Mastery Syllabus](devops/docker/syllabi/docker-containerization-syllabus.md) | Syllabus | Intermediate | [EN](devops/docker/syllabi/docker-containerization-syllabus.md) \| [ID](devops/docker/syllabi/docker-containerization-syllabus_id.md) |
+| [Docker Image Optimization and Best Practices Guide](devops/docker/guides/docker-image-optimization-guide.md) | Guide | Intermediate | [EN](devops/docker/guides/docker-image-optimization-guide.md) \| [ID](devops/docker/guides/docker-image-optimization-guide_id.md) |
 | [Docker Logging and Monitoring Tutorial](devops/docker/tutorials/docker-logging-and-monitoring-tutorial.md) | Tutorial | Intermediate | [EN](devops/docker/tutorials/docker-logging-and-monitoring-tutorial.md) \| [ID](devops/docker/tutorials/docker-logging-and-monitoring-tutorial_id.md) |
 | [Docker Multi-Architecture Builds with Buildx](devops/docker/tutorials/docker-multi-architecture-builds.md) | Tutorial | Intermediate | [EN](devops/docker/tutorials/docker-multi-architecture-builds.md) \| [ID](devops/docker/tutorials/docker-multi-architecture-builds_id.md) |
 | [Docker Secrets Management and Security Best Practices](devops/docker/tutorials/docker-secrets-management-and-security.md) | Tutorial | Intermediate | [EN](devops/docker/tutorials/docker-secrets-management-and-security.md) \| [ID](devops/docker/tutorials/docker-secrets-management-and-security_id.md) |
@@ -286,6 +310,7 @@ Below is the dynamically updated list of all materials available in the library:
 | [Managing Node.js Applications with PM2](devops/pm2/tutorials/managing-node-js-applications-with-pm2.md) | Tutorial | Intermediate | [EN](devops/pm2/tutorials/managing-node-js-applications-with-pm2.md) \| [ID](devops/pm2/tutorials/managing-node-js-applications-with-pm2_id.md) |
 | [PM2 Cheatsheet](devops/pm2/cheatsheets/pm2-cheatsheet.md) | Cheatsheet | Intermediate | [EN](devops/pm2/cheatsheets/pm2-cheatsheet.md) \| [ID](devops/pm2/cheatsheets/pm2-cheatsheet_id.md) |
 | [PM2 Development Workflows and Local Development Guide](devops/pm2/guides/pm2-development-workflows-guide.md) | Guide | Intermediate | [EN](devops/pm2/guides/pm2-development-workflows-guide.md) \| [ID](devops/pm2/guides/pm2-development-workflows-guide_id.md) |
+| [PM2 in Docker Containers Cheatsheet](devops/pm2/cheatsheets/pm2-docker-container-cheatsheet.md) | Cheatsheet | Advanced | [EN](devops/pm2/cheatsheets/pm2-docker-container-cheatsheet.md) \| [ID](devops/pm2/cheatsheets/pm2-docker-container-cheatsheet_id.md) |
 | [Building Microservices with PM2](devops/pm2/tutorials/pm2-microservices-architecture.md) | Tutorial | Advanced | [EN](devops/pm2/tutorials/pm2-microservices-architecture.md) \| [ID](devops/pm2/tutorials/pm2-microservices-architecture_id.md) |
 | [PM2 Application Monitoring and Observability](devops/pm2/tutorials/pm2-monitoring-and-observability.md) | Tutorial | Intermediate | [EN](devops/pm2/tutorials/pm2-monitoring-and-observability.md) \| [ID](devops/pm2/tutorials/pm2-monitoring-and-observability_id.md) |
 | [PM2 Process Management Syllabus](devops/pm2/syllabi/pm2-process-management-syllabus.md) | Syllabus | Intermediate | [EN](devops/pm2/syllabi/pm2-process-management-syllabus.md) \| [ID](devops/pm2/syllabi/pm2-process-management-syllabus_id.md) |
@@ -300,18 +325,23 @@ Below is the dynamically updated list of all materials available in the library:
 | [Kubernetes DevOps Syllabus](devops/kubernetes/syllabi/kubernetes-devops-syllabus.md) | Syllabus | Intermediate | [EN](devops/kubernetes/syllabi/kubernetes-devops-syllabus.md) \| [ID](devops/kubernetes/syllabi/kubernetes-devops-syllabus_id.md) |
 | [GitOps with ArgoCD on Kubernetes](devops/kubernetes/tutorials/kubernetes-gitops-argocd.md) | Tutorial | Advanced | [EN](devops/kubernetes/tutorials/kubernetes-gitops-argocd.md) \| [ID](devops/kubernetes/tutorials/kubernetes-gitops-argocd_id.md) |
 | [Kubernetes Production Best Practices Guide](devops/kubernetes/guides/kubernetes-production-best-practices.md) | Guide | Advanced | [EN](devops/kubernetes/guides/kubernetes-production-best-practices.md) \| [ID](devops/kubernetes/guides/kubernetes-production-best-practices_id.md) |
+| [Kubernetes Security Cheat Sheet](devops/kubernetes/cheatsheets/kubernetes-security-cheatsheet.md) | Cheatsheet | Advanced | [EN](devops/kubernetes/cheatsheets/kubernetes-security-cheatsheet.md) \| [ID](devops/kubernetes/cheatsheets/kubernetes-security-cheatsheet_id.md) |
 | [Kubernetes Stateful Applications: Deploying Databases with StatefulSets](devops/kubernetes/tutorials/kubernetes-stateful-applications-statefulsets.md) | Tutorial | Advanced | [EN](devops/kubernetes/tutorials/kubernetes-stateful-applications-statefulsets.md) \| [ID](devops/kubernetes/tutorials/kubernetes-stateful-applications-statefulsets_id.md) |
+| [Kubernetes Troubleshooting Guide](devops/kubernetes/guides/kubernetes-troubleshooting-guide.md) | Guide | Advanced | [EN](devops/kubernetes/guides/kubernetes-troubleshooting-guide.md) \| [ID](devops/kubernetes/guides/kubernetes-troubleshooting-guide_id.md) |
 
 #### 🏷️ Github Actions
 
 | Topic | Format | Difficulty | Available Languages |
 | :--- | :--- | :--- | :--- |
+| [Advanced GitHub Actions Enterprise Automation Syllabus](devops/github-actions/syllabi/advanced-github-actions-syllabus.md) | Syllabus | Advanced | [EN](devops/github-actions/syllabi/advanced-github-actions-syllabus.md) \| [ID](devops/github-actions/syllabi/advanced-github-actions-syllabus_id.md) |
 | [Building Custom GitHub Actions](devops/github-actions/tutorials/building-custom-github-actions.md) | Tutorial | Intermediate | [EN](devops/github-actions/tutorials/building-custom-github-actions.md) \| [ID](devops/github-actions/tutorials/building-custom-github-actions_id.md) |
 | [Getting Started with GitHub Actions](devops/github-actions/tutorials/getting-started-with-github-actions.md) | Tutorial | Beginner | [EN](devops/github-actions/tutorials/getting-started-with-github-actions.md) \| [ID](devops/github-actions/tutorials/getting-started-with-github-actions_id.md) |
 | [GitHub Actions Cheat Sheet](devops/github-actions/cheatsheets/github-actions-cheatsheet.md) | Cheatsheet | Beginner | [EN](devops/github-actions/cheatsheets/github-actions-cheatsheet.md) \| [ID](devops/github-actions/cheatsheets/github-actions-cheatsheet_id.md) |
 | [GitHub Actions CI/CD Best Practices Guide](devops/github-actions/guides/github-actions-cicd-best-practices-guide.md) | Guide | Intermediate | [EN](devops/github-actions/guides/github-actions-cicd-best-practices-guide.md) \| [ID](devops/github-actions/guides/github-actions-cicd-best-practices-guide_id.md) |
 | [Building Deployment Pipelines with GitHub Actions](devops/github-actions/tutorials/github-actions-deployment-pipelines.md) | Tutorial | Intermediate | [EN](devops/github-actions/tutorials/github-actions-deployment-pipelines.md) \| [ID](devops/github-actions/tutorials/github-actions-deployment-pipelines_id.md) |
 | [GitHub Actions DevOps Syllabus](devops/github-actions/syllabi/github-actions-devops-syllabus.md) | Syllabus | Intermediate | [EN](devops/github-actions/syllabi/github-actions-devops-syllabus.md) \| [ID](devops/github-actions/syllabi/github-actions-devops-syllabus_id.md) |
+| [GitHub Actions Security and Secrets Management Cheat Sheet](devops/github-actions/cheatsheets/github-actions-security-secrets-cheatsheet.md) | Cheatsheet | Intermediate | [EN](devops/github-actions/cheatsheets/github-actions-security-secrets-cheatsheet.md) \| [ID](devops/github-actions/cheatsheets/github-actions-security-secrets-cheatsheet_id.md) |
+| [GitHub Actions Workflow Testing and Debugging Guide](devops/github-actions/guides/github-actions-workflow-testing-debugging-guide.md) | Guide | Intermediate | [EN](devops/github-actions/guides/github-actions-workflow-testing-debugging-guide.md) \| [ID](devops/github-actions/guides/github-actions-workflow-testing-debugging-guide_id.md) |
 
 ### 📁 Database
 
@@ -319,11 +349,13 @@ Below is the dynamically updated list of all materials available in the library:
 
 | Topic | Format | Difficulty | Available Languages |
 | :--- | :--- | :--- | :--- |
+| [Advanced Redis Syllabus](database/redis/syllabi/advanced-redis-syllabus.md) | Syllabus | Advanced | [EN](database/redis/syllabi/advanced-redis-syllabus.md) \| [ID](database/redis/syllabi/advanced-redis-syllabus_id.md) |
 | [Building a Task Queue with Redis](database/redis/tutorials/building-task-queue-with-redis.md) | Tutorial | Intermediate | [EN](database/redis/tutorials/building-task-queue-with-redis.md) \| [ID](database/redis/tutorials/building-task-queue-with-redis_id.md) |
 | [Getting Started with Redis](database/redis/tutorials/getting-started-with-redis.md) | Tutorial | Beginner | [EN](database/redis/tutorials/getting-started-with-redis.md) \| [ID](database/redis/tutorials/getting-started-with-redis_id.md) |
 | [Redis Caching Patterns and Strategies Guide](database/redis/guides/redis-caching-patterns-guide.md) | Guide | Intermediate | [EN](database/redis/guides/redis-caching-patterns-guide.md) \| [ID](database/redis/guides/redis-caching-patterns-guide_id.md) |
 | [Redis Cheatsheet](database/redis/cheatsheets/redis-cheatsheet.md) | Cheatsheet | Beginner | [EN](database/redis/cheatsheets/redis-cheatsheet.md) \| [ID](database/redis/cheatsheets/redis-cheatsheet_id.md) |
 | [Redis Development Syllabus](database/redis/syllabi/redis-development-syllabus.md) | Syllabus | Intermediate | [EN](database/redis/syllabi/redis-development-syllabus.md) \| [ID](database/redis/syllabi/redis-development-syllabus_id.md) |
+| [Redis High Availability Guide](database/redis/guides/redis-high-availability-guide.md) | Guide | Advanced | [EN](database/redis/guides/redis-high-availability-guide.md) \| [ID](database/redis/guides/redis-high-availability-guide_id.md) |
 | [Redis Lua Scripting and Server-Side Programming Cheatsheet](database/redis/cheatsheets/redis-lua-scripting-cheatsheet.md) | Cheatsheet | Intermediate | [EN](database/redis/cheatsheets/redis-lua-scripting-cheatsheet.md) \| [ID](database/redis/cheatsheets/redis-lua-scripting-cheatsheet_id.md) |
 | [Redis Persistence and Data Durability Guide](database/redis/guides/redis-persistence-and-data-durability-guide.md) | Guide | Intermediate | [EN](database/redis/guides/redis-persistence-and-data-durability-guide.md) \| [ID](database/redis/guides/redis-persistence-and-data-durability-guide_id.md) |
 | [Building an Event-Driven System with Redis Streams](database/redis/tutorials/redis-streams-event-driven-architecture.md) | Tutorial | Intermediate | [EN](database/redis/tutorials/redis-streams-event-driven-architecture.md) \| [ID](database/redis/tutorials/redis-streams-event-driven-architecture_id.md) |
@@ -332,6 +364,7 @@ Below is the dynamically updated list of all materials available in the library:
 
 | Topic | Format | Difficulty | Available Languages |
 | :--- | :--- | :--- | :--- |
+| [Advanced MongoDB Syllabus](database/mongodb/syllabi/advanced-mongodb-syllabus.md) | Syllabus | Advanced | [EN](database/mongodb/syllabi/advanced-mongodb-syllabus.md) \| [ID](database/mongodb/syllabi/advanced-mongodb-syllabus_id.md) |
 | [MongoDB Aggregation Pipeline: A Practical Tutorial](database/mongodb/tutorials/mongodb-aggregation-pipeline.md) | Tutorial | Intermediate | [EN](database/mongodb/tutorials/mongodb-aggregation-pipeline.md) \| [ID](database/mongodb/tutorials/mongodb-aggregation-pipeline_id.md) |
 | [MongoDB Aggregation Pipeline Cheatsheet](database/mongodb/cheatsheets/mongodb-aggregation-pipeline-cheatsheet.md) | Cheatsheet | Intermediate | [EN](database/mongodb/cheatsheets/mongodb-aggregation-pipeline-cheatsheet.md) \| [ID](database/mongodb/cheatsheets/mongodb-aggregation-pipeline-cheatsheet_id.md) |
 | [Building Real-Time Data Pipelines with MongoDB Change Streams](database/mongodb/tutorials/mongodb-change-streams-real-time-pipelines.md) | Tutorial | Advanced | [EN](database/mongodb/tutorials/mongodb-change-streams-real-time-pipelines.md) \| [ID](database/mongodb/tutorials/mongodb-change-streams-real-time-pipelines_id.md) |
@@ -339,15 +372,19 @@ Below is the dynamically updated list of all materials available in the library:
 | [MongoDB Indexing Strategies and Query Performance Optimization](database/mongodb/tutorials/mongodb-indexing-strategies.md) | Tutorial | Intermediate | [EN](database/mongodb/tutorials/mongodb-indexing-strategies.md) \| [ID](database/mongodb/tutorials/mongodb-indexing-strategies_id.md) |
 | [MongoDB Performance Optimization and Monitoring Guide](database/mongodb/guides/mongodb-performance-optimization-guide.md) | Guide | Advanced | [EN](database/mongodb/guides/mongodb-performance-optimization-guide.md) \| [ID](database/mongodb/guides/mongodb-performance-optimization-guide_id.md) |
 | [MongoDB Query Cheatsheet](database/mongodb/cheatsheets/mongodb-query-cheatsheet.md) | Cheatsheet | Beginner | [EN](database/mongodb/cheatsheets/mongodb-query-cheatsheet.md) \| [ID](database/mongodb/cheatsheets/mongodb-query-cheatsheet_id.md) |
+| [MongoDB Replica Sets and Sharding Guide](database/mongodb/guides/mongodb-replica-sets-and-sharding-guide.md) | Guide | Advanced | [EN](database/mongodb/guides/mongodb-replica-sets-and-sharding-guide.md) \| [ID](database/mongodb/guides/mongodb-replica-sets-and-sharding-guide_id.md) |
 | [MongoDB Schema Design and Data Modeling Guide](database/mongodb/guides/mongodb-schema-design-and-data-modeling-guide.md) | Guide | Intermediate | [EN](database/mongodb/guides/mongodb-schema-design-and-data-modeling-guide.md) \| [ID](database/mongodb/guides/mongodb-schema-design-and-data-modeling-guide_id.md) |
 
 #### 🏷️ Postgres
 
 | Topic | Format | Difficulty | Available Languages |
 | :--- | :--- | :--- | :--- |
+| [Advanced PostgreSQL Syllabus](database/postgres/syllabi/advanced-postgresql-syllabus.md) | Syllabus | Advanced | [EN](database/postgres/syllabi/advanced-postgresql-syllabus.md) \| [ID](database/postgres/syllabi/advanced-postgresql-syllabus_id.md) |
 | [Getting Started with PostgreSQL](database/postgres/tutorials/getting-started-with-postgresql.md) | Tutorial | Beginner | [EN](database/postgres/tutorials/getting-started-with-postgresql.md) \| [ID](database/postgres/tutorials/getting-started-with-postgresql_id.md) |
 | [PostgreSQL Database Administration Cheatsheet](database/postgres/cheatsheets/postgresql-administration-cheatsheet.md) | Cheatsheet | Intermediate | [EN](database/postgres/cheatsheets/postgresql-administration-cheatsheet.md) \| [ID](database/postgres/cheatsheets/postgresql-administration-cheatsheet_id.md) |
 | [PostgreSQL Full-Text Search Tutorial](database/postgres/tutorials/postgresql-full-text-search-tutorial.md) | Tutorial | Intermediate | [EN](database/postgres/tutorials/postgresql-full-text-search-tutorial.md) \| [ID](database/postgres/tutorials/postgresql-full-text-search-tutorial_id.md) |
+| [PostgreSQL Indexing Cheatsheet](database/postgres/cheatsheets/postgresql-indexing-cheatsheet.md) | Cheatsheet | Intermediate | [EN](database/postgres/cheatsheets/postgresql-indexing-cheatsheet.md) \| [ID](database/postgres/cheatsheets/postgresql-indexing-cheatsheet_id.md) |
+| [PostgreSQL JSON and JSONB Data Management](database/postgres/tutorials/postgresql-json-jsonb-data-management.md) | Tutorial | Intermediate | [EN](database/postgres/tutorials/postgresql-json-jsonb-data-management.md) \| [ID](database/postgres/tutorials/postgresql-json-jsonb-data-management_id.md) |
 | [PostgreSQL Performance Tuning and Optimization Guide](database/postgres/guides/postgresql-performance-tuning-guide.md) | Guide | Advanced | [EN](database/postgres/guides/postgresql-performance-tuning-guide.md) \| [ID](database/postgres/guides/postgresql-performance-tuning-guide_id.md) |
 | [PostgreSQL Query Cheatsheet](database/postgres/cheatsheets/postgresql-query-cheatsheet.md) | Cheatsheet | Beginner | [EN](database/postgres/cheatsheets/postgresql-query-cheatsheet.md) \| [ID](database/postgres/cheatsheets/postgresql-query-cheatsheet_id.md) |
 | [PostgreSQL Replication and High Availability Guide](database/postgres/guides/postgresql-replication-high-availability-guide.md) | Guide | Advanced | [EN](database/postgres/guides/postgresql-replication-high-availability-guide.md) \| [ID](database/postgres/guides/postgresql-replication-high-availability-guide_id.md) |
