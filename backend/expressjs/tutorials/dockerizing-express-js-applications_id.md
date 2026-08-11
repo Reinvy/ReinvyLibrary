@@ -1,5 +1,5 @@
 ---
-title: "Judul"
+title: "Dockerizing Aplikasi Express JS"
 description: "Materi ini membahas cara melakukan containerization (mengemas) aplikasi Express.js menggunakan Docker. Anda akan mempelajari cara menulis Dockerfile yang diopti"
 category: "backend"
 technology: "expressjs"
@@ -8,9 +8,7 @@ type: "tutorial"
 locale: "id"
 ---
 
-# Judul
-
-Dockerizing Aplikasi Express JS
+# Dockerizing Aplikasi Express JS
 
 ## Ringkasan
 

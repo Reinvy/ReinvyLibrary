@@ -1,5 +1,5 @@
 ---
-title: "Judul"
+title: "Paginasi, Filtering, dan Sorting pada API Express.js"
 description: "Tutorial ini membahas cara mengimplementasikan fitur paginasi, pencarian (filtering), dan pengurutan (sorting) pada REST API yang dibangun dengan Express.js. An"
 category: "backend"
 technology: "expressjs"
@@ -8,9 +8,7 @@ type: "tutorial"
 locale: "id"
 ---
 
-# Judul
-
-Paginasi, Filtering, dan Sorting pada API Express.js
+# Paginasi, Filtering, dan Sorting pada API Express.js
 
 ## Ringkasan
 
