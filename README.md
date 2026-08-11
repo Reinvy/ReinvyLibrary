@@ -112,6 +112,7 @@ Below is the dynamically updated list of all materials available in the library:
 
 | Topic | Format | Difficulty | Available Languages |
 | :--- | :--- | :--- | :--- |
+| [Advanced Elysia.js Syllabus](backend/elysiajs/syllabi/advanced-elysiajs-syllabus.md) | Syllabus | Advanced | [EN](backend/elysiajs/syllabi/advanced-elysiajs-syllabus.md) \| [ID](backend/elysiajs/syllabi/advanced-elysiajs-syllabus_id.md) |
 | [Building REST APIs with ElysiaJS](backend/elysiajs/tutorials/building-rest-apis-with-elysiajs.md) | Tutorial | Intermediate | [EN](backend/elysiajs/tutorials/building-rest-apis-with-elysiajs.md) \| [ID](backend/elysiajs/tutorials/building-rest-apis-with-elysiajs_id.md) |
 | [Building a URL Shortener with Elysia.js](backend/elysiajs/tutorials/building-url-shortener-with-elysiajs.md) | Tutorial | Intermediate | [EN](backend/elysiajs/tutorials/building-url-shortener-with-elysiajs.md) \| [ID](backend/elysiajs/tutorials/building-url-shortener-with-elysiajs_id.md) |
 | [Elysia.js Cheatsheet](backend/elysiajs/cheatsheets/elysiajs-cheatsheet.md) | Cheatsheet | Beginner | [EN](backend/elysiajs/cheatsheets/elysiajs-cheatsheet.md) \| [ID](backend/elysiajs/cheatsheets/elysiajs-cheatsheet_id.md) |

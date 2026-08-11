@@ -112,6 +112,7 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 
 | Topik | Format | Kesulitan | Bahasa Tersedia |
 | :--- | :--- | :--- | :--- |
+| [Silabus Lanjutan Elysia.js](backend/elysiajs/syllabi/advanced-elysiajs-syllabus.md) | Syllabus | Advanced | [EN](backend/elysiajs/syllabi/advanced-elysiajs-syllabus.md) \| [ID](backend/elysiajs/syllabi/advanced-elysiajs-syllabus_id.md) |
 | [Membangun REST API dengan ElysiaJS](backend/elysiajs/tutorials/building-rest-apis-with-elysiajs.md) | Tutorial | Intermediate | [EN](backend/elysiajs/tutorials/building-rest-apis-with-elysiajs.md) \| [ID](backend/elysiajs/tutorials/building-rest-apis-with-elysiajs_id.md) |
 | [Membangun URL Shortener dengan Elysia.js](backend/elysiajs/tutorials/building-url-shortener-with-elysiajs.md) | Tutorial | Intermediate | [EN](backend/elysiajs/tutorials/building-url-shortener-with-elysiajs.md) \| [ID](backend/elysiajs/tutorials/building-url-shortener-with-elysiajs_id.md) |
 | [Cheat Sheet Elysia.js](backend/elysiajs/cheatsheets/elysiajs-cheatsheet.md) | Cheatsheet | Beginner | [EN](backend/elysiajs/cheatsheets/elysiajs-cheatsheet.md) \| [ID](backend/elysiajs/cheatsheets/elysiajs-cheatsheet_id.md) |
