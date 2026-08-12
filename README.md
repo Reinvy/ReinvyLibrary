@@ -375,6 +375,7 @@ Below is the dynamically updated list of all materials available in the library:
 | [MongoDB Query Cheatsheet](database/mongodb/cheatsheets/mongodb-query-cheatsheet.md) | Cheatsheet | Beginner | [EN](database/mongodb/cheatsheets/mongodb-query-cheatsheet.md) \| [ID](database/mongodb/cheatsheets/mongodb-query-cheatsheet_id.md) |
 | [MongoDB Replica Sets and Sharding Guide](database/mongodb/guides/mongodb-replica-sets-and-sharding-guide.md) | Guide | Advanced | [EN](database/mongodb/guides/mongodb-replica-sets-and-sharding-guide.md) \| [ID](database/mongodb/guides/mongodb-replica-sets-and-sharding-guide_id.md) |
 | [MongoDB Schema Design and Data Modeling Guide](database/mongodb/guides/mongodb-schema-design-and-data-modeling-guide.md) | Guide | Intermediate | [EN](database/mongodb/guides/mongodb-schema-design-and-data-modeling-guide.md) \| [ID](database/mongodb/guides/mongodb-schema-design-and-data-modeling-guide_id.md) |
+| [MongoDB Security Cheatsheet](database/mongodb/cheatsheets/mongodb-security-cheatsheet.md) | Cheatsheet | Advanced | [EN](database/mongodb/cheatsheets/mongodb-security-cheatsheet.md) \| [ID](database/mongodb/cheatsheets/mongodb-security-cheatsheet_id.md) |
 
 #### 🏷️ Postgres
 
