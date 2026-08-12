@@ -375,6 +375,7 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 | [Cheat Sheet Query MongoDB](database/mongodb/cheatsheets/mongodb-query-cheatsheet.md) | Cheatsheet | Beginner | [EN](database/mongodb/cheatsheets/mongodb-query-cheatsheet.md) \| [ID](database/mongodb/cheatsheets/mongodb-query-cheatsheet_id.md) |
 | [Panduan Replica Set dan Sharding MongoDB](database/mongodb/guides/mongodb-replica-sets-and-sharding-guide.md) | Guide | Advanced | [EN](database/mongodb/guides/mongodb-replica-sets-and-sharding-guide.md) \| [ID](database/mongodb/guides/mongodb-replica-sets-and-sharding-guide_id.md) |
 | [Panduan Desain Skema dan Pemodelan Data MongoDB](database/mongodb/guides/mongodb-schema-design-and-data-modeling-guide.md) | Guide | Intermediate | [EN](database/mongodb/guides/mongodb-schema-design-and-data-modeling-guide.md) \| [ID](database/mongodb/guides/mongodb-schema-design-and-data-modeling-guide_id.md) |
+| [Cheatsheet Keamanan MongoDB](database/mongodb/cheatsheets/mongodb-security-cheatsheet.md) | Cheatsheet | Advanced | [EN](database/mongodb/cheatsheets/mongodb-security-cheatsheet.md) \| [ID](database/mongodb/cheatsheets/mongodb-security-cheatsheet_id.md) |
 
 #### 🏷️ Postgres
 
