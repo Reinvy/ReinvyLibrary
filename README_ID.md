@@ -213,6 +213,7 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 | [Silabus Aplikasi Enterprise Vue.js dengan TypeScript](frontend/vuejs/syllabi/vuejs-enterprise-typescript-syllabus.md) | Syllabus | Advanced | [EN](frontend/vuejs/syllabi/vuejs-enterprise-typescript-syllabus.md) \| [ID](frontend/vuejs/syllabi/vuejs-enterprise-typescript-syllabus_id.md) |
 | [Panduan Penanganan dan Validasi Formulir Vue.js](frontend/vuejs/guides/vuejs-form-handling-validation-guide.md) | Guide | Intermediate | [EN](frontend/vuejs/guides/vuejs-form-handling-validation-guide.md) \| [ID](frontend/vuejs/guides/vuejs-form-handling-validation-guide_id.md) |
 | [Silabus Pengembangan Frontend Vue.js](frontend/vuejs/syllabi/vuejs-frontend-development-syllabus.md) | Syllabus | Intermediate | [EN](frontend/vuejs/syllabi/vuejs-frontend-development-syllabus.md) \| [ID](frontend/vuejs/syllabi/vuejs-frontend-development-syllabus_id.md) |
+| [Panduan Optimasi Performa Vue.js](frontend/vuejs/guides/vuejs-performance-optimization-guide.md) | Guide | Advanced | [EN](frontend/vuejs/guides/vuejs-performance-optimization-guide.md) \| [ID](frontend/vuejs/guides/vuejs-performance-optimization-guide_id.md) |
 
 #### 🏷️ Tailwindcss
 
