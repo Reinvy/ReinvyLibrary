@@ -309,6 +309,7 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 
 | Topik | Format | Kesulitan | Bahasa Tersedia |
 | :--- | :--- | :--- | :--- |
+| [Silabus Lanjutan Internals PM2 dan Keandalan Produksi](devops/pm2/syllabi/advanced-pm2-syllabus.md) | Syllabus | Advanced | [EN](devops/pm2/syllabi/advanced-pm2-syllabus.md) \| [ID](devops/pm2/syllabi/advanced-pm2-syllabus_id.md) |
 | [Mengelola Aplikasi Node.js dengan PM2](devops/pm2/tutorials/managing-node-js-applications-with-pm2.md) | Tutorial | Intermediate | [EN](devops/pm2/tutorials/managing-node-js-applications-with-pm2.md) \| [ID](devops/pm2/tutorials/managing-node-js-applications-with-pm2_id.md) |
 | [Cheat Sheet PM2](devops/pm2/cheatsheets/pm2-cheatsheet.md) | Cheatsheet | Intermediate | [EN](devops/pm2/cheatsheets/pm2-cheatsheet.md) \| [ID](devops/pm2/cheatsheets/pm2-cheatsheet_id.md) |
 | [Panduan Alur Kerja Pengembangan dan Development Lokal dengan PM2](devops/pm2/guides/pm2-development-workflows-guide.md) | Guide | Intermediate | [EN](devops/pm2/guides/pm2-development-workflows-guide.md) \| [ID](devops/pm2/guides/pm2-development-workflows-guide_id.md) |
