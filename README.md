@@ -309,6 +309,7 @@ Below is the dynamically updated list of all materials available in the library:
 
 | Topic | Format | Difficulty | Available Languages |
 | :--- | :--- | :--- | :--- |
+| [Advanced PM2 Internals and Production Reliability Syllabus](devops/pm2/syllabi/advanced-pm2-syllabus.md) | Syllabus | Advanced | [EN](devops/pm2/syllabi/advanced-pm2-syllabus.md) \| [ID](devops/pm2/syllabi/advanced-pm2-syllabus_id.md) |
 | [Managing Node.js Applications with PM2](devops/pm2/tutorials/managing-node-js-applications-with-pm2.md) | Tutorial | Intermediate | [EN](devops/pm2/tutorials/managing-node-js-applications-with-pm2.md) \| [ID](devops/pm2/tutorials/managing-node-js-applications-with-pm2_id.md) |
 | [PM2 Cheatsheet](devops/pm2/cheatsheets/pm2-cheatsheet.md) | Cheatsheet | Intermediate | [EN](devops/pm2/cheatsheets/pm2-cheatsheet.md) \| [ID](devops/pm2/cheatsheets/pm2-cheatsheet_id.md) |
 | [PM2 Development Workflows and Local Development Guide](devops/pm2/guides/pm2-development-workflows-guide.md) | Guide | Intermediate | [EN](devops/pm2/guides/pm2-development-workflows-guide.md) \| [ID](devops/pm2/guides/pm2-development-workflows-guide_id.md) |
