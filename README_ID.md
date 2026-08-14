@@ -125,6 +125,7 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 
 | Topik | Format | Kesulitan | Bahasa Tersedia |
 | :--- | :--- | :--- | :--- |
+| [Silabus Optimasi Kinerja dan Profiling Go Tingkat Lanjut](backend/golang/syllabi/advanced-golang-syllabus.md) | Syllabus | Advanced | [EN](backend/golang/syllabi/advanced-golang-syllabus.md) \| [ID](backend/golang/syllabi/advanced-golang-syllabus_id.md) |
 | [Membangun RESTful API dengan Go](backend/golang/tutorials/building-restful-api-with-go.md) | Tutorial | Intermediate | [EN](backend/golang/tutorials/building-restful-api-with-go.md) \| [ID](backend/golang/tutorials/building-restful-api-with-go_id.md) |
 | [Membangun Server Chat WebSocket Real-time dengan Go](backend/golang/tutorials/building-websocket-chat-server-with-go.md) | Tutorial | Intermediate | [EN](backend/golang/tutorials/building-websocket-chat-server-with-go.md) \| [ID](backend/golang/tutorials/building-websocket-chat-server-with-go_id.md) |
 | [Memulai Pemrograman Go](backend/golang/tutorials/getting-started-with-go.md) | Tutorial | Beginner | [EN](backend/golang/tutorials/getting-started-with-go.md) \| [ID](backend/golang/tutorials/getting-started-with-go_id.md) |
