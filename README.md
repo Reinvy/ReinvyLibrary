@@ -125,6 +125,7 @@ Below is the dynamically updated list of all materials available in the library:
 
 | Topic | Format | Difficulty | Available Languages |
 | :--- | :--- | :--- | :--- |
+| [Advanced Go Performance Optimization and Profiling Syllabus](backend/golang/syllabi/advanced-golang-syllabus.md) | Syllabus | Advanced | [EN](backend/golang/syllabi/advanced-golang-syllabus.md) \| [ID](backend/golang/syllabi/advanced-golang-syllabus_id.md) |
 | [Building a RESTful API with Go](backend/golang/tutorials/building-restful-api-with-go.md) | Tutorial | Intermediate | [EN](backend/golang/tutorials/building-restful-api-with-go.md) \| [ID](backend/golang/tutorials/building-restful-api-with-go_id.md) |
 | [Building a Real-time WebSocket Chat Server with Go](backend/golang/tutorials/building-websocket-chat-server-with-go.md) | Tutorial | Intermediate | [EN](backend/golang/tutorials/building-websocket-chat-server-with-go.md) \| [ID](backend/golang/tutorials/building-websocket-chat-server-with-go_id.md) |
 | [Getting Started with Go Programming](backend/golang/tutorials/getting-started-with-go.md) | Tutorial | Beginner | [EN](backend/golang/tutorials/getting-started-with-go.md) \| [ID](backend/golang/tutorials/getting-started-with-go_id.md) |
