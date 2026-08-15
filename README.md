@@ -363,6 +363,7 @@ Below is the dynamically updated list of all materials available in the library:
 | [Redis High Availability Guide](database/redis/guides/redis-high-availability-guide.md) | Guide | Advanced | [EN](database/redis/guides/redis-high-availability-guide.md) \| [ID](database/redis/guides/redis-high-availability-guide_id.md) |
 | [Redis Lua Scripting and Server-Side Programming Cheatsheet](database/redis/cheatsheets/redis-lua-scripting-cheatsheet.md) | Cheatsheet | Intermediate | [EN](database/redis/cheatsheets/redis-lua-scripting-cheatsheet.md) \| [ID](database/redis/cheatsheets/redis-lua-scripting-cheatsheet_id.md) |
 | [Redis Persistence and Data Durability Guide](database/redis/guides/redis-persistence-and-data-durability-guide.md) | Guide | Intermediate | [EN](database/redis/guides/redis-persistence-and-data-durability-guide.md) \| [ID](database/redis/guides/redis-persistence-and-data-durability-guide_id.md) |
+| [Redis Security Cheatsheet](database/redis/cheatsheets/redis-security-cheatsheet.md) | Cheatsheet | Advanced | [EN](database/redis/cheatsheets/redis-security-cheatsheet.md) \| [ID](database/redis/cheatsheets/redis-security-cheatsheet_id.md) |
 | [Building an Event-Driven System with Redis Streams](database/redis/tutorials/redis-streams-event-driven-architecture.md) | Tutorial | Intermediate | [EN](database/redis/tutorials/redis-streams-event-driven-architecture.md) \| [ID](database/redis/tutorials/redis-streams-event-driven-architecture_id.md) |
 
 #### 🏷️ Mongodb
