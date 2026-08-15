@@ -363,6 +363,7 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 | [Panduan Ketersediaan Tinggi Redis](database/redis/guides/redis-high-availability-guide.md) | Guide | Advanced | [EN](database/redis/guides/redis-high-availability-guide.md) \| [ID](database/redis/guides/redis-high-availability-guide_id.md) |
 | [Cheat Sheet Skrip Lua dan Pemrograman Server-Side Redis](database/redis/cheatsheets/redis-lua-scripting-cheatsheet.md) | Cheatsheet | Intermediate | [EN](database/redis/cheatsheets/redis-lua-scripting-cheatsheet.md) \| [ID](database/redis/cheatsheets/redis-lua-scripting-cheatsheet_id.md) |
 | [Panduan Persistensi dan Ketahanan Data Redis](database/redis/guides/redis-persistence-and-data-durability-guide.md) | Guide | Intermediate | [EN](database/redis/guides/redis-persistence-and-data-durability-guide.md) \| [ID](database/redis/guides/redis-persistence-and-data-durability-guide_id.md) |
+| [Redis Security Cheatsheet](database/redis/cheatsheets/redis-security-cheatsheet.md) | Cheatsheet | Advanced | [EN](database/redis/cheatsheets/redis-security-cheatsheet.md) \| [ID](database/redis/cheatsheets/redis-security-cheatsheet_id.md) |
 | [Membangun Sistem Berbasis Event dengan Redis Streams](database/redis/tutorials/redis-streams-event-driven-architecture.md) | Tutorial | Intermediate | [EN](database/redis/tutorials/redis-streams-event-driven-architecture.md) \| [ID](database/redis/tutorials/redis-streams-event-driven-architecture_id.md) |
 
 #### 🏷️ Mongodb
