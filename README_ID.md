@@ -233,6 +233,7 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 
 | Topik | Format | Kesulitan | Bahasa Tersedia |
 | :--- | :--- | :--- | :--- |
+| [Silabus Arsitektur Svelte 5 Runes dan SvelteKit Tingkat Lanjut](frontend/svelte/syllabi/advanced-svelte-syllabus.md) | Syllabus | Advanced | [EN](frontend/svelte/syllabi/advanced-svelte-syllabus.md) \| [ID](frontend/svelte/syllabi/advanced-svelte-syllabus_id.md) |
 | [Membangun Blog Markdown dengan SvelteKit](frontend/svelte/tutorials/building-markdown-blog-with-sveltekit.md) | Tutorial | Intermediate | [EN](frontend/svelte/tutorials/building-markdown-blog-with-sveltekit.md) \| [ID](frontend/svelte/tutorials/building-markdown-blog-with-sveltekit_id.md) |
 | [Membangun Aplikasi Manajemen Tugas dengan SvelteKit](frontend/svelte/tutorials/building-task-management-app-with-sveltekit.md) | Tutorial | Intermediate | [EN](frontend/svelte/tutorials/building-task-management-app-with-sveltekit.md) \| [ID](frontend/svelte/tutorials/building-task-management-app-with-sveltekit_id.md) |
 | [Memulai dengan Svelte](frontend/svelte/tutorials/getting-started-with-svelte.md) | Tutorial | Beginner | [EN](frontend/svelte/tutorials/getting-started-with-svelte.md) \| [ID](frontend/svelte/tutorials/getting-started-with-svelte_id.md) |
