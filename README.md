@@ -233,6 +233,7 @@ Below is the dynamically updated list of all materials available in the library:
 
 | Topic | Format | Difficulty | Available Languages |
 | :--- | :--- | :--- | :--- |
+| [Advanced Svelte 5 Runes and SvelteKit Architecture Syllabus](frontend/svelte/syllabi/advanced-svelte-syllabus.md) | Syllabus | Advanced | [EN](frontend/svelte/syllabi/advanced-svelte-syllabus.md) \| [ID](frontend/svelte/syllabi/advanced-svelte-syllabus_id.md) |
 | [Building a Markdown Blog with SvelteKit](frontend/svelte/tutorials/building-markdown-blog-with-sveltekit.md) | Tutorial | Intermediate | [EN](frontend/svelte/tutorials/building-markdown-blog-with-sveltekit.md) \| [ID](frontend/svelte/tutorials/building-markdown-blog-with-sveltekit_id.md) |
 | [Building a Task Management Application with SvelteKit](frontend/svelte/tutorials/building-task-management-app-with-sveltekit.md) | Tutorial | Intermediate | [EN](frontend/svelte/tutorials/building-task-management-app-with-sveltekit.md) \| [ID](frontend/svelte/tutorials/building-task-management-app-with-sveltekit_id.md) |
 | [Getting Started with Svelte](frontend/svelte/tutorials/getting-started-with-svelte.md) | Tutorial | Beginner | [EN](frontend/svelte/tutorials/getting-started-with-svelte.md) \| [ID](frontend/svelte/tutorials/getting-started-with-svelte_id.md) |
