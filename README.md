@@ -172,6 +172,7 @@ Below is the dynamically updated list of all materials available in the library:
 | [Bun File I/O and Stream Processing Guide](backend/bun/guides/bun-file-io-stream-processing-guide.md) | Guide | Intermediate | [EN](backend/bun/guides/bun-file-io-stream-processing-guide.md) \| [ID](backend/bun/guides/bun-file-io-stream-processing-guide_id.md) |
 | [Bun Production Patterns Guide](backend/bun/guides/bun-production-patterns-guide.md) | Guide | Intermediate | [EN](backend/bun/guides/bun-production-patterns-guide.md) \| [ID](backend/bun/guides/bun-production-patterns-guide_id.md) |
 | [Bun SQLite and Database Operations Cheatsheet](backend/bun/cheatsheets/bun-sqlite-database-cheatsheet.md) | Cheatsheet | Intermediate | [EN](backend/bun/cheatsheets/bun-sqlite-database-cheatsheet.md) \| [ID](backend/bun/cheatsheets/bun-sqlite-database-cheatsheet_id.md) |
+| [Bun Test Runner and Testing Best Practices Guide](backend/bun/guides/bun-test-runner-and-testing-guide.md) | Guide | Advanced | [EN](backend/bun/guides/bun-test-runner-and-testing-guide.md) \| [ID](backend/bun/guides/bun-test-runner-and-testing-guide_id.md) |
 | [Getting Started with Bun](backend/bun/tutorials/getting-started-with-bun.md) | Tutorial | Beginner | [EN](backend/bun/tutorials/getting-started-with-bun.md) \| [ID](backend/bun/tutorials/getting-started-with-bun_id.md) |
 
 ### 📁 Frontend
