@@ -326,6 +326,7 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 
 | Topik | Format | Kesulitan | Bahasa Tersedia |
 | :--- | :--- | :--- | :--- |
+| [Silabus Lanjutan Platform Engineering dan Internals Cluster Kubernetes](devops/kubernetes/syllabi/advanced-kubernetes-syllabus.md) | Syllabus | Advanced | [EN](devops/kubernetes/syllabi/advanced-kubernetes-syllabus.md) \| [ID](devops/kubernetes/syllabi/advanced-kubernetes-syllabus_id.md) |
 | [Memulai dengan Kubernetes](devops/kubernetes/tutorials/getting-started-with-kubernetes.md) | Tutorial | Intermediate | [EN](devops/kubernetes/tutorials/getting-started-with-kubernetes.md) \| [ID](devops/kubernetes/tutorials/getting-started-with-kubernetes_id.md) |
 | [Cheat Sheet Kubernetes](devops/kubernetes/cheatsheets/kubernetes-cheatsheet.md) | Cheatsheet | Beginner | [EN](devops/kubernetes/cheatsheets/kubernetes-cheatsheet.md) \| [ID](devops/kubernetes/cheatsheets/kubernetes-cheatsheet_id.md) |
 | [Silabus DevOps Kubernetes](devops/kubernetes/syllabi/kubernetes-devops-syllabus.md) | Syllabus | Intermediate | [EN](devops/kubernetes/syllabi/kubernetes-devops-syllabus.md) \| [ID](devops/kubernetes/syllabi/kubernetes-devops-syllabus_id.md) |

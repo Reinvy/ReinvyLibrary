@@ -326,6 +326,7 @@ Below is the dynamically updated list of all materials available in the library:
 
 | Topic | Format | Difficulty | Available Languages |
 | :--- | :--- | :--- | :--- |
+| [Advanced Kubernetes Platform Engineering and Cluster Internals Syllabus](devops/kubernetes/syllabi/advanced-kubernetes-syllabus.md) | Syllabus | Advanced | [EN](devops/kubernetes/syllabi/advanced-kubernetes-syllabus.md) \| [ID](devops/kubernetes/syllabi/advanced-kubernetes-syllabus_id.md) |
 | [Getting Started with Kubernetes](devops/kubernetes/tutorials/getting-started-with-kubernetes.md) | Tutorial | Intermediate | [EN](devops/kubernetes/tutorials/getting-started-with-kubernetes.md) \| [ID](devops/kubernetes/tutorials/getting-started-with-kubernetes_id.md) |
 | [Kubernetes Cheat Sheet](devops/kubernetes/cheatsheets/kubernetes-cheatsheet.md) | Cheatsheet | Beginner | [EN](devops/kubernetes/cheatsheets/kubernetes-cheatsheet.md) \| [ID](devops/kubernetes/cheatsheets/kubernetes-cheatsheet_id.md) |
 | [Kubernetes DevOps Syllabus](devops/kubernetes/syllabi/kubernetes-devops-syllabus.md) | Syllabus | Intermediate | [EN](devops/kubernetes/syllabi/kubernetes-devops-syllabus.md) \| [ID](devops/kubernetes/syllabi/kubernetes-devops-syllabus_id.md) |
