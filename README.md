@@ -181,6 +181,7 @@ Below is the dynamically updated list of all materials available in the library:
 
 | Topic | Format | Difficulty | Available Languages |
 | :--- | :--- | :--- | :--- |
+| [Advanced Next.js Production Architecture and Performance Syllabus](frontend/nextjs/syllabi/advanced-nextjs-syllabus.md) | Syllabus | Advanced | [EN](frontend/nextjs/syllabi/advanced-nextjs-syllabus.md) \| [ID](frontend/nextjs/syllabi/advanced-nextjs-syllabus_id.md) |
 | [Building a Full-Stack Blog with Next.js App Router](frontend/nextjs/tutorials/building-a-full-stack-blog-with-nextjs-app-router.md) | Tutorial | Intermediate | [EN](frontend/nextjs/tutorials/building-a-full-stack-blog-with-nextjs-app-router.md) \| [ID](frontend/nextjs/tutorials/building-a-full-stack-blog-with-nextjs-app-router_id.md) |
 | [Building an E-commerce Store with Next.js](frontend/nextjs/tutorials/building-ecommerce-store-with-nextjs.md) | Tutorial | Advanced | [EN](frontend/nextjs/tutorials/building-ecommerce-store-with-nextjs.md) \| [ID](frontend/nextjs/tutorials/building-ecommerce-store-with-nextjs_id.md) |
 | [Building a Personal Finance Dashboard with Next.js](frontend/nextjs/tutorials/building-personal-finance-dashboard-nextjs.md) | Tutorial | Intermediate | [EN](frontend/nextjs/tutorials/building-personal-finance-dashboard-nextjs.md) \| [ID](frontend/nextjs/tutorials/building-personal-finance-dashboard-nextjs_id.md) |
