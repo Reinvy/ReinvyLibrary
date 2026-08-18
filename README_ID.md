@@ -181,6 +181,7 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 
 | Topik | Format | Kesulitan | Bahasa Tersedia |
 | :--- | :--- | :--- | :--- |
+| [Silabus Arsitektur Produksi dan Performa Next.js Tingkat Lanjut](frontend/nextjs/syllabi/advanced-nextjs-syllabus.md) | Syllabus | Advanced | [EN](frontend/nextjs/syllabi/advanced-nextjs-syllabus.md) \| [ID](frontend/nextjs/syllabi/advanced-nextjs-syllabus_id.md) |
 | [Membangun Blog Full-Stack dengan Next.js App Router](frontend/nextjs/tutorials/building-a-full-stack-blog-with-nextjs-app-router.md) | Tutorial | Intermediate | [EN](frontend/nextjs/tutorials/building-a-full-stack-blog-with-nextjs-app-router.md) \| [ID](frontend/nextjs/tutorials/building-a-full-stack-blog-with-nextjs-app-router_id.md) |
 | [Membangun Toko E-commerce dengan Next.js](frontend/nextjs/tutorials/building-ecommerce-store-with-nextjs.md) | Tutorial | Advanced | [EN](frontend/nextjs/tutorials/building-ecommerce-store-with-nextjs.md) \| [ID](frontend/nextjs/tutorials/building-ecommerce-store-with-nextjs_id.md) |
 | [Membangun Dashboard Keuangan Pribadi dengan Next.js](frontend/nextjs/tutorials/building-personal-finance-dashboard-nextjs.md) | Tutorial | Intermediate | [EN](frontend/nextjs/tutorials/building-personal-finance-dashboard-nextjs.md) \| [ID](frontend/nextjs/tutorials/building-personal-finance-dashboard-nextjs_id.md) |
