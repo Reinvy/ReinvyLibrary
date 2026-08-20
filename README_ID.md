@@ -223,6 +223,7 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 
 | Topik | Format | Kesulitan | Bahasa Tersedia |
 | :--- | :--- | :--- | :--- |
+| [Silabus Tailwind CSS Lanjutan](frontend/tailwindcss/syllabi/advanced-tailwindcss-syllabus.md) | Syllabus | Advanced | [EN](frontend/tailwindcss/syllabi/advanced-tailwindcss-syllabus.md) \| [ID](frontend/tailwindcss/syllabi/advanced-tailwindcss-syllabus_id.md) |
 | [Membangun Dashboard UI dengan Tailwind CSS](frontend/tailwindcss/tutorials/building-dashboard-ui-with-tailwind-css.md) | Tutorial | Intermediate | [EN](frontend/tailwindcss/tutorials/building-dashboard-ui-with-tailwind-css.md) \| [ID](frontend/tailwindcss/tutorials/building-dashboard-ui-with-tailwind-css_id.md) |
 | [Membangun Landing Page Responsif dengan Tailwind CSS](frontend/tailwindcss/tutorials/building-responsive-landing-page-with-tailwind-css.md) | Tutorial | Beginner | [EN](frontend/tailwindcss/tutorials/building-responsive-landing-page-with-tailwind-css.md) \| [ID](frontend/tailwindcss/tutorials/building-responsive-landing-page-with-tailwind-css_id.md) |
 | [Memulai dengan Tailwind CSS](frontend/tailwindcss/tutorials/getting-started-with-tailwind-css.md) | Tutorial | Beginner | [EN](frontend/tailwindcss/tutorials/getting-started-with-tailwind-css.md) \| [ID](frontend/tailwindcss/tutorials/getting-started-with-tailwind-css_id.md) |
