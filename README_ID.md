@@ -152,6 +152,7 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 
 | Topik | Format | Kesulitan | Bahasa Tersedia |
 | :--- | :--- | :--- | :--- |
+| [Silabus Arsitektur NestJS Lanjutan dan Rekayasa Produksi](backend/nestjs/syllabi/advanced-nestjs-syllabus.md) | Syllabus | Advanced | [EN](backend/nestjs/syllabi/advanced-nestjs-syllabus.md) \| [ID](backend/nestjs/syllabi/advanced-nestjs-syllabus_id.md) |
 | [Membangun API GraphQL dengan NestJS](backend/nestjs/tutorials/building-graphql-api-with-nestjs.md) | Tutorial | Intermediate | [EN](backend/nestjs/tutorials/building-graphql-api-with-nestjs.md) \| [ID](backend/nestjs/tutorials/building-graphql-api-with-nestjs_id.md) |
 | [Membangun API Chat Real-Time dengan NestJS dan WebSocket Gateway](backend/nestjs/tutorials/building-real-time-chat-api-with-nestjs-websocket.md) | Tutorial | Intermediate | [EN](backend/nestjs/tutorials/building-real-time-chat-api-with-nestjs-websocket.md) \| [ID](backend/nestjs/tutorials/building-real-time-chat-api-with-nestjs-websocket_id.md) |
 | [Memulai dengan NestJS](backend/nestjs/tutorials/getting-started-with-nestjs.md) | Tutorial | Intermediate | [EN](backend/nestjs/tutorials/getting-started-with-nestjs.md) \| [ID](backend/nestjs/tutorials/getting-started-with-nestjs_id.md) |

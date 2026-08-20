@@ -152,6 +152,7 @@ Below is the dynamically updated list of all materials available in the library:
 
 | Topic | Format | Difficulty | Available Languages |
 | :--- | :--- | :--- | :--- |
+| [Advanced NestJS Architecture and Production Engineering Syllabus](backend/nestjs/syllabi/advanced-nestjs-syllabus.md) | Syllabus | Advanced | [EN](backend/nestjs/syllabi/advanced-nestjs-syllabus.md) \| [ID](backend/nestjs/syllabi/advanced-nestjs-syllabus_id.md) |
 | [Building a GraphQL API with NestJS](backend/nestjs/tutorials/building-graphql-api-with-nestjs.md) | Tutorial | Intermediate | [EN](backend/nestjs/tutorials/building-graphql-api-with-nestjs.md) \| [ID](backend/nestjs/tutorials/building-graphql-api-with-nestjs_id.md) |
 | [Building a Real-Time Chat API with NestJS and WebSocket Gateway](backend/nestjs/tutorials/building-real-time-chat-api-with-nestjs-websocket.md) | Tutorial | Intermediate | [EN](backend/nestjs/tutorials/building-real-time-chat-api-with-nestjs-websocket.md) \| [ID](backend/nestjs/tutorials/building-real-time-chat-api-with-nestjs-websocket_id.md) |
 | [Getting Started with NestJS](backend/nestjs/tutorials/getting-started-with-nestjs.md) | Tutorial | Intermediate | [EN](backend/nestjs/tutorials/getting-started-with-nestjs.md) \| [ID](backend/nestjs/tutorials/getting-started-with-nestjs_id.md) |
