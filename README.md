@@ -223,6 +223,7 @@ Below is the dynamically updated list of all materials available in the library:
 
 | Topic | Format | Difficulty | Available Languages |
 | :--- | :--- | :--- | :--- |
+| [Advanced Tailwind CSS Syllabus](frontend/tailwindcss/syllabi/advanced-tailwindcss-syllabus.md) | Syllabus | Advanced | [EN](frontend/tailwindcss/syllabi/advanced-tailwindcss-syllabus.md) \| [ID](frontend/tailwindcss/syllabi/advanced-tailwindcss-syllabus_id.md) |
 | [Building a Dashboard UI with Tailwind CSS](frontend/tailwindcss/tutorials/building-dashboard-ui-with-tailwind-css.md) | Tutorial | Intermediate | [EN](frontend/tailwindcss/tutorials/building-dashboard-ui-with-tailwind-css.md) \| [ID](frontend/tailwindcss/tutorials/building-dashboard-ui-with-tailwind-css_id.md) |
 | [Building a Responsive Landing Page with Tailwind CSS](frontend/tailwindcss/tutorials/building-responsive-landing-page-with-tailwind-css.md) | Tutorial | Beginner | [EN](frontend/tailwindcss/tutorials/building-responsive-landing-page-with-tailwind-css.md) \| [ID](frontend/tailwindcss/tutorials/building-responsive-landing-page-with-tailwind-css_id.md) |
 | [Getting Started with Tailwind CSS](frontend/tailwindcss/tutorials/getting-started-with-tailwind-css.md) | Tutorial | Beginner | [EN](frontend/tailwindcss/tutorials/getting-started-with-tailwind-css.md) \| [ID](frontend/tailwindcss/tutorials/getting-started-with-tailwind-css_id.md) |
