@@ -139,6 +139,7 @@ Below is the dynamically updated list of all materials available in the library:
 
 | Topic | Format | Difficulty | Available Languages |
 | :--- | :--- | :--- | :--- |
+| [Advanced Laravel Architecture and Production Engineering Syllabus](backend/laravel/syllabi/advanced-laravel-syllabus.md) | Syllabus | Advanced | [EN](backend/laravel/syllabi/advanced-laravel-syllabus.md) \| [ID](backend/laravel/syllabi/advanced-laravel-syllabus_id.md) |
 | [Building a Real-Time Chat Application with Laravel Reverb](backend/laravel/tutorials/building-real-time-chat-with-laravel-reverb.md) | Tutorial | Advanced | [EN](backend/laravel/tutorials/building-real-time-chat-with-laravel-reverb.md) \| [ID](backend/laravel/tutorials/building-real-time-chat-with-laravel-reverb_id.md) |
 | [Laravel Best Practices Guide](backend/laravel/guides/laravel-best-practices-guide.md) | Guide | Intermediate | [EN](backend/laravel/guides/laravel-best-practices-guide.md) \| [ID](backend/laravel/guides/laravel-best-practices-guide_id.md) |
 | [Laravel Cheat Sheet](backend/laravel/cheatsheets/laravel-cheatsheet.md) | Cheatsheet | Beginner | [EN](backend/laravel/cheatsheets/laravel-cheatsheet.md) \| [ID](backend/laravel/cheatsheets/laravel-cheatsheet_id.md) |
