@@ -119,6 +119,7 @@ Below is the dynamically updated list of all materials available in the library:
 | [Elysia.js Database Integration Cheatsheet](backend/elysiajs/cheatsheets/elysiajs-database-integration-cheatsheet.md) | Cheatsheet | Intermediate | [EN](backend/elysiajs/cheatsheets/elysiajs-database-integration-cheatsheet.md) \| [ID](backend/elysiajs/cheatsheets/elysiajs-database-integration-cheatsheet_id.md) |
 | [Elysia.js Production Patterns Guide](backend/elysiajs/guides/elysiajs-production-patterns-guide.md) | Guide | Intermediate | [EN](backend/elysiajs/guides/elysiajs-production-patterns-guide.md) \| [ID](backend/elysiajs/guides/elysiajs-production-patterns-guide_id.md) |
 | [Elysia.js Real-Time Applications with WebSocket and SSE Guide](backend/elysiajs/guides/elysiajs-realtime-websocket-guide.md) | Guide | Intermediate | [EN](backend/elysiajs/guides/elysiajs-realtime-websocket-guide.md) \| [ID](backend/elysiajs/guides/elysiajs-realtime-websocket-guide_id.md) |
+| [Elysia.js Security Hardening Guide](backend/elysiajs/guides/elysiajs-security-hardening-guide.md) | Guide | Advanced | [EN](backend/elysiajs/guides/elysiajs-security-hardening-guide.md) \| [ID](backend/elysiajs/guides/elysiajs-security-hardening-guide_id.md) |
 | [Elysia.js Web Development Syllabus](backend/elysiajs/syllabi/elysiajs-web-development-syllabus.md) | Syllabus | Intermediate | [EN](backend/elysiajs/syllabi/elysiajs-web-development-syllabus.md) \| [ID](backend/elysiajs/syllabi/elysiajs-web-development-syllabus_id.md) |
 
 #### 🏷️ Golang

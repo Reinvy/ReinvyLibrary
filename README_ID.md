@@ -119,6 +119,7 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 | [Cheat Sheet Integrasi Database Elysia.js](backend/elysiajs/cheatsheets/elysiajs-database-integration-cheatsheet.md) | Cheatsheet | Intermediate | [EN](backend/elysiajs/cheatsheets/elysiajs-database-integration-cheatsheet.md) \| [ID](backend/elysiajs/cheatsheets/elysiajs-database-integration-cheatsheet_id.md) |
 | [Panduan Pola Produksi Elysia.js](backend/elysiajs/guides/elysiajs-production-patterns-guide.md) | Guide | Intermediate | [EN](backend/elysiajs/guides/elysiajs-production-patterns-guide.md) \| [ID](backend/elysiajs/guides/elysiajs-production-patterns-guide_id.md) |
 | [Panduan Aplikasi Real-Time dengan WebSocket dan SSE di Elysia.js](backend/elysiajs/guides/elysiajs-realtime-websocket-guide.md) | Guide | Intermediate | [EN](backend/elysiajs/guides/elysiajs-realtime-websocket-guide.md) \| [ID](backend/elysiajs/guides/elysiajs-realtime-websocket-guide_id.md) |
+| [Panduan Pengamanan Elysia.js](backend/elysiajs/guides/elysiajs-security-hardening-guide.md) | Guide | Advanced | [EN](backend/elysiajs/guides/elysiajs-security-hardening-guide.md) \| [ID](backend/elysiajs/guides/elysiajs-security-hardening-guide_id.md) |
 | [Silabus Pengembangan Web Elysia.js](backend/elysiajs/syllabi/elysiajs-web-development-syllabus.md) | Syllabus | Intermediate | [EN](backend/elysiajs/syllabi/elysiajs-web-development-syllabus.md) \| [ID](backend/elysiajs/syllabi/elysiajs-web-development-syllabus_id.md) |
 
 #### 🏷️ Golang
