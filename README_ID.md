@@ -283,6 +283,7 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 | [Panduan Praktik Terbaik Swift iOS](mobile/swift/guides/swift-ios-best-practices-guide.md) | Guide | Advanced | [EN](mobile/swift/guides/swift-ios-best-practices-guide.md) \| [ID](mobile/swift/guides/swift-ios-best-practices-guide_id.md) |
 | [Panduan Keamanan dan Perlindungan Data iOS dengan Swift](mobile/swift/guides/swift-ios-security-data-protection-guide.md) | Guide | Advanced | [EN](mobile/swift/guides/swift-ios-security-data-protection-guide.md) \| [ID](mobile/swift/guides/swift-ios-security-data-protection-guide_id.md) |
 | [Cheat Sheet Manajemen Memori dan ARC Swift](mobile/swift/cheatsheets/swift-memory-management-arc-cheatsheet.md) | Cheatsheet | Advanced | [EN](mobile/swift/cheatsheets/swift-memory-management-arc-cheatsheet.md) \| [ID](mobile/swift/cheatsheets/swift-memory-management-arc-cheatsheet_id.md) |
+| [Silabus Pengujian dan Rekayasa Kualitas Swift](mobile/swift/syllabi/swift-quality-engineering-syllabus.md) | Syllabus | Advanced | [EN](mobile/swift/syllabi/swift-quality-engineering-syllabus.md) \| [ID](mobile/swift/syllabi/swift-quality-engineering-syllabus_id.md) |
 | [Cheat Sheet Komponen dan Pola SwiftUI](mobile/swift/cheatsheets/swiftui-components-cheatsheet.md) | Cheatsheet | Intermediate | [EN](mobile/swift/cheatsheets/swiftui-components-cheatsheet.md) \| [ID](mobile/swift/cheatsheets/swiftui-components-cheatsheet_id.md) |
 
 #### 🏷️ Kotlin
