@@ -212,6 +212,7 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 
 | Topik | Format | Kesulitan | Bahasa Tersedia |
 | :--- | :--- | :--- | :--- |
+| [Membangun Toko E-Commerce dengan Vue 3 dan Pinia](frontend/vuejs/tutorials/building-ecommerce-storefront-vuejs-pinia.md) | Tutorial | Advanced | [EN](frontend/vuejs/tutorials/building-ecommerce-storefront-vuejs-pinia.md) \| [ID](frontend/vuejs/tutorials/building-ecommerce-storefront-vuejs-pinia_id.md) |
 | [Membangun Aplikasi Web dengan Vue.js 3](frontend/vuejs/tutorials/building-web-apps-with-vuejs.md) | Tutorial | Intermediate | [EN](frontend/vuejs/tutorials/building-web-apps-with-vuejs.md) \| [ID](frontend/vuejs/tutorials/building-web-apps-with-vuejs_id.md) |
 | [Membangun Dashboard Real-Time dengan Vue.js dan WebSocket](frontend/vuejs/tutorials/real-time-dashboard-with-vuejs-websocket.md) | Tutorial | Advanced | [EN](frontend/vuejs/tutorials/real-time-dashboard-with-vuejs-websocket.md) \| [ID](frontend/vuejs/tutorials/real-time-dashboard-with-vuejs-websocket_id.md) |
 | [Cheat Sheet Animasi dan Transisi Vue.js](frontend/vuejs/cheatsheets/vuejs-animations-transitions-cheatsheet.md) | Cheatsheet | Intermediate | [EN](frontend/vuejs/cheatsheets/vuejs-animations-transitions-cheatsheet.md) \| [ID](frontend/vuejs/cheatsheets/vuejs-animations-transitions-cheatsheet_id.md) |
