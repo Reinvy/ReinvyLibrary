@@ -212,6 +212,7 @@ Below is the dynamically updated list of all materials available in the library:
 
 | Topic | Format | Difficulty | Available Languages |
 | :--- | :--- | :--- | :--- |
+| [Building an E-Commerce Storefront with Vue 3 and Pinia](frontend/vuejs/tutorials/building-ecommerce-storefront-vuejs-pinia.md) | Tutorial | Advanced | [EN](frontend/vuejs/tutorials/building-ecommerce-storefront-vuejs-pinia.md) \| [ID](frontend/vuejs/tutorials/building-ecommerce-storefront-vuejs-pinia_id.md) |
 | [Building Web Apps with Vue.js 3](frontend/vuejs/tutorials/building-web-apps-with-vuejs.md) | Tutorial | Intermediate | [EN](frontend/vuejs/tutorials/building-web-apps-with-vuejs.md) \| [ID](frontend/vuejs/tutorials/building-web-apps-with-vuejs_id.md) |
 | [Building a Real-Time Dashboard with Vue.js and WebSocket](frontend/vuejs/tutorials/real-time-dashboard-with-vuejs-websocket.md) | Tutorial | Advanced | [EN](frontend/vuejs/tutorials/real-time-dashboard-with-vuejs-websocket.md) \| [ID](frontend/vuejs/tutorials/real-time-dashboard-with-vuejs-websocket_id.md) |
 | [Vue.js Animations and Transitions Cheatsheet](frontend/vuejs/cheatsheets/vuejs-animations-transitions-cheatsheet.md) | Cheatsheet | Intermediate | [EN](frontend/vuejs/cheatsheets/vuejs-animations-transitions-cheatsheet.md) \| [ID](frontend/vuejs/cheatsheets/vuejs-animations-transitions-cheatsheet_id.md) |
