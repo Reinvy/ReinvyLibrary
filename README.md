@@ -416,6 +416,7 @@ Below is the dynamically updated list of all materials available in the library:
 | [PostgreSQL Security Hardening Guide](database/postgres/guides/postgresql-security-hardening-guide.md) | Guide | Advanced | [EN](database/postgres/guides/postgresql-security-hardening-guide.md) \| [ID](database/postgres/guides/postgresql-security-hardening-guide_id.md) |
 | [PostgreSQL Syllabus](database/postgres/syllabi/postgresql-syllabus.md) | Syllabus | Beginner | [EN](database/postgres/syllabi/postgresql-syllabus.md) \| [ID](database/postgres/syllabi/postgresql-syllabus_id.md) |
 | [PostgreSQL Table Partitioning and Data Lifecycle Management](database/postgres/tutorials/postgresql-table-partitioning-and-lifecycle-management.md) | Tutorial | Advanced | [EN](database/postgres/tutorials/postgresql-table-partitioning-and-lifecycle-management.md) \| [ID](database/postgres/tutorials/postgresql-table-partitioning-and-lifecycle-management_id.md) |
+| [PostgreSQL Time-Series Analytics Syllabus](database/postgres/syllabi/postgresql-time-series-analytics-syllabus.md) | Syllabus | Advanced | [EN](database/postgres/syllabi/postgresql-time-series-analytics-syllabus.md) \| [ID](database/postgres/syllabi/postgresql-time-series-analytics-syllabus_id.md) |
 <!-- INDEX_END -->
 
 ---
