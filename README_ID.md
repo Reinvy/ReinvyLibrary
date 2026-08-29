@@ -322,6 +322,7 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 | [Tutorial Logging dan Monitoring Docker](devops/docker/tutorials/docker-logging-and-monitoring-tutorial.md) | Tutorial | Intermediate | [EN](devops/docker/tutorials/docker-logging-and-monitoring-tutorial.md) \| [ID](devops/docker/tutorials/docker-logging-and-monitoring-tutorial_id.md) |
 | [Build Multi-Arsitektur Docker dengan Buildx](devops/docker/tutorials/docker-multi-architecture-builds.md) | Tutorial | Intermediate | [EN](devops/docker/tutorials/docker-multi-architecture-builds.md) \| [ID](devops/docker/tutorials/docker-multi-architecture-builds_id.md) |
 | [Manajemen Rahasia Docker dan Praktik Keamanan Terbaik](devops/docker/tutorials/docker-secrets-management-and-security.md) | Tutorial | Intermediate | [EN](devops/docker/tutorials/docker-secrets-management-and-security.md) \| [ID](devops/docker/tutorials/docker-secrets-management-and-security_id.md) |
+| [Panduan Penyimpanan dan Volume Docker](devops/docker/guides/docker-storage-and-volumes-guide.md) | Guide | Intermediate | [EN](devops/docker/guides/docker-storage-and-volumes-guide.md) \| [ID](devops/docker/guides/docker-storage-and-volumes-guide_id.md) |
 | [Membuat Aplikasi Full-Stack dengan Docker](devops/docker/tutorials/dockerizing-a-full-stack-application.md) | Tutorial | Intermediate | [EN](devops/docker/tutorials/dockerizing-a-full-stack-application.md) \| [ID](devops/docker/tutorials/dockerizing-a-full-stack-application_id.md) |
 
 #### 🏷️ Pm2
