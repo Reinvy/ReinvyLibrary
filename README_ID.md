@@ -163,6 +163,7 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 | [Cheat Sheet NestJS](backend/nestjs/cheatsheets/nestjs-cheatsheet.md) | Cheatsheet | Intermediate | [EN](backend/nestjs/cheatsheets/nestjs-cheatsheet.md) \| [ID](backend/nestjs/cheatsheets/nestjs-cheatsheet_id.md) |
 | [Silabus Pengembangan NestJS](backend/nestjs/syllabi/nestjs-development-syllabus.md) | Syllabus | Intermediate | [EN](backend/nestjs/syllabi/nestjs-development-syllabus.md) \| [ID](backend/nestjs/syllabi/nestjs-development-syllabus_id.md) |
 | [Panduan Mikroservis NestJS](backend/nestjs/guides/nestjs-microservices-guide.md) | Guide | Advanced | [EN](backend/nestjs/guides/nestjs-microservices-guide.md) \| [ID](backend/nestjs/guides/nestjs-microservices-guide_id.md) |
+| [Panduan Penguatan Keamanan NestJS](backend/nestjs/guides/nestjs-security-hardening-guide.md) | Guide | Advanced | [EN](backend/nestjs/guides/nestjs-security-hardening-guide.md) \| [ID](backend/nestjs/guides/nestjs-security-hardening-guide_id.md) |
 | [Cheatsheet Pengujian NestJS](backend/nestjs/cheatsheets/nestjs-testing-cheatsheet.md) | Cheatsheet | Advanced | [EN](backend/nestjs/cheatsheets/nestjs-testing-cheatsheet.md) \| [ID](backend/nestjs/cheatsheets/nestjs-testing-cheatsheet_id.md) |
 
 #### 🏷️ Bun
