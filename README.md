@@ -431,6 +431,7 @@ Below is the dynamically updated list of all materials available in the library:
 | [PostgreSQL Syllabus](database/postgres/syllabi/postgresql-syllabus.md) | Syllabus | Beginner | [EN](database/postgres/syllabi/postgresql-syllabus.md) \| [ID](database/postgres/syllabi/postgresql-syllabus_id.md) |
 | [PostgreSQL Table Partitioning and Data Lifecycle Management](database/postgres/tutorials/postgresql-table-partitioning-and-lifecycle-management.md) | Tutorial | Advanced | [EN](database/postgres/tutorials/postgresql-table-partitioning-and-lifecycle-management.md) \| [ID](database/postgres/tutorials/postgresql-table-partitioning-and-lifecycle-management_id.md) |
 | [PostgreSQL Time-Series Analytics Syllabus](database/postgres/syllabi/postgresql-time-series-analytics-syllabus.md) | Syllabus | Advanced | [EN](database/postgres/syllabi/postgresql-time-series-analytics-syllabus.md) \| [ID](database/postgres/syllabi/postgresql-time-series-analytics-syllabus_id.md) |
+| [PostgreSQL Transactions and Concurrency Control Cheatsheet](database/postgres/cheatsheets/postgresql-transactions-concurrency-cheatsheet.md) | Cheatsheet | Advanced | [EN](database/postgres/cheatsheets/postgresql-transactions-concurrency-cheatsheet.md) \| [ID](database/postgres/cheatsheets/postgresql-transactions-concurrency-cheatsheet_id.md) |
 <!-- INDEX_END -->
 
 ---

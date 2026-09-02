@@ -431,6 +431,7 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 | [Silabus PostgreSQL](database/postgres/syllabi/postgresql-syllabus.md) | Syllabus | Beginner | [EN](database/postgres/syllabi/postgresql-syllabus.md) \| [ID](database/postgres/syllabi/postgresql-syllabus_id.md) |
 | [Partisi Tabel PostgreSQL dan Manajemen Siklus Hidup Data](database/postgres/tutorials/postgresql-table-partitioning-and-lifecycle-management.md) | Tutorial | Advanced | [EN](database/postgres/tutorials/postgresql-table-partitioning-and-lifecycle-management.md) \| [ID](database/postgres/tutorials/postgresql-table-partitioning-and-lifecycle-management_id.md) |
 | [Silabus Analitik Time-Series PostgreSQL](database/postgres/syllabi/postgresql-time-series-analytics-syllabus.md) | Syllabus | Advanced | [EN](database/postgres/syllabi/postgresql-time-series-analytics-syllabus.md) \| [ID](database/postgres/syllabi/postgresql-time-series-analytics-syllabus_id.md) |
+| [Cheatsheet Transaksi dan Kontrol Konkurensi PostgreSQL](database/postgres/cheatsheets/postgresql-transactions-concurrency-cheatsheet.md) | Cheatsheet | Advanced | [EN](database/postgres/cheatsheets/postgresql-transactions-concurrency-cheatsheet.md) \| [ID](database/postgres/cheatsheets/postgresql-transactions-concurrency-cheatsheet_id.md) |
 <!-- INDEX_END -->
 
 ---
