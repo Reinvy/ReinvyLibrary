@@ -345,6 +345,7 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 | [Panduan Siklus Hidup Proses dan Operasi Zero-Downtime dengan PM2](devops/pm2/guides/pm2-process-lifecycle-guide.md) | Guide | Advanced | [EN](devops/pm2/guides/pm2-process-lifecycle-guide.md) \| [ID](devops/pm2/guides/pm2-process-lifecycle-guide_id.md) |
 | [Silabus Manajemen Proses PM2](devops/pm2/syllabi/pm2-process-management-syllabus.md) | Syllabus | Intermediate | [EN](devops/pm2/syllabi/pm2-process-management-syllabus.md) \| [ID](devops/pm2/syllabi/pm2-process-management-syllabus_id.md) |
 | [Panduan Deployment Produksi dan Monitoring dengan PM2](devops/pm2/guides/pm2-production-deployment-guide.md) | Guide | Intermediate | [EN](devops/pm2/guides/pm2-production-deployment-guide.md) \| [ID](devops/pm2/guides/pm2-production-deployment-guide_id.md) |
+| [Cheat Sheet Pengamanan PM2](devops/pm2/cheatsheets/pm2-security-hardening-cheatsheet.md) | Cheatsheet | Advanced | [EN](devops/pm2/cheatsheets/pm2-security-hardening-cheatsheet.md) \| [ID](devops/pm2/cheatsheets/pm2-security-hardening-cheatsheet_id.md) |
 
 #### 🏷️ Kubernetes
 

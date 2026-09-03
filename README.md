@@ -345,6 +345,7 @@ Below is the dynamically updated list of all materials available in the library:
 | [PM2 Process Lifecycle and Zero-Downtime Operations Guide](devops/pm2/guides/pm2-process-lifecycle-guide.md) | Guide | Advanced | [EN](devops/pm2/guides/pm2-process-lifecycle-guide.md) \| [ID](devops/pm2/guides/pm2-process-lifecycle-guide_id.md) |
 | [PM2 Process Management Syllabus](devops/pm2/syllabi/pm2-process-management-syllabus.md) | Syllabus | Intermediate | [EN](devops/pm2/syllabi/pm2-process-management-syllabus.md) \| [ID](devops/pm2/syllabi/pm2-process-management-syllabus_id.md) |
 | [PM2 Production Deployment and Monitoring Guide](devops/pm2/guides/pm2-production-deployment-guide.md) | Guide | Intermediate | [EN](devops/pm2/guides/pm2-production-deployment-guide.md) \| [ID](devops/pm2/guides/pm2-production-deployment-guide_id.md) |
+| [PM2 Security Hardening Cheatsheet](devops/pm2/cheatsheets/pm2-security-hardening-cheatsheet.md) | Cheatsheet | Advanced | [EN](devops/pm2/cheatsheets/pm2-security-hardening-cheatsheet.md) \| [ID](devops/pm2/cheatsheets/pm2-security-hardening-cheatsheet_id.md) |
 
 #### 🏷️ Kubernetes
 
