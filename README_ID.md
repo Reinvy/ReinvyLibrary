@@ -150,6 +150,7 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 | [Cheat Sheet Eloquent ORM Lanjutan](backend/laravel/cheatsheets/laravel-eloquent-advanced-cheatsheet.md) | Cheatsheet | Advanced | [EN](backend/laravel/cheatsheets/laravel-eloquent-advanced-cheatsheet.md) \| [ID](backend/laravel/cheatsheets/laravel-eloquent-advanced-cheatsheet_id.md) |
 | [Panduan Pengembangan Paket Laravel](backend/laravel/guides/laravel-package-development-guide.md) | Guide | Advanced | [EN](backend/laravel/guides/laravel-package-development-guide.md) \| [ID](backend/laravel/guides/laravel-package-development-guide_id.md) |
 | [Tutorial Queue dan Pemrosesan Job Laravel](backend/laravel/tutorials/laravel-queue-job-processing-tutorial.md) | Tutorial | Advanced | [EN](backend/laravel/tutorials/laravel-queue-job-processing-tutorial.md) \| [ID](backend/laravel/tutorials/laravel-queue-job-processing-tutorial_id.md) |
+| [Cheat Sheet Penguatan Keamanan Laravel](backend/laravel/cheatsheets/laravel-security-hardening-cheatsheet.md) | Cheatsheet | Advanced | [EN](backend/laravel/cheatsheets/laravel-security-hardening-cheatsheet.md) \| [ID](backend/laravel/cheatsheets/laravel-security-hardening-cheatsheet_id.md) |
 
 #### 🏷️ Nestjs
 

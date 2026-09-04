@@ -150,6 +150,7 @@ Below is the dynamically updated list of all materials available in the library:
 | [Advanced Eloquent ORM Cheat Sheet](backend/laravel/cheatsheets/laravel-eloquent-advanced-cheatsheet.md) | Cheatsheet | Advanced | [EN](backend/laravel/cheatsheets/laravel-eloquent-advanced-cheatsheet.md) \| [ID](backend/laravel/cheatsheets/laravel-eloquent-advanced-cheatsheet_id.md) |
 | [Laravel Package Development Guide](backend/laravel/guides/laravel-package-development-guide.md) | Guide | Advanced | [EN](backend/laravel/guides/laravel-package-development-guide.md) \| [ID](backend/laravel/guides/laravel-package-development-guide_id.md) |
 | [Laravel Queue and Job Processing Tutorial](backend/laravel/tutorials/laravel-queue-job-processing-tutorial.md) | Tutorial | Advanced | [EN](backend/laravel/tutorials/laravel-queue-job-processing-tutorial.md) \| [ID](backend/laravel/tutorials/laravel-queue-job-processing-tutorial_id.md) |
+| [Laravel Security Hardening Cheatsheet](backend/laravel/cheatsheets/laravel-security-hardening-cheatsheet.md) | Cheatsheet | Advanced | [EN](backend/laravel/cheatsheets/laravel-security-hardening-cheatsheet.md) \| [ID](backend/laravel/cheatsheets/laravel-security-hardening-cheatsheet_id.md) |
 
 #### 🏷️ Nestjs
 
