@@ -151,7 +151,7 @@ export default function SearchBox({ docs, initialQuery = "", locale, dictionary,
               message={dictionary.noResultsMessage}
               action={
                 <a
-                  href={`/${locale}#categories`}
+                  href={`/${locale}/browse`}
                   className="inline-block rounded-full bg-terracotta px-5 py-2.5 font-hand text-sm text-card shadow-paper transition hover:-rotate-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta/60"
                 >
                   {browseLabel}

@@ -89,7 +89,7 @@ export default async function HomePage({
       </section>
 
       {/* Bento */}
-      <section id="categories" className="pb-16">
+      <section id="featured" className="pb-16">
         <h2 className="mb-6 font-display text-2xl font-bold text-ink">
           {dict.home.featured}
         </h2>

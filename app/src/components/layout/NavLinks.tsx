@@ -27,11 +27,10 @@ export default function NavLinks({ locale, labels }: NavLinksProps) {
     </Link>
   );
 
-  const browseActive = segment !== null && segment !== "search";
   return (
     <>
       {link(`/${locale}`, segment === null, labels.home)}
-      {link(`/${locale}#categories`, browseActive, labels.categories)}
+      {link(`/${locale}/browse`, segment === "browse", labels.categories)}
       {link(`/${locale}/search`, segment === "search", labels.search)}
     </>
   );

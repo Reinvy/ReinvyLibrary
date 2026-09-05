@@ -67,6 +67,7 @@ export interface Dictionary {
   };
   footer: { syncedFrom: string; builtWith: string; lastSync: string };
   category: { count: string; emptyTitle: string; emptyMessage: string };
+  browse: { title: string; subtitle: string };
 }
 
 export const dictionaries: Record<Locale, Dictionary> = {
@@ -147,6 +148,10 @@ export const dictionaries: Record<Locale, Dictionary> = {
       emptyTitle: "Nothing here yet",
       emptyMessage: "This shelf is still being stocked. Check back soon!",
     },
+    browse: {
+      title: "Browse the library",
+      subtitle: "Pick a shelf — every category lists its topics and technologies.",
+    },
   },
   id: {
     nav: { home: "Beranda", categories: "Jelajahi", search: "Cari", source: "Sumber" },
@@ -224,6 +229,10 @@ export const dictionaries: Record<Locale, Dictionary> = {
       count: "topik",
       emptyTitle: "Belum ada apa-apa",
       emptyMessage: "Rak ini masih diisi. Kembalilah lagi nanti!",
+    },
+    browse: {
+      title: "Jelajahi perpustakaan",
+      subtitle: "Pilih rak — setiap kategori menampilkan topik dan teknologinya.",
     },
   },
 };
