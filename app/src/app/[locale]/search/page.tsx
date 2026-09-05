@@ -59,6 +59,10 @@ export default async function SearchPage({
             noResultsTitle: dict.search.noResultsTitle,
             noResultsMessage: dict.search.noResultsMessage,
             popularTags: dict.search.popularTags,
+            browseByCategory: dict.search.browseByCategory,
+            popularTech: dict.search.popularTech,
+            indexedTopics: dict.search.indexedTopics,
+            tryInstead: dict.search.tryInstead,
           }}
           browseLabel={dict.common.browseCategory}
         />
@@ -82,6 +86,10 @@ async function SearchLoader({
     noResultsTitle: string;
     noResultsMessage: string;
     popularTags: string;
+    browseByCategory: string;
+    popularTech: string;
+    indexedTopics: string;
+    tryInstead: string;
   };
   browseLabel: string;
 }) {

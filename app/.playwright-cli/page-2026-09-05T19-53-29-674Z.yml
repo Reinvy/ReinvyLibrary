@@ -1,0 +1,94 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e4]:
+        - link "R ReinvyLibrary" [ref=e5] [cursor=pointer]:
+          - /url: /en
+          - generic [ref=e6]: R
+          - generic [ref=e7]: ReinvyLibrary
+        - navigation "Main" [ref=e8]:
+          - link "Home" [ref=e9] [cursor=pointer]:
+            - /url: /en
+          - link "Browse" [ref=e10] [cursor=pointer]:
+            - /url: /en/browse
+          - link "Search" [ref=e11] [cursor=pointer]:
+            - /url: /en/search
+          - link "Source" [ref=e12] [cursor=pointer]:
+            - /url: https://github.com/Reinvy/ReinvyLibrary
+    - main [ref=e13]:
+      - generic [ref=e14]:
+        - heading "Search" [level=1] [ref=e15]
+        - paragraph [ref=e16]: Curated tutorials, cheatsheets, guides & syllabi — written with care, in English and Bahasa Indonesia.
+        - generic [ref=e17]:
+          - search [ref=e18]:
+            - combobox "Search everything…" [ref=e19]
+          - generic [ref=e20]:
+            - generic [ref=e21]:
+              - paragraph [ref=e22]: Popular right now
+              - generic [ref=e23]:
+                - button "intermediate" [ref=e24]
+                - button "advanced" [ref=e25]
+                - button "tutorial" [ref=e26]
+                - button "backend" [ref=e27]
+                - button "guide" [ref=e28]
+                - button "cheatsheet" [ref=e29]
+            - generic [ref=e30]:
+              - paragraph [ref=e31]: Browse by category
+              - generic [ref=e33]:
+                - link "Backend · 94" [ref=e34] [cursor=pointer]:
+                  - /url: /en/browse/backend
+                  - text: Backend
+                  - generic [ref=e35]: · 94
+                - link "Frontend · 50" [ref=e36] [cursor=pointer]:
+                  - /url: /en/browse/frontend
+                  - text: Frontend
+                  - generic [ref=e37]: · 50
+                - link "Mobile · 40" [ref=e38] [cursor=pointer]:
+                  - /url: /en/browse/mobile
+                  - text: Mobile
+                  - generic [ref=e39]: · 40
+                - link "DevOps · 43" [ref=e40] [cursor=pointer]:
+                  - /url: /en/browse/devops
+                  - text: DevOps
+                  - generic [ref=e41]: · 43
+                - link "Database · 41" [ref=e42] [cursor=pointer]:
+                  - /url: /en/browse/database
+                  - text: Database
+                  - generic [ref=e43]: · 41
+            - generic [ref=e44]:
+              - paragraph [ref=e45]: Popular technologies
+              - generic [ref=e46]:
+                - button "Express.js · 45" [ref=e47]:
+                  - text: Express.js
+                  - generic [ref=e48]: · 45
+                - button "Kotlin · 14" [ref=e49]:
+                  - text: Kotlin
+                  - generic [ref=e50]: · 14
+                - button "MongoDB · 14" [ref=e51]:
+                  - text: MongoDB
+                  - generic [ref=e52]: · 14
+                - button "PostgreSQL · 14" [ref=e53]:
+                  - text: PostgreSQL
+                  - generic [ref=e54]: · 14
+                - button "Flutter · 13" [ref=e55]:
+                  - text: Flutter
+                  - generic [ref=e56]: · 13
+                - button "Swift · 13" [ref=e57]:
+                  - text: Swift
+                  - generic [ref=e58]: · 13
+            - paragraph [ref=e59]: 268 topics indexed
+    - contentinfo [ref=e60]:
+      - generic [ref=e61]:
+        - paragraph [ref=e62]:
+          - text: Synced from
+          - link "Reinvy/ReinvyLibrary" [ref=e63] [cursor=pointer]:
+            - /url: https://github.com/Reinvy/ReinvyLibrary
+        - paragraph [ref=e64]: "Last sync: Sep 6, 2026"
+        - paragraph [ref=e65]: © 2026 ReinvyLibrary · Built with paper & love
+        - generic [ref=e66]:
+          - link "English" [ref=e67] [cursor=pointer]:
+            - /url: /en
+          - link "Bahasa Indonesia" [ref=e68] [cursor=pointer]:
+            - /url: /id
+    - generic [ref=e69]: English · 268 topics · Tutorial/Cheatsheet/Guide/Syllabus · Beginner/Intermediate/Advanced
+  - alert [ref=e70]

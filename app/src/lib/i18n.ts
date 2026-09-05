@@ -58,6 +58,10 @@ export interface Dictionary {
     noResultsTitle: string;
     noResultsMessage: string;
     popularTags: string;
+    browseByCategory: string;
+    popularTech: string;
+    indexedTopics: string;
+    tryInstead: string;
   };
   common: {
     beginner: string;
@@ -133,8 +137,12 @@ export const dictionaries: Record<Locale, Dictionary> = {
       placeholder: "Search everything…",
       results: "results",
       noResultsTitle: "Nothing found — yet!",
-      noResultsMessage: "Try a different keyword, or browse by category below.",
+      noResultsMessage: "Try a different keyword, pick a suggestion, or browse by category below.",
       popularTags: "Popular right now",
+      browseByCategory: "Browse by category",
+      popularTech: "Popular technologies",
+      indexedTopics: "topics indexed",
+      tryInstead: "Try instead",
     },
     common: {
       beginner: "Beginner",
@@ -221,8 +229,12 @@ export const dictionaries: Record<Locale, Dictionary> = {
       placeholder: "Cari semuanya…",
       results: "hasil",
       noResultsTitle: "Tidak ditemukan — belum!",
-      noResultsMessage: "Coba kata kunci lain, atau jelajahi kategori di bawah.",
+      noResultsMessage: "Coba kata kunci lain, pilih saran, atau jelajahi kategori di bawah.",
       popularTags: "Populer saat ini",
+      browseByCategory: "Jelajahi berdasarkan kategori",
+      popularTech: "Teknologi populer",
+      indexedTopics: "topik terindeks",
+      tryInstead: "Coba ini",
     },
     common: {
       beginner: "Pemula",

@@ -4,7 +4,7 @@ import { useDeferredValue, useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
 import FlexSearch from "flexsearch";
 import type { Locale, SearchDoc } from "@/lib/types";
-import { TYPE_DIR } from "@/lib/constants";
+import { CATEGORIES, CATEGORY_LABELS, TECHNOLOGY_LABELS, TYPE_DIR } from "@/lib/constants";
 import { topicUrl } from "@/lib/urls";
 import EmptyState from "@/components/ui/EmptyState";
 
@@ -23,11 +23,15 @@ interface SearchBoxProps {
     noResultsTitle: string;
     noResultsMessage: string;
     popularTags: string;
+    browseByCategory: string;
+    popularTech: string;
+    indexedTopics: string;
+    tryInstead: string;
   };
   browseLabel: string;
 }
 
-const POPULAR_TAGS = ["tutorial", "cheatsheet", "syllabus", "guide", "nextjs", "postgres"];
+const POPULAR_FALLBACK = ["tutorial", "cheatsheet", "syllabus", "guide", "nextjs", "postgres"];
 
 function buildIndex(docs: SearchDoc[]): FlexSearch.Index {
   const idx = new FlexSearch.Index({ tokenize: "forward", optimize: true, resolution: 9 });
@@ -79,12 +83,48 @@ export default function SearchBox({ docs, initialQuery = "", locale, dictionary,
     );
   };
 
-  const popular = useMemo(() => POPULAR_TAGS, []);
+  // Data-driven showcase derived from the shipped payload (no extra fetch).
+  const popular = useMemo(() => {
+    const freq = new Map<string, number>();
+    for (const doc of docs) for (const tag of doc.tags) freq.set(tag, (freq.get(tag) ?? 0) + 1);
+    const ranked = [...freq.entries()].sort((a, b) => b[1] - a[1]).map(([tag]) => tag);
+    return ranked.length > 0 ? ranked.slice(0, 6) : POPULAR_FALLBACK;
+  }, [docs]);
+
+  const categories = useMemo(
+    () =>
+      CATEGORIES.map((cat) => ({
+        cat,
+        count: docs.filter((d) => d.category === cat).length,
+      })).filter((c) => c.count > 0),
+    [docs]
+  );
+
+  const topTech = useMemo(() => {
+    const freq = new Map<string, number>();
+    for (const doc of docs) freq.set(doc.technology, (freq.get(doc.technology) ?? 0) + 1);
+    return [...freq.entries()].sort((a, b) => b[1] - a[1]).slice(0, 6);
+  }, [docs]);
 
   const applyQuery = (tag: string) => {
     setQuery(tag);
     router.replace(`/${locale}/search?q=${encodeURIComponent(tag)}`, { scroll: false });
   };
+
+  const categoryChips = (
+    <div className="flex flex-wrap gap-2">
+      {categories.map(({ cat, count }) => (
+        <a
+          key={cat}
+          href={`/${locale}/browse/${cat}`}
+          className="rounded-full bg-sage px-3 py-1.5 font-hand text-sm text-ink transition hover:-rotate-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta/60"
+        >
+          {CATEGORY_LABELS[cat as keyof typeof CATEGORY_LABELS]?.[locale] ?? cat}{" "}
+          <span className="text-ink-muted">· {count}</span>
+        </a>
+      ))}
+    </div>
+  );
 
   return (
     <div className="w-full">
@@ -125,20 +165,52 @@ export default function SearchBox({ docs, initialQuery = "", locale, dictionary,
       </form>
 
       {!query.trim() && (
-        <div className="mt-10">
-          <p className="font-hand text-lg text-ink-muted">{dictionary.popularTags}</p>
-          <div className="mt-3 flex flex-wrap gap-2">
-            {popular.map((tag) => (
-              <button
-                key={tag}
-                type="button"
-                onClick={() => applyQuery(tag)}
-                className="rounded-full bg-peach px-3 py-1.5 font-hand text-sm text-ink transition hover:rotate-1 hover:bg-peach/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta/60"
-              >
-                {tag}
-              </button>
-            ))}
+        <div className="mt-10 space-y-8">
+          <div>
+            <p className="font-hand text-lg text-ink-muted">{dictionary.popularTags}</p>
+            <div className="mt-3 flex flex-wrap gap-2">
+              {popular.map((tag) => (
+                <button
+                  key={tag}
+                  type="button"
+                  onClick={() => applyQuery(tag)}
+                  className="rounded-full bg-peach px-3 py-1.5 font-hand text-sm text-ink transition hover:rotate-1 hover:bg-peach/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta/60"
+                >
+                  {tag}
+                </button>
+              ))}
+            </div>
           </div>
+
+          {categories.length > 0 && (
+            <div>
+              <p className="font-hand text-lg text-ink-muted">{dictionary.browseByCategory}</p>
+              <div className="mt-3">{categoryChips}</div>
+            </div>
+          )}
+
+          {topTech.length > 0 && (
+            <div>
+              <p className="font-hand text-lg text-ink-muted">{dictionary.popularTech}</p>
+              <div className="mt-3 flex flex-wrap gap-2">
+                {topTech.map(([tech, count]) => (
+                  <button
+                    key={tech}
+                    type="button"
+                    onClick={() => applyQuery(tech)}
+                    className="rounded-full bg-sage/60 px-3 py-1.5 font-hand text-sm text-ink transition hover:-rotate-1 hover:bg-sage focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta/60"
+                  >
+                    {TECHNOLOGY_LABELS[tech as keyof typeof TECHNOLOGY_LABELS]?.[locale] ?? tech}{" "}
+                    <span className="text-ink-muted">· {count}</span>
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
+
+          <p className="font-hand text-sm text-ink-muted">
+            {docs.length} {dictionary.indexedTopics}
+          </p>
         </div>
       )}
 
@@ -148,18 +220,47 @@ export default function SearchBox({ docs, initialQuery = "", locale, dictionary,
             {results.length} {dictionary.results}
           </p>
           {results.length === 0 && (
-            <EmptyState
-              title={dictionary.noResultsTitle}
-              message={dictionary.noResultsMessage}
-              action={
-                <a
-                  href={`/${locale}/browse`}
-                  className="inline-block rounded-full bg-terracotta px-5 py-2.5 font-hand text-sm text-card shadow-paper transition hover:-rotate-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta/60"
-                >
-                  {browseLabel}
-                </a>
-              }
-            />
+            <>
+              <EmptyState
+                title={dictionary.noResultsTitle}
+                message={dictionary.noResultsMessage}
+                action={
+                  <span className="flex flex-col items-center gap-4">
+                    <a
+                      href={`/${locale}/browse`}
+                      className="inline-block rounded-full bg-terracotta px-5 py-2.5 font-hand text-sm text-card shadow-paper transition hover:-rotate-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta/60"
+                    >
+                      {browseLabel}
+                    </a>
+                    {popular.length > 0 && (
+                      <span className="flex flex-wrap items-center justify-center gap-2">
+                        <span className="font-hand text-sm text-ink-muted">
+                          {dictionary.tryInstead}:
+                        </span>
+                        {popular.slice(0, 3).map((tag) => (
+                          <button
+                            key={tag}
+                            type="button"
+                            onClick={() => applyQuery(tag)}
+                            className="rounded-full bg-peach px-3 py-1.5 font-hand text-sm text-ink transition hover:rotate-1 hover:bg-peach/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta/60"
+                          >
+                            {tag}
+                          </button>
+                        ))}
+                      </span>
+                    )}
+                  </span>
+                }
+              />
+              {categories.length > 0 && (
+                <div className="mt-6">
+                  <p className="mb-3 text-center font-hand text-sm text-ink-muted">
+                    {dictionary.browseByCategory}
+                  </p>
+                  <div className="flex flex-wrap justify-center gap-2">{categoryChips}</div>
+                </div>
+              )}
+            </>
           )}
           {results.map(({ doc }) => (
             <a
