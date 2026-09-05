@@ -4,8 +4,7 @@ import { notFound } from "next/navigation";
 import { getDictionary } from "@/lib/i18n";
 import { LOCALES } from "@/lib/constants";
 import type { Locale } from "@/lib/types";
-import { getTopics } from "@/lib/content";
-import { getFeaturedTutorial, getRecentCheatsheets, getSyllabi } from "@/lib/featured";
+import { getTopics, sortTopics } from "@/lib/content";
 
 import HeroSearch from "@/components/home/HeroSearch";
 import BentoGrid from "@/components/home/BentoGrid";
@@ -40,13 +39,14 @@ export default async function HomePage({
   if (!LOCALES.includes(locale as Locale)) notFound();
   const dict = getDictionary(locale as Locale);
 
-  const topics = await getTopics();
-  const topicsHere = topics.filter((t) => (locale === "en" ? t.en : t.id));
-  const categories = new Set(topics.map((t) => t.category)).size;
+  // Single index read, derived in-memory (avoids 4x getTopics + re-sorts).
+  const sorted = sortTopics(await getTopics());
+  const topicsHere = sorted.filter((t) => (locale === "en" ? t.en : t.id));
+  const categories = new Set(sorted.map((t) => t.category)).size;
 
-  const featured = await getFeaturedTutorial();
-  const cheatsheets = await getRecentCheatsheets(locale as Locale, 2);
-  const syllabi = await getSyllabi();
+  const featured = sorted.find((t) => t.type === "tutorial") ?? null;
+  const cheatsheets = sorted.filter((t) => t.type === "cheatsheet").slice(0, 2);
+  const syllabi = sorted.filter((t) => t.type === "syllabus");
 
   const stats = (
     <PaperCard className="flex h-full flex-col justify-center p-6">

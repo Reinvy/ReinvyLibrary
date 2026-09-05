@@ -9,10 +9,7 @@ export default function WashiTape({ className }: WashiTapeProps) {
   return (
     <span
       aria-hidden
-      className={cn(
-        "pointer-events-none absolute left-1/2 top-0 h-5 w-24 -translate-x-1/2 -translate-y-1/2 rotate-[-2deg] rounded-sm bg-washi shadow-paper",
-        className
-      )}
+      className={cn("washi pointer-events-none", className)}
     />
   );
 }

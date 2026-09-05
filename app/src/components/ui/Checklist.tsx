@@ -20,9 +20,9 @@ export default function Checklist({ topicSlug, items }: ChecklistProps) {
         <p className="font-hand text-sm text-ink-muted">
           {done}/{items.length} done
         </p>
-        <div className="h-2 w-32 overflow-hidden rounded-full bg-sage">
+        <div className="h-2 w-32 overflow-hidden rounded-full bg-sage" role="progressbar" aria-valuenow={done} aria-valuemin={0} aria-valuemax={items.length}>
           <div
-            className="h-full rounded-full bg-eucalyptus transition-all"
+            className="h-full rounded-full bg-eucalyptus transition-[width] duration-200 ease-out"
             style={{ width: `${items.length ? (done / items.length) * 100 : 0}%` }}
           />
         </div>

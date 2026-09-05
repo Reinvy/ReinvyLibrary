@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { Locale } from "@/lib/types";
 
 interface LanguageToggleProps {
@@ -10,6 +11,10 @@ interface LanguageToggleProps {
 
 /** EN ↔ ID pill toggle linking to the paired file. */
 export default function LanguageToggle({ locale, otherHref, enLabel, idLabel }: LanguageToggleProps) {
+  const missingLabel =
+    locale === "en"
+      ? "Indonesian version not available yet"
+      : "Versi Inggris belum tersedia";
   return (
     <div
       className="inline-flex items-center rounded-full border border-line bg-card p-1 shadow-paper"
@@ -20,14 +25,18 @@ export default function LanguageToggle({ locale, otherHref, enLabel, idLabel }: 
         <>
           <span className="rounded-full bg-sticky px-3 py-1 font-hand text-xs text-ink">{enLabel}</span>
           {otherHref ? (
-            <a
+            <Link
               href={otherHref}
-              className="rounded-full px-3 py-1 font-hand text-xs text-ink-muted transition hover:bg-peach hover:text-ink"
+              className="rounded-full px-3 py-1 font-hand text-xs text-ink-muted transition hover:bg-peach hover:text-ink focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta/60"
             >
               {idLabel}
-            </a>
+            </Link>
           ) : (
-            <span className="cursor-not-allowed rounded-full px-3 py-1 font-hand text-xs text-ink-muted/40">
+            <span
+              className="cursor-not-allowed rounded-full px-3 py-1 font-hand text-xs text-ink-muted/40"
+              title={missingLabel}
+              aria-disabled="true"
+            >
               {idLabel}
             </span>
           )}
@@ -35,14 +44,18 @@ export default function LanguageToggle({ locale, otherHref, enLabel, idLabel }: 
       ) : (
         <>
           {otherHref ? (
-            <a
+            <Link
               href={otherHref}
-              className="rounded-full px-3 py-1 font-hand text-xs text-ink-muted transition hover:bg-peach hover:text-ink"
+              className="rounded-full px-3 py-1 font-hand text-xs text-ink-muted transition hover:bg-peach hover:text-ink focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta/60"
             >
               {enLabel}
-            </a>
+            </Link>
           ) : (
-            <span className="cursor-not-allowed rounded-full px-3 py-1 font-hand text-xs text-ink-muted/40">
+            <span
+              className="cursor-not-allowed rounded-full px-3 py-1 font-hand text-xs text-ink-muted/40"
+              title={missingLabel}
+              aria-disabled="true"
+            >
               {enLabel}
             </span>
           )}

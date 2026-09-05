@@ -37,7 +37,7 @@ export default function StickyCallout({
   return (
     <aside
       className={cn(
-        "relative my-6 rounded-2xl border p-5 pl-6 shadow-paper rotate-[-0.5deg]",
+        "sticky-note relative my-6 rounded-2xl border p-5 pl-6 shadow-paper",
         style.box,
         className
       )}

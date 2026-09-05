@@ -85,47 +85,59 @@ export interface TopicLoader {
   fetchFile(path: string): Promise<string>;
 }
 
+const LOAD_CONCURRENCY = 12;
+
+function chunk<T>(arr: T[], size: number): T[][] {
+  const out: T[][] = [];
+  for (let i = 0; i < arr.length; i += size) out.push(arr.slice(i, i + size));
+  return out;
+}
+
 /** Assembles Topic[] from a source (used by both server queries and the snapshot script). */
 export async function loadTopics(loader: TopicLoader): Promise<Topic[]> {
   const paths = await loader.listPaths();
   const bySlug = new Map<string, Topic>();
 
-  for (const contentPath of paths) {
-    const seg = splitContentPath(contentPath);
-    if (!seg) continue;
-    const locale: Locale = contentPath.endsWith("_id.md") ? "id" : "en";
-    let raw: string;
-    try {
-      raw = await loader.fetchFile(contentPath);
-    } catch {
-      // A single missing/unfetchable file must not break the whole index.
-      continue;
-    }
-    const { frontmatter, body } = parseFrontmatter(raw);
-    const file: ContentFile = {
-      path: contentPath,
-      slug: seg.slug,
-      category: seg.category,
-      technology: seg.technology,
-      typeDir: seg.typeDir,
-      frontmatter,
-      body,
-    };
-
-    const key = `${seg.category}/${seg.technology}/${seg.typeDir}/${seg.slug}`;
-    const existing = bySlug.get(key);
-    if (existing) {
-      existing[locale] = file;
-    } else {
-      bySlug.set(key, {
+  // Bounded parallel fetch: same skip-on-missing semantics, ~N/12 round-trips.
+  for (const batch of chunk(paths, LOAD_CONCURRENCY)) {
+    const settled = await Promise.allSettled(
+      batch.map(async (contentPath) => ({
+        contentPath,
+        seg: splitContentPath(contentPath),
+        raw: await loader.fetchFile(contentPath),
+      }))
+    );
+    for (const r of settled) {
+      if (r.status === "rejected") continue;
+      const { contentPath, seg, raw } = r.value;
+      if (!seg) continue;
+      const locale: Locale = contentPath.endsWith("_id.md") ? "id" : "en";
+      const { frontmatter, body } = parseFrontmatter(raw);
+      const file: ContentFile = {
+        path: contentPath,
         slug: seg.slug,
         category: seg.category,
         technology: seg.technology,
-        type: DIR_TO_TYPE[seg.typeDir],
-        difficulty: file.frontmatter.difficulty,
-        title: file.frontmatter.title,
-        [locale]: file,
-      });
+        typeDir: seg.typeDir,
+        frontmatter,
+        body,
+      };
+
+      const key = `${seg.category}/${seg.technology}/${seg.typeDir}/${seg.slug}`;
+      const existing = bySlug.get(key);
+      if (existing) {
+        existing[locale] = file;
+      } else {
+        bySlug.set(key, {
+          slug: seg.slug,
+          category: seg.category,
+          technology: seg.technology,
+          type: DIR_TO_TYPE[seg.typeDir],
+          difficulty: file.frontmatter.difficulty,
+          title: file.frontmatter.title,
+          [locale]: file,
+        });
+      }
     }
   }
 

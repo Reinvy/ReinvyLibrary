@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import { getDictionary } from "@/lib/i18n";
@@ -61,13 +62,13 @@ export default async function CategoryPage({
         </p>
         <div className="mt-4 flex flex-wrap gap-2">
           {Array.from(new Set(topics.map((t) => t.technology))).map((tech) => (
-            <a
+            <Link
               key={tech}
               href={`/${locale}/${category}/${tech}`}
-              className="rounded-full bg-sage px-3 py-1 font-hand text-xs text-ink transition hover:-rotate-1"
+              className="rounded-full bg-sage px-3 py-1 font-hand text-xs text-ink transition hover:-rotate-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta/60"
             >
               {TECHNOLOGY_LABELS[tech as keyof typeof TECHNOLOGY_LABELS][locale as "en" | "id"]}
-            </a>
+            </Link>
           ))}
         </div>
       </header>

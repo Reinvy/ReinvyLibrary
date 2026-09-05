@@ -3,6 +3,7 @@
 import { useMemo, useState } from "react";
 import type { Snippet } from "@/lib/types";
 import SnippetCard from "./SnippetCard";
+import EmptyState from "@/components/ui/EmptyState";
 import { cn } from "@/lib/utils";
 
 interface CheatsheetGridProps {
@@ -16,10 +17,12 @@ interface CheatsheetGridProps {
     copied: string;
     lines: string;
   };
+  emptyTitle?: string;
+  emptyMessage?: string;
 }
 
 /** Filterable masonry-ish grid of snippet cards. */
-export default function CheatsheetGrid({ snippets, labels }: CheatsheetGridProps) {
+export default function CheatsheetGrid({ snippets, labels, emptyTitle, emptyMessage }: CheatsheetGridProps) {
   const [language, setLanguage] = useState<string>("all");
   const [section, setSection] = useState<string>("all");
 
@@ -48,7 +51,7 @@ export default function CheatsheetGrid({ snippets, labels }: CheatsheetGridProps
           onClick={() => setLanguage("all")}
           aria-pressed={language === "all"}
           className={cn(
-            "rounded-full px-3 py-1.5 font-hand text-sm transition",
+            "rounded-full px-3 py-1.5 font-hand text-sm transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta/60",
             language === "all"
               ? "bg-terracotta text-card shadow-paper"
               : "bg-peach text-ink hover:bg-peach/70"
@@ -63,7 +66,7 @@ export default function CheatsheetGrid({ snippets, labels }: CheatsheetGridProps
             onClick={() => setLanguage(l)}
             aria-pressed={language === l}
             className={cn(
-              "rounded-full px-3 py-1.5 font-hand text-sm transition",
+              "rounded-full px-3 py-1.5 font-hand text-sm transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta/60",
               language === l
                 ? "bg-terracotta text-card shadow-paper"
                 : "bg-peach text-ink hover:bg-peach/70"
@@ -80,7 +83,7 @@ export default function CheatsheetGrid({ snippets, labels }: CheatsheetGridProps
               onClick={() => setSection("all")}
               aria-pressed={section === "all"}
               className={cn(
-                "rounded-full px-3 py-1.5 font-hand text-sm transition",
+                "rounded-full px-3 py-1.5 font-hand text-sm transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta/60",
                 section === "all"
                   ? "bg-eucalyptus text-card shadow-paper"
                   : "bg-sage text-ink hover:bg-sage/70"
@@ -95,7 +98,7 @@ export default function CheatsheetGrid({ snippets, labels }: CheatsheetGridProps
                 onClick={() => setSection(s)}
                 aria-pressed={section === s}
                 className={cn(
-                  "rounded-full px-3 py-1.5 font-hand text-sm transition",
+                  "rounded-full px-3 py-1.5 font-hand text-sm transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta/60",
                   section === s
                     ? "bg-eucalyptus text-card shadow-paper"
                     : "bg-sage text-ink hover:bg-sage/70"
@@ -108,16 +111,35 @@ export default function CheatsheetGrid({ snippets, labels }: CheatsheetGridProps
         )}
       </div>
 
-      <p className="mb-4 font-hand text-sm text-ink-muted">
+      <p className="mb-4 font-hand text-sm text-ink-muted" aria-live="polite">
         {filtered.length} {labels.snippets}
       </p>
 
-      {/* CSS-columns masonry */}
-      <div className="columns-1 gap-5 sm:columns-2 lg:columns-3 [&>*]:mb-5">
-        {filtered.map((snippet) => (
-          <SnippetCard key={snippet.id} snippet={snippet} labels={labels} />
-        ))}
-      </div>
+      {filtered.length === 0 ? (
+        <EmptyState
+          title={emptyTitle ?? `No ${labels.snippets}`}
+          message={emptyMessage ?? `${labels.filterBy}: ${language} / ${section}`}
+          action={
+            <button
+              type="button"
+              onClick={() => {
+                setLanguage("all");
+                setSection("all");
+              }}
+              className="rounded-full bg-terracotta px-5 py-2.5 font-hand text-sm text-card shadow-paper transition hover:-rotate-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta/60"
+            >
+              {labels.allLanguages} · {labels.allSections}
+            </button>
+          }
+        />
+      ) : (
+        /* CSS-columns masonry */
+        <div className="columns-1 gap-5 sm:columns-2 lg:columns-3 [&>*]:mb-5">
+          {filtered.map((snippet) => (
+            <SnippetCard key={snippet.id} snippet={snippet} labels={labels} />
+          ))}
+        </div>
+      )}
     </div>
   );
 }

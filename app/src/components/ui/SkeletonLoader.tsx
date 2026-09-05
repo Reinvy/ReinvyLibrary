@@ -7,11 +7,12 @@ interface SkeletonLoaderProps {
 
 /** Soft paper-outline skeletons with a gentle pulse (respects reduced motion). */
 export default function SkeletonLoader({ variant = "card", className }: SkeletonLoaderProps) {
-  const base = "animate-pulse rounded-card border border-line bg-card/60";
+  const base =
+    "animate-pulse rounded-card border border-line bg-card/60 motion-reduce:animate-none";
 
   if (variant === "hero") {
     return (
-      <div className={cn("space-y-4", className)}>
+      <div className={cn("space-y-4", className)} role="status" aria-busy="true" aria-label="Loading">
         <div className={cn(base, "h-12 w-2/3")} />
         <div className={cn(base, "h-6 w-1/2")} />
         <div className={cn(base, "h-12 w-full rounded-full")} />
@@ -21,7 +22,7 @@ export default function SkeletonLoader({ variant = "card", className }: Skeleton
 
   if (variant === "doc") {
     return (
-      <div className={cn("space-y-5", className)}>
+      <div className={cn("space-y-5", className)} role="status" aria-busy="true" aria-label="Loading">
         <div className={cn(base, "h-10 w-3/4")} />
         <div className={cn(base, "h-4 w-full")} />
         <div className={cn(base, "h-4 w-5/6")} />
@@ -34,7 +35,7 @@ export default function SkeletonLoader({ variant = "card", className }: Skeleton
 
   if (variant === "grid") {
     return (
-      <div className={cn("grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3", className)}>
+      <div className={cn("grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3", className)} role="status" aria-busy="true" aria-label="Loading">
         {Array.from({ length: 6 }).map((_, i) => (
           <div key={i} className={cn(base, "h-44")} />
         ))}
@@ -43,8 +44,8 @@ export default function SkeletonLoader({ variant = "card", className }: Skeleton
   }
 
   return (
-    <div className={cn("rounded-card border border-line bg-card/60 p-6", className)}>
-      <div className="animate-pulse space-y-3">
+    <div className={cn("rounded-card border border-line bg-card/60 p-6", className)} role="status" aria-busy="true" aria-label="Loading">
+      <div className="animate-pulse space-y-3 motion-reduce:animate-none">
         <div className="h-4 w-1/3 rounded-full bg-line/60" />
         <div className="h-5 w-3/4 rounded-full bg-line/60" />
         <div className="h-4 w-2/3 rounded-full bg-line/60" />

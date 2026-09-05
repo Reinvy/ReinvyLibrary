@@ -2,6 +2,7 @@ import Link from "next/link";
 import { getDictionary } from "@/lib/i18n";
 import { GITHUB_REPO } from "@/lib/github";
 import type { Locale } from "@/lib/types";
+import NavLinks from "./NavLinks";
 
 export default function Header({ locale }: { locale: Locale }) {
   const dict = getDictionary(locale);
@@ -18,29 +19,15 @@ export default function Header({ locale }: { locale: Locale }) {
         </Link>
 
         <nav aria-label="Main" className="flex items-center gap-1 sm:gap-2">
-          <Link
-            href={`/${locale}`}
-            className="rounded-full px-3 py-1.5 font-hand text-sm text-ink-muted transition hover:bg-peach hover:text-ink"
-          >
-            {dict.nav.home}
-          </Link>
-          <Link
-            href={`/${locale}#categories`}
-            className="rounded-full px-3 py-1.5 font-hand text-sm text-ink-muted transition hover:bg-peach hover:text-ink"
-          >
-            {dict.nav.categories}
-          </Link>
-          <Link
-            href={`/${locale}/search`}
-            className="rounded-full px-3 py-1.5 font-hand text-sm text-ink-muted transition hover:bg-peach hover:text-ink"
-          >
-            {dict.nav.search}
-          </Link>
+          <NavLinks
+            locale={locale}
+            labels={{ home: dict.nav.home, categories: dict.nav.categories, search: dict.nav.search }}
+          />
           <a
             href={`https://github.com/${GITHUB_REPO}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden rounded-full border border-line bg-card px-3 py-1.5 font-hand text-sm text-ink-muted transition hover:bg-sage hover:text-ink sm:inline-block"
+            className="hidden rounded-full border border-line bg-card px-3 py-1.5 font-hand text-sm text-ink-muted transition hover:bg-sage hover:text-ink focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta/60 sm:inline-block"
           >
             {dict.nav.source}
           </a>

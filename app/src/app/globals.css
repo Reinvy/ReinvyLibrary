@@ -49,7 +49,6 @@
   --font-hand: var(--font-kalam), "Comic Sans MS", cursive;
   --font-mono: var(--font-jetbrains), ui-monospace, "SF Mono", monospace;
 
-  --animate-pulse-soft: pulse 2.4s ease-in-out infinite;
 }
 
 @layer base {

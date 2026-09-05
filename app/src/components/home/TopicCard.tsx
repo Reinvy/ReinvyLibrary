@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { Locale, Topic } from "@/lib/types";
 import { TYPE_DIR, DIFFICULTY_LABELS, TYPE_LABELS, TECHNOLOGY_LABELS, CATEGORY_LABELS } from "@/lib/constants";
 import { topicUrl, fileForLocale } from "@/lib/urls";
@@ -25,9 +26,9 @@ export default function TopicCard({ topic, locale, first = false }: TopicCardPro
         <Badge label={DIFFICULTY_LABELS[topic.difficulty][locale]} tone="sage" />
       </div>
       <h3 className="mt-3 font-display text-lg font-semibold leading-snug text-ink">
-        <a href={href} className="hover:text-terracotta">
+        <Link href={href} className="rounded hover:text-terracotta focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta/60">
           {topic.title}
-        </a>
+        </Link>
       </h3>
       <p className="mt-2 line-clamp-2 text-sm text-ink-muted">{file.frontmatter.description}</p>
       <div className="mt-4 flex items-center gap-2">

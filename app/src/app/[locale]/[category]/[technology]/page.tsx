@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import { getDictionary } from "@/lib/i18n";
@@ -58,9 +59,9 @@ export default async function TechnologyPage({
       <header className="mb-8">
         <p className="font-hand text-sm text-ink-muted">
           {dict.nav.categories} /{" "}
-          <a href={`/${locale}/${category}`} className="hover:text-terracotta">
+          <Link href={`/${locale}/${category}`} className="rounded hover:text-terracotta focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta/60">
             {cat[locale as "en" | "id"]}
-          </a>{" "}
+          </Link>{" "}
           / <span className="text-terracotta">{tech[locale as "en" | "id"]}</span>
         </p>
         <h1 className="mt-2 font-display text-3xl font-bold text-ink">

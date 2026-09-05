@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import type { ReactNode } from "react";
+import { Suspense } from "react";
 
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -50,25 +51,32 @@ export default async function LocaleLayout({
   const { locale } = await params;
   if (!LOCALES.includes(locale as Locale)) notFound();
 
-  // Total topic count per locale for the header badge (server-cached).
-  const topics = await getTopics();
-  const count = topics.filter((t) =>
-    locale === "en" ? t.en : t.id
-  ).length;
-
   return (
     <div className="flex min-h-screen flex-col">
       <ProgressProvider>
         <Header locale={locale as Locale} />
         <main className="flex-1">{children}</main>
-        <Footer locale={locale as Locale} />
+        <Suspense fallback={null}>
+          <Footer locale={locale as Locale} />
+        </Suspense>
       </ProgressProvider>
-      <span className="sr-only">
-        {LOCALE_NAMES[locale as Locale]} · {count} topics ·{" "}
-        {TYPE_LABELS.tutorial.en}/{TYPE_LABELS.cheatsheet.en}/{TYPE_LABELS.guide.en}/
-        {TYPE_LABELS.syllabus.en} · {DIFFICULTY_LABELS.beginner.en}/
-        {DIFFICULTY_LABELS.intermediate.en}/{DIFFICULTY_LABELS.advanced.en}
-      </span>
+      <Suspense fallback={null}>
+        <HeaderCount locale={locale as Locale} />
+      </Suspense>
     </div>
+  );
+}
+
+/** Non-blocking locale topic count for screen readers (streams after shell). */
+async function HeaderCount({ locale }: { locale: Locale }) {
+  const topics = await getTopics();
+  const count = topics.filter((t) => (locale === "en" ? t.en : t.id)).length;
+  return (
+    <span className="sr-only">
+      {LOCALE_NAMES[locale]} · {count} topics · {TYPE_LABELS.tutorial.en}/
+      {TYPE_LABELS.cheatsheet.en}/{TYPE_LABELS.guide.en}/{TYPE_LABELS.syllabus.en} ·{" "}
+      {DIFFICULTY_LABELS.beginner.en}/{DIFFICULTY_LABELS.intermediate.en}/
+      {DIFFICULTY_LABELS.advanced.en}
+    </span>
   );
 }

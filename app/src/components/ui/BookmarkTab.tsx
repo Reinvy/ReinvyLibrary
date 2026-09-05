@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { cn } from "@/lib/utils";
 
 interface BookmarkTabProps {
@@ -17,7 +18,7 @@ export default function BookmarkTab({
   onClick,
 }: BookmarkTabProps) {
   const className = cn(
-    "block w-full rounded-r-xl border-l-2 py-2 pl-3 pr-2 text-left font-display text-sm transition",
+    "block w-full rounded-r-xl border-l-2 py-2 pl-3 pr-2 text-left font-display text-sm transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta/60",
     active
       ? "border-terracotta bg-peach text-ink shadow-paper"
       : "border-line bg-card text-ink-muted hover:bg-peach/50 hover:text-ink",
@@ -26,13 +27,13 @@ export default function BookmarkTab({
 
   if (href) {
     return (
-      <a href={href} className={className}>
+      <Link href={href} aria-current={active ? "page" : undefined} className={className}>
         {label}
-      </a>
+      </Link>
     );
   }
   return (
-    <button type="button" onClick={onClick} className={className}>
+    <button type="button" onClick={onClick} aria-pressed={active} className={className}>
       {label}
     </button>
   );

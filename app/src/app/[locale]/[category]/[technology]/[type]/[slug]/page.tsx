@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import { getDictionary } from "@/lib/i18n";
@@ -15,7 +16,7 @@ import {
 import type { Locale, Snippet } from "@/lib/types";
 import {
   getTopicByKey,
-  getSiblingTopics,
+  getTopics,
 } from "@/lib/content";
 import { fileForLocale, siblingFile, topicUrl } from "@/lib/urls";
 import { renderMarkdown } from "@/lib/markdown/render";
@@ -33,7 +34,7 @@ export const revalidate = 300;
 
 export async function generateStaticParams() {
   // Generates all doc routes from the shared topic index (single tree fetch).
-  const topics = await import("@/lib/content").then((m) => m.getTopics());
+  const topics = await getTopics();
   return LOCALES.flatMap((locale) =>
     topics
       .filter((t) => (locale === "en" ? t.en : t.id))
@@ -83,11 +84,22 @@ export default async function DocPage({
   if (!CATEGORIES.includes(category as never)) notFound();
   if (!TECHNOLOGIES.includes(technology as never)) notFound();
 
-  const topic = await getTopicByKey(category, technology, type, slug);
+  // Single index read: find topic + siblings in-memory (avoids 2x getTopics()).
+  const topics = await getTopics();
+  const topic =
+    topics.find(
+      (t) =>
+        t.category === category &&
+        t.technology === technology &&
+        TYPE_DIR[t.type] === type &&
+        t.slug === slug
+    ) ?? null;
   if (!topic) notFound();
   const file = fileForLocale(topic, loc);
   const other = siblingFile(topic, loc);
-  const siblings = await getSiblingTopics(topic);
+  const siblings = topics.filter(
+    (t) => t.category === topic.category && t.technology === topic.technology
+  );
   const dict = getDictionary(loc);
 
   const { toc, body, checklists } = renderMarkdown({
@@ -101,15 +113,15 @@ export default async function DocPage({
 
   const crumbs = (
     <nav aria-label="Breadcrumb" className="mb-4 flex flex-wrap items-center gap-1.5 font-hand text-sm text-ink-muted">
-      <a href={`/${loc}`} className="hover:text-terracotta">{dict.nav.home}</a>
+      <Link href={`/${loc}`} className="rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta/60 hover:text-terracotta">{dict.nav.home}</Link>
       <span aria-hidden>/</span>
-      <a href={`/${loc}/${category}`} className="hover:text-terracotta">
+      <Link href={`/${loc}/${category}`} className="rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta/60 hover:text-terracotta">
         {CATEGORY_LABELS[category as keyof typeof CATEGORY_LABELS][loc]}
-      </a>
+      </Link>
       <span aria-hidden>/</span>
-      <a href={`/${loc}/${category}/${technology}`} className="hover:text-terracotta">
+      <Link href={`/${loc}/${category}/${technology}`} className="rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta/60 hover:text-terracotta">
         {TECHNOLOGY_LABELS[technology as keyof typeof TECHNOLOGY_LABELS][loc]}
-      </a>
+      </Link>
       <span aria-hidden>/</span>
       <span className="text-ink">{TYPE_LABELS[topic.type][loc]}</span>
     </nav>
@@ -159,6 +171,8 @@ export default async function DocPage({
         copied: dict.cheatsheet.copied,
         lines: dict.cheatsheet.lines,
       }}
+      emptyTitle={dict.category.emptyTitle}
+      emptyMessage={dict.category.emptyMessage}
     />
   ) : (
     <article className="reader-prose">
@@ -183,26 +197,26 @@ export default async function DocPage({
   const prevNext = (prev || next) && (
     <nav aria-label="Pagination" className="mt-12 grid gap-4 border-t border-line pt-6 sm:grid-cols-2">
       {prev ? (
-        <a
+        <Link
           href={topicUrl(loc, prev.category, prev.technology, TYPE_DIR[prev.type], prev.slug)}
-          className="group rounded-card border border-line bg-card p-4 shadow-paper transition hover:-rotate-1 hover:shadow-lift"
+          className="group rounded-card border border-line bg-card p-4 shadow-paper transition hover:-rotate-1 hover:shadow-lift focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta/60"
         >
           <p className="font-hand text-xs text-ink-muted">{dict.doc.prev}</p>
           <p className="mt-1 line-clamp-1 font-display font-semibold text-ink group-hover:text-terracotta">
             {prev.title}
           </p>
-        </a>
+        </Link>
       ) : <span />}
       {next ? (
-        <a
+        <Link
           href={topicUrl(loc, next.category, next.technology, TYPE_DIR[next.type], next.slug)}
-          className="group rounded-card border border-line bg-card p-4 text-right shadow-paper transition hover:rotate-1 hover:shadow-lift"
+          className="group rounded-card border border-line bg-card p-4 text-right shadow-paper transition hover:rotate-1 hover:shadow-lift focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta/60"
         >
           <p className="font-hand text-xs text-ink-muted">{dict.doc.next}</p>
           <p className="mt-1 line-clamp-1 font-display font-semibold text-ink group-hover:text-terracotta">
             {next.title}
           </p>
-        </a>
+        </Link>
       ) : <span />}
     </nav>
   );

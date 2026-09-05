@@ -5,10 +5,11 @@ interface ErrorStateProps {
   message: string;
   retryLabel?: string;
   onRetry?: () => void;
+  pending?: boolean;
 }
 
 /** Scrapbook-themed error state for error boundaries. */
-export default function ErrorState({ title, message, retryLabel = "Try again", onRetry }: ErrorStateProps) {
+export default function ErrorState({ title, message, retryLabel = "Try again", onRetry, pending = false }: ErrorStateProps) {
   return (
     <div className="my-12 flex flex-col items-center rounded-2xl border border-line bg-card p-10 text-center shadow-paper">
       <svg
@@ -32,7 +33,9 @@ export default function ErrorState({ title, message, retryLabel = "Try again", o
         <button
           type="button"
           onClick={onRetry}
-          className="mt-6 rounded-full bg-terracotta px-5 py-2.5 font-hand text-sm text-card shadow-paper transition hover:-rotate-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta/60"
+          disabled={pending}
+          aria-busy={pending}
+          className="mt-6 rounded-full bg-terracotta px-5 py-2.5 font-hand text-sm text-card shadow-paper transition hover:-rotate-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta/60 disabled:cursor-wait disabled:opacity-70"
         >
           {retryLabel}
         </button>
