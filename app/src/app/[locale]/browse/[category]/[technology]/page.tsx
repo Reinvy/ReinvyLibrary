@@ -58,8 +58,11 @@ export default async function TechnologyPage({
     <div className="mx-auto max-w-6xl px-4 py-12">
       <header className="mb-8">
         <p className="font-hand text-sm text-ink-muted">
-          {dict.nav.categories} /{" "}
-          <Link href={`/${locale}/${category}`} className="rounded hover:text-terracotta focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta/60">
+          <Link href={`/${locale}/browse`} className="rounded hover:text-terracotta focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta/60">
+            {dict.nav.categories}
+          </Link>{" "}
+          /{" "}
+          <Link href={`/${locale}/browse/${category}`} className="rounded hover:text-terracotta focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta/60">
             {cat[locale as "en" | "id"]}
           </Link>{" "}
           / <span className="text-terracotta">{tech[locale as "en" | "id"]}</span>

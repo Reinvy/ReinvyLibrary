@@ -88,7 +88,7 @@ export default async function BrowsePage({
             </div>
             <h2 className="mt-3 font-display text-lg font-semibold leading-snug text-ink">
               <Link
-                href={`/${loc}/${category}`}
+                href={`/${loc}/browse/${category}`}
                 className="rounded hover:text-terracotta focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta/60"
               >
                 {info[loc]}
@@ -102,7 +102,7 @@ export default async function BrowsePage({
                 {techs.map(([tech, n]) => (
                   <Link
                     key={tech}
-                    href={`/${loc}/${category}/${tech}`}
+                    href={`/${loc}/browse/${category}/${tech}`}
                     className="rounded-full bg-sage px-3 py-1 font-hand text-xs text-ink transition hover:-rotate-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta/60"
                   >
                     {

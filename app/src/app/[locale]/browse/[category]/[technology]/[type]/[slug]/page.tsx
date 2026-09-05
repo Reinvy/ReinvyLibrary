@@ -61,7 +61,7 @@ export async function generateMetadata({
   if (!topic) return {};
   const file = fileForLocale(topic, locale as Locale);
   const other = siblingFile(topic, locale as Locale);
-  const base = `/${locale}/${category}/${technology}/${type}/${slug}`;
+  const base = `/${locale}/browse/${category}/${technology}/${type}/${slug}`;
   return {
     title: file.frontmatter.title,
     description: file.frontmatter.description,
@@ -115,11 +115,15 @@ export default async function DocPage({
     <nav aria-label="Breadcrumb" className="mb-4 flex flex-wrap items-center gap-1.5 font-hand text-sm text-ink-muted">
       <Link href={`/${loc}`} className="rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta/60 hover:text-terracotta">{dict.nav.home}</Link>
       <span aria-hidden>/</span>
-      <Link href={`/${loc}/${category}`} className="rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta/60 hover:text-terracotta">
+      <Link href={`/${loc}/browse`} className="rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta/60 hover:text-terracotta">
+        {dict.nav.categories}
+      </Link>
+      <span aria-hidden>/</span>
+      <Link href={`/${loc}/browse/${category}`} className="rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta/60 hover:text-terracotta">
         {CATEGORY_LABELS[category as keyof typeof CATEGORY_LABELS][loc]}
       </Link>
       <span aria-hidden>/</span>
-      <Link href={`/${loc}/${category}/${technology}`} className="rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta/60 hover:text-terracotta">
+      <Link href={`/${loc}/browse/${category}/${technology}`} className="rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta/60 hover:text-terracotta">
         {TECHNOLOGY_LABELS[technology as keyof typeof TECHNOLOGY_LABELS][loc]}
       </Link>
       <span aria-hidden>/</span>

@@ -4,6 +4,8 @@ import { useDeferredValue, useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
 import FlexSearch from "flexsearch";
 import type { Locale, SearchDoc } from "@/lib/types";
+import { TYPE_DIR } from "@/lib/constants";
+import { topicUrl } from "@/lib/urls";
 import EmptyState from "@/components/ui/EmptyState";
 
 export interface SearchHit {
@@ -162,7 +164,7 @@ export default function SearchBox({ docs, initialQuery = "", locale, dictionary,
           {results.map(({ doc }) => (
             <a
               key={doc.id}
-              href={`/${doc.locale}/${doc.category}/${doc.technology}/${doc.type === "cheatsheet" ? "cheatsheets" : doc.type === "tutorial" ? "tutorials" : doc.type === "guide" ? "guides" : "syllabi"}/${doc.path.split("/").pop()!.replace(/\.md$/, "").replace(/_id$/, "")}`}
+              href={topicUrl(doc.locale, doc.category, doc.technology, TYPE_DIR[doc.type], doc.path.split("/").pop()!.replace(/\.md$/, "").replace(/_id$/, ""))}
               className="block rounded-2xl border border-line bg-card p-5 shadow-paper transition hover:-rotate-0.5 hover:shadow-lift focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta/60"
             >
               <div className="flex items-center gap-2">

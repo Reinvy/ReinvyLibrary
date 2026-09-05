@@ -12,7 +12,7 @@ export function topicUrl(
   typeDir: string,
   slug: string
 ): string {
-  return `/${locale}/${category}/${technology}/${typeDir}/${slug}`;
+  return `/${locale}/browse/${category}/${technology}/${typeDir}/${slug}`;
 }
 
 export function contentFileUrl(file: ContentFile): string {
