@@ -1,5 +1,5 @@
 ---
-title: "Judul"
+title: "Pagination, Filtering, and Sorting in Express APIs"
 description: "This tutorial covers how to implement pagination, filtering, and sorting in Express.js REST APIs. You will learn techniques to manage large datasets by limiting"
 category: "backend"
 technology: "expressjs"
@@ -8,9 +8,7 @@ type: "tutorial"
 locale: "en"
 ---
 
-# Judul
-
-Pagination, Filtering, and Sorting in Express APIs
+# Pagination, Filtering, and Sorting in Express APIs
 
 ## Summary
 

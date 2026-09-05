@@ -1,5 +1,5 @@
 ---
-title: "Judul"
+title: "Dockerizing Express JS Applications"
 description: "This material covers how to containerize an Express.js application using Docker. You will learn how to write a highly optimized Dockerfile, utilize .dockerignor"
 category: "backend"
 technology: "expressjs"
@@ -8,9 +8,7 @@ type: "tutorial"
 locale: "en"
 ---
 
-# Judul
-
-Dockerizing Express JS Applications
+# Dockerizing Express JS Applications
 
 ## Summary
 
