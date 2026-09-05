@@ -1,0 +1,35 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e4]:
+        - link "R ReinvyLibrary" [ref=e5] [cursor=pointer]:
+          - /url: /en
+          - generic [ref=e6]: R
+          - generic [ref=e7]: ReinvyLibrary
+        - navigation "Main" [ref=e8]:
+          - link "Home" [ref=e9] [cursor=pointer]:
+            - /url: /en
+          - link "Browse" [ref=e10] [cursor=pointer]:
+            - /url: /en/browse
+          - link "Search" [ref=e11] [cursor=pointer]:
+            - /url: /en/search
+          - link "Source" [ref=e12] [cursor=pointer]:
+            - /url: https://github.com/Reinvy/ReinvyLibrary
+    - main [ref=e13]:
+      - generic [ref=e14]:
+        - status "Loading" [ref=e15]
+        - status "Loading" [ref=e20]
+    - contentinfo [ref=e27]:
+      - generic [ref=e28]:
+        - paragraph [ref=e29]:
+          - text: Synced from
+          - link "Reinvy/ReinvyLibrary" [ref=e30] [cursor=pointer]:
+            - /url: https://github.com/Reinvy/ReinvyLibrary
+        - paragraph [ref=e31]: © 2026 ReinvyLibrary · Built with paper & love
+        - generic [ref=e32]:
+          - link "English" [ref=e33] [cursor=pointer]:
+            - /url: /en
+          - link "Bahasa Indonesia" [ref=e34] [cursor=pointer]:
+            - /url: /id
+    - generic [ref=e35]: English · 268 topics · Tutorial/Cheatsheet/Guide/Syllabus · Beginner/Intermediate/Advanced
+  - alert [ref=e36]

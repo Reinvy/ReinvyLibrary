@@ -15,10 +15,16 @@ export interface Dictionary {
   };
   home: {
     featured: string;
+    highlights: string;
     recentCheatsheets: string;
     syllabusProgress: string;
     syllabusProgressEmpty: string;
     syllabusProgressCta: string;
+    categoriesTitle: string;
+    popularTech: string;
+    latestGuides: string;
+    viewAll: string;
+    readMore: string;
   };
   doc: {
     readingTime: string;
@@ -86,10 +92,16 @@ export const dictionaries: Record<Locale, Dictionary> = {
     },
     home: {
       featured: "Featured tutorial",
+      highlights: "Highlights",
       recentCheatsheets: "Fresh cheatsheets",
       syllabusProgress: "Syllabus progress",
       syllabusProgressEmpty: "Pick a syllabus to start tracking chapters!",
       syllabusProgressCta: "Browse syllabi",
+      categoriesTitle: "Browse by category",
+      popularTech: "Popular technologies",
+      latestGuides: "Fresh guides & tutorials",
+      viewAll: "View all",
+      readMore: "Read",
     },
     doc: {
       readingTime: "min read",
@@ -168,10 +180,16 @@ export const dictionaries: Record<Locale, Dictionary> = {
     },
     home: {
       featured: "Tutorial unggulan",
+      highlights: "Sorotan",
       recentCheatsheets: "Cheatsheet terbaru",
       syllabusProgress: "Progres silabus",
       syllabusProgressEmpty: "Pilih silabus untuk mulai melacak bab!",
       syllabusProgressCta: "Jelajahi silabus",
+      categoriesTitle: "Jelajahi berdasarkan kategori",
+      popularTech: "Teknologi populer",
+      latestGuides: "Panduan & tutorial terbaru",
+      viewAll: "Lihat semua",
+      readMore: "Baca",
     },
     doc: {
       readingTime: "menit baca",
