@@ -23,7 +23,7 @@ export default function Header({ locale }: { locale: Locale }) {
         <nav aria-label="Main" className="flex items-center gap-1 sm:gap-2">
           <NavLinks
             locale={locale}
-            labels={{ home: dict.nav.home, categories: dict.nav.categories, search: dict.nav.search }}
+            labels={{ home: dict.nav.home, categories: dict.nav.categories, search: dict.nav.search, collection: dict.nav.collection }}
           />
           <HeaderGamification
             locale={locale}

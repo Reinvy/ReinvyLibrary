@@ -29,6 +29,7 @@ import ProgressTracker from "@/components/doc/ProgressTracker";
 import CheatsheetGrid from "@/components/cheatsheet/CheatsheetGrid";
 import BookmarkButton from "@/components/gamification/BookmarkButton";
 import DocHistoryTracker from "@/components/gamification/DocHistoryTracker";
+import FocusTimer from "@/components/gamification/FocusTimer";
 import MarkCompleteSection from "@/components/gamification/MarkCompleteSection";
 import Badge from "@/components/ui/Badge";
 import TagChip from "@/components/ui/TagChip";
@@ -271,6 +272,20 @@ export default async function DocPage({
               }}
             />
             {prevNext}
+            <div className="mx-auto mt-8 max-w-sm">
+              <FocusTimer
+                labels={{
+                  title: dict.game.focusTitle,
+                  subtitle: dict.game.focusSubtitle,
+                  start: dict.game.focusStart,
+                  pause: dict.game.focusPause,
+                  resume: dict.game.focusResume,
+                  reset: dict.game.focusReset,
+                  done: dict.game.focusDone,
+                  minutes: dict.game.focusMinutes,
+                }}
+              />
+            </div>
           </div>
         </main>
         <aside className="hidden w-56 shrink-0 lg:block">

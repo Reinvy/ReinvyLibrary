@@ -6,12 +6,12 @@ import { cn } from "@/lib/utils";
 
 interface NavLinksProps {
   locale: string;
-  labels: { home: string; categories: string; search: string };
+  labels: { home: string; categories: string; search: string; collection: string };
 }
 
 /** Route-aware primary nav: active pill + aria-current + keyboard ring. */
 export default function NavLinks({ locale, labels }: NavLinksProps) {
-  // Segment is null on /[locale], "search"/category/tech on sub-routes.
+  // Segment is null on /[locale], "search"/"collection"/category/tech on sub-routes.
   const segment = useSelectedLayoutSegment();
 
   const link = (href: string, active: boolean, children: string) => (
@@ -31,6 +31,7 @@ export default function NavLinks({ locale, labels }: NavLinksProps) {
     <>
       {link(`/${locale}`, segment === null, labels.home)}
       {link(`/${locale}/browse`, segment === "browse", labels.categories)}
+      {link(`/${locale}/collection`, segment === "collection", labels.collection)}
       {link(`/${locale}/search`, segment === "search", labels.search)}
     </>
   );
