@@ -5,10 +5,12 @@ import { useEffect, useRef, useState } from "react";
 interface CopyButtonProps {
   text: string;
   label?: string;
+  /** fired with the copy outcome (used for gamification XP) */
+  onCopied?: (ok: boolean) => void;
 }
 
 /** Copies text to clipboard with pending guard, timer cleanup, and real failure state. */
-export default function CopyButton({ text, label = "Copy" }: CopyButtonProps) {
+export default function CopyButton({ text, label = "Copy", onCopied }: CopyButtonProps) {
   const [copied, setCopied] = useState(false);
   const [failed, setFailed] = useState(false);
   const [isCopying, setIsCopying] = useState(false);
@@ -23,6 +25,7 @@ export default function CopyButton({ text, label = "Copy" }: CopyButtonProps) {
   const flash = (ok: boolean) => {
     setCopied(ok);
     setFailed(!ok);
+    onCopied?.(ok);
     if (timerRef.current) clearTimeout(timerRef.current);
     timerRef.current = setTimeout(() => {
       setCopied(false);

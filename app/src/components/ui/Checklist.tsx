@@ -1,6 +1,7 @@
 "use client";
 
 import { useProgress } from "@/components/providers/ProgressProvider";
+import { useGamification } from "@/components/providers/GamificationProvider";
 import type { ChecklistItem } from "@/lib/types";
 
 interface ChecklistProps {
@@ -11,8 +12,16 @@ interface ChecklistProps {
 /** Interactive GFM checklist, persisted via localStorage progress provider. */
 export default function Checklist({ topicSlug, items }: ChecklistProps) {
   const { progress, toggleItem } = useProgress();
+  const { recordChecklistItem } = useGamification();
   const checkedIds = progress[topicSlug]?.checked ?? [];
   const done = items.filter((i) => checkedIds.includes(i.id)).length;
+
+  const onToggle = (itemId: string) => {
+    const willCheck = !checkedIds.includes(itemId);
+    toggleItem(topicSlug, itemId);
+    // XP only when ticking (once per item — provider guards duplicates).
+    if (willCheck) recordChecklistItem(topicSlug, itemId);
+  };
 
   return (
     <div className="my-6 rounded-2xl border border-line bg-card p-4 shadow-paper">
@@ -36,7 +45,7 @@ export default function Checklist({ topicSlug, items }: ChecklistProps) {
                 <input
                   type="checkbox"
                   checked={checked}
-                  onChange={() => toggleItem(topicSlug, item.id)}
+                  onChange={() => onToggle(item.id)}
                   className="mt-1 h-4 w-4 rounded border-line accent-eucalyptus"
                 />
                 <span

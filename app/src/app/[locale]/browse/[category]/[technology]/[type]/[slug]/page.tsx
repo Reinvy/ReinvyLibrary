@@ -27,6 +27,9 @@ import DocToc from "@/components/doc/DocToc";
 import LanguageToggle from "@/components/doc/LanguageToggle";
 import ProgressTracker from "@/components/doc/ProgressTracker";
 import CheatsheetGrid from "@/components/cheatsheet/CheatsheetGrid";
+import BookmarkButton from "@/components/gamification/BookmarkButton";
+import DocHistoryTracker from "@/components/gamification/DocHistoryTracker";
+import MarkCompleteSection from "@/components/gamification/MarkCompleteSection";
 import Badge from "@/components/ui/Badge";
 import TagChip from "@/components/ui/TagChip";
 
@@ -159,6 +162,13 @@ export default async function DocPage({
         <TagChip label={category} tone="sage" />
         <TagChip label={technology} tone="peach" />
         <TagChip label={topic.type} tone="sticky" />
+        <BookmarkButton
+          entryKey={`${topic.slug}:${loc}`}
+          title={file.frontmatter.title}
+          url={`/${loc}/browse/${category}/${technology}/${type}/${slug}`}
+          saveLabel={dict.game.save}
+          savedLabel={dict.game.saved}
+        />
       </div>
     </header>
   );
@@ -228,6 +238,11 @@ export default async function DocPage({
   return (
     <div className="mx-auto max-w-7xl px-4 py-10">
       {crumbs}
+      <DocHistoryTracker
+        entryKey={`${topic.slug}:${loc}`}
+        title={file.frontmatter.title}
+        url={`/${loc}/browse/${category}/${technology}/${type}/${slug}`}
+      />
       <div className="flex gap-8">
         <SidebarNav
           siblings={siblings}
@@ -239,6 +254,22 @@ export default async function DocPage({
           <div className="rounded-card border border-line bg-card p-6 shadow-paper sm:p-10">
             {header}
             {content}
+            <MarkCompleteSection
+              slug={topic.slug}
+              locale={loc}
+              category={topic.category}
+              technology={topic.technology}
+              readingMinutes={minutes}
+              title={file.frontmatter.title}
+              url={`/${loc}/browse/${category}/${technology}/${type}/${slug}`}
+              labels={{
+                markComplete: dict.game.markComplete,
+                completed: dict.game.completed,
+                earns: dict.game.earns,
+                xpSuffix: dict.game.xp,
+                scrollHint: dict.game.scrollHint,
+              }}
+            />
             {prevNext}
           </div>
         </main>

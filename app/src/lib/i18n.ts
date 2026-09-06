@@ -76,6 +76,37 @@ export interface Dictionary {
     notFoundMessage: string;
   };
   footer: { syncedFrom: string; builtWith: string; lastSync: string };
+  game: {
+    level: string;
+    xp: string;
+    toGo: string;
+    streak: string;
+    freezes: string;
+    quests: string;
+    questProgress: string;
+    questBonus: string;
+    questAllDone: string;
+    badges: string;
+    badgesUnlocked: string;
+    badgeLocked: string;
+    toastBadge: string;
+    toastLevel: string;
+    toastQuest: string;
+    toastFreeze: string;
+    toastSyllabus: string;
+    streakTitle: string;
+    streakBest: string;
+    streakEmpty: string;
+    streakCta: string;
+    tipTitle: string;
+    markComplete: string;
+    completed: string;
+    earns: string;
+    scrollHint: string;
+    save: string;
+    saved: string;
+    adventure: string;
+  };
   category: { count: string; emptyTitle: string; emptyMessage: string };
   browse: { title: string; subtitle: string };
 }
@@ -162,6 +193,37 @@ export const dictionaries: Record<Locale, Dictionary> = {
       syncedFrom: "Synced from",
       builtWith: "Built with paper & love",
       lastSync: "Last sync",
+    },
+    game: {
+      level: "Lv",
+      xp: "XP",
+      toGo: "to go",
+      streak: "day streak",
+      freezes: "freezes",
+      quests: "Today's quests",
+      questProgress: "Finish all 3 for",
+      questBonus: "bonus XP",
+      questAllDone: "All quests done — bonus claimed!",
+      badges: "Badge shelf",
+      badgesUnlocked: "unlocked",
+      badgeLocked: "Keep reading to unlock",
+      toastBadge: "Badge unlocked",
+      toastLevel: "Level up!",
+      toastQuest: "Daily quest complete",
+      toastFreeze: "Streak freeze used — Owi saved your streak!",
+      toastSyllabus: "Syllabus complete — graduate!",
+      streakTitle: "Reading streak",
+      streakBest: "best",
+      streakEmpty: "Owi is sleepy — read a page to wake them up!",
+      streakCta: "Start reading",
+      tipTitle: "Owi's washi tip",
+      markComplete: "Mark as finished",
+      completed: "Finished — nicely read!",
+      earns: "One tap, or just scroll to the bottom.",
+      scrollHint: "Read to the bottom (or tap below) to earn XP.",
+      save: "Save",
+      saved: "Saved",
+      adventure: "Your adventure",
     },
     category: {
       count: "topics",
@@ -254,6 +316,37 @@ export const dictionaries: Record<Locale, Dictionary> = {
       syncedFrom: "Disinkronkan dari",
       builtWith: "Dibuat dengan kertas & cinta",
       lastSync: "Sinkron terakhir",
+    },
+    game: {
+      level: "Lv",
+      xp: "XP",
+      toGo: "lagi",
+      streak: "streak harian",
+      freezes: "beku",
+      quests: "Misi hari ini",
+      questProgress: "Selesaikan ketiganya untuk",
+      questBonus: "bonus XP",
+      questAllDone: "Semua misi selesai — bonus diklaim!",
+      badges: "Rak lencana",
+      badgesUnlocked: "terbuka",
+      badgeLocked: "Terus baca untuk membuka",
+      toastBadge: "Lencana terbuka",
+      toastLevel: "Naik level!",
+      toastQuest: "Misi harian selesai",
+      toastFreeze: "Beku streak dipakai — Owi menyelamatkan streakmu!",
+      toastSyllabus: "Silabus tuntas — lulusan!",
+      streakTitle: "Streak membaca",
+      streakBest: "terbaik",
+      streakEmpty: "Owi mengantuk — baca satu halaman untuk membangunkannya!",
+      streakCta: "Mulai baca",
+      tipTitle: "Tips washi Owi",
+      markComplete: "Tandai selesai",
+      completed: "Tuntas — bacaan yang bagus!",
+      earns: "Satu ketukan, atau gulir saja sampai bawah.",
+      scrollHint: "Baca sampai bawah (atau ketuk di bawah) untuk dapat XP.",
+      save: "Simpan",
+      saved: "Tersimpan",
+      adventure: "Petualanganmu",
     },
     category: {
       count: "topik",

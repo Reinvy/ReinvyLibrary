@@ -1,6 +1,8 @@
 "use client";
 
+import { useEffect } from "react";
 import { useProgress } from "@/components/providers/ProgressProvider";
+import { useGamification } from "@/components/providers/GamificationProvider";
 import type { ChecklistItem } from "@/lib/types";
 
 interface ProgressTrackerProps {
@@ -20,10 +22,18 @@ export default function ProgressTracker({
   ofLabel,
 }: ProgressTrackerProps) {
   const { progress } = useProgress();
+  const { recordSyllabusProgress } = useGamification();
   const done = (progress[topicSlug]?.checked ?? []).filter((id) =>
     items.some((i) => i.id === id)
   ).length;
   const pct = items.length ? Math.round((done / items.length) * 100) : 0;
+
+  // Graduate bonus: completing every chapter grants a one-time XP reward.
+  useEffect(() => {
+    if (items.length > 0 && done === items.length) {
+      recordSyllabusProgress(topicSlug, done, items.length);
+    }
+  }, [done, items.length, topicSlug, recordSyllabusProgress]);
 
   return (
     <div className="sticky-note my-4 rounded-2xl border border-sticky/70 bg-sticky p-4 shadow-paper">

@@ -6,6 +6,8 @@ import { Suspense } from "react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { ProgressProvider } from "@/components/providers/ProgressProvider";
+import { GamificationProvider } from "@/components/providers/GamificationProvider";
+import AchievementToast from "@/components/gamification/AchievementToast";
 import { getDictionary } from "@/lib/i18n";
 import { LOCALES, TYPE_LABELS, DIFFICULTY_LABELS } from "@/lib/constants";
 import type { Locale } from "@/lib/types";
@@ -50,15 +52,30 @@ export default async function LocaleLayout({
 }) {
   const { locale } = await params;
   if (!LOCALES.includes(locale as Locale)) notFound();
+  const loc = locale as Locale;
+  const dict = getDictionary(loc);
 
   return (
     <div className="flex min-h-screen flex-col">
       <ProgressProvider>
-        <Header locale={locale as Locale} />
-        <main className="flex-1">{children}</main>
-        <Suspense fallback={null}>
-          <Footer locale={locale as Locale} />
-        </Suspense>
+        <GamificationProvider>
+          <Header locale={loc} />
+          <main className="flex-1">{children}</main>
+          <Suspense fallback={null}>
+            <Footer locale={loc} />
+          </Suspense>
+          <AchievementToast
+            locale={loc}
+            labels={{
+              badgeUnlocked: dict.game.toastBadge,
+              levelUp: dict.game.toastLevel,
+              questDone: dict.game.toastQuest,
+              freezeUsed: dict.game.toastFreeze,
+              syllabusDone: dict.game.toastSyllabus,
+              xpSuffix: dict.game.xp,
+            }}
+          />
+        </GamificationProvider>
       </ProgressProvider>
       <Suspense fallback={null}>
         <HeaderCount locale={locale as Locale} />

@@ -1,3 +1,5 @@
+import CopyXpButton from "@/components/gamification/CopyXpButton";
+
 interface CodeBlockProps {
   code: string;
   language?: string;
@@ -24,14 +26,7 @@ export default function CodeBlock({ code, language, filename, collapsibleAt = 40
           <span className="font-hand text-xs text-ink-muted">{langLabel}</span>
         </div>
         <div className="opacity-90">
-          <button
-            type="button"
-            aria-label="Copy code"
-            onClick={() => navigator.clipboard.writeText(code)}
-            className="inline-flex items-center gap-1.5 rounded-full bg-card px-3 py-1.5 font-hand text-sm text-ink shadow-paper transition hover:bg-sticky focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta/60"
-          >
-            Copy
-          </button>
+          <CopyXpButton text={code} />
         </div>
       </div>
       <div className="p-4">
