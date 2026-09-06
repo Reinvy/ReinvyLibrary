@@ -133,8 +133,8 @@ export default function CheatsheetGrid({ snippets, labels, emptyTitle, emptyMess
           }
         />
       ) : (
-        /* CSS-columns masonry */
-        <div className="columns-1 gap-5 sm:columns-2 lg:columns-3 [&>*]:mb-5">
+        /* CSS-columns masonry — maks 2 kolom */
+        <div className="columns-1 gap-5 sm:columns-2 [&>*]:mb-5">
           {filtered.map((snippet) => (
             <SnippetCard key={snippet.id} snippet={snippet} labels={labels} />
           ))}
