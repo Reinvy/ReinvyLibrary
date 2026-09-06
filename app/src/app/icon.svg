@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <title>ReinvyLibrary</title>
+  <rect x="4" y="4" width="504" height="504" rx="112" fill="#FAFAF7" stroke="#E5E5E0" stroke-width="8"/>
+  <g transform="rotate(-4 256 272)">
+    <rect x="96" y="122" width="320" height="282" rx="48" fill="#FFFFFF" stroke="#E5E5E0" stroke-width="8"/>
+    <path d="M132 122 v92 l22 -16 l22 16 v-92 z" fill="#81B29A" stroke="#E5E5E0" stroke-width="5" stroke-linejoin="round"/>
+    <g fill="none" stroke="#2D3142" stroke-linecap="round" stroke-linejoin="round"><line x1="196" y1="196" x2="196" y2="356" stroke-width="42"/><path d="M196 202 H272 A48 48 0 0 1 272 298 H196" stroke-width="38"/><line x1="258" y1="292" x2="330" y2="358" stroke-width="40"/></g>
+    <circle cx="338" cy="296" r="21" fill="#E07A5F" stroke="#FFFFFF" stroke-width="7"/>
+    <rect x="172" y="362" width="118" height="15" rx="7.5" fill="#E8F3E8"/>
+  </g>
+  <g transform="rotate(-2 256 118)">
+    <rect x="176" y="96" width="160" height="42" rx="9" fill="#F7F3E8" stroke="#E5E5E0" stroke-width="5"/>
+    <line x1="196" y1="106" x2="196" y2="128" stroke="#E5E5E0" stroke-width="4" stroke-linecap="round" stroke-dasharray="2 8"/>
+    <line x1="316" y1="106" x2="316" y2="128" stroke="#E5E5E0" stroke-width="4" stroke-linecap="round" stroke-dasharray="2 8"/>
+  </g>
+  <g transform="rotate(8 366 348)">
+    <rect x="318" y="300" width="96" height="96" rx="20" fill="#FFF3B0" stroke="#E5E5E0" stroke-width="6"/>
+    <line x1="334" y1="330" x2="398" y2="330" stroke="#4C566A" stroke-width="7" stroke-linecap="round" opacity="0.45"/>
+    <line x1="334" y1="352" x2="378" y2="352" stroke="#4C566A" stroke-width="7" stroke-linecap="round" opacity="0.3"/>
+  </g>
+</svg>

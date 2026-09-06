@@ -2,6 +2,7 @@ import Link from "next/link";
 import { getDictionary } from "@/lib/i18n";
 import { GITHUB_REPO } from "@/lib/github";
 import type { Locale } from "@/lib/types";
+import AppIcon from "@/components/ui/AppIcon";
 import NavLinks from "./NavLinks";
 
 export default function Header({ locale }: { locale: Locale }) {
@@ -10,8 +11,8 @@ export default function Header({ locale }: { locale: Locale }) {
     <header className="sticky top-0 z-40 border-b border-line bg-paper/85 backdrop-blur-sm">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
         <Link href={`/${locale}`} className="group flex items-center gap-2">
-          <span className="grid h-9 w-9 place-items-center rounded-2xl bg-sticky font-display text-lg font-bold text-ink shadow-paper transition group-hover:rotate-[-3deg]">
-            R
+          <span className="grid h-9 w-9 place-items-center overflow-hidden rounded-2xl shadow-paper transition group-hover:rotate-[-3deg]">
+            <AppIcon size={36} />
           </span>
           <span className="font-display text-lg font-bold text-ink">
             Reinvy<span className="text-terracotta">Library</span>
