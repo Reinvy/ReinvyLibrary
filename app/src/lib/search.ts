@@ -6,7 +6,8 @@ import { fileForLocale } from "./urls";
 import { deriveTags } from "./utils";
 import { parseMarkdownSync } from "./markdown/parser";
 
-const BODY_PREVIEW_LEN = 2000;
+const BODY_PREVIEW_LEN = 600;
+const HEADINGS_MAX = 20;
 
 function plainText(markdown: string): string {
   return markdown
@@ -29,7 +30,10 @@ export async function buildSearchDocs(locale: Locale): Promise<SearchDoc[]> {
     const file = fileForLocale(topic, locale);
     const body = plainText(file.body);
     const { toc } = parseMarkdownSync(file.body);
-    const headings = toc.map((g) => [g.heading.text, ...g.children.map((c) => c.text)]).flat();
+    const headings = toc
+      .map((g) => [g.heading.text, ...g.children.map((c) => c.text)])
+      .flat()
+      .slice(0, HEADINGS_MAX);
     docs.push({
       id: `${locale}:${file.path}`,
       locale,

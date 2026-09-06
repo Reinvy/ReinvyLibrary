@@ -44,13 +44,13 @@ export default async function Footer({ locale }: { locale: Locale }) {
         <div className="mt-2 flex gap-4">
           <Link
             href="/en"
-            className="rounded-full bg-peach px-3 py-1 font-hand text-xs text-ink transition hover:rotate-1"
+            className="rounded-full bg-peach px-3 py-1 font-hand text-xs text-ink transition hover:rotate-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta/60"
           >
             English
           </Link>
           <Link
             href="/id"
-            className="rounded-full bg-sage px-3 py-1 font-hand text-xs text-ink transition hover:-rotate-1"
+            className="rounded-full bg-sage px-3 py-1 font-hand text-xs text-ink transition hover:-rotate-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta/60"
           >
             Bahasa Indonesia
           </Link>

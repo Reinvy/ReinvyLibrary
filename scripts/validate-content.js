@@ -10,6 +10,10 @@ const ALLOWED_TECHNOLOGIES = [
 const ALLOWED_DIFFICULTIES = ['beginner', 'intermediate', 'advanced'];
 const ALLOWED_TYPES = ['tutorial', 'syllabus', 'cheatsheet', 'guide'];
 
+// Reserved URL segments under /[locale]/ — must never become a category/technology
+// slug, otherwise they collide with static routes (browse, search).
+const RESERVED_ROUTE_SEGMENTS = ['browse', 'search'];
+
 const EXPECTED_H2S = {
   tutorial: {
     en: ['Summary', 'Target Audience', 'Prerequisites', 'Learning Objectives', 'Context and Motivation', 'Core Content', 'Code Examples', 'Key Insights', 'Next Steps', 'Conclusion'],
@@ -124,6 +128,13 @@ function validateFile(filePath) {
   // Technology check
   if (!ALLOWED_TECHNOLOGIES.includes(metadata.technology)) {
     logError(filePath, `Invalid technology "${metadata.technology}". Allowed: ${ALLOWED_TECHNOLOGIES.join(', ')}`);
+  }
+
+  // Reserved route segment guard (collides with /[locale]/browse, /[locale]/search)
+  for (const value of [metadata.category, metadata.technology]) {
+    if (RESERVED_ROUTE_SEGMENTS.includes(value)) {
+      logError(filePath, `Reserved route segment "${value}" must never be a category/technology slug.`);
+    }
   }
   
   // Difficulty check

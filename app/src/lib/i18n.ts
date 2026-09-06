@@ -15,10 +15,16 @@ export interface Dictionary {
   };
   home: {
     featured: string;
+    highlights: string;
     recentCheatsheets: string;
     syllabusProgress: string;
     syllabusProgressEmpty: string;
     syllabusProgressCta: string;
+    categoriesTitle: string;
+    popularTech: string;
+    latestGuides: string;
+    viewAll: string;
+    readMore: string;
   };
   doc: {
     readingTime: string;
@@ -52,6 +58,10 @@ export interface Dictionary {
     noResultsTitle: string;
     noResultsMessage: string;
     popularTags: string;
+    browseByCategory: string;
+    popularTech: string;
+    indexedTopics: string;
+    tryInstead: string;
   };
   common: {
     beginner: string;
@@ -67,6 +77,7 @@ export interface Dictionary {
   };
   footer: { syncedFrom: string; builtWith: string; lastSync: string };
   category: { count: string; emptyTitle: string; emptyMessage: string };
+  browse: { title: string; subtitle: string };
 }
 
 export const dictionaries: Record<Locale, Dictionary> = {
@@ -85,10 +96,16 @@ export const dictionaries: Record<Locale, Dictionary> = {
     },
     home: {
       featured: "Featured tutorial",
+      highlights: "Highlights",
       recentCheatsheets: "Fresh cheatsheets",
       syllabusProgress: "Syllabus progress",
       syllabusProgressEmpty: "Pick a syllabus to start tracking chapters!",
       syllabusProgressCta: "Browse syllabi",
+      categoriesTitle: "Browse by category",
+      popularTech: "Popular technologies",
+      latestGuides: "Fresh guides & tutorials",
+      viewAll: "View all",
+      readMore: "Read",
     },
     doc: {
       readingTime: "min read",
@@ -120,8 +137,12 @@ export const dictionaries: Record<Locale, Dictionary> = {
       placeholder: "Search everything…",
       results: "results",
       noResultsTitle: "Nothing found — yet!",
-      noResultsMessage: "Try a different keyword, or browse by category below.",
+      noResultsMessage: "Try a different keyword, pick a suggestion, or browse by category below.",
       popularTags: "Popular right now",
+      browseByCategory: "Browse by category",
+      popularTech: "Popular technologies",
+      indexedTopics: "topics indexed",
+      tryInstead: "Try instead",
     },
     common: {
       beginner: "Beginner",
@@ -147,6 +168,10 @@ export const dictionaries: Record<Locale, Dictionary> = {
       emptyTitle: "Nothing here yet",
       emptyMessage: "This shelf is still being stocked. Check back soon!",
     },
+    browse: {
+      title: "Browse the library",
+      subtitle: "Pick a shelf — every category lists its topics and technologies.",
+    },
   },
   id: {
     nav: { home: "Beranda", categories: "Jelajahi", search: "Cari", source: "Sumber" },
@@ -163,10 +188,16 @@ export const dictionaries: Record<Locale, Dictionary> = {
     },
     home: {
       featured: "Tutorial unggulan",
+      highlights: "Sorotan",
       recentCheatsheets: "Cheatsheet terbaru",
       syllabusProgress: "Progres silabus",
       syllabusProgressEmpty: "Pilih silabus untuk mulai melacak bab!",
       syllabusProgressCta: "Jelajahi silabus",
+      categoriesTitle: "Jelajahi berdasarkan kategori",
+      popularTech: "Teknologi populer",
+      latestGuides: "Panduan & tutorial terbaru",
+      viewAll: "Lihat semua",
+      readMore: "Baca",
     },
     doc: {
       readingTime: "menit baca",
@@ -198,8 +229,12 @@ export const dictionaries: Record<Locale, Dictionary> = {
       placeholder: "Cari semuanya…",
       results: "hasil",
       noResultsTitle: "Tidak ditemukan — belum!",
-      noResultsMessage: "Coba kata kunci lain, atau jelajahi kategori di bawah.",
+      noResultsMessage: "Coba kata kunci lain, pilih saran, atau jelajahi kategori di bawah.",
       popularTags: "Populer saat ini",
+      browseByCategory: "Jelajahi berdasarkan kategori",
+      popularTech: "Teknologi populer",
+      indexedTopics: "topik terindeks",
+      tryInstead: "Coba ini",
     },
     common: {
       beginner: "Pemula",
@@ -224,6 +259,10 @@ export const dictionaries: Record<Locale, Dictionary> = {
       count: "topik",
       emptyTitle: "Belum ada apa-apa",
       emptyMessage: "Rak ini masih diisi. Kembalilah lagi nanti!",
+    },
+    browse: {
+      title: "Jelajahi perpustakaan",
+      subtitle: "Pilih rak — setiap kategori menampilkan topik dan teknologinya.",
     },
   },
 };

@@ -5,6 +5,13 @@ interface DataTableProps {
 
 /** Warm-bordered GFM table with a sage header tint, horizontal scroll. */
 export default function DataTable({ headers, rows }: DataTableProps) {
+  if (rows.length === 0) {
+    return (
+      <p className="my-6 rounded-2xl border border-line bg-card p-6 text-center font-hand text-sm text-ink-muted">
+        No rows.
+      </p>
+    );
+  }
   return (
     <div className="my-6 overflow-x-auto rounded-2xl border border-line">
       <table className="w-full min-w-[480px] border-collapse text-sm text-ink-muted">

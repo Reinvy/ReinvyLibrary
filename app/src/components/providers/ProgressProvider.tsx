@@ -1,6 +1,6 @@
 "use client";
 
-import { createContext, useCallback, useContext, useState, type ReactNode } from "react";
+import { createContext, useCallback, useContext, useEffect, useState, type ReactNode } from "react";
 
 export interface ProgressState {
   [topicSlug: string]: {
@@ -37,19 +37,35 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
     return readStorage();
   });
 
+  // Persist outside the updater (StrictMode-safe) + cross-tab sync.
+  useEffect(() => {
+    try {
+      window.localStorage.setItem(STORAGE_KEY, JSON.stringify(progress));
+    } catch {
+      /* storage full/unavailable — degrade silently */
+    }
+  }, [progress]);
+
+  useEffect(() => {
+    const onStorage = (e: StorageEvent) => {
+      if (e.key !== STORAGE_KEY) return;
+      try {
+        setProgress(e.newValue ? (JSON.parse(e.newValue) as ProgressState) : {});
+      } catch {
+        /* ignore corrupt cross-tab payload */
+      }
+    };
+    window.addEventListener("storage", onStorage);
+    return () => window.removeEventListener("storage", onStorage);
+  }, []);
+
   const toggleItem = useCallback((topicSlug: string, itemId: string) => {
     setProgress((prev) => {
       const topic = prev[topicSlug] ?? { checked: [] };
       const checked = topic.checked.includes(itemId)
         ? topic.checked.filter((id) => id !== itemId)
         : [...topic.checked, itemId];
-      const next: ProgressState = { ...prev, [topicSlug]: { checked } };
-      try {
-        window.localStorage.setItem(STORAGE_KEY, JSON.stringify(next));
-      } catch {
-        /* storage full/unavailable — degrade silently */
-      }
-      return next;
+      return { ...prev, [topicSlug]: { checked } };
     });
   }, []);
 

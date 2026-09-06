@@ -37,7 +37,7 @@ export default function FilterableTopicGrid({
           type="button"
           onClick={() => setType("all")}
           aria-pressed={type === "all"}
-          className={`rounded-full px-3 py-1.5 font-hand text-sm transition ${
+          className={`rounded-full px-3 py-1.5 font-hand text-sm transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta/60 ${
             type === "all"
               ? "bg-terracotta text-card shadow-paper"
               : "bg-peach text-ink hover:bg-peach/70"
@@ -51,7 +51,7 @@ export default function FilterableTopicGrid({
             type="button"
             onClick={() => setType(t)}
             aria-pressed={type === t}
-            className={`rounded-full px-3 py-1.5 font-hand text-sm transition ${
+            className={`rounded-full px-3 py-1.5 font-hand text-sm transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta/60 ${
               type === t
                 ? "bg-terracotta text-card shadow-paper"
                 : "bg-peach text-ink hover:bg-peach/70"
@@ -65,7 +65,7 @@ export default function FilterableTopicGrid({
           type="button"
           onClick={() => setDifficulty("all")}
           aria-pressed={difficulty === "all"}
-          className={`rounded-full px-3 py-1.5 font-hand text-sm transition ${
+          className={`rounded-full px-3 py-1.5 font-hand text-sm transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta/60 ${
             difficulty === "all"
               ? "bg-eucalyptus text-card shadow-paper"
               : "bg-sage text-ink hover:bg-sage/70"
@@ -79,7 +79,7 @@ export default function FilterableTopicGrid({
             type="button"
             onClick={() => setDifficulty(d)}
             aria-pressed={difficulty === d}
-            className={`rounded-full px-3 py-1.5 font-hand text-sm transition ${
+            className={`rounded-full px-3 py-1.5 font-hand text-sm transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta/60 ${
               difficulty === d
                 ? "bg-eucalyptus text-card shadow-paper"
                 : "bg-sage text-ink hover:bg-sage/70"
@@ -91,7 +91,22 @@ export default function FilterableTopicGrid({
       </div>
 
       {filtered.length === 0 ? (
-        <EmptyState title={emptyTitle} message={emptyMessage} />
+        <EmptyState
+          title={emptyTitle}
+          message={emptyMessage}
+          action={
+            <button
+              type="button"
+              onClick={() => {
+                setType("all");
+                setDifficulty("all");
+              }}
+              className="rounded-full bg-terracotta px-5 py-2.5 font-hand text-sm text-card shadow-paper transition hover:-rotate-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta/60"
+            >
+              Clear filters
+            </button>
+          }
+        />
       ) : (
         <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {filtered.map((t, i) => (

@@ -42,7 +42,7 @@ export default function HeroSearch({ placeholder, buttonLabel, locale }: HeroSea
           onChange={(e) => setQuery(e.target.value)}
           placeholder={placeholder}
           aria-label={placeholder}
-          className="w-full rounded-full border border-line bg-card py-3.5 pl-12 pr-4 font-body text-ink shadow-paper placeholder:text-ink-muted/60 focus:outline-none focus:ring-2 focus:ring-terracotta/60"
+          className="w-full rounded-full border border-line bg-card py-3.5 pl-12 pr-4 font-body text-ink shadow-paper placeholder:text-ink-muted/60 focus:outline-none focus-visible:ring-2 focus-visible:ring-terracotta/60"
         />
       </div>
       <button

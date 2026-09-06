@@ -31,15 +31,16 @@ export async function generateMetadata({
 
 export default async function SearchPage({
   params,
+  searchParams,
 }: {
   params: Promise<{ locale: string }>;
+  searchParams: Promise<{ q?: string }>;
 }) {
   const { locale } = await params;
   if (!LOCALES.includes(locale as Locale)) notFound();
   const dict = getDictionary(locale as Locale);
-
-  // Build the search payload server-side and ship it to the client.
-  const docs = await buildSearchDocs(locale as Locale);
+  const { q } = await searchParams;
+  const initialQuery = (q ?? "").slice(0, 200);
 
   return (
     <div className="mx-auto max-w-3xl px-4 py-12">
@@ -49,17 +50,60 @@ export default async function SearchPage({
       <p className="mb-8 font-hand text-lg text-ink-muted">{dict.hero.subtitle}</p>
 
       <Suspense fallback={<SkeletonLoader variant="hero" />}>
-        <SearchBox
-          docs={docs}
+        <SearchLoader
+          locale={locale as Locale}
+          initialQuery={initialQuery}
           dictionary={{
             placeholder: dict.search.placeholder,
             results: dict.search.results,
             noResultsTitle: dict.search.noResultsTitle,
             noResultsMessage: dict.search.noResultsMessage,
             popularTags: dict.search.popularTags,
+            browseByCategory: dict.search.browseByCategory,
+            popularTech: dict.search.popularTech,
+            indexedTopics: dict.search.indexedTopics,
+            tryInstead: dict.search.tryInstead,
           }}
+          browseLabel={dict.common.browseCategory}
         />
       </Suspense>
     </div>
+  );
+}
+
+/** Suspending child so the header streams and the skeleton actually shows. */
+async function SearchLoader({
+  locale,
+  initialQuery,
+  dictionary,
+  browseLabel,
+}: {
+  locale: Locale;
+  initialQuery: string;
+  dictionary: {
+    placeholder: string;
+    results: string;
+    noResultsTitle: string;
+    noResultsMessage: string;
+    popularTags: string;
+    browseByCategory: string;
+    popularTech: string;
+    indexedTopics: string;
+    tryInstead: string;
+  };
+  browseLabel: string;
+}) {
+  // Build the search payload server-side and ship it to the client.
+  // key remounts on ?q= back/forward so useState(initialQuery) stays correct.
+  const docs = await buildSearchDocs(locale);
+  return (
+    <SearchBox
+      key={initialQuery}
+      docs={docs}
+      initialQuery={initialQuery}
+      locale={locale}
+      dictionary={dictionary}
+      browseLabel={browseLabel}
+    />
   );
 }

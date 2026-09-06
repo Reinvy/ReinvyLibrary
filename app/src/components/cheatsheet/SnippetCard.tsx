@@ -50,7 +50,8 @@ export default function SnippetCard({ snippet, labels }: SnippetCardProps) {
           <button
             type="button"
             onClick={() => setExpanded((e) => !e)}
-            className="mt-2 font-hand text-sm text-terracotta"
+            aria-expanded={showAll}
+            className="mt-2 rounded font-hand text-sm text-terracotta focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta/60"
           >
             {expanded ? "Collapse" : `Show all (${lineCount} ${labels.lines})`}
           </button>
