@@ -2,7 +2,7 @@ import type { Locale } from "./types";
 
 /** Shared string-keyed shape for both locales. */
 export interface Dictionary {
-  nav: { home: string; categories: string; search: string; source: string };
+  nav: { home: string; categories: string; search: string; source: string; collection: string };
   hero: {
     badge: string;
     title: string;
@@ -76,13 +76,76 @@ export interface Dictionary {
     notFoundMessage: string;
   };
   footer: { syncedFrom: string; builtWith: string; lastSync: string };
+  game: {
+    level: string;
+    xp: string;
+    toGo: string;
+    streak: string;
+    freezes: string;
+    quests: string;
+    questProgress: string;
+    questBonus: string;
+    questAllDone: string;
+    badges: string;
+    badgesUnlocked: string;
+    badgeLocked: string;
+    toastBadge: string;
+    toastLevel: string;
+    toastQuest: string;
+    toastFreeze: string;
+    toastSyllabus: string;
+    streakTitle: string;
+    streakBest: string;
+    streakEmpty: string;
+    streakCta: string;
+    tipTitle: string;
+    markComplete: string;
+    completed: string;
+    earns: string;
+    scrollHint: string;
+    save: string;
+    saved: string;
+    adventure: string;
+    shelf: string;
+    continueReading: string;
+    shelfEmpty: string;
+    historyEmpty: string;
+    browseMore: string;
+    removeBookmark: string;
+    stamps: string;
+    stampsCollected: string;
+    stampLocked: string;
+    collectionTitle: string;
+    collectionSubtitle: string;
+    focusTitle: string;
+    focusSubtitle: string;
+    focusStart: string;
+    focusPause: string;
+    focusResume: string;
+    focusReset: string;
+    focusDone: string;
+    focusMinutes: string;
+    shareDownload: string;
+    shareButton: string;
+    shareDone: string;
+    shareTagline: string;
+    dataTitle: string;
+    dataDescription: string;
+    dataExport: string;
+    dataImport: string;
+    dataReset: string;
+    dataResetConfirm: string;
+    dataResetCancel: string;
+    dataImportOk: string;
+    dataImportFail: string;
+  };
   category: { count: string; emptyTitle: string; emptyMessage: string };
   browse: { title: string; subtitle: string };
 }
 
 export const dictionaries: Record<Locale, Dictionary> = {
   en: {
-    nav: { home: "Home", categories: "Browse", search: "Search", source: "Source" },
+    nav: { home: "Home", categories: "Browse", search: "Search", source: "Source", collection: "Collection" },
     hero: {
       badge: "a cozy corner of the internet",
       title: "Learn, one paper card at a time.",
@@ -163,6 +226,69 @@ export const dictionaries: Record<Locale, Dictionary> = {
       builtWith: "Built with paper & love",
       lastSync: "Last sync",
     },
+    game: {
+      level: "Lv",
+      xp: "XP",
+      toGo: "to go",
+      streak: "day streak",
+      freezes: "freezes",
+      quests: "Today's quests",
+      questProgress: "Finish all 3 for",
+      questBonus: "bonus XP",
+      questAllDone: "All quests done — bonus claimed!",
+      badges: "Badge shelf",
+      badgesUnlocked: "unlocked",
+      badgeLocked: "Keep reading to unlock",
+      toastBadge: "Badge unlocked",
+      toastLevel: "Level up!",
+      toastQuest: "Daily quest complete",
+      toastFreeze: "Streak freeze used — Owi saved your streak!",
+      toastSyllabus: "Syllabus complete — graduate!",
+      streakTitle: "Reading streak",
+      streakBest: "best",
+      streakEmpty: "Owi is sleepy — read a page to wake them up!",
+      streakCta: "Start reading",
+      tipTitle: "Owi's washi tip",
+      markComplete: "Mark as finished",
+      completed: "Finished — nicely read!",
+      earns: "One tap, or just scroll to the bottom.",
+      scrollHint: "Read to the bottom (or tap below) to earn XP.",
+      save: "Save",
+      saved: "Saved",
+      adventure: "Your adventure",
+      shelf: "My shelf",
+      continueReading: "Continue reading",
+      shelfEmpty: "No saved reads yet — tap Save on any page.",
+      historyEmpty: "Nothing here yet — your reads will appear like sticky notes.",
+      browseMore: "Find something to read",
+      removeBookmark: "Remove",
+      stamps: "Stamp book",
+      stampsCollected: "collected",
+      stampLocked: "Unread",
+      collectionTitle: "My collection",
+      collectionSubtitle: "Badges, stamps, shelf & achievements — all yours, stored in this browser.",
+      focusTitle: "Focus reading",
+      focusSubtitle: "Pick a duration, read calmly, earn XP.",
+      focusStart: "Start",
+      focusPause: "Pause",
+      focusResume: "Resume",
+      focusReset: "Reset",
+      focusDone: "Focus session complete — nicely done!",
+      focusMinutes: "min",
+      shareDownload: "Download card",
+      shareButton: "Share",
+      shareDone: "Shared!",
+      shareTagline: "Learning, one paper card at a time.",
+      dataTitle: "Your data stays here",
+      dataDescription: "Progress lives only in this browser. Export a backup, or wipe the shelf clean.",
+      dataExport: "Export backup",
+      dataImport: "Import backup",
+      dataReset: "Reset all",
+      dataResetConfirm: "Yes, wipe it",
+      dataResetCancel: "Keep it",
+      dataImportOk: "Backup restored — welcome back!",
+      dataImportFail: "That file doesn't look like a backup.",
+    },
     category: {
       count: "topics",
       emptyTitle: "Nothing here yet",
@@ -174,7 +300,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
     },
   },
   id: {
-    nav: { home: "Beranda", categories: "Jelajahi", search: "Cari", source: "Sumber" },
+    nav: { home: "Beranda", categories: "Jelajahi", search: "Cari", source: "Sumber", collection: "Koleksi" },
     hero: {
       badge: "sudut internet yang hangat",
       title: "Belajar, satu kartu kertas di satu waktu.",
@@ -254,6 +380,69 @@ export const dictionaries: Record<Locale, Dictionary> = {
       syncedFrom: "Disinkronkan dari",
       builtWith: "Dibuat dengan kertas & cinta",
       lastSync: "Sinkron terakhir",
+    },
+    game: {
+      level: "Lv",
+      xp: "XP",
+      toGo: "lagi",
+      streak: "streak harian",
+      freezes: "beku",
+      quests: "Misi hari ini",
+      questProgress: "Selesaikan ketiganya untuk",
+      questBonus: "bonus XP",
+      questAllDone: "Semua misi selesai — bonus diklaim!",
+      badges: "Rak lencana",
+      badgesUnlocked: "terbuka",
+      badgeLocked: "Terus baca untuk membuka",
+      toastBadge: "Lencana terbuka",
+      toastLevel: "Naik level!",
+      toastQuest: "Misi harian selesai",
+      toastFreeze: "Beku streak dipakai — Owi menyelamatkan streakmu!",
+      toastSyllabus: "Silabus tuntas — lulusan!",
+      streakTitle: "Streak membaca",
+      streakBest: "terbaik",
+      streakEmpty: "Owi mengantuk — baca satu halaman untuk membangunkannya!",
+      streakCta: "Mulai baca",
+      tipTitle: "Tips washi Owi",
+      markComplete: "Tandai selesai",
+      completed: "Tuntas — bacaan yang bagus!",
+      earns: "Satu ketukan, atau gulir saja sampai bawah.",
+      scrollHint: "Baca sampai bawah (atau ketuk di bawah) untuk dapat XP.",
+      save: "Simpan",
+      saved: "Tersimpan",
+      adventure: "Petualanganmu",
+      shelf: "Rakku",
+      continueReading: "Lanjutkan baca",
+      shelfEmpty: "Belum ada simpanan — ketuk Simpan di halaman mana pun.",
+      historyEmpty: "Belum ada apa-apa — bacaanmu akan muncul seperti sticky note.",
+      browseMore: "Cari bacaan",
+      removeBookmark: "Hapus",
+      stamps: "Buku stempel",
+      stampsCollected: "terkumpul",
+      stampLocked: "Belum dibaca",
+      collectionTitle: "Koleksiku",
+      collectionSubtitle: "Lencana, stempel, rak & pencapaian — semuanya milikmu, tersimpan di browser ini.",
+      focusTitle: "Fokus membaca",
+      focusSubtitle: "Pilih durasi, baca dengan tenang, dapatkan XP.",
+      focusStart: "Mulai",
+      focusPause: "Jeda",
+      focusResume: "Lanjut",
+      focusReset: "Ulang",
+      focusDone: "Sesi fokus selesai — kerja bagus!",
+      focusMinutes: "mnt",
+      shareDownload: "Unduh kartu",
+      shareButton: "Bagikan",
+      shareDone: "Terbagikan!",
+      shareTagline: "Belajar, satu kartu kertas di satu waktu.",
+      dataTitle: "Datamu tetap di sini",
+      dataDescription: "Progres hanya tersimpan di browser ini. Unduh cadangan, atau bersihkan rak.",
+      dataExport: "Unduh cadangan",
+      dataImport: "Pulihkan cadangan",
+      dataReset: "Hapus semua",
+      dataResetConfirm: "Ya, hapus",
+      dataResetCancel: "Batalkan",
+      dataImportOk: "Cadangan dipulihkan — selamat kembali!",
+      dataImportFail: "Berkas itu sepertinya bukan cadangan.",
     },
     category: {
       count: "topik",

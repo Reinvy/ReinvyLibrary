@@ -12,6 +12,10 @@ import BentoGrid from "@/components/home/BentoGrid";
 import FeaturedTutorialCard from "@/components/home/FeaturedTutorialCard";
 import RecentCheatsheetCard from "@/components/home/RecentCheatsheetCard";
 import SyllabusProgressCard from "@/components/home/SyllabusProgressCard";
+import QuestCard from "@/components/gamification/QuestCard";
+import StreakCalendar from "@/components/gamification/StreakCalendar";
+import WashiTip from "@/components/gamification/WashiTip";
+import BadgeGrid from "@/components/gamification/BadgeGrid";
 import TopicCard from "@/components/home/TopicCard";
 import PaperCard from "@/components/ui/PaperCard";
 import WashiTape from "@/components/ui/WashiTape";
@@ -163,6 +167,41 @@ export default async function HomePage({
           }
           stats={stats}
         />
+      </section>
+
+      {/* Gamification adventure row */}
+      <section className="pb-4">
+        <SectionHeading>{dict.game.adventure}</SectionHeading>
+        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <QuestCard
+            locale={loc}
+            title={dict.game.quests}
+            doneLabel={dict.game.questProgress}
+            bonusLabel={dict.game.questBonus}
+            completeLabel={dict.game.questAllDone}
+            browseHref={`/${loc}/browse`}
+          />
+          <StreakCalendar
+            locale={loc}
+            title={dict.game.streakTitle}
+            bestLabel={dict.game.streakBest}
+            emptyLabel={dict.game.streakEmpty}
+            ctaLabel={dict.game.streakCta}
+            browseHref={`/${loc}/browse`}
+          />
+          <div className="sm:col-span-2 lg:col-span-1">
+            <WashiTip locale={loc} title={dict.game.tipTitle} />
+          </div>
+        </div>
+        <div className="mt-5">
+          <BadgeGrid
+            locale={loc}
+            title={dict.game.badges}
+            unlockedLabel={dict.game.badgesUnlocked}
+            lockedLabel={dict.game.badgeLocked}
+            compact
+          />
+        </div>
       </section>
 
       {/* Category shelf */}

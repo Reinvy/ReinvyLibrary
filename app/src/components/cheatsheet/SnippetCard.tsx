@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import type { Snippet } from "@/lib/types";
-import CopyButton from "@/components/ui/CopyButton";
+import CopyXpButton from "@/components/gamification/CopyXpButton";
 
 interface SnippetCardProps {
   snippet: Snippet;
@@ -29,7 +29,7 @@ export default function SnippetCard({ snippet, labels }: SnippetCardProps) {
             {snippet.language || "text"}
           </span>
         </div>
-        <CopyButton text={snippet.code} label={labels.copy} />
+        <CopyXpButton text={snippet.code} label={labels.copy} />
       </div>
 
       {snippet.section && (

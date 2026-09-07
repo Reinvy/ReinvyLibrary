@@ -3,10 +3,13 @@ import "server-only";
 import React from "react";
 import ReactMarkdown, { type Components } from "react-markdown";
 import remarkGfm from "remark-gfm";
-import rehypeSlug from "rehype-slug";
+import { fromMarkdown } from "mdast-util-from-markdown";
+import { gfmFromMarkdown } from "mdast-util-gfm";
+import { gfm } from "micromark-extension-gfm";
 
 import { remarkCallouts } from "./plugins/callouts";
 import { remarkChecklists } from "./plugins/checklists";
+import { extractTocFlat } from "./plugins/toc";
 import type { TocItem } from "../types";
 import type { ChecklistItem } from "../types";
 import { slugify } from "../utils";
@@ -33,21 +36,41 @@ export interface RenderResult {
 /**
  * Renders markdown into paper-themed React components.
  * react-markdown escapes raw HTML by default → XSS-safe by construction.
+ *
+ * TOC is computed synchronously via mdast (same source as parser.ts) so the
+ * sidebar receives a populated list. Heading `id`s are assigned in document
+ * order from that TOC — never via render side-effects (which run after return).
  */
 export function renderMarkdown(opts: RenderOptions): RenderResult {
   const { markdown, checklistsEnabled = true } = opts;
 
-  const toc: TocItem[] = [];
+  const toc = getTocSync(markdown);
   const checklists: ChecklistItem[] = [];
+  let cursor = 0;
+
+  const nextId = (level: 2 | 3, fallbackText: string): string => {
+    const item = toc[cursor];
+    if (item && item.level === level) {
+      cursor += 1;
+      return item.id;
+    }
+    // Defensive: find next matching level ahead (keeps H2/H3 order stable).
+    for (let i = cursor; i < toc.length; i += 1) {
+      if (toc[i].level === level) {
+        cursor = i + 1;
+        return toc[i].id;
+      }
+    }
+    return slugify(fallbackText) || `section-${cursor++}`;
+  };
 
   const components: Components = {
     h2: ({ children }) => {
       const text = extractText(children);
-      const id = slugify(text);
-      toc.push({ id, text, level: 2 });
+      const id = nextId(2, text);
       return (
         <h2 id={id} className="group mt-10 mb-4 scroll-mt-24 flex items-baseline gap-2">
-          <span className="text-2xl font-display font-bold text-ink">{text}</span>
+          <span className="text-2xl font-display font-bold text-ink">{children}</span>
           <a href={`#${id}`} className="text-terracotta opacity-0 group-hover:opacity-100 transition-opacity" aria-label="Link to section">
             #
           </a>
@@ -56,11 +79,10 @@ export function renderMarkdown(opts: RenderOptions): RenderResult {
     },
     h3: ({ children }) => {
       const text = extractText(children);
-      const id = slugify(text);
-      toc.push({ id, text, level: 3 });
+      const id = nextId(3, text);
       return (
         <h3 id={id} className="mt-8 mb-3 scroll-mt-24 text-xl font-display font-semibold text-ink">
-          {text}
+          {children}
         </h3>
       );
     },
@@ -164,7 +186,6 @@ export function renderMarkdown(opts: RenderOptions): RenderResult {
         remarkCallouts,
         ...(checklistsEnabled ? [remarkChecklists] : []),
       ]}
-      rehypePlugins={[rehypeSlug]}
       components={calloutComponents}
     >
       {markdown}
@@ -174,9 +195,22 @@ export function renderMarkdown(opts: RenderOptions): RenderResult {
   return { toc, body, checklists };
 }
 
+/** Synchronous mdast TOC (same logic as parser.ts, no async highlight cost). */
+function getTocSync(markdown: string): TocItem[] {
+  try {
+    const tree = fromMarkdown(markdown, {
+      extensions: [gfm()],
+      mdastExtensions: [gfmFromMarkdown()],
+    });
+    return extractTocFlat(tree);
+  } catch {
+    return [];
+  }
+}
+
 function extractText(node: React.ReactNode): string {
   if (typeof node === "string" || typeof node === "number") return String(node);
-  if (Array.isArray(node)) return node.map(extractText).join(" ");
+  if (Array.isArray(node)) return node.map(extractText).join("");
   if (React.isValidElement(node)) {
     const props = node.props as { children?: React.ReactNode };
     return extractText(props.children);

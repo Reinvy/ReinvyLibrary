@@ -3,6 +3,7 @@ import { getDictionary } from "@/lib/i18n";
 import { GITHUB_REPO } from "@/lib/github";
 import type { Locale } from "@/lib/types";
 import AppIcon from "@/components/ui/AppIcon";
+import HeaderGamification from "@/components/gamification/HeaderGamification";
 import NavLinks from "./NavLinks";
 
 export default function Header({ locale }: { locale: Locale }) {
@@ -22,7 +23,15 @@ export default function Header({ locale }: { locale: Locale }) {
         <nav aria-label="Main" className="flex items-center gap-1 sm:gap-2">
           <NavLinks
             locale={locale}
-            labels={{ home: dict.nav.home, categories: dict.nav.categories, search: dict.nav.search }}
+            labels={{ home: dict.nav.home, categories: dict.nav.categories, search: dict.nav.search, collection: dict.nav.collection }}
+          />
+          <HeaderGamification
+            locale={locale}
+            levelLabel={dict.game.level}
+            xpLabel={dict.game.xp}
+            toGoLabel={dict.game.toGo}
+            streakLabel={dict.game.streak}
+            freezeLabel={dict.game.freezes}
           />
           <a
             href={`https://github.com/${GITHUB_REPO}`}

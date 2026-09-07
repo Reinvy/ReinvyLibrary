@@ -6,7 +6,7 @@ import { gfm } from "micromark-extension-gfm";
 import type { Root } from "mdast";
 
 import { extractSnippets } from "./plugins/snippets";
-import { extractToc } from "./plugins/toc";
+import { extractToc, extractTocFlat, flattenToc } from "./plugins/toc";
 import { remarkChecklists } from "./plugins/checklists";
 import { remarkCallouts } from "./plugins/callouts";
 import { highlightCode } from "./highlight";
@@ -78,4 +78,4 @@ function visitChecklists(node: Root, out: ChecklistItem[]): void {
   }
 }
 
-export { remarkCallouts, remarkChecklists, extractToc, extractSnippets };
+export { remarkCallouts, remarkChecklists, extractToc, extractTocFlat, flattenToc, extractSnippets };

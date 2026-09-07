@@ -141,4 +141,60 @@
   .reader-prose hr {
     @apply my-8 border-line;
   }
+
+  /* Gamification celebrations (cozy paper style, no emoji) */
+  @keyframes toast-pop {
+    0% { transform: translateY(12px) scale(0.96); opacity: 0; }
+    60% { transform: translateY(-2px) scale(1.01); opacity: 1; }
+    100% { transform: translateY(0) scale(1); opacity: 1; }
+  }
+  .toast-pop {
+    animation: toast-pop 0.35s ease-out;
+  }
+  @keyframes pop-in {
+    0% { transform: scale(0.6); opacity: 0; }
+    70% { transform: scale(1.08); opacity: 1; }
+    100% { transform: scale(1); opacity: 1; }
+  }
+  .animate-pop {
+    animation: pop-in 0.3s ease-out;
+  }
+
+  /* Paper-piece burst inside celebration toasts */
+  .confetti-burst {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+  }
+  .confetti-burst i {
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    width: 6px;
+    height: 9px;
+    border-radius: 1.5px;
+    opacity: 0;
+    animation: burst-fly 0.9s ease-out 0.05s;
+  }
+  .confetti-burst i:nth-child(1) { --tx: 110px; --ty: -46px; --tr: 200deg; }
+  .confetti-burst i:nth-child(2) { --tx: 88px; --ty: 30px; --tr: -160deg; }
+  .confetti-burst i:nth-child(3) { --tx: 64px; --ty: -58px; --tr: 240deg; }
+  .confetti-burst i:nth-child(4) { --tx: 96px; --ty: -8px; --tr: -220deg; }
+  .confetti-burst i:nth-child(5) { --tx: 52px; --ty: 44px; --tr: 180deg; }
+  .confetti-burst i:nth-child(6) { --tx: 118px; --ty: -28px; --tr: -200deg; }
+  @keyframes burst-fly {
+    0% { opacity: 1; transform: translate(0, 0) rotate(0); }
+    100% { opacity: 0; transform: translate(var(--tx, 90px), var(--ty, -30px)) rotate(var(--tr, 220deg)); }
+  }
+
+  /* Owi blink: gentle bob, paused for reduced motion globally */
+  @keyframes owi-bob {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-2px) rotate(-1deg); }
+  }
+  .owi-blink {
+    animation: owi-bob 5s ease-in-out infinite;
+    transform-origin: center bottom;
+  }
 }
