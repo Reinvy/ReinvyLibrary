@@ -233,6 +233,7 @@ Below is the dynamically updated list of all materials available in the library:
 | [Vue.js Form Handling and Validation Guide](frontend/vuejs/guides/vuejs-form-handling-validation-guide.md) | Guide | Intermediate | [EN](frontend/vuejs/guides/vuejs-form-handling-validation-guide.md) \| [ID](frontend/vuejs/guides/vuejs-form-handling-validation-guide_id.md) |
 | [Vue.js Frontend Development Syllabus](frontend/vuejs/syllabi/vuejs-frontend-development-syllabus.md) | Syllabus | Intermediate | [EN](frontend/vuejs/syllabi/vuejs-frontend-development-syllabus.md) \| [ID](frontend/vuejs/syllabi/vuejs-frontend-development-syllabus_id.md) |
 | [Vue.js Performance Optimization Guide](frontend/vuejs/guides/vuejs-performance-optimization-guide.md) | Guide | Advanced | [EN](frontend/vuejs/guides/vuejs-performance-optimization-guide.md) \| [ID](frontend/vuejs/guides/vuejs-performance-optimization-guide_id.md) |
+| [Vue.js Security Cheatsheet](frontend/vuejs/cheatsheets/vuejs-security-cheatsheet.md) | Cheatsheet | Advanced | [EN](frontend/vuejs/cheatsheets/vuejs-security-cheatsheet.md) \| [ID](frontend/vuejs/cheatsheets/vuejs-security-cheatsheet_id.md) |
 
 #### 🏷️ Tailwindcss
 
