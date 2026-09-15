@@ -219,6 +219,7 @@ Below is the dynamically updated list of all materials available in the library:
 | [React Native Performance Optimization and Debugging Guide](frontend/react-native/guides/react-native-performance-debugging-guide.md) | Guide | Advanced | [EN](frontend/react-native/guides/react-native-performance-debugging-guide.md) \| [ID](frontend/react-native/guides/react-native-performance-debugging-guide_id.md) |
 | [React Native Security Cheatsheet](frontend/react-native/cheatsheets/react-native-security-cheatsheet.md) | Cheatsheet | Advanced | [EN](frontend/react-native/cheatsheets/react-native-security-cheatsheet.md) \| [ID](frontend/react-native/cheatsheets/react-native-security-cheatsheet_id.md) |
 | [React Native State Management Guide](frontend/react-native/guides/react-native-state-management-guide.md) | Guide | Intermediate | [EN](frontend/react-native/guides/react-native-state-management-guide.md) \| [ID](frontend/react-native/guides/react-native-state-management-guide_id.md) |
+| [React Native Testing Guide](frontend/react-native/guides/react-native-testing-guide.md) | Guide | Advanced | [EN](frontend/react-native/guides/react-native-testing-guide.md) \| [ID](frontend/react-native/guides/react-native-testing-guide_id.md) |
 
 #### 🏷️ Vuejs
 

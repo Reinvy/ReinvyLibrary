@@ -219,6 +219,7 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 | [Panduan Optimasi Performa dan Debugging React Native](frontend/react-native/guides/react-native-performance-debugging-guide.md) | Guide | Advanced | [EN](frontend/react-native/guides/react-native-performance-debugging-guide.md) \| [ID](frontend/react-native/guides/react-native-performance-debugging-guide_id.md) |
 | [Cheat Sheet Keamanan React Native](frontend/react-native/cheatsheets/react-native-security-cheatsheet.md) | Cheatsheet | Advanced | [EN](frontend/react-native/cheatsheets/react-native-security-cheatsheet.md) \| [ID](frontend/react-native/cheatsheets/react-native-security-cheatsheet_id.md) |
 | [Panduan Manajemen State React Native](frontend/react-native/guides/react-native-state-management-guide.md) | Guide | Intermediate | [EN](frontend/react-native/guides/react-native-state-management-guide.md) \| [ID](frontend/react-native/guides/react-native-state-management-guide_id.md) |
+| [Panduan Pengujian React Native](frontend/react-native/guides/react-native-testing-guide.md) | Guide | Advanced | [EN](frontend/react-native/guides/react-native-testing-guide.md) \| [ID](frontend/react-native/guides/react-native-testing-guide_id.md) |
 
 #### 🏷️ Vuejs
 
