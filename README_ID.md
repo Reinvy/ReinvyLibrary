@@ -256,6 +256,7 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 | [Silabus Tailwind CSS](frontend/tailwindcss/syllabi/tailwind-css-syllabus.md) | Syllabus | Beginner | [EN](frontend/tailwindcss/syllabi/tailwind-css-syllabus.md) \| [ID](frontend/tailwindcss/syllabi/tailwind-css-syllabus_id.md) |
 | [Cheat Sheet Konfigurasi CSS-First Tailwind CSS v4](frontend/tailwindcss/cheatsheets/tailwind-css-v4-css-first-configuration-cheatsheet.md) | Cheatsheet | Advanced | [EN](frontend/tailwindcss/cheatsheets/tailwind-css-v4-css-first-configuration-cheatsheet.md) \| [ID](frontend/tailwindcss/cheatsheets/tailwind-css-v4-css-first-configuration-cheatsheet_id.md) |
 | [Membangun Design System dengan Tailwind CSS](frontend/tailwindcss/tutorials/tailwindcss-design-system-tutorial.md) | Tutorial | Intermediate | [EN](frontend/tailwindcss/tutorials/tailwindcss-design-system-tutorial.md) \| [ID](frontend/tailwindcss/tutorials/tailwindcss-design-system-tutorial_id.md) |
+| [Cheat Sheet Varian dan Styling Kondisional Tailwind CSS](frontend/tailwindcss/cheatsheets/tailwindcss-variants-cheatsheet.md) | Cheatsheet | Advanced | [EN](frontend/tailwindcss/cheatsheets/tailwindcss-variants-cheatsheet.md) \| [ID](frontend/tailwindcss/cheatsheets/tailwindcss-variants-cheatsheet_id.md) |
 
 #### 🏷️ Svelte
 

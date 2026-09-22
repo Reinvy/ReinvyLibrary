@@ -256,6 +256,7 @@ Below is the dynamically updated list of all materials available in the library:
 | [Tailwind CSS Syllabus](frontend/tailwindcss/syllabi/tailwind-css-syllabus.md) | Syllabus | Beginner | [EN](frontend/tailwindcss/syllabi/tailwind-css-syllabus.md) \| [ID](frontend/tailwindcss/syllabi/tailwind-css-syllabus_id.md) |
 | [Tailwind CSS v4 CSS-First Configuration Cheatsheet](frontend/tailwindcss/cheatsheets/tailwind-css-v4-css-first-configuration-cheatsheet.md) | Cheatsheet | Advanced | [EN](frontend/tailwindcss/cheatsheets/tailwind-css-v4-css-first-configuration-cheatsheet.md) \| [ID](frontend/tailwindcss/cheatsheets/tailwind-css-v4-css-first-configuration-cheatsheet_id.md) |
 | [Building a Design System with Tailwind CSS](frontend/tailwindcss/tutorials/tailwindcss-design-system-tutorial.md) | Tutorial | Intermediate | [EN](frontend/tailwindcss/tutorials/tailwindcss-design-system-tutorial.md) \| [ID](frontend/tailwindcss/tutorials/tailwindcss-design-system-tutorial_id.md) |
+| [Tailwind CSS Variants and Conditional Styling Cheatsheet](frontend/tailwindcss/cheatsheets/tailwindcss-variants-cheatsheet.md) | Cheatsheet | Advanced | [EN](frontend/tailwindcss/cheatsheets/tailwindcss-variants-cheatsheet.md) \| [ID](frontend/tailwindcss/cheatsheets/tailwindcss-variants-cheatsheet_id.md) |
 
 #### 🏷️ Svelte
 
