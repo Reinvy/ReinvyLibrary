@@ -430,6 +430,7 @@ Below is the dynamically updated list of all materials available in the library:
 | Topic | Format | Difficulty | Available Languages |
 | :--- | :--- | :--- | :--- |
 | [Advanced Redis Syllabus](database/redis/syllabi/advanced-redis-syllabus.md) | Syllabus | Advanced | [EN](database/redis/syllabi/advanced-redis-syllabus.md) \| [ID](database/redis/syllabi/advanced-redis-syllabus_id.md) |
+| [Building a Distributed Rate Limiter with Redis](database/redis/tutorials/building-distributed-rate-limiter-with-redis.md) | Tutorial | Advanced | [EN](database/redis/tutorials/building-distributed-rate-limiter-with-redis.md) \| [ID](database/redis/tutorials/building-distributed-rate-limiter-with-redis_id.md) |
 | [Building a Task Queue with Redis](database/redis/tutorials/building-task-queue-with-redis.md) | Tutorial | Intermediate | [EN](database/redis/tutorials/building-task-queue-with-redis.md) \| [ID](database/redis/tutorials/building-task-queue-with-redis_id.md) |
 | [Getting Started with Redis](database/redis/tutorials/getting-started-with-redis.md) | Tutorial | Beginner | [EN](database/redis/tutorials/getting-started-with-redis.md) \| [ID](database/redis/tutorials/getting-started-with-redis_id.md) |
 | [Redis Advanced Data Structures Cheatsheet](database/redis/cheatsheets/redis-advanced-data-structures-cheatsheet.md) | Cheatsheet | Intermediate | [EN](database/redis/cheatsheets/redis-advanced-data-structures-cheatsheet.md) \| [ID](database/redis/cheatsheets/redis-advanced-data-structures-cheatsheet_id.md) |
