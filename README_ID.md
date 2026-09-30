@@ -430,6 +430,7 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 | Topik | Format | Kesulitan | Bahasa Tersedia |
 | :--- | :--- | :--- | :--- |
 | [Silabus Redis Tingkat Lanjut](database/redis/syllabi/advanced-redis-syllabus.md) | Syllabus | Advanced | [EN](database/redis/syllabi/advanced-redis-syllabus.md) \| [ID](database/redis/syllabi/advanced-redis-syllabus_id.md) |
+| [Membangun Rate Limiter Terdistribusi dengan Redis](database/redis/tutorials/building-distributed-rate-limiter-with-redis.md) | Tutorial | Advanced | [EN](database/redis/tutorials/building-distributed-rate-limiter-with-redis.md) \| [ID](database/redis/tutorials/building-distributed-rate-limiter-with-redis_id.md) |
 | [Membangun Antrean Tugas dengan Redis](database/redis/tutorials/building-task-queue-with-redis.md) | Tutorial | Intermediate | [EN](database/redis/tutorials/building-task-queue-with-redis.md) \| [ID](database/redis/tutorials/building-task-queue-with-redis_id.md) |
 | [Memulai dengan Redis](database/redis/tutorials/getting-started-with-redis.md) | Tutorial | Beginner | [EN](database/redis/tutorials/getting-started-with-redis.md) \| [ID](database/redis/tutorials/getting-started-with-redis_id.md) |
 | [Cheat Sheet Struktur Data Lanjutan Redis](database/redis/cheatsheets/redis-advanced-data-structures-cheatsheet.md) | Cheatsheet | Intermediate | [EN](database/redis/cheatsheets/redis-advanced-data-structures-cheatsheet.md) \| [ID](database/redis/cheatsheets/redis-advanced-data-structures-cheatsheet_id.md) |
