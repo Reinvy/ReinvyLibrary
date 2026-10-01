@@ -210,6 +210,7 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 | [Panduan Optimasi Gambar di Next.js](frontend/nextjs/guides/nextjs-image-optimization-guide.md) | Guide | Intermediate | [EN](frontend/nextjs/guides/nextjs-image-optimization-guide.md) \| [ID](frontend/nextjs/guides/nextjs-image-optimization-guide_id.md) |
 | [Panduan Internasionalisasi (i18n) dan Lokalisasi Next.js](frontend/nextjs/guides/nextjs-internationalization-and-localization-guide.md) | Guide | Intermediate | [EN](frontend/nextjs/guides/nextjs-internationalization-and-localization-guide.md) \| [ID](frontend/nextjs/guides/nextjs-internationalization-and-localization-guide_id.md) |
 | [Struktur Proyek Next.js dan Praktik Terbaik](frontend/nextjs/guides/nextjs-project-structure-and-best-practices.md) | Guide | Intermediate | [EN](frontend/nextjs/guides/nextjs-project-structure-and-best-practices.md) \| [ID](frontend/nextjs/guides/nextjs-project-structure-and-best-practices_id.md) |
+| [Cheat Sheet Server Actions dan Formulir Next.js](frontend/nextjs/cheatsheets/nextjs-server-actions-and-forms-cheatsheet.md) | Cheatsheet | Advanced | [EN](frontend/nextjs/cheatsheets/nextjs-server-actions-and-forms-cheatsheet.md) \| [ID](frontend/nextjs/cheatsheets/nextjs-server-actions-and-forms-cheatsheet_id.md) |
 | [Silabus Pengembangan Next.js](frontend/nextjs/syllabi/nextjs-syllabus.md) | Syllabus | Intermediate | [EN](frontend/nextjs/syllabi/nextjs-syllabus.md) \| [ID](frontend/nextjs/syllabi/nextjs-syllabus_id.md) |
 
 #### 🏷️ React Native
