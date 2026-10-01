@@ -210,6 +210,7 @@ Below is the dynamically updated list of all materials available in the library:
 | [Next.js Image Optimization Guide](frontend/nextjs/guides/nextjs-image-optimization-guide.md) | Guide | Intermediate | [EN](frontend/nextjs/guides/nextjs-image-optimization-guide.md) \| [ID](frontend/nextjs/guides/nextjs-image-optimization-guide_id.md) |
 | [Next.js Internationalization (i18n) and Localization Guide](frontend/nextjs/guides/nextjs-internationalization-and-localization-guide.md) | Guide | Intermediate | [EN](frontend/nextjs/guides/nextjs-internationalization-and-localization-guide.md) \| [ID](frontend/nextjs/guides/nextjs-internationalization-and-localization-guide_id.md) |
 | [Next.js Project Structure and Best Practices](frontend/nextjs/guides/nextjs-project-structure-and-best-practices.md) | Guide | Intermediate | [EN](frontend/nextjs/guides/nextjs-project-structure-and-best-practices.md) \| [ID](frontend/nextjs/guides/nextjs-project-structure-and-best-practices_id.md) |
+| [Next.js Server Actions and Forms Cheatsheet](frontend/nextjs/cheatsheets/nextjs-server-actions-and-forms-cheatsheet.md) | Cheatsheet | Advanced | [EN](frontend/nextjs/cheatsheets/nextjs-server-actions-and-forms-cheatsheet.md) \| [ID](frontend/nextjs/cheatsheets/nextjs-server-actions-and-forms-cheatsheet_id.md) |
 | [Next.js Development Syllabus](frontend/nextjs/syllabi/nextjs-syllabus.md) | Syllabus | Intermediate | [EN](frontend/nextjs/syllabi/nextjs-syllabus.md) \| [ID](frontend/nextjs/syllabi/nextjs-syllabus_id.md) |
 
 #### 🏷️ React Native
