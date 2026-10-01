@@ -141,6 +141,7 @@ Below is the dynamically updated list of all materials available in the library:
 | [Go Web Development and HTTP API Cheatsheet](backend/golang/cheatsheets/go-web-development-cheatsheet.md) | Cheatsheet | Intermediate | [EN](backend/golang/cheatsheets/go-web-development-cheatsheet.md) \| [ID](backend/golang/cheatsheets/go-web-development-cheatsheet_id.md) |
 | [Golang Cheatsheet](backend/golang/cheatsheets/golang-cheatsheet.md) | Cheatsheet | Intermediate | [EN](backend/golang/cheatsheets/golang-cheatsheet.md) \| [ID](backend/golang/cheatsheets/golang-cheatsheet_id.md) |
 | [Go Concurrency Patterns Guide](backend/golang/guides/golang-concurrency-patterns-guide.md) | Guide | Intermediate | [EN](backend/golang/guides/golang-concurrency-patterns-guide.md) \| [ID](backend/golang/guides/golang-concurrency-patterns-guide_id.md) |
+| [Go Distributed Systems Engineering Syllabus](backend/golang/syllabi/golang-distributed-systems-syllabus.md) | Syllabus | Advanced | [EN](backend/golang/syllabi/golang-distributed-systems-syllabus.md) \| [ID](backend/golang/syllabi/golang-distributed-systems-syllabus_id.md) |
 
 #### 🏷️ Laravel
 
