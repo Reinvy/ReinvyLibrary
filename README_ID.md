@@ -141,6 +141,7 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 | [Cheat Sheet Pengembangan Web Go dan HTTP API](backend/golang/cheatsheets/go-web-development-cheatsheet.md) | Cheatsheet | Intermediate | [EN](backend/golang/cheatsheets/go-web-development-cheatsheet.md) \| [ID](backend/golang/cheatsheets/go-web-development-cheatsheet_id.md) |
 | [Cheat Sheet Golang](backend/golang/cheatsheets/golang-cheatsheet.md) | Cheatsheet | Intermediate | [EN](backend/golang/cheatsheets/golang-cheatsheet.md) \| [ID](backend/golang/cheatsheets/golang-cheatsheet_id.md) |
 | [Panduan Pola Konkurensi Go](backend/golang/guides/golang-concurrency-patterns-guide.md) | Guide | Intermediate | [EN](backend/golang/guides/golang-concurrency-patterns-guide.md) \| [ID](backend/golang/guides/golang-concurrency-patterns-guide_id.md) |
+| [Silabus Rekayasa Sistem Terdistribusi Go](backend/golang/syllabi/golang-distributed-systems-syllabus.md) | Syllabus | Advanced | [EN](backend/golang/syllabi/golang-distributed-systems-syllabus.md) \| [ID](backend/golang/syllabi/golang-distributed-systems-syllabus_id.md) |
 
 #### 🏷️ Laravel
 
