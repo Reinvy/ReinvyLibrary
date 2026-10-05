@@ -351,6 +351,7 @@ Below is the dynamically updated list of all materials available in the library:
 | [Kotlin Jetpack Compose Cheat Sheet](mobile/kotlin/cheatsheets/kotlin-jetpack-compose-cheatsheet.md) | Cheatsheet | Intermediate | [EN](mobile/kotlin/cheatsheets/kotlin-jetpack-compose-cheatsheet.md) \| [ID](mobile/kotlin/cheatsheets/kotlin-jetpack-compose-cheatsheet_id.md) |
 | [Kotlin Ktor Cheat Sheet](mobile/kotlin/cheatsheets/kotlin-ktor-cheatsheet.md) | Cheatsheet | Advanced | [EN](mobile/kotlin/cheatsheets/kotlin-ktor-cheatsheet.md) \| [ID](mobile/kotlin/cheatsheets/kotlin-ktor-cheatsheet_id.md) |
 | [Kotlin Multiplatform and Compose Multiplatform Guide](mobile/kotlin/guides/kotlin-multiplatform-compose-multiplatform-guide.md) | Guide | Advanced | [EN](mobile/kotlin/guides/kotlin-multiplatform-compose-multiplatform-guide.md) \| [ID](mobile/kotlin/guides/kotlin-multiplatform-compose-multiplatform-guide_id.md) |
+| [Kotlin Testing and Mocking Cheatsheet](mobile/kotlin/cheatsheets/kotlin-testing-and-mocking-cheatsheet.md) | Cheatsheet | Advanced | [EN](mobile/kotlin/cheatsheets/kotlin-testing-and-mocking-cheatsheet.md) \| [ID](mobile/kotlin/cheatsheets/kotlin-testing-and-mocking-cheatsheet_id.md) |
 | [Building a Movie Discovery App with Kotlin, Retrofit, and Jetpack Compose](mobile/kotlin/tutorials/movie-discovery-app-kotlin-retrofit-compose.md) | Tutorial | Intermediate | [EN](mobile/kotlin/tutorials/movie-discovery-app-kotlin-retrofit-compose.md) \| [ID](mobile/kotlin/tutorials/movie-discovery-app-kotlin-retrofit-compose_id.md) |
 
 ### 📁 Devops
