@@ -376,6 +376,7 @@ Below is the dynamically updated list of all materials available in the library:
 | [Docker Multi-Architecture Builds with Buildx](devops/docker/tutorials/docker-multi-architecture-builds.md) | Tutorial | Intermediate | [EN](devops/docker/tutorials/docker-multi-architecture-builds.md) \| [ID](devops/docker/tutorials/docker-multi-architecture-builds_id.md) |
 | [Docker Secrets Management and Security Best Practices](devops/docker/tutorials/docker-secrets-management-and-security.md) | Tutorial | Intermediate | [EN](devops/docker/tutorials/docker-secrets-management-and-security.md) \| [ID](devops/docker/tutorials/docker-secrets-management-and-security_id.md) |
 | [Docker Storage and Volumes Guide](devops/docker/guides/docker-storage-and-volumes-guide.md) | Guide | Intermediate | [EN](devops/docker/guides/docker-storage-and-volumes-guide.md) \| [ID](devops/docker/guides/docker-storage-and-volumes-guide_id.md) |
+| [Docker Troubleshooting and Debugging Cheatsheet](devops/docker/cheatsheets/docker-troubleshooting-and-debugging-cheatsheet.md) | Cheatsheet | Intermediate | [EN](devops/docker/cheatsheets/docker-troubleshooting-and-debugging-cheatsheet.md) \| [ID](devops/docker/cheatsheets/docker-troubleshooting-and-debugging-cheatsheet_id.md) |
 | [Dockerizing a Full-Stack Application](devops/docker/tutorials/dockerizing-a-full-stack-application.md) | Tutorial | Intermediate | [EN](devops/docker/tutorials/dockerizing-a-full-stack-application.md) \| [ID](devops/docker/tutorials/dockerizing-a-full-stack-application_id.md) |
 
 #### 🏷️ Pm2
