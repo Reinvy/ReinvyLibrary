@@ -249,6 +249,7 @@ Below is the dynamically updated list of all materials available in the library:
 | [Vue.js Performance Optimization Guide](frontend/vuejs/guides/vuejs-performance-optimization-guide.md) | Guide | Advanced | [EN](frontend/vuejs/guides/vuejs-performance-optimization-guide.md) \| [ID](frontend/vuejs/guides/vuejs-performance-optimization-guide_id.md) |
 | [Vue.js Quality Engineering Syllabus](frontend/vuejs/syllabi/vuejs-quality-engineering-syllabus.md) | Syllabus | Advanced | [EN](frontend/vuejs/syllabi/vuejs-quality-engineering-syllabus.md) \| [ID](frontend/vuejs/syllabi/vuejs-quality-engineering-syllabus_id.md) |
 | [Vue.js Security Cheatsheet](frontend/vuejs/cheatsheets/vuejs-security-cheatsheet.md) | Cheatsheet | Advanced | [EN](frontend/vuejs/cheatsheets/vuejs-security-cheatsheet.md) \| [ID](frontend/vuejs/cheatsheets/vuejs-security-cheatsheet_id.md) |
+| [Vue.js Testing Guide](frontend/vuejs/guides/vuejs-testing-guide.md) | Guide | Advanced | [EN](frontend/vuejs/guides/vuejs-testing-guide.md) \| [ID](frontend/vuejs/guides/vuejs-testing-guide_id.md) |
 
 #### 🏷️ Tailwindcss
 

@@ -249,6 +249,7 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 | [Panduan Optimasi Performa Vue.js](frontend/vuejs/guides/vuejs-performance-optimization-guide.md) | Guide | Advanced | [EN](frontend/vuejs/guides/vuejs-performance-optimization-guide.md) \| [ID](frontend/vuejs/guides/vuejs-performance-optimization-guide_id.md) |
 | [Silabus Rekayasa Kualitas Vue.js](frontend/vuejs/syllabi/vuejs-quality-engineering-syllabus.md) | Syllabus | Advanced | [EN](frontend/vuejs/syllabi/vuejs-quality-engineering-syllabus.md) \| [ID](frontend/vuejs/syllabi/vuejs-quality-engineering-syllabus_id.md) |
 | [Cheat Sheet Keamanan Vue.js](frontend/vuejs/cheatsheets/vuejs-security-cheatsheet.md) | Cheatsheet | Advanced | [EN](frontend/vuejs/cheatsheets/vuejs-security-cheatsheet.md) \| [ID](frontend/vuejs/cheatsheets/vuejs-security-cheatsheet_id.md) |
+| [Panduan Pengujian Vue.js](frontend/vuejs/guides/vuejs-testing-guide.md) | Guide | Advanced | [EN](frontend/vuejs/guides/vuejs-testing-guide.md) \| [ID](frontend/vuejs/guides/vuejs-testing-guide_id.md) |
 
 #### 🏷️ Tailwindcss
 
