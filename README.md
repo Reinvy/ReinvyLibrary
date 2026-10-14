@@ -517,6 +517,7 @@ Below is the dynamically updated list of all materials available in the library:
 | [PostgreSQL Time-Series Analytics Syllabus](database/postgres/syllabi/postgresql-time-series-analytics-syllabus.md) | Syllabus | Advanced | [EN](database/postgres/syllabi/postgresql-time-series-analytics-syllabus.md) \| [ID](database/postgres/syllabi/postgresql-time-series-analytics-syllabus_id.md) |
 | [PostgreSQL Transactions and Concurrency Control Cheatsheet](database/postgres/cheatsheets/postgresql-transactions-concurrency-cheatsheet.md) | Cheatsheet | Advanced | [EN](database/postgres/cheatsheets/postgresql-transactions-concurrency-cheatsheet.md) \| [ID](database/postgres/cheatsheets/postgresql-transactions-concurrency-cheatsheet_id.md) |
 | [PostgreSQL Window Functions Tutorial](database/postgres/tutorials/postgresql-window-functions-tutorial.md) | Tutorial | Advanced | [EN](database/postgres/tutorials/postgresql-window-functions-tutorial.md) \| [ID](database/postgres/tutorials/postgresql-window-functions-tutorial_id.md) |
+| [PostgreSQL Zero-Downtime Schema Migrations Guide](database/postgres/guides/postgresql-zero-downtime-schema-migrations-guide.md) | Guide | Advanced | [EN](database/postgres/guides/postgresql-zero-downtime-schema-migrations-guide.md) \| [ID](database/postgres/guides/postgresql-zero-downtime-schema-migrations-guide_id.md) |
 <!-- INDEX_END -->
 
 ---
