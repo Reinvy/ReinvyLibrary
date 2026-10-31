@@ -549,6 +549,7 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 | [Silabus Analitik Real-Time Redis](database/redis/syllabi/redis-real-time-analytics-syllabus.md) | Syllabus | Advanced | [EN](database/redis/syllabi/redis-real-time-analytics-syllabus.md) \| [ID](database/redis/syllabi/redis-real-time-analytics-syllabus_id.md) |
 | [Redis Security Cheatsheet](database/redis/cheatsheets/redis-security-cheatsheet.md) | Cheatsheet | Advanced | [EN](database/redis/cheatsheets/redis-security-cheatsheet.md) \| [ID](database/redis/cheatsheets/redis-security-cheatsheet_id.md) |
 | [Membangun Sistem Berbasis Event dengan Redis Streams](database/redis/tutorials/redis-streams-event-driven-architecture.md) | Tutorial | Intermediate | [EN](database/redis/tutorials/redis-streams-event-driven-architecture.md) \| [ID](database/redis/tutorials/redis-streams-event-driven-architecture_id.md) |
+| [Panduan Transaksi, Pipelining, dan Atomisitas Redis](database/redis/guides/redis-transactions-pipelining-and-atomicity-guide.md) | Guide | Advanced | [EN](database/redis/guides/redis-transactions-pipelining-and-atomicity-guide.md) \| [ID](database/redis/guides/redis-transactions-pipelining-and-atomicity-guide_id.md) |
 
 #### 🏷️ Mongodb
 
