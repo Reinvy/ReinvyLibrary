@@ -206,6 +206,7 @@ Below is the dynamically updated list of all materials available in the library:
 | [NestJS Observability and Logging Guide](backend/nestjs/guides/nestjs-observability-and-logging-guide.md) | Guide | Advanced | [EN](backend/nestjs/guides/nestjs-observability-and-logging-guide.md) \| [ID](backend/nestjs/guides/nestjs-observability-and-logging-guide_id.md) |
 | [NestJS Security Hardening Guide](backend/nestjs/guides/nestjs-security-hardening-guide.md) | Guide | Advanced | [EN](backend/nestjs/guides/nestjs-security-hardening-guide.md) \| [ID](backend/nestjs/guides/nestjs-security-hardening-guide_id.md) |
 | [NestJS Testing Cheatsheet](backend/nestjs/cheatsheets/nestjs-testing-cheatsheet.md) | Cheatsheet | Advanced | [EN](backend/nestjs/cheatsheets/nestjs-testing-cheatsheet.md) \| [ID](backend/nestjs/cheatsheets/nestjs-testing-cheatsheet_id.md) |
+| [NestJS Validation and Serialization Cheatsheet](backend/nestjs/cheatsheets/nestjs-validation-and-serialization-cheatsheet.md) | Cheatsheet | Advanced | [EN](backend/nestjs/cheatsheets/nestjs-validation-and-serialization-cheatsheet.md) \| [ID](backend/nestjs/cheatsheets/nestjs-validation-and-serialization-cheatsheet_id.md) |
 
 #### 🏷️ Bun
 
