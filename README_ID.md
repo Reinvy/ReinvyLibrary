@@ -158,6 +158,7 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 | [Silabus CLI dan Tooling Go](backend/golang/syllabi/golang-cli-and-tooling-syllabus.md) | Syllabus | Intermediate | [EN](backend/golang/syllabi/golang-cli-and-tooling-syllabus.md) \| [ID](backend/golang/syllabi/golang-cli-and-tooling-syllabus_id.md) |
 | [Panduan Pola Konkurensi Go](backend/golang/guides/golang-concurrency-patterns-guide.md) | Guide | Intermediate | [EN](backend/golang/guides/golang-concurrency-patterns-guide.md) \| [ID](backend/golang/guides/golang-concurrency-patterns-guide_id.md) |
 | [Silabus Rekayasa Sistem Terdistribusi Go](backend/golang/syllabi/golang-distributed-systems-syllabus.md) | Syllabus | Advanced | [EN](backend/golang/syllabi/golang-distributed-systems-syllabus.md) \| [ID](backend/golang/syllabi/golang-distributed-systems-syllabus_id.md) |
+| [Silabus Rekayasa Analisis Statis dan Verifikasi Go](backend/golang/syllabi/golang-static-analysis-and-verification-syllabus.md) | Syllabus | Advanced | [EN](backend/golang/syllabi/golang-static-analysis-and-verification-syllabus.md) \| [ID](backend/golang/syllabi/golang-static-analysis-and-verification-syllabus_id.md) |
 | [Cheat Sheet Testing Go](backend/golang/cheatsheets/golang-testing-cheatsheet.md) | Cheatsheet | Intermediate | [EN](backend/golang/cheatsheets/golang-testing-cheatsheet.md) \| [ID](backend/golang/cheatsheets/golang-testing-cheatsheet_id.md) |
 
 #### 🏷️ Laravel
