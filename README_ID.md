@@ -184,6 +184,7 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 | [Tutorial Queue dan Pemrosesan Job Laravel](backend/laravel/tutorials/laravel-queue-job-processing-tutorial.md) | Tutorial | Advanced | [EN](backend/laravel/tutorials/laravel-queue-job-processing-tutorial.md) \| [ID](backend/laravel/tutorials/laravel-queue-job-processing-tutorial_id.md) |
 | [Cheat Sheet Penguatan Keamanan Laravel](backend/laravel/cheatsheets/laravel-security-hardening-cheatsheet.md) | Cheatsheet | Advanced | [EN](backend/laravel/cheatsheets/laravel-security-hardening-cheatsheet.md) \| [ID](backend/laravel/cheatsheets/laravel-security-hardening-cheatsheet_id.md) |
 | [Panduan Testing Laravel](backend/laravel/guides/laravel-testing-guide.md) | Guide | Intermediate | [EN](backend/laravel/guides/laravel-testing-guide.md) \| [ID](backend/laravel/guides/laravel-testing-guide_id.md) |
+| [Silabus Rekayasa Upgrade dan Modernisasi Laravel](backend/laravel/syllabi/laravel-upgrade-and-modernization-syllabus.md) | Syllabus | Advanced | [EN](backend/laravel/syllabi/laravel-upgrade-and-modernization-syllabus.md) \| [ID](backend/laravel/syllabi/laravel-upgrade-and-modernization-syllabus_id.md) |
 
 #### 🏷️ Nestjs
 
