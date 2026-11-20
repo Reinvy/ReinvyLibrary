@@ -184,6 +184,7 @@ Below is the dynamically updated list of all materials available in the library:
 | [Laravel Queue and Job Processing Tutorial](backend/laravel/tutorials/laravel-queue-job-processing-tutorial.md) | Tutorial | Advanced | [EN](backend/laravel/tutorials/laravel-queue-job-processing-tutorial.md) \| [ID](backend/laravel/tutorials/laravel-queue-job-processing-tutorial_id.md) |
 | [Laravel Security Hardening Cheatsheet](backend/laravel/cheatsheets/laravel-security-hardening-cheatsheet.md) | Cheatsheet | Advanced | [EN](backend/laravel/cheatsheets/laravel-security-hardening-cheatsheet.md) \| [ID](backend/laravel/cheatsheets/laravel-security-hardening-cheatsheet_id.md) |
 | [Laravel Testing Guide](backend/laravel/guides/laravel-testing-guide.md) | Guide | Intermediate | [EN](backend/laravel/guides/laravel-testing-guide.md) \| [ID](backend/laravel/guides/laravel-testing-guide_id.md) |
+| [Laravel Upgrade and Modernization Engineering Syllabus](backend/laravel/syllabi/laravel-upgrade-and-modernization-syllabus.md) | Syllabus | Advanced | [EN](backend/laravel/syllabi/laravel-upgrade-and-modernization-syllabus.md) \| [ID](backend/laravel/syllabi/laravel-upgrade-and-modernization-syllabus_id.md) |
 
 #### 🏷️ Nestjs
 
