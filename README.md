@@ -497,6 +497,7 @@ Below is the dynamically updated list of all materials available in the library:
 | [Building Automation Tooling with the PM2 Programmatic API](devops/pm2/tutorials/pm2-programmatic-api-automation.md) | Tutorial | Advanced | [EN](devops/pm2/tutorials/pm2-programmatic-api-automation.md) \| [ID](devops/pm2/tutorials/pm2-programmatic-api-automation_id.md) |
 | [PM2 Real-Time Applications Engineering Syllabus](devops/pm2/syllabi/pm2-real-time-applications-syllabus.md) | Syllabus | Advanced | [EN](devops/pm2/syllabi/pm2-real-time-applications-syllabus.md) \| [ID](devops/pm2/syllabi/pm2-real-time-applications-syllabus_id.md) |
 | [PM2 Security Hardening Cheatsheet](devops/pm2/cheatsheets/pm2-security-hardening-cheatsheet.md) | Cheatsheet | Advanced | [EN](devops/pm2/cheatsheets/pm2-security-hardening-cheatsheet.md) \| [ID](devops/pm2/cheatsheets/pm2-security-hardening-cheatsheet_id.md) |
+| [PM2 Troubleshooting and Diagnostics Cheatsheet](devops/pm2/cheatsheets/pm2-troubleshooting-and-diagnostics-cheatsheet.md) | Cheatsheet | Advanced | [EN](devops/pm2/cheatsheets/pm2-troubleshooting-and-diagnostics-cheatsheet.md) \| [ID](devops/pm2/cheatsheets/pm2-troubleshooting-and-diagnostics-cheatsheet_id.md) |
 | [PM2 Zero-Downtime Deployment Tutorial](devops/pm2/tutorials/pm2-zero-downtime-deployment-tutorial.md) | Tutorial | Advanced | [EN](devops/pm2/tutorials/pm2-zero-downtime-deployment-tutorial.md) \| [ID](devops/pm2/tutorials/pm2-zero-downtime-deployment-tutorial_id.md) |
 
 #### 🏷️ Kubernetes
