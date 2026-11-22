@@ -497,6 +497,7 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 | [Membangun Alat Otomasi dengan PM2 Programmatic API](devops/pm2/tutorials/pm2-programmatic-api-automation.md) | Tutorial | Advanced | [EN](devops/pm2/tutorials/pm2-programmatic-api-automation.md) \| [ID](devops/pm2/tutorials/pm2-programmatic-api-automation_id.md) |
 | [Silabus Rekayasa Aplikasi Real-Time dengan PM2](devops/pm2/syllabi/pm2-real-time-applications-syllabus.md) | Syllabus | Advanced | [EN](devops/pm2/syllabi/pm2-real-time-applications-syllabus.md) \| [ID](devops/pm2/syllabi/pm2-real-time-applications-syllabus_id.md) |
 | [Cheat Sheet Pengamanan PM2](devops/pm2/cheatsheets/pm2-security-hardening-cheatsheet.md) | Cheatsheet | Advanced | [EN](devops/pm2/cheatsheets/pm2-security-hardening-cheatsheet.md) \| [ID](devops/pm2/cheatsheets/pm2-security-hardening-cheatsheet_id.md) |
+| [Cheat Sheet Troubleshooting dan Diagnostik PM2](devops/pm2/cheatsheets/pm2-troubleshooting-and-diagnostics-cheatsheet.md) | Cheatsheet | Advanced | [EN](devops/pm2/cheatsheets/pm2-troubleshooting-and-diagnostics-cheatsheet.md) \| [ID](devops/pm2/cheatsheets/pm2-troubleshooting-and-diagnostics-cheatsheet_id.md) |
 | [Tutorial Deployment Zero-Downtime dengan PM2](devops/pm2/tutorials/pm2-zero-downtime-deployment-tutorial.md) | Tutorial | Advanced | [EN](devops/pm2/tutorials/pm2-zero-downtime-deployment-tutorial.md) \| [ID](devops/pm2/tutorials/pm2-zero-downtime-deployment-tutorial_id.md) |
 
 #### 🏷️ Kubernetes
