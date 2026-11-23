@@ -209,6 +209,7 @@ Di bawah ini adalah daftar semua materi yang tersedia di perpustakaan, diperbaru
 | [Panduan Observabilitas dan Logging NestJS](backend/nestjs/guides/nestjs-observability-and-logging-guide.md) | Guide | Advanced | [EN](backend/nestjs/guides/nestjs-observability-and-logging-guide.md) \| [ID](backend/nestjs/guides/nestjs-observability-and-logging-guide_id.md) |
 | [Panduan Penguatan Keamanan NestJS](backend/nestjs/guides/nestjs-security-hardening-guide.md) | Guide | Advanced | [EN](backend/nestjs/guides/nestjs-security-hardening-guide.md) \| [ID](backend/nestjs/guides/nestjs-security-hardening-guide_id.md) |
 | [Cheatsheet Pengujian NestJS](backend/nestjs/cheatsheets/nestjs-testing-cheatsheet.md) | Cheatsheet | Advanced | [EN](backend/nestjs/cheatsheets/nestjs-testing-cheatsheet.md) \| [ID](backend/nestjs/cheatsheets/nestjs-testing-cheatsheet_id.md) |
+| [Silabus Rekayasa Pengujian dan Kualitas NestJS](backend/nestjs/syllabi/nestjs-testing-quality-engineering-syllabus.md) | Syllabus | Advanced | [EN](backend/nestjs/syllabi/nestjs-testing-quality-engineering-syllabus.md) \| [ID](backend/nestjs/syllabi/nestjs-testing-quality-engineering-syllabus_id.md) |
 | [Cheatsheet Validasi dan Serialisasi NestJS](backend/nestjs/cheatsheets/nestjs-validation-and-serialization-cheatsheet.md) | Cheatsheet | Advanced | [EN](backend/nestjs/cheatsheets/nestjs-validation-and-serialization-cheatsheet.md) \| [ID](backend/nestjs/cheatsheets/nestjs-validation-and-serialization-cheatsheet_id.md) |
 
 #### 🏷️ Bun
